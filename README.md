@@ -30,3 +30,84 @@ React 的安装包，可以到[官网](https://github.com/facebook/react/release
 ```
 
 直接在浏览其中打开 [step01](https://github.com/atlantis1024/react-step-by-step/blob/master/step01) 目录下的 hello.html 和 ajax.html 可以看到使用react的演示效果。
+
+## step02 - 最简单的web app
+
+> **关键点**
+>
+> - `npm` - 详细用法可以参考 [runoob的NPM 使用介绍](http://www.runoob.com/nodejs/nodejs-npm.html)
+> - `webpack` - [教程](https://github.com/atlantis1024/webpack-notes)
+> - `babel`
+
+### 通过 npm 使用 React
+
+#### 安装npm
+
+ [step01](https://github.com/atlantis1024/react-step-by-step/blob/master/step01) 中通过下载javascript的方式下载js库已经OUT了。现在的javascript应用开发一般使用npm或yarn来管理库。本文中，仅介绍npm方式。
+
+首先，需要在 https://nodejs.org/en/download/ 下载并安装**Node.js**。安装程序会默认安装**npm**。
+
+#### 创建package.json
+
+**package.json** 文件一般位于模块的目录下，用于定义包的属性。
+
+首先，执行`npm init`命令，会有多个引导提示，根据提示输入配置信息，即可创建一个 **package.json** 文件。如果嫌烦，也可以一直按回车键，npm会根据默认配置为你创建一个 **package.json** 文件。
+
+#### 使用npm安装js库
+
+```sh
+$ npm install react react-dom --save ##本地安装，并保存到package.json的dependencies中
+$ npm install babel-core babel-loader babel-preset-es2015 babel-preset-react http-server webpack webpack-dev-server --save-dev  ##本地安装，并保存到package.json的devDependencies中
+```
+
+
+#### 使用淘宝npm
+
+国内使用 npm 速度很慢，你可以使用淘宝定制的 cnpm (gzip 压缩支持) 命令行工具代替默认的 npm:
+
+```sh
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+$ npm config set registry https://registry.npm.taobao.org
+```
+
+这样就可以使用 cnpm 命令来安装模块了：
+
+```sh
+$ cnpm install [name]
+```
+
+### 使用webpack将js代码模块化打包
+
+新建一个`webpack.config.js`文件。这个文件是webpack用于管理javascript库的配置文件。
+
+```javascript
+module.exports = {
+  // 入口
+  entry: './index.js',
+  // 输出
+  output: {
+    filename: 'bundle.js'
+  },
+
+  devServer: {
+    inline: true,
+    port: 3000
+  },
+
+  module: {
+    // babel加载器，将js或jsx文件中的ES6或React语法转译为浏览器可以识别的js代码
+    loaders: [
+      {test: /\.(js|jsx)$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react'}
+    ]
+  }
+};
+```
+然后，在package.json中更新执行脚本命令，添加
+
+```json
+"scripts": {
+    "start": "webpack-dev-server --hot --inline --content-base ."
+},
+```
+
+该命令的作用是使用webpack-dev-server启动一个支持热部署的web app。
