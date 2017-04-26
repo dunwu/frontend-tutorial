@@ -1,4 +1,5 @@
 # react-step-by-step
+
 首先，要声明一下，我是一名后端程序员。
 
 React不仅仅是一个优秀的Javascript框架，而是一个整个技术栈。要发挥它的真正威力，不得不学习一大堆的技术。讲真，第一次接触时，光是一堆术语就可以直接让人晕菜。
@@ -59,7 +60,6 @@ React 的安装包，可以到[官网](https://github.com/facebook/react/release
 $ npm install react react-dom --save ##本地安装，并保存到package.json的dependencies中
 $ npm install babel-core babel-loader babel-preset-es2015 babel-preset-react http-server webpack webpack-dev-server --save-dev  ##本地安装，并保存到package.json的devDependencies中
 ```
-
 
 #### 使用淘宝npm
 
@@ -129,7 +129,7 @@ $ npm i react-router-dom -S
 
 简单的示例
 
-```react
+```jsx
 import React from "react";
 import {BrowserRouter as Router, Link, Redirect, Route, Switch} from "react-router-dom";
 
