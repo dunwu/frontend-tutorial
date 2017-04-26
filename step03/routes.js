@@ -1,74 +1,81 @@
 import React from "react";
-import {BrowserRouter as Router, Link, Route} from "react-router-dom";
+import {BrowserRouter as Router, Link, Redirect, Route, Switch} from "react-router-dom";
 
-// Each logical "route" has two components, one for
-// the sidebar and one for the main area. We want to
-// render both of them in different places when the
-// path matches the current URL.
-const routes = [
-  {
-    path: '/',
-    exact: true,
-    sidebar: () => <div>home!</div>,
-    main: () => <h2>Home</h2>
-  },
-  {
-    path: '/bubblegum',
-    sidebar: () => <div>bubblegum!</div>,
-    main: () => <h2>Bubblegum</h2>
-  },
-  {
-    path: '/shoelaces',
-    sidebar: () => <div>shoelaces!</div>,
-    main: () => <h2>Shoelaces</h2>
-  }
-]
+const Home = () => (
+  <div>
+    <h2>首页</h2>
+  </div>
+);
 
-const SidebarExample = () => (
+const NewMatch = () => (
+  <div>
+    <h2>重定向后的页面</h2>
+  </div>
+);
+
+const Topic = ({match}) => (
+  <div>
+    <h3>{match.params.topicId}</h3>
+  </div>
+);
+
+
+const NoMatch = ({location}) => (
+  <div>
+    <h3>未找到的路径： <code>{location.pathname}</code></h3>
+  </div>
+);
+
+
+const Topics = ({match}) => (
+  <div>
+    <h2>标题组</h2>
+    <ul>
+      <li>
+        <Link to={`${match.url}/rendering`}>
+          标题1
+        </Link>
+      </li>
+      <li>
+        <Link to={`${match.url}/components`}>
+          标题2
+        </Link>
+      </li>
+      <li>
+        <Link to={`${match.url}/props-v-state`}>
+          标题3
+        </Link>
+      </li>
+    </ul>
+
+    <Route path={`${match.url}/:topicId`} component={Topic}/>
+    <Route exact path={match.url} render={() => (
+      <h3>请选择一个标题</h3>
+    )}/>
+  </div>
+);
+
+const MyRoute = () => (
   <Router>
-    <div style={{display: 'flex'}}>
-      <div style={{
-        padding: '10px',
-        width: '40%',
-        background: '#f0f0f0'
-      }}>
-        <ul style={{listStyleType: 'none', padding: 0}}>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/bubblegum">Bubblegum</Link></li>
-          <li><Link to="/shoelaces">Shoelaces</Link></li>
-        </ul>
+    <div>
+      <ul>
+        <li><Link to="/">首页</Link></li>
+        <li><Link to="/old-match">重定向前</Link></li>
+        <li><Link to="/new-match">重定向后</Link></li>
+        <li><Link to="/topics">标题组</Link></li>
+        <li><Link to="/none">找不到的路由地址</Link></li>
+      </ul>
 
-        {routes.map((route, index) => (
-          // You can render a <Route> in as many places
-          // as you want in your app. It will render along
-          // with any other <Route>s that also match the URL.
-          // So, a sidebar or breadcrumbs or anything else
-          // that requires you to render multiple things
-          // in multiple places at the same URL is nothing
-          // more than multiple <Route>s.
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.sidebar}
-          />
-        ))}
-      </div>
+      <hr/>
 
-      <div style={{flex: 1, padding: '10px'}}>
-        {routes.map((route, index) => (
-          // Render more <Route>s with the same paths as
-          // above, but different components this time.
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.main}
-          />
-        ))}
-      </div>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Redirect from="/old-match" to="/new-match"/>
+        <Route path="/new-match" component={NewMatch}/>
+        <Route path="/topics" component={Topics}/>
+        <Route component={NoMatch}/>
+      </Switch>
     </div>
   </Router>
-)
-
-export default SidebarExample
+);
+export default MyRoute

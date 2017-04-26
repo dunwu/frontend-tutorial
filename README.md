@@ -111,3 +111,18 @@ module.exports = {
 ```
 
 该命令的作用是使用webpack-dev-server启动一个支持热部署的web app。
+
+## step03 - react-router
+
+> **关键点**
+>
+> - `react-router`
+>
+
+本示例中使用了react-router 4.x版本。react-router 4.x版本与react-router 2.x版本的API差异非常大，需要格外注意。
+
+安装react-router 4.x版本：
+
+```sh
+$ npm i react-router-dom -S
+```

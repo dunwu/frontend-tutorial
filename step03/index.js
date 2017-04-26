@@ -1,7 +1,7 @@
 import React from "react";
 import {render} from "react-dom";
-import SidebarExample from "./routes";
+import MyRoute from "./routes";
 
 render((
-  <SidebarExample/>
+  <MyRoute/>
 ), document.getElementById('app'));
