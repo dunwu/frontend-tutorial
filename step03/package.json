@@ -4,7 +4,7 @@
   "description": "react-step-by-step is a course for react.",
   "main": "index.js",
   "scripts": {
-    "start": "if-env set NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "webpack-dev-server --hot --inline --content-base .",
     "start:prod": "webpack && node server.js"
   },
