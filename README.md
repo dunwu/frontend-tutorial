@@ -126,3 +126,40 @@ module.exports = {
 ```sh
 $ npm i react-router-dom -S
 ```
+
+简单的示例
+
+```react
+import React from "react";
+import {BrowserRouter as Router, Link, Redirect, Route, Switch} from "react-router-dom";
+
+import Home from 'modules/Home';
+import NewMatch from 'modules/NewMatch';
+import Topics from 'modules/Topics';
+import NoMatch from 'modules/NoMatch';
+
+const MyRoute = () => (
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/">首页</Link></li>
+        <li><Link to="/old-match">重定向前</Link></li>
+        <li><Link to="/new-match">重定向后</Link></li>
+        <li><Link to="/topics">标题组</Link></li>
+        <li><Link to="/none">找不到的路由地址</Link></li>
+      </ul>
+
+      <hr/>
+
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Redirect from="/old-match" to="/new-match"/>
+        <Route path="/new-match" component={NewMatch}/>
+        <Route path="/topics" component={Topics}/>
+        <Route component={NoMatch}/>
+      </Switch>
+    </div>
+  </Router>
+);
+export default MyRoute;
+```
