@@ -4,7 +4,6 @@
 import React from "react";
 import {Alert, Card} from "antd";
 import styles from "./Home.css";
-import "whatwg-fetch";
 
 export default class Home extends React.Component {
 
@@ -20,43 +19,18 @@ export default class Home extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchFn();
   }
 
   componentWillUnmount () {
     // remove event listeners (Flux Store, WebSocket, document, etc.)
   }
 
-  fetchFn = () => {
-    fetch('http://localhost:9527/hello/world', {
-      method: 'POST',
-      mode: 'cors',
-      cache: 'default',
-      /*credentials: "same-origin",*/
-      /*headers: {
-       'Content-Type': 'application/json',
-       'Access-Control-Allow-Origin': ''
-       },*/
-      body: JSON.stringify({
-        name: 'root',
-      })
-    }).then((response) => {
-      console.log('response', response);
-      return response.json();
-    }).then((json) => {
-      console.log('json: ', json);
-      this.setState({origin: json.data});
-    }).catch((ex) => {
-      console.log('failed', ex);
-    });
-  };
-
   render() {
     return (
       <div>
         <Alert
-          message={this.state.origin}
-          description="启动spring-react-webs后，访问首页就可以看到提示内容"
+          message="提示信息"
+          description="Hello World"
           type="info"
           showIcon
         />
@@ -68,7 +42,7 @@ export default class Home extends React.Component {
             </div>
             <div className="custom-card">
               <h3>Welcome to spring-react-webc</h3>
-              <a href="https://github.com/atlantis1024/spring-react-webc">https://github.com/atlantis1024/spring-react-webc</a>
+              <a href="https://github.com/atlantis1024/react-step-by-step">https://github.com/atlantis1024/react-step-by-step</a>
             </div>
           </Card>
         </div>
