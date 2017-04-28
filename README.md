@@ -214,3 +214,39 @@ ReactDOM.render(<App />, document.getElementById('root'));
 import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
 ```
 
+## step05 -  使用fetch
+
+> **关键点**
+>
+> - `fetch` - [官网](https://github.com/github/fetch)
+
+在step04中的示例已经算是一个有点样子的静态web app了。
+
+但是，还有许多场景下，需要向app的外部获取数据。在传统的前端工程中，获取app外部数据，一般使用Ajax技术。
+
+但是，react技术栈提出了一种新的选择：fetch。`whatwg-fetch` 就是目前一个较火的 fetch 实现库。
+
+举一个简单的例子：
+
+这里向一个url 接口发出post请求，并解析其json数据。
+
+```jsx
+fetchWeb = () => {
+  fetch('http://localhost:9527/hello/world', {
+    method: 'POST',
+    mode: 'cors',
+    cache: 'default',
+    body: JSON.stringify({
+      name: 'root',
+    })
+  }).then((response) => {
+    console.log('response', response);
+    return response.json();
+  }).then((json) => {
+    console.log('json: ', json);
+    this.setState({origin: json.data});
+  }).catch((ex) => {
+    console.log('failed', ex);
+  });
+};
+```
