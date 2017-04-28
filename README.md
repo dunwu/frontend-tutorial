@@ -163,3 +163,54 @@ const MyRoute = () => (
 );
 export default MyRoute;
 ```
+## step04 - 引入antd
+
+`antd`是一个UI框架。当前支持react的UI框架不少，如 `react-bootstrap`、`material-ui` 等。为什么选择`antd`呢？是因为它是淘宝蚂蚁金服的开源项目，中文文档比较丰富。
+
+> **关键点**
+>
+> - `antd` - [官方教程](https://ant.design/docs/react/introduce-cn)
+
+**安装**
+
+```sh
+$ npm install antd --save
+```
+
+**示例**
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { DatePicker, message } from 'antd';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: '',
+    };
+  }
+  handleChange(date) {
+    message.info('您选择的日期是: ' + date.toString());
+    this.setState({ date });
+  }
+  render() {
+    return (
+      <div style={{ width: 400, margin: '100px auto' }}>
+        <DatePicker onChange={value => this.handleChange(value)} />
+        <div style={{ marginTop: 20 }}>当前日期：{this.state.date.toString()}</div>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+**引入样式**
+
+```jsx
+import 'antd/dist/antd.css';  // or 'antd/dist/antd.less'
+```
+
