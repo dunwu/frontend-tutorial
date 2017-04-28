@@ -73,14 +73,14 @@ export default class Home extends React.Component {
           showIcon
         />
         <div className={styles.normal}>
-          <h1 className={styles.title}>spring-react-webc 首页</h1>
+          <h1 className={styles.title}>react-step-by-stepc 首页</h1>
           <Card style={{width: 500}} bodyStyle={{padding: 0}}>
             <div className="custom-image">
               <img alt="example" src={require('../../assets/images/welcome.jpg')}/>
             </div>
             <div className="custom-card">
-              <h3>Welcome to spring-react-webc</h3>
-              <a href="https://github.com/atlantis1024/spring-react-webc">https://github.com/atlantis1024/spring-react-webc</a>
+              <h3>Welcome to react-step-by-stepc</h3>
+              <a href="https://github.com/atlantis1024/react-step-by-stepc">https://github.com/atlantis1024/react-step-by-stepc</a>
             </div>
           </Card>
         </div>
