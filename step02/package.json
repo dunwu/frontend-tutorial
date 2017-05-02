@@ -1,10 +1,10 @@
-{
+﻿{
   "name": "react-step-by-step",
   "version": "1.0.0",
   "description": "react-step-by-step is a course for react.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --content-base ."
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,17 +15,8 @@
   ],
   "author": "victor zhang",
   "license": "MIT",
-  "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "http-server": "^0.8.5",
-    "webpack": "^1.15.0",
-    "webpack-dev-server": "^1.16.4"
+    "express": "^4.15.2"
   }
 }
