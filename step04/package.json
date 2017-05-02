@@ -12,7 +12,9 @@
   },
   "keywords": [
     "react",
-    "webpack"
+    "npm",
+    "webpack",
+    "babel"
   ],
   "author": "victor zhang",
   "license": "MIT",

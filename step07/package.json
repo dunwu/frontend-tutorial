@@ -13,11 +13,13 @@
     "url": "https://github.com/atlantis1024/react-step-by-step"
   },
   "keywords": [
-    "antd",
-    "babel",
     "react",
+    "npm",
+    "webpack",
+    "babel",
     "react-router",
-    "webpack"
+    "antd",
+    "fetch"
   ],
   "author": "victor zhang",
   "license": "MIT",

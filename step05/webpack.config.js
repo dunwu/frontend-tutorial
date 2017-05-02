@@ -3,7 +3,8 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: path.resolve(__dirname, "src"),
+  // entry: path.resolve(__dirname, "src"),
+  entry: "./src/index",
   // 这里应用程序开始执行
   // webpack 开始打包
 
@@ -11,10 +12,10 @@ module.exports = {
     // webpack 如何输出结果的相关选项
 
     filename: "bundle.js",
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "dist"),
     // 所有输出文件的目标路径
     // 必须是绝对路径（使用 Node.js 的 path 模块）
-    publicPath: "http://localhost:3000/",
+    publicPath: "",
   },
 
   module: {
@@ -42,9 +43,14 @@ module.exports = {
         // 为了更清晰，`-loader` 后缀在 webpack 2 中不再是可选的
 
         /*options: {
-          presets: ["es2015", "react", "stage-0"]
-        }*/
-      }
+         presets: ["es2015", "react", "stage-0"]
+         }*/
+      },
+
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
     ]
   },
 
@@ -52,7 +58,7 @@ module.exports = {
     // proxy: { // 代理
     //   '/api': 'http://localhost:3000'
     // },
-    contentBase: path.join(__dirname, 'public'), // boolean | string | array, static file location
+    contentBase: path.join(__dirname, 'dist'), // boolean | string | array, static file location
     compress: true, // enable gzip compression
     historyApiFallback: true, // true for index.html upon 404, object for multiple paths
     hot: false, // hot module replacement. Depends on HotModuleReplacementPlugin
@@ -66,7 +72,7 @@ module.exports = {
     // 插件列表
     new HtmlWebpackPlugin({
       filename: 'index.html', //设置最后生成文件名称;
-      template: __dirname + '/public/index.html' //设置模板文件;
+      template: __dirname + '/index.html' //设置模板文件;
     }),
   ]
 };
