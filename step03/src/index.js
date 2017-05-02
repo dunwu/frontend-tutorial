@@ -6,9 +6,9 @@ render((
     <h1>Hello, React!</h1>
     <p>技术点：</p>
     <ul>
-      <li>Babel</li>
-      <li>React</li>
-      <li>Webpack</li>
+      <li>react</li>
+      <li>npm</li>
+      <li>webpack</li>
     </ul>
   </div>
 ), document.getElementById('app'));

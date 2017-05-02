@@ -72,7 +72,7 @@ module.exports = {
     // 插件列表
     new HtmlWebpackPlugin({
       filename: 'index.html', //设置最后生成文件名称;
-      template: __dirname + '/index.html' //设置模板文件;
+      template: __dirname + '/src/index.html' //设置模板文件;
     }),
   ]
 };
