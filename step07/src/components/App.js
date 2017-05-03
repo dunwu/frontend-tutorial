@@ -55,7 +55,7 @@ export default class App extends React.Component {
           collapsed={this.state.collapsed}
           onCollapse={this.onCollapse}
         >
-          <img src='src/assets/images/logo.png' id="logo"/>
+          <img alt="logo" src={require('../assets/images/logo.png')} id="logo"/>
           <Menu theme="dark"
                 onClick={this.handleClick}
                 defaultOpenKeys={['1', '2']}
