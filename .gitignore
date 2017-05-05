@@ -10,6 +10,7 @@ coverage
 build
 dist
 bundle.js
+_book
 
 # misc
 .DS_Store
