@@ -1,18 +1,21 @@
 # Summary
 
-* [Introduction](README.md)
+## 简介
+* [简介](README.md)
+
+## 章节
 * [Chapter01 - React]()
 * [Chapter02 - npm]()
 * [Chapter03 - Webpack]()
 * [Chapter04 - ES6 / Babel](docs/chapter04/README.md)
-    * [ES6]()
-        * [ES6入门](docs/chapter04/es6/ES6入门.md)
-    * [Babel]()
-        * [Babel入门](docs/chapter04/babel/Babel入门.md)
+    * [ES6入门](docs/chapter04/es6/ES6入门.md)
+    * [Babel入门](docs/chapter04/babel/Babel入门.md)
 * [Chapter05 - React Router]()
 * [Chapter06 - Flux / Redux](docs/chapter06/README.md)
-    * [Flux]()
-        * [Flux入门](docs/chapter06/flux/Flux入门.md)
-    * [Redux]()
-        * [Redux入门](docs/chapter06/redux/Redux入门.md)
+    * [Flux入门](docs/chapter06/flux/Flux入门.md)
+    * [Redux入门](docs/chapter06/redux/Redux入门.md)
 * [Chapter07 - ImmutableJS]()
+
+----
+
+* [术语](GLOSSARY.md)

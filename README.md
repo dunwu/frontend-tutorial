@@ -1,6 +1,6 @@
 # react-step-by-step
 
-react-step-by-step 是一个从零开始学习react的教程。
+react-step-by-step 是一个从零开始学习 react 的教程。
 
 ## 目录
 
