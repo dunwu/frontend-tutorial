@@ -4,20 +4,20 @@
 import React from "react";
 import {HashRouter, Route, Switch} from "react-router-dom";
 // 引入单个页面（包括嵌套的子页面）
-import App from "./components/App.js";
-import Home from "./views/Home/Home.js";
-import CardBox from "./views/CardBox/CardBox.js";
-import NoMatch from "./views/NoMatch/NoMatch.js";
+import Full from "./layouts/Full/Full";
+import Home from "./views/Home/Home";
+import CardBox from "./views/CardBox/CardBox";
+import NoMatch from "./views/NoMatch/NoMatch";
 
 const MyRouter = () => (
   <HashRouter>
-    <App>
+    <Full>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/cardbox" component={CardBox}/>
         <Route component={NoMatch}/>
       </Switch>
-    </App>
+    </Full>
   </HashRouter>
 );
 export default MyRouter;

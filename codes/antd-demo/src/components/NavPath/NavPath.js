@@ -3,10 +3,10 @@
  */
 import React from "react";
 import {Breadcrumb} from "antd";
-import "./MyNavPath.css";
+import "./NavPath.css";
 
 
-export default class MyNavPath extends React.Component {
+export default class NavPath extends React.Component {
   constructor(props) {
     super(props)
   }

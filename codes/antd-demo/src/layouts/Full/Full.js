@@ -4,14 +4,14 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {Icon, Layout, Menu} from "antd";
-import "./App.css";
-import MyHeader from "./Header/MyHeader.js";
-import MyFooter from "./Footer/MyFooter.js";
-import MyNavPath from "./NavPath/MyNavPath.js";
+import "./Full.less";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import NavPath from "../../components/NavPath/NavPath";
 const SubMenu = Menu.SubMenu;
 const {Content, Sider} = Layout;
 
-export default class App extends React.Component {
+export default class Full extends React.Component {
 
   onCollapse = (collapsed) => {
     console.log(collapsed);
@@ -55,7 +55,7 @@ export default class App extends React.Component {
           collapsed={this.state.collapsed}
           onCollapse={this.onCollapse}
         >
-          <img alt="logo" src={require('../assets/images/logo.png')} id="logo"/>
+          <img alt="logo" src={require('../../assets/images/logo.png')} id="logo"/>
           <Menu theme="dark"
                 onClick={this.handleClick}
                 defaultOpenKeys={['1', '2']}
@@ -72,14 +72,14 @@ export default class App extends React.Component {
         </Sider>
 
         <Layout>
-          <MyHeader/>
+          <Header/>
           <Content style={{margin: '0 16px'}}>
-            <MyNavPath/>
+            <NavPath/>
             <div style={{padding: 24, background: '#fff', minHeight: 750}}>
               { this.props.children }
             </div>
           </Content>
-          <MyFooter/>
+          <Footer/>
         </Layout>
 
       </Layout>
