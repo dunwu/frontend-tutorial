@@ -2,12 +2,12 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
          xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.zp</groupId>
-  <artifactId>tents</artifactId>
+  <groupId>org.zp.react</groupId>
+  <artifactId>antd-admin-server</artifactId>
   <version>0.0.1</version>
-  <name>tents</name>
+  <name>antd-admin-server</name>
   <packaging>war</packaging>
-  <description>tent 的服务器项目</description>
+  <description>antd-admin 的服务器项目</description>
 
   <properties>
     <spring.version>4.1.4.RELEASE</spring.version>

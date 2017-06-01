@@ -11,6 +11,7 @@ build
 dist
 bundle.js
 _book
+*.log
 
 # misc
 .DS_Store
