@@ -85,7 +85,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: './public/index.html',
       title: globalConfig.name,
       favIcon: './public/favicon.ico',
       hash: true,  // 引入js/css的时候加个hash, 防止cdn的缓存问题

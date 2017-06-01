@@ -9,31 +9,31 @@ class Ajax {
     console.debug('method=%s, url=%s, params=%o, data=%o, headers=%o',
       method, url, params, data, headers);
     return new Promise((resolve, reject) => {
-      const tmp = superagent(method, url);
+      const request = superagent(method, url);
       // 是否是跨域请求
-      if (globalConfig.isCrossDomain()) {
-        tmp.withCredentials();
-      }
+      /*if (globalConfig.isCrossDomain()) {
+        request.withCredentials();
+      }*/
       // 设置全局的超时时间
       if (globalConfig.api.timeout && !isNaN(globalConfig.api.timeout)) {
-        tmp.timeout(globalConfig.api.timeout);
+        request.timeout(globalConfig.api.timeout);
       }
       // 默认的Content-Type和Accept
-      tmp.set('Content-Type', 'application/json').set('Accept', 'application/json');
+      request.set('Content-Type', 'application/json').set('Accept', 'application/json');
       // 如果有自定义的header
       if (headers) {
-        tmp.set(headers);
+        request.set(headers);
       }
       // url中是否有附加的参数?
       if (params) {
-        tmp.query(params);
+        request.query(params);
       }
       // body中发送的数据
       if (data) {
-        tmp.send(data);
+        request.send(data);
       }
       // 包装成promise
-      tmp.end((err, res) => {
+      request.end((err, res) => {
         console.debug('err=%o, res=%o', err, res);
         // 我本来在想, 要不要在这里把错误包装下, 即使请求失败也调用resolve, 这样上层就不用区分"网络请求成功但查询数据失败"和"网络失败"两种情况了
         // 但后来觉得这个ajax方法是很底层的, 在这里包装不合适, 应该让上层业务去包装
@@ -54,14 +54,20 @@ class Ajax {
     return this.requestWrapper('POST', url, { ...opts, data });
   }
 
-  getCurrentUser() {
-    return this.get(`${globalConfig.getAPIPath()}${globalConfig.login.getCurrentUser}`);
+  check() {
+    const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
+    return this.get(`${globalConfig.getAPIPath()}${globalConfig.login.check}`, { headers });
   }
 
   login(username, password) {
     const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
-    return this.post(`${globalConfig.getAPIPath()}${globalConfig.login.validate}`,
+    return this.post(`${globalConfig.getAPIPath()}${globalConfig.login.login}`,
       { username, password }, { headers });
+  }
+
+  logout() {
+    const headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
+    return this.get(`${globalConfig.getAPIPath()}${globalConfig.login.logout}`, { headers });
   }
 }
 export default Ajax;

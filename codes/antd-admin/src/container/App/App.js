@@ -80,11 +80,11 @@ class App extends React.Component {
 
       try {
         // 先去服务端验证下, 说不定已经登录了
-        const res = await ajax.getCurrentUser();
+        const res = await ajax.check();
         hide();
 
         // 注意这里, debug模式下每次刷新都必须重新登录
-        if (res.success && !globalConfig.debug) {
+        if (res.code === 0 && res.data && !globalConfig.debug) {
           // 这里不需要setState了, 因为setState的目的是为了re-render, 而下一句会触发redux的状态变化, 也会re-render
           // 所以直接修改状态, 就是感觉这么做有点奇怪...
           this.state.tryingLogin = false;
@@ -95,7 +95,7 @@ class App extends React.Component {
         }
       } catch (e) {
         // 如果网络请求出错, 弹出一个错误提示
-        console.error('getCurrentUser error, %o', e);
+        console.error('check error, %o', e);
         this.handleLoginError(`网络请求出错: ${e.message}`);
       }
     }

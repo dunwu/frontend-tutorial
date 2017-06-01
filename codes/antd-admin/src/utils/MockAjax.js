@@ -14,7 +14,7 @@ const mockPromise = (callback) => {
 };
 
 class MockAjax {
-  getCurrentUser() {
+  check() {
     return mockPromise(resolve => {
       result.success = true;
       result.data = 'guest';
