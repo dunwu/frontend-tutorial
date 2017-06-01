@@ -1,0 +1,12 @@
+# Temp files
+*.class
+*.jar
+*.war
+*.ear
+
+# Temp folders
+logs/
+target/
+
+# Intellij
+.idea/
