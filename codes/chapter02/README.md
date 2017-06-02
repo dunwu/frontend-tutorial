@@ -1,15 +1,11 @@
 # react-step-by-step
 
-## step02 - npm
+## step01 - react
 
 > **关键点**
 >
-> - `npm` - 详细用法可以参考 [runoob的NPM 使用介绍](http://www.runoob.com/nodejs/nodejs-npm.html)
+> - `react` - [教程](https://github.com/atlantis1024/react-notes)
 
 **示例运行方法**
 
-```sh
-$ npm install
-$ npm start
-```
-
+直接在浏览器中打开html文件。
