@@ -310,188 +310,60 @@ Node.js，Stream 有四种流类型：
 
 ### 读取流
 
-创建 input.txt 文件，内容如下：
+获取读取流
 
-```
-菜鸟教程官网地址：www.runoob.com
-```
+```js
+var readerStream = fs.createReadStream(pathname);
 
-创建 main.js 文件, 代码如下：
-
-```
-var fs = require("fs");
-var data = '';
-
-// 创建可读流
-var readerStream = fs.createReadStream('input.txt');
-
-// 设置编码为 utf8。
-readerStream.setEncoding('UTF8');
-
-// 处理流事件 --> data, end, and error
-readerStream.on('data', function(chunk) {
-   data += chunk;
+readerStream.on('data', function (chunk) {
+    doSomething(chunk);
 });
 
-readerStream.on('end',function(){
-   console.log(data);
+readerStream.on('end', function () {
+    cleanUp();
 });
-
-readerStream.on('error', function(err){
-   console.log(err.stack);
-});
-
-console.log("程序执行完毕");
 ```
 
-以上代码执行结果如下：
-
-```
-程序执行完毕
-菜鸟教程官网地址：www.runoob.com
-```
+完整示例代码见：codes/chapter01/node/stream/streamDemo01.js
 
 ### 写入流
 
-创建 main.js 文件, 代码如下：
+获取写入流
 
-```
-var fs = require("fs");
-var data = '菜鸟教程官网地址：www.runoob.com';
-
-// 创建一个可以写入的流，写入到文件 output.txt 中
+```js
 var writerStream = fs.createWriteStream('output.txt');
-
-// 使用 utf8 编码写入数据
 writerStream.write(data,'UTF8');
-
-// 标记文件末尾
 writerStream.end();
-
-// 处理流事件 --> data, end, and error
-writerStream.on('finish', function() {
-    console.log("写入完成。");
-});
-
-writerStream.on('error', function(err){
-   console.log(err.stack);
-});
-
-console.log("程序执行完毕");
 ```
 
-以上程序会将 data 变量的数据写入到 output.txt 文件中。代码执行结果如下：
-
-```
-$ node main.js 
-程序执行完毕
-写入完成。
-```
-
-查看 output.txt 文件的内容：
-
-```
-$ cat output.txt 
-菜鸟教程官网地址：www.runoob.com
-```
+完整示例代码见：codes/chapter01/node/stream/streamDemo02.js
 
 ### 管道流
 
 管道提供了一个输出流到输入流的机制。通常我们用于从一个流中获取数据并将数据传递到另外一个流中。
 
-如上面的图片所示，我们把文件比作装水的桶，而水就是文件里的内容，我们用一根管子(pipe)连接两个桶使得水从一个桶流入另一个桶，这样就慢慢的实现了大文件的复制过程。
-
-以下实例我们通过读取一个文件内容并将内容写入到另外一个文件中。
-
-设置 input.txt 文件内容如下：
-
-```
-菜鸟教程官网地址：www.runoob.com
-管道流操作实例
-```
-
-创建 main.js 文件, 代码如下：
-
-```
+```js
 var fs = require("fs");
-
-// 创建一个可读流
 var readerStream = fs.createReadStream('input.txt');
-
-// 创建一个可写流
 var writerStream = fs.createWriteStream('output.txt');
-
-// 管道读写操作
-// 读取 input.txt 文件内容，并将内容写入到 output.txt 文件中
 readerStream.pipe(writerStream);
-
-console.log("程序执行完毕");
 ```
 
-代码执行结果如下：
-
-```
-$ node main.js 
-程序执行完毕
-```
-
-查看 output.txt 文件的内容：
-
-```
-$ cat output.txt 
-菜鸟教程官网地址：www.runoob.com
-管道流操作实例
-```
+完整示例代码见：codes/chapter01/node/stream/streamDemo03.js
 
 ### 链式流
 
 链式是通过连接输出流到另外一个流并创建多个对个流操作链的机制。链式流一般用于管道操作。
 
-接下来我们就是用管道和链式来压缩和解压文件。
-
-创建 compress.js 文件, 代码如下：
-
-```
+```js
 var fs = require("fs");
 var zlib = require('zlib');
-
-// 压缩 input.txt 文件为 input.txt.gz
 fs.createReadStream('input.txt')
   .pipe(zlib.createGzip())
   .pipe(fs.createWriteStream('input.txt.gz'));
-  
-console.log("文件压缩完成。");
 ```
 
-代码执行结果如下：
-
-```
-$ node compress.js 
-文件压缩完成。
-```
-
-执行完以上操作后，我们可以看到当前目录下生成了 input.txt 的压缩文件 input.txt.gz。
-
-接下来，让我们来解压该文件，创建 decompress.js 文件，代码如下：
-
-```
-var fs = require("fs");
-var zlib = require('zlib');
-
-// 解压 input.txt.gz 文件为 input.txt
-fs.createReadStream('input.txt.gz')
-  .pipe(zlib.createGunzip())
-  .pipe(fs.createWriteStream('input.txt'));
-  
-console.log("文件解压完成。");
-```
-
-代码执行结果如下：
-
-```
-$ node decompress.js 
-文件解压完成。
-```
+完整示例代码见：codes/chapter01/node/stream/streamDemo04.js
 
 ## 文件系统
 
@@ -509,62 +381,17 @@ Node.js 文件系统（fs 模块）模块中的方法均有异步和同步版本
 
 建议大家是用异步方法，比起同步，异步方法性能更高，速度更快，而且没有阻塞。
 
-实例
-
-创建 input.txt 文件，内容如下：
-
-```
-菜鸟教程官网地址：www.runoob.com
-文件读取实例
-```
-
-创建 file.js 文件, 代码如下：
-
-```
-var fs = require("fs");
-
-// 异步读取
-fs.readFile('input.txt', function (err, data) {
-   if (err) {
-       return console.error(err);
-   }
-   console.log("异步读取: " + data.toString());
-});
-
-// 同步读取
-var data = fs.readFileSync('input.txt');
-console.log("同步读取: " + data.toString());
-
-console.log("程序执行完毕。");
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-同步读取: 菜鸟教程官网地址：www.runoob.com
-文件读取实例
-
-程序执行完毕。
-异步读取: 菜鸟教程官网地址：www.runoob.com
-文件读取实例
-```
-
-接下来，让我们来具体了解下 Node.js 文件系统的方法。
+**完整代码示例**：codes/chapter01/node/fs/fsDemo01.js
 
 ### 打开文件
 
-语法
-
-以下为在异步模式下打开文件的语法格式：
+**语法**
 
 ```
 fs.open(path, flags[, mode], callback)
 ```
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **path** - 文件的路径。
 - **flags** - 文件打开的行为。具体值详见下文。
@@ -588,57 +415,22 @@ flags 参数可以是以下值：
 | a+   | 以读取追加模式打开文件，如果文件不存在则创建。        |
 | ax+  | 类似 'a+'， 但是如果文件路径存在，则文件读取追加失败。 |
 
-实例
-
-接下来我们创建 file.js 文件，并打开 input.txt 文件进行读写，代码如下所示：
-
-```
-var fs = require("fs");
-
-// 异步打开文件
-console.log("准备打开文件！");
-fs.open('input.txt', 'r+', function(err, fd) {
-   if (err) {
-       return console.error(err);
-   }
-  console.log("文件打开成功！");     
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备打开文件！
-文件打开成功！
-```
+**完整代码示例**：codes/chapter01/node/fs/fsDemo02.js
 
 ### 获取文件信息
 
-语法
-
-以下为通过异步模式获取文件信息的语法格式：
+**语法**
 
 ```
 fs.stat(path, callback)
 ```
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **path** - 文件路径。
 - **callback** - 回调函数，带有两个参数如：(err, stats), **stats** 是 fs.Stats 对象。
 
-fs.stat(path)执行后，会将stats类的实例返回给其回调函数。可以通过stats类中的提供方法判断文件的相关属性。例如判断是否为文件：
-
-```
-var fs = require('fs');
-
-fs.stat('/Users/liuht/code/itbilu/demo/fs.js', function (err, stats) {
-    console.log(stats.isFile()); 		//true
-})
-```
+fs.stat(path)执行后，会将stats类的实例返回给其回调函数。可以通过stats类中的提供方法判断文件的相关属性。
 
 stats类中的方法有：
 
@@ -652,57 +444,11 @@ stats类中的方法有：
 | stats.isFIFO()            | 如果是FIFO，返回true，否则返回 false。FIFO是UNIX中的一种特殊类型的命令管道。 |
 | stats.isSocket()          | 如果是 Socket 返回 true，否则返回 false。           |
 
-实例
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-
-console.log("准备打开文件！");
-fs.stat('input.txt', function (err, stats) {
-   if (err) {
-       return console.error(err);
-   }
-   console.log(stats);
-   console.log("读取文件信息成功！");
-   
-   // 检测文件类型
-   console.log("是否为文件(isFile) ? " + stats.isFile());
-   console.log("是否为目录(isDirectory) ? " + stats.isDirectory());    
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备打开文件！
-{ dev: 16777220,
-  mode: 33188,
-  nlink: 1,
-  uid: 501,
-  gid: 20,
-  rdev: 0,
-  blksize: 4096,
-  ino: 40333161,
-  size: 61,
-  blocks: 8,
-  atime: Mon Sep 07 2015 17:43:55 GMT+0800 (CST),
-  mtime: Mon Sep 07 2015 17:22:35 GMT+0800 (CST),
-  ctime: Mon Sep 07 2015 17:22:35 GMT+0800 (CST) }
-读取文件信息成功！
-是否为文件(isFile) ? true
-是否为目录(isDirectory) ? false
-```
-
-------
+**完整代码示例**：codes/chapter01/node/fs/fsDemo03.js
 
 ### 写入文件
 
-语法
-
-以下为异步模式下写入文件的语法格式：
+**语法**
 
 ```
 fs.writeFile(file, data[, options], callback)
@@ -710,57 +456,18 @@ fs.writeFile(file, data[, options], callback)
 
 如果文件存在，该方法写入的内容会覆盖旧的文件内容。
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **file** - 文件名或文件描述符。
 - **data** - 要写入文件的数据，可以是 String(字符串) 或 Buffer(流) 对象。
 - **options** - 该参数是一个对象，包含 {encoding, mode, flag}。默认编码为 utf8, 模式为 0666 ， flag 为 'w'
 - **callback** - 回调函数，回调函数只包含错误信息参数(err)，在写入失败时返回。
 
-实例
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-
-console.log("准备写入文件");
-fs.writeFile('input.txt', '我是通过写入的文件内容！',  function(err) {
-   if (err) {
-       return console.error(err);
-   }
-   console.log("数据写入成功！");
-   console.log("--------我是分割线-------------")
-   console.log("读取写入的数据！");
-   fs.readFile('input.txt', function (err, data) {
-      if (err) {
-         return console.error(err);
-      }
-      console.log("异步读取文件数据: " + data.toString());
-   });
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备写入文件
-数据写入成功！
---------我是分割线-------------
-读取写入的数据！
-异步读取文件数据: 我是通过写入的文件内容
-```
-
-------
+**完整代码示例**：codes/chapter01/node/fs/fsDemo04.js
 
 ### 读取文件
 
-语法
-
-以下为异步模式下读取文件的语法格式：
+**语法**
 
 ```
 fs.read(fd, buffer, offset, length, position, callback)
@@ -768,9 +475,7 @@ fs.read(fd, buffer, offset, length, position, callback)
 
 该方法使用了文件描述符来读取文件。
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **fd** - 通过 fs.open() 方法返回的文件描述符。
 - **buffer** - 数据写入的缓冲区。
@@ -779,59 +484,11 @@ fs.read(fd, buffer, offset, length, position, callback)
 - **position** - 文件读取的起始位置，如果 position 的值为 null，则会从当前文件指针的位置读取。
 - **callback** - 回调函数，有三个参数err, bytesRead, buffer，err 为错误信息， bytesRead 表示读取的字节数，buffer 为缓冲区对象。
 
-实例
-
-input.txt 文件内容为：
-
-```
-菜鸟教程官网地址：www.runoob.com
-```
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-var buf = new Buffer(1024);
-
-console.log("准备打开已存在的文件！");
-fs.open('input.txt', 'r+', function(err, fd) {
-   if (err) {
-       return console.error(err);
-   }
-   console.log("文件打开成功！");
-   console.log("准备读取文件：");
-   fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){
-      if (err){
-         console.log(err);
-      }
-      console.log(bytes + "  字节被读取");
-      
-      // 仅输出读取的字节
-      if(bytes > 0){
-         console.log(buf.slice(0, bytes).toString());
-      }
-   });
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备打开已存在的文件！
-文件打开成功！
-准备读取文件：
-42  字节被读取
-菜鸟教程官网地址：www.runoob.com
-```
-
-------
+**完整代码示例**：codes/chapter01/node/fs/fsDemo05.js
 
 ### 关闭文件
 
-语法
-
-以下为异步模式下关闭文件的语法格式：
+**语法**
 
 ```
 fs.close(fd, callback)
@@ -839,73 +496,16 @@ fs.close(fd, callback)
 
 该方法使用了文件描述符来读取文件。
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **fd** - 通过 fs.open() 方法返回的文件描述符。
 - **callback** - 回调函数，没有参数。
 
-实例
-
-input.txt 文件内容为：
-
-```
-菜鸟教程官网地址：www.runoob.com
-```
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-var buf = new Buffer(1024);
-
-console.log("准备打开文件！");
-fs.open('input.txt', 'r+', function(err, fd) {
-   if (err) {
-       return console.error(err);
-   }
-   console.log("文件打开成功！");
-   console.log("准备读取文件！");
-   fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){
-      if (err){
-         console.log(err);
-      }
-
-      // 仅输出读取的字节
-      if(bytes > 0){
-         console.log(buf.slice(0, bytes).toString());
-      }
-
-      // 关闭文件
-      fs.close(fd, function(err){
-         if (err){
-            console.log(err);
-         } 
-         console.log("文件关闭成功");
-      });
-   });
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备打开文件！
-文件打开成功！
-准备读取文件！
-菜鸟教程官网地址：www.runoob.com
-文件关闭成功
-```
-
-------
+**完整代码示例**：codes/chapter01/node/fs/fsDemo06.js
 
 ### 截取文件
 
-语法
-
-以下为异步模式下截取文件的语法格式：
+**语法**
 
 ```
 fs.ftruncate(fd, len, callback)
@@ -913,309 +513,72 @@ fs.ftruncate(fd, len, callback)
 
 该方法使用了文件描述符来读取文件。
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **fd** - 通过 fs.open() 方法返回的文件描述符。
 - **len** - 文件内容截取的长度。
 - **callback** - 回调函数，没有参数。
 
-实例
-
-input.txt 文件内容为：
-
-```
-site:www.runoob.com
-```
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-var buf = new Buffer(1024);
-
-console.log("准备打开文件！");
-fs.open('input.txt', 'r+', function(err, fd) {
-   if (err) {
-       return console.error(err);
-   }
-   console.log("文件打开成功！");
-   console.log("截取10字节后的文件内容。");
-   
-   // 截取文件
-   fs.ftruncate(fd, 10, function(err){
-      if (err){
-         console.log(err);
-      } 
-      console.log("文件截取成功。");
-      console.log("读取相同的文件"); 
-      fs.read(fd, buf, 0, buf.length, 0, function(err, bytes){
-         if (err){
-            console.log(err);
-         }
-
-         // 仅输出读取的字节
-         if(bytes > 0){
-            console.log(buf.slice(0, bytes).toString());
-         }
-
-         // 关闭文件
-         fs.close(fd, function(err){
-            if (err){
-               console.log(err);
-            } 
-            console.log("文件关闭成功！");
-         });
-      });
-   });
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备打开文件！
-文件打开成功！
-截取10字节后的文件内容。
-文件截取成功。
-读取相同的文件
-site:www.r
-文件关闭成功
-```
-
-------
+**完整代码示例**：codes/chapter01/node/fs/fsDemo07.js
 
 ### 删除文件
 
-语法
-
-以下为删除文件的语法格式：
+**语法**
 
 ```
 fs.unlink(path, callback)
 ```
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **path** - 文件路径。
 - **callback** - 回调函数，没有参数。
 
-实例
-
-input.txt 文件内容为：
-
-```
-site:www.runoob.com
-```
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-
-console.log("准备删除文件！");
-fs.unlink('input.txt', function(err) {
-   if (err) {
-       return console.error(err);
-   }
-   console.log("文件删除成功！");
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备删除文件！
-文件删除成功！
-```
-
-再去查看 input.txt 文件，发现已经不存在了。
+**完整代码示例**：codes/chapter01/node/fs/fsDemo08.js
 
 ### 创建目录
 
-语法
-
-以下为创建目录的语法格式：
+**语法**
 
 ```
 fs.mkdir(path[, mode], callback)
 ```
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **path** - 文件路径。
 - **mode** - 设置目录权限，默认为 0777。
 - **callback** - 回调函数，没有参数。
 
-实例
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-
-console.log("创建目录 /tmp/test/");
-fs.mkdir("/tmp/test/",function(err){
-   if (err) {
-       return console.error(err);
-   }
-   console.log("目录创建成功。");
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-创建目录 /tmp/test/
-目录创建成功。
-```
+**完整代码示例**：codes/chapter01/node/fs/fsDemo09.js
 
 ### 读取目录
 
-语法
-
-以下为读取目录的语法格式：
+**语法**
 
 ```
 fs.readdir(path, callback)
 ```
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **path** - 文件路径。
 - **callback** - 回调函数，回调函数带有两个参数err, files，err 为错误信息，files 为 目录下的文件数组列表。
 
-实例
-
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-
-console.log("查看 /tmp 目录");
-fs.readdir("/tmp/",function(err, files){
-   if (err) {
-       return console.error(err);
-   }
-   files.forEach( function (file){
-       console.log( file );
-   });
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-查看 /tmp 目录
-input.out
-output.out
-test
-test.txt
-```
+**完整代码示例**：codes/chapter01/node/fs/fsDemo10.js
 
 ### 删除目录
 
-语法
-
-以下为删除目录的语法格式：
+**语法**
 
 ```
 fs.rmdir(path, callback)
 ```
 
-参数
-
-参数使用说明如下：
+**参数**
 
 - **path** - 文件路径。
 - **callback** - 回调函数，没有参数。
 
-实例
+**完整代码示例**：codes/chapter01/node/fs/fsDemo11.js
 
-接下来我们创建 file.js 文件，代码如下所示：
-
-```
-var fs = require("fs");
-// 执行前创建一个空的 /tmp/test 目录
-console.log("准备删除目录 /tmp/test");
-fs.rmdir("/tmp/test",function(err){
-   if (err) {
-       return console.error(err);
-   }
-   console.log("读取 /tmp 目录");
-   fs.readdir("/tmp/",function(err, files){
-      if (err) {
-          return console.error(err);
-      }
-      files.forEach( function (file){
-          console.log( file );
-      });
-   });
-});
-```
-
-以上代码执行结果如下：
-
-```
-$ node file.js 
-准备删除目录 /tmp/test
-读取 /tmp 目录
-……
-```
-
-### 文件模块方法参考手册
-
-以下为 Node.js 文件模块相同的方法列表：
-
-更多内容，请查看官网文件模块描述：[File System](https://nodejs.org/api/fs.html#fs_fs_rename_oldpath_newpath_callback)。
-
-## Path
-
-操作文件时难免不与文件路径打交道。NodeJS提供了`path`内置模块来简化路径相关操作，并提升代码可读性。以下分别介绍几个常用的API。
-
-- path.normalize
-
-  将传入的路径转换为标准路径，具体讲的话，除了解析路径中的`.`与`..`外，还能去掉多余的斜杠。如果有程序需要使用路径作为某些数据的索引，但又允许用户随意输入路径时，就需要使用该方法保证路径的唯一性。以下是一个例子：
-
-  ```
-    var cache = {};
-
-    function store(key, value) {
-        cache[path.normalize(key)] = value;
-    }
-
-    store('foo/bar', 1);
-    store('foo//baz//../bar', 2);
-    console.log(cache);  // => { "foo/bar": 2 }
-  ```
-
-  > **坑出没注意： **标准化之后的路径里的斜杠在Windows系统下是`\`，而在Linux系统下是`/`。如果想保证任何系统下都使用`/`作为路径分隔符的话，需要用`.replace(/\\/g, '/')`再替换一下标准路径。
-
-- path.join
-
-  将传入的多个路径拼接为标准路径。该方法可避免手工拼接路径字符串的繁琐，并且能在不同系统下正确使用相应的路径分隔符。以下是一个例子：
-
-  ```
-    path.join('foo/', 'baz/', '../bar'); // => "foo/bar"
-  ```
-
-- path.extname
-
-  当我们需要根据不同文件扩展名做不同操作时，该方法就显得很好用。以下是一个例子：
-
-  ```
-    path.extname('foo/bar.js'); // => ".js"
-  ```
-
-`path`模块提供的其余方法也不多，稍微看一下官方文档就能全部掌握。

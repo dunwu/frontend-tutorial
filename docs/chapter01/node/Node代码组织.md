@@ -8,7 +8,7 @@
 
 ### 内置模块
 
-如果传递给 `require` 函数的是 Node.js 内置模块名称，不做路径解析，直接返回内部模块的导出对象，例如`require('fs')`。
+如果传递给 `require` 函数的是 Node.js 内置模块名称，不做路径解析，直接返回内部模块的导出对象，例如`require("fs")`。
 
 ### node_modules 目录
 

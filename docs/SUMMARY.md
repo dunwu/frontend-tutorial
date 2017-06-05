@@ -6,6 +6,8 @@
 ## 教程
 * [Chapter01 - Node, Npm, Yarn](chapter01/README.md)
     * [Node入门](chapter01/node/Node入门.md)
+    * [Node代码组织](chapter01/node/Node代码组织.md)
+    * [Node的IO操作](chapter01/node/Node的IO操作.md)
     * [Npm入门](chapter01/npm/Npm入门.md)
 * Chapter02 - React
 * Chapter03 - Webpack
