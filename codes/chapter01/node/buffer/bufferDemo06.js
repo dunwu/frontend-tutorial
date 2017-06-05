@@ -1,6 +1,6 @@
 /**
  * 返回一个数字，表示 buf 在 otherBuffer 之前，之后或相同
- * Created by zhangpeng0913 on 2017/6/5.
+ * Created by victor zhang on 2017/6/5.
  */
 var buffer1 = new Buffer('ABC');
 var buffer2 = new Buffer('ABCD');

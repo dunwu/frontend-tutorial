@@ -1,5 +1,5 @@
 /**
- * Created by zhangpeng0913 on 2017/5/26.
+ * Created by victor zhang on 2017/5/26.
  */
 import React from 'react';
 import { hashHistory, IndexRoute, Route, Router } from 'react-router';

@@ -1,5 +1,5 @@
 /**
- * Created by zhangpeng0913 on 2017/5/9.
+ * Created by victor zhang on 2017/5/9.
  */
 import React from 'react';
 import {BrowserRouter as Router, Link, Redirect, Route, Switch} from "react-router-dom";
