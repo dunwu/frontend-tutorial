@@ -40,4 +40,4 @@
 
 ## :door: 传送门
 
-| [回首頁](https://github.com/atlantis1024/react-step-by-step) |
+| [回首頁](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) |
