@@ -9,11 +9,11 @@
     * [Node代码组织](chapter01/node/Node代码组织.md)
     * [Node的IO操作](chapter01/node/Node的IO操作.md)
     * [Npm入门](chapter01/npm/Npm入门.md)
-* Chapter02 - React
+* [Chapter02 - ES6, Babel](chapter02/README.md)
+    * [ES6入门](chapter02/es6/ES6入门.md)
+    * [Babel入门](chapter02/babel/Babel入门.md)
 * Chapter03 - Webpack
-* [Chapter04 - ES6 / Babel](chapter04/README.md)
-    * [ES6入门](chapter04/es6/ES6入门.md)
-    * [Babel入门](chapter04/babel/Babel入门.md)
+* Chapter04 - React
 * Chapter05 - React Router
 * [Chapter06 - Flux / Redux](chapter06/README.md)
     * [Flux入门](chapter06/flux/Flux入门.md)
