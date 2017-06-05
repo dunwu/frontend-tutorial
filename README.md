@@ -4,7 +4,7 @@ react-step-by-step 是一个从零开始学习 react 的教程。
 
 ## 目录
 
-- [ ] [Chapter01 - Node, Npm, Yarn]()
+- [x] [Chapter01 - Node, Npm, Yarn]()
 - [ ] [Chapter02 - React]()
 - [ ] [Chapter03 - Webpack]()
 - [x] [Chapter04 - ES6 / Babel](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04)
