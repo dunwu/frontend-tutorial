@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>React 复合组件</title>
+  <script src="../libs/react.js"></script>
+  <script src="../libs/react-dom.js"></script>
+  <script src="../libs/browser.min.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+  function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
+
+  function Persons() {
+    return (
+        <div>
+          <Welcome name="Sara"/>
+          <Welcome name="Cahal"/>
+          <Welcome name="Edite"/>
+        </div>
+    );
+  }
+
+  ReactDOM.render(
+      <Persons />,
+      document.getElementById('example')
+  );
+</script>
+</body>
+</html>
