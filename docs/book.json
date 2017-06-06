@@ -26,8 +26,6 @@
     "include-codeblock@^3.0.2",
     "ace@^0.3.2",
     "local-video@^1.0.1",
-    "prism@^2.1.0",
-    "prism-themes@^0.0.2",
     "search-plus@^0.0.11",
     "sectionx@^3.1.0",
     "simple-page-toc@^0.1.1",
