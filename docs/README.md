@@ -34,12 +34,12 @@ $ gitbook serve
 
 ## 目录概要
 
-- [x] [Chapter01 - Node, Npm, Yarn]()
-- [ ] [Chapter02 - React]()
+- [x] [Chapter01 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)
+- [x] [Chapter02 - ES6, Babel](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02)
 - [ ] [Chapter03 - Webpack]()
-- [x] [Chapter04 - ES6 / Babel](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04)
+- [ ] [Chapter04 - React]()
 - [ ] [Chapter05 - React Router]()
-- [x] [Chapter06 - Flux / Redux](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06)
+- [x] [Chapter06 - Flux, Redux](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06)
 - [ ] [Chapter07 - ImmutableJS]()
 
 

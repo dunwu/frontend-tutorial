@@ -8,7 +8,7 @@
 
 水很深，坑很大，真不容易啊，故立此项目，记录爬坑点滴。
 
-## 内容目录
+## :memo: 内容目录
 
 - [x] [Chapter01 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)
 - [x] [Chapter02 - ES6, Babel](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02)
@@ -18,7 +18,7 @@
 - [x] [Chapter06 - Flux, Redux](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06)
 - [ ] [Chapter07 - ImmutableJS]()
 
-## 项目规范
+## :triangular_ruler: 项目规范
 
 正所谓无规矩不成方圆，一个画风严肃的项目应该有一套完整的规范，才不至于长歪了。
 
