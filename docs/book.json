@@ -1,7 +1,7 @@
 {
   "gitbook": "3.2.2",
   "title": "react-step-by-step",
-  "description": "记录 GitBook 的配置和一些插件的使用",
+  "description": "React 爬坑指南",
   "author": "victor zhang",
   "language": "zh-hans",
   "links": {
