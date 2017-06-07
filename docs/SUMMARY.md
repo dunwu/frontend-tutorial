@@ -12,7 +12,8 @@
 * [Chapter02 - ES6, Babel](chapter02/README.md)
     * [ES6入门](chapter02/es6/ES6入门.md)
     * [Babel入门](chapter02/babel/Babel入门.md)
-* Chapter03 - Webpack
+* [Chapter03 - Webpack](chapter03/README.md)
+    * [Webpack 概念](chapter03/webpack/concept.md)
 * [Chapter04 - React](chapter04/README.md)
     * [React入门](chapter04/react/React入门.md)
     * [React 官方教程基础篇](chapter04/react/react-basic-lessons.md)
