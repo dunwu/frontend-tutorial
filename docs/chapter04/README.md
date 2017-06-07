@@ -1,29 +1,30 @@
-# Chapter04 - React
+# Chapter04 - ES6, Babel
 
 ## :memo:知识点
 
-### React
+### ES6
 
-React 是一个用于构建用户界面的 Javascript 库。
+ECMAScript 6.0（简称 ES6）是 JavaScript 语言的下一代标准。ES6 的第一个版本，就这样在2015年6月发布了，正式名称就是《ECMAScript 2015标准》（简称 ES2015）。
 
-React 的特点：
+### Babel
 
-- **1.声明式设计** −React采用声明范式，可以轻松描述应用。
-- **2.高效** −React通过对DOM的模拟，最大限度地减少与DOM的交互。
-- **3.灵活** −React可以与已知的库或框架很好地配合。
-- **4.JSX** − JSX 是 JavaScript 语法的扩展。React 开发不一定使用 JSX ，但我们建议使用它。
-- **5.组件** − 通过 React 构建组件，使得代码更加容易得到复用，能够很好的应用在大项目的开发中。
-- **6.单向响应的数据流** − React 实现了单向响应的数据流，从而减少了重复代码，这也是它为什么比传统数据绑定更简单。
+[Babel](https://babeljs.io/) 是一个广泛使用的 ES6 转码器，可以将 ES6 代码转为 ES5 代码，从而在现有环境执行。这意味着，你可以用 ES6 的方式编写程序，又不用担心现有环境是否支持。
 
 ## :books: 学习资料
 
-- **React**
+- **ES6**
 
-  - [React 官网](https://github.com/facebook/react)
-  - [React 官方文档](https://facebook.github.io/react/)
-  - [awesome-react - react资料大全](https://github.com/enaqx/awesome-react)
-  - [阮一峰老师的React入门示例](https://github.com/ruanyf/react-demos)
-  - [js-stack-from-scratch - js 技术栈一步步入坑指南](https://github.com/verekia/js-stack-from-scratch)
+  - [30分钟掌握ES6/ES2015核心内容](http://www.jianshu.com/p/ebfeb687eb70)
+
+- **Babel**
+
+  - [Babel Github](https://github.com/babel/babel)
+
+  - [Babel 官方文档](http://babeljs.io/)
+
+  - [Babel 官方文档中文版](http://babeljs.cn/)
+
+  - [Babel 入门教程](http://www.ruanyifeng.com/blog/2016/01/babel.html)
 
 ## :door: 传送门
 

@@ -10,13 +10,13 @@
 
 ## :memo: 内容目录
 
-- [x] [Chapter01 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)
+- [x] [Chapter01 - React](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)
 
-- [x] [Chapter02 - ES6, Babel](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02)
+- [x] [Chapter02 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02)
 
 - [x] [Chapter03 - Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03)
 
-- [x] [Chapter04 - React](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04)
+- [x] [Chapter04 - ES6, Babel](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02)
 
 - [ ] [Chapter05 - React Router]()
 

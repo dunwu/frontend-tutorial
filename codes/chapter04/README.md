@@ -1,11 +1,15 @@
 # react-step-by-step
 
-## step01 - react
+## step04 babel
 
 > **关键点**
 >
-> - `react` - [教程](https://github.com/atlantis1024/react-notes)
+> - `babel` - [教程](https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md)
 
-**示例运行方法**
+**运行方法**
 
-直接在浏览器中打开html文件。
+```sh
+$ npm install
+$ npm start
+```
+
