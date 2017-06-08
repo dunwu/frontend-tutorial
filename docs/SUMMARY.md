@@ -26,6 +26,7 @@
     * [Node的IO操作](chapter02/node/Node的IO操作.md)
     * [Npm入门](chapter02/npm/Npm入门.md)
 * [Chapter03 - Webpack](chapter03/README.md)
+    * [Webpack 入门](chapter03/webpack/webpack-howto.md)
     * [Webpack 概念](chapter03/webpack/concept.md)
 * [Chapter04 - ES6, Babel](chapter04/README.md)
     * [ES6入门](chapter04/es6/ES6入门.md)
