@@ -24,7 +24,7 @@ module.exports = {
       // 模块规则（配置加载器、解析器等选项）
 
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)?$/,
         include: [
           path.resolve(__dirname, "src")
         ],

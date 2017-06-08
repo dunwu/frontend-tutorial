@@ -5,9 +5,32 @@
 
 ## 示例代码说明
 
-### webpack
+### webpack2
+
+demo01
+
+一个最简单的 webpack 示例。
+
+demo02
+
+多入口的 webpack 示例。
+
+demo03
+
+
 
 ### jigsaw
+
+#### 使用说明
+
+1. 执行以下命令：
+
+```
+npm install
+npm start
+```
+
+2. 在浏览器中打开：http://localhost:3000
 
 #### 项目说明
 
