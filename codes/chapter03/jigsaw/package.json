@@ -1,7 +1,7 @@
 {
   "name": "react-step-by-step",
   "version": "1.0.0",
-  "description": "react-step-by-step is a course for react.",
+  "description": "react-step-by-step 是一个从零开始学习 react 的教程。",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --content-base"
@@ -12,7 +12,6 @@
   },
   "keywords": [
     "react",
-    "npm",
     "webpack"
   ],
   "author": "victor zhang",

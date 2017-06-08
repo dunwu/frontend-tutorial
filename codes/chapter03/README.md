@@ -1,17 +1,36 @@
-# react-step-by-step
+# Chapter03 - Webpack
 
-## step03 - webpack2
-
-> **关键点**
+> 本章节教程文档：[Chapter01 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)
 >
-> - `webpack` - [教程](https://github.com/atlantis1024/webpack-notes)
 
-***注：本示例使用的是webpack2，`webpack.config.js` 配置文件内容会与1.x版本有些许不同。***
+## 示例代码说明
 
-**示例运行方法**
+### webpack
 
-```sh
-$ npm install
-$ npm start
-```
+### jigsaw
 
+#### 项目说明
+
+**上次内容：**
+
+`codes/chapter01/jigsaw` 的示例中，我们看到了如何使用 React 。
+
+但是，可以看到有许多的不足之处：
+
+- 直接下载并管理 React 等 JavaScript 库很不方便；
+- React 语法在一些浏览器上无法识别，需要解析器去解析；
+- 如果要启动一个 web app，还需要解决打包、装载等问题。
+
+在学习了 [Chapter02 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02) 和 [Chapter03 - Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03) 之后，我们可以解决上述问题了。
+
+**本次内容：**
+
+让我们来看看 `codes/chapter03/jigsaw` 示例：
+
+`package.json` 文件中的 `dependencies` 和 `devDependencies` 属性列举了本项目需要使用的各种 JavaScript 库。你可以轻松通过 **Npm** 或 **Yarn** 来自动下载对应版本的包。`scripts` 属性指定了可以运行的命令：`npm start` ，在本文件中，这条命令等价于执行 `webpack-dev-server --hot --inline --content-base` 命令。它会启动一个 web app。
+
+Webpack 会根据 `webpack.config.js` 文件中的配置去打包、装载资源模块和代码模块。
+
+**下次内容：**
+
+也许，你已经留意到在 webpack.config.js 中，使用了 `babel-loader` 。由于浏览器无法直接识别 React 语法，所以需要使用 Babel 来转义 React 语法为浏览器可以识别的 JavaScript 语法。Chapter04 将介绍这部分内容，并给出示例。
