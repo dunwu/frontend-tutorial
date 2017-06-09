@@ -50,6 +50,12 @@ module.exports = {
           presets: ["es2015", "react"]
         },
       },
+
+      {
+        // css 加载
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      }
     ]
   },
 
@@ -61,7 +67,6 @@ module.exports = {
     extensions: [".js", ".jsx", ".json", ".css"],
   },
 
-  // 附加插件列表
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       names: ["vendor", "manifest"] // 指定公共 bundle 的名字。

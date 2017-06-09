@@ -50,6 +50,32 @@ module.exports = {
           presets: ["es2015", "react"]
         },
       },
+
+      {
+        // css 加载
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+
+      {
+        // 图片加载 + 图片压缩
+        test: /\.(png|svg|jpg|gif)$/,
+        loaders: [
+          "file-loader",
+          {
+            loader: "image-webpack-loader",
+            query: {
+              progressive: true,
+              optimizationLevel: 7,
+              interlaced: false,
+              pngquant: {
+                quality: "65-90",
+                speed: 4
+              }
+            }
+          }
+        ]
+      }
     ]
   },
 
@@ -61,7 +87,6 @@ module.exports = {
     extensions: [".js", ".jsx", ".json", ".css"],
   },
 
-  // 附加插件列表
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
       names: ["vendor", "manifest"] // 指定公共 bundle 的名字。

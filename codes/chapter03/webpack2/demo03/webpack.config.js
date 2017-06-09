@@ -24,14 +24,15 @@ module.exports = {
 
     // 模块规则（配置 loader、解析器等选项）
     rules: [
+      // 这里是匹配条件，每个选项都接收一个正则表达式或字符串
+      // test 和 include 具有相同的作用，都是必须匹配选项
+      // exclude 是必不匹配选项（优先于 test 和 include）
+      // 最佳实践：
+      // - 只在 test 和 文件名匹配 中使用正则表达式
+      // - 在 include 和 exclude 中使用绝对路径数组
+      // - 尽量避免 exclude，更倾向于使用 include
       {
-        // 这里是匹配条件，每个选项都接收一个正则表达式或字符串
-        // test 和 include 具有相同的作用，都是必须匹配选项
-        // exclude 是必不匹配选项（优先于 test 和 include）
-        // 最佳实践：
-        // - 只在 test 和 文件名匹配 中使用正则表达式
-        // - 在 include 和 exclude 中使用绝对路径数组
-        // - 尽量避免 exclude，更倾向于使用 include
+        // 语义解释器，将 js/jsx 文件中的 es2015/react 语法自动转为浏览器可识别的 Javascript 语法
         test: /\.jsx?$/,
         include: path.resolve(__dirname, "app"),
 
