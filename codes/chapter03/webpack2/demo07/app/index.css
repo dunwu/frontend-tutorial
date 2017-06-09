@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'SentyTEA-Platinum';
+  src: url('./font/SentyTEA-Platinum.eot'); /* IE9*/
+  src: url('./font/SentyTEA-Platinum.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./font/SentyTEA-Platinum.woff') format('woff'), /* chrome、firefox */
+  url('./font/SentyTEA-Platinum.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('./font/SentyTEA-Platinum.svg#SentyTEA-Platinum') format('svg'); /* iOS 4.1- */
+}
+
+h1 {
+  font-family: 'SentyTEA-Platinum';
+  font-size: 24px;
+}
+
+p {
+  font-family: 'SentyTEA-Platinum';
+  font-size: 18px;
+}

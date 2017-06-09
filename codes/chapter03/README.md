@@ -17,7 +17,24 @@ demo02
 
 demo03
 
+webpack + react：webpack 自动将 js 中的 React 语法转义为浏览器可以识别的 JavaScript 语法。
 
+demo04
+
+使用 webpack.optimize.CommonsChunkPlugin 插件，分离第三方库。
+再使用 HtmlWebpackPlugin，根据 html 模板，自动生成捆绑 bundle 的 html。
+
+demo05
+
+打包、加载 css 文件。
+
+demo06
+
+打包、压缩图片文件。
+
+demo07
+
+添加字体
 
 ### jigsaw
 
