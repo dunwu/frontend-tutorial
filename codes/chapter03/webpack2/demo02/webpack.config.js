@@ -17,6 +17,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
 
     // 「入口分块(entry chunk)」的文件名模板（出口分块？）
+    // filename: "bundle.js", // 用于多个入口点(entry point)（出口点？）
     filename: "[name].js", // 用于多个入口点(entry point)（出口点？）
     // filename: "[chunkhash].js", // 用于长效缓存
     // filename: "[name].[chunkhash].js", // 用于长效缓存

@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
 
@@ -18,9 +19,10 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
 
     // 「入口分块(entry chunk)」的文件名模板（出口分块？）
+    filename: "bundle.js",
     // filename: "bundle.js", // 用于多个入口点(entry point)（出口点？）
     // filename: "[chunkhash].js", // 用于长效缓存
-    filename: "[name].[chunkhash:8].js", // 用于长效缓存
+    // filename: "[name].[chunkhash:8].js", // 用于长效缓存
   },
 
   // 关于模块配置
@@ -95,14 +97,18 @@ module.exports = {
     extensions: [".js", ".jsx", ".json", ".css"],
   },
 
+  // 附加插件列表
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      names: ["vendor", "manifest"] // 指定公共 bundle 的名字。
+
+    // 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务。
+    new HtmlWebpackPlugin({
+      title: "react-step-by-step",
+      template: "./public/index.html"
     }),
 
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      title: "react-step-by-step"
-    }),
+    // 自动打开浏览器
+    new OpenBrowserPlugin({
+      url: 'http://localhost:8080'
+    })
   ]
 };

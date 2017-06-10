@@ -16,6 +16,7 @@
     "build": "node buildAll.js"
   },
   "dependencies": {
+    "fontmin": "^0.9.6",
     "react": "15.x",
     "react-dom": "15.x"
   },
@@ -28,6 +29,7 @@
     "file-loader": "0.x",
     "html-webpack-plugin": "2.x",
     "image-webpack-loader": "3.x",
+    "open-browser-webpack-plugin": "^0.0.5",
     "style-loader": "0.x",
     "webpack": "2.x",
     "webpack-dev-server": "2.x"
