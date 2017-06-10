@@ -2,7 +2,7 @@
  * Created by victor zhang on 2017/6/8.
  */
 import React from 'react';
-import imgBig from './lion.png'
+import imgBig from './lion.png';
 
 class Welcome extends React.PureComponent {
   render() {

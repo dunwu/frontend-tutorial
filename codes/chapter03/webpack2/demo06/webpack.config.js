@@ -9,7 +9,7 @@ module.exports = {
   // webpack 开始打包
   // 本例中 entry 为多入口
   entry: {
-    main: './app/index'
+    main: "./app/index"
   },
 
   // webpack 如何输出结果的相关选项
@@ -100,7 +100,7 @@ module.exports = {
 
     // 自动打开浏览器
     new OpenBrowserPlugin({
-      url: 'http://localhost:8080'
+      url: "http://localhost:8080"
     })
   ]
 };
