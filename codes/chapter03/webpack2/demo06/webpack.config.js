@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
 
@@ -19,8 +19,8 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
 
     // 「入口分块(entry chunk)」的文件名模板（出口分块？）
-    filename: "bundle.js",
-    // filename: "bundle.js", // 用于多个入口点(entry point)（出口点？）
+    filename: "bundle.min.js",
+    // filename: "[name].js", // 用于多个入口点(entry point)（出口点？）
     // filename: "[chunkhash].js", // 用于长效缓存
     // filename: "[name].[chunkhash:8].js", // 用于长效缓存
   },
@@ -57,26 +57,6 @@ module.exports = {
         // css 加载
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
-      },
-
-      {
-        // 图片加载 + 图片压缩
-        test: /\.(png|svg|jpg|gif)$/,
-        loaders: [
-          "file-loader",
-          {
-            loader: "image-webpack-loader",
-            query: {
-              progressive: true,
-              optimizationLevel: 7,
-              interlaced: false,
-              pngquant: {
-                quality: "65-90",
-                speed: 4
-              }
-            }
-          }
-        ]
       }
     ]
   },
@@ -91,6 +71,13 @@ module.exports = {
 
   // 附加插件列表
   plugins: [
+
+    // 压缩 js 插件
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
 
     // 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务。
     new HtmlWebpackPlugin({

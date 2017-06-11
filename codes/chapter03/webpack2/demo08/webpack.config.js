@@ -22,7 +22,7 @@ module.exports = {
     filename: "bundle.min.js",
     // filename: "[name].js", // 用于多个入口点(entry point)（出口点？）
     // filename: "[chunkhash].js", // 用于长效缓存
-    // filename: "[name].[chunkhash].js", // 用于长效缓存
+    // filename: "[name].[chunkhash:8].js", // 用于长效缓存
   },
 
   // 关于模块配置
@@ -52,6 +52,38 @@ module.exports = {
           presets: ["es2015", "react"]
         },
       },
+
+      {
+        // css 加载
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+
+      {
+        // 图片加载 + 图片压缩
+        test: /\.(png|svg|jpg|gif)$/,
+        loaders: [
+          "file-loader",
+          {
+            loader: "image-webpack-loader",
+            query: {
+              progressive: true,
+              pngquant: {
+                quality: "65-90",
+                speed: 4
+              }
+            }
+          }
+        ]
+      },
+
+      {
+        // 字体加载
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          "file-loader"
+        ]
+      }
     ]
   },
 
@@ -76,7 +108,7 @@ module.exports = {
     // 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务。
     new HtmlWebpackPlugin({
       title: "react-step-by-step",
-      template: "./index.html"
+      template: "./public/index.html"
     }),
 
     // 自动打开浏览器

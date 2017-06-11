@@ -9,7 +9,7 @@
 
 demo01
 
-一个最简单的 webpack 示例。
+单入口的 webpack 示例。
 
 demo02
 
@@ -17,14 +17,17 @@ demo02
 
 demo03
 
-webpack + react：webpack 自动将 js 中的 React 语法转义为浏览器可以识别的 JavaScript 语法。
+HtmlWebpackPlugin + OpenBrowserPlugin 根据 Html 模板生成包含 bundle 的 html 文件，并且自动打开浏览器。
 
 demo04
 
-使用 webpack.optimize.CommonsChunkPlugin 插件，分离第三方库。
-再使用 HtmlWebpackPlugin，根据 html 模板，自动生成捆绑 bundle 的 html。
+webpack + react：webpack 自动将 js 中的 React 语法转义为浏览器可以识别的 JavaScript 语法。
 
 demo05
+
+使用 webpack.optimize.UglifyJsPlugin 插件，压缩 js 文件。
+
+demo06
 
 打包、加载 css 文件。
 
