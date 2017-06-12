@@ -1,4 +1,4 @@
-# webpack-howto
+# 如何学习 Webpack
 
 > **Tip：**
 >

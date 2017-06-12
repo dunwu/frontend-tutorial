@@ -14,7 +14,7 @@
 1. 执行命令
 
 ```bash
-$ webpack index.js bundle.js
+$ webpack ./app/index.js ./dist/bundle.js
 ```
 2. 在浏览器中打开 index.html 文件。
 
