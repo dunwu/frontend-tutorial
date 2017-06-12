@@ -1,51 +1,66 @@
 # Chapter03 - Webpack
 
-> 本章节教程文档：[Chapter01 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)
+> 本章节教程文档：[Chapter03 - Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03)
 >
 
 ## 示例代码说明
 
 ### webpack2
 
-demo01
+#### demo00
+
+**使用方法**
+
+1. 执行命令
+
+```bash
+$ webpack index.js bundle.js
+```
+2. 在浏览器中打开 index.html 文件。
+
+#### demo01
 
 单入口的 webpack 示例。
 
-demo02
+#### demo02
 
 多入口的 webpack 示例。
 
-demo03
+#### demo03
 
 HtmlWebpackPlugin + OpenBrowserPlugin 根据 Html 模板生成包含 bundle 的 html 文件，并且自动打开浏览器。
 
-demo04
+#### demo04
 
 webpack + react：webpack 自动将 js 中的 React 语法转义为浏览器可以识别的 JavaScript 语法。
 
-demo05
+#### demo05
 
 使用 webpack.optimize.UglifyJsPlugin 插件，压缩 js 文件。
 
-demo06
+#### demo06
 
 打包、加载 css 文件。
 
-demo07
+#### demo07
 
 打包、压缩图片文件。
 
-demo08
+#### demo08
 
 添加字体
 
-demo09
+#### demo09
 
 代码分离 - CSS
 
-demo10
+#### demo10
 
 代码分离 - Libraries
+
+#### demo11
+
+代码分离 - 异步
 
 ### jigsaw
 
