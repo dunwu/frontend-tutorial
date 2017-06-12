@@ -60,6 +60,12 @@
 *.mp3 binary
 *.swf binary
 
+# 字体
+*.eot binary
+*.svg binary
+*.ttf binary
+*.woff binary
+
 # other doc
 *.pdf binary
 *.doc binary
