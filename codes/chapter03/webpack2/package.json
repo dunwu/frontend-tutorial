@@ -16,7 +16,6 @@
     "build": "node buildAll.js"
   },
   "dependencies": {
-    "fontmin": "^0.9.6",
     "react": "15.x",
     "react-dom": "15.x"
   },
