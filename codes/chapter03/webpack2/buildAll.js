@@ -18,7 +18,7 @@ const build = function (demoDirs) {
   for (const dir of demoDirs) {
 
     // 跳过 node_modules 目录
-    if (dir === "node_modules") {
+    if (dir === "node_modules" || dir === "demo00") {
       continue;
     }
 
