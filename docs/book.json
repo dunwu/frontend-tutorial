@@ -11,7 +11,6 @@
   },
   "plugins": [
     "-fontsettings",
-    "-highlight",
     "-livereload",
     "-lunr",
     "-search",
