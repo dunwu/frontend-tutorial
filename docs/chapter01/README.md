@@ -18,6 +18,22 @@
 > 需要有心理准备的是：React 绝不仅仅是本身的语法，要真正发挥其威力，需要学习与之相关的整套技术栈。 
 > 
 
+- **教程**
+  - [React 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/React入门.md)
+  - [React 基础篇](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/react-basic-lessons.md)
+    - [安装](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/01.installation.md)
+    - [JSX 简介](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/02.introducing-jsx.md)
+    - [元素渲染](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/03.rendering-elements.md)
+    - [组件（component）和属性（props）](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/04.components-and-props.md)
+    - [状态（State）和生命周期](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/05.state-and-lifecycle.md)
+    - [事件处理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/06.handling-events.md)
+    - [条件渲染](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/07.conditional-rendering.md)
+    - [列表 & Keys](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/08.lists-and-keys.md)
+    - [表单](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/09.forms.md)
+    - [状态提升](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/10.lifting-state-up.md)
+    - [组合 vs 继承](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/11.composition-vs-inheritance.md)
+    - [思考 React](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/12.thinking-in-react.md)
+
 ## :books: 学习资料
 
 ### React
