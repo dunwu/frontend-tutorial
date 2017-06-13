@@ -3,9 +3,9 @@
  */
 import React from 'react';
 
-const Welcome = React.createClass({
-  render: function () {
+class Welcome extends React.PureComponent {
+  render() {
     return <h1>Hello, {this.props.name}</h1>;
   }
-});
+}
 export default Welcome;
