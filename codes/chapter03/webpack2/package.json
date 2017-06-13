@@ -26,6 +26,7 @@
     "babel-preset-es2015": "6.x",
     "babel-preset-react": "6.x",
     "css-loader": "0.x",
+    "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "0.x",
     "html-webpack-plugin": "2.x",
     "image-webpack-loader": "3.x",
