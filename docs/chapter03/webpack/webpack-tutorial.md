@@ -1,6 +1,6 @@
 # Webpack 入门
 
-> **Tip:**
+> :pushpin: **提示：**
 >
 > 本文所有示例基于 webpack2。
 >
@@ -65,7 +65,7 @@ $ webpack ./app/index.js ./dist/bundle.js
 
 在浏览器中打开 `index.html` 文件。
 
-> **完整示例：** ([**DEMO00**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo00))
+> :flashlight:  **示例：** ([**DEMO00**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo00))
 
 ## webpack.config.js
 
@@ -104,7 +104,7 @@ $ webpack
 
 在浏览器中打开 `index.html` 文件。
 
-> **完整示例：** ([**DEMO01**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo01))
+> :flashlight:  **示例：** ([**DEMO01**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo01))
 
 ### 多入口(Entry)
 
@@ -172,4 +172,4 @@ $ webpack
 在浏览器中打开 `index.html` 文件。
 
 
-> **完整示例：** ([**DEMO02**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo02))
+> :flashlight:  **示例：** ([**DEMO02**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo02))

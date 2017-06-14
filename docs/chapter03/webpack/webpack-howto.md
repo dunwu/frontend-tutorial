@@ -1,6 +1,6 @@
 # 如何学习 Webpack
 
-> **Tip：**
+> :pushpin: **提示：**
 >
 > 本文是 [webpack-howto](https://github.com/petehunt/webpack-howto/blob/master/README-zh.md) 的原文，我觉得这篇文章写得非常好，确实算是目前学习 webpack 入门的必读文章。直接收录之。
 >
