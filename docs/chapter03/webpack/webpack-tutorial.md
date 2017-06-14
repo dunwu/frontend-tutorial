@@ -1,6 +1,6 @@
 # Webpack 入门
 
-> **Tip:**
+> :pushpin: **提示：**
 >
 > 本文所有示例基于 webpack2。
 >
