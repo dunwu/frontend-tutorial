@@ -30,7 +30,7 @@ module.exports = {
     filename: "[name].[hash].js",
 
     // 输出解析文件的目录，url 相对于 HTML 页面
-    publicPath: "./dist",
+    publicPath: "./",
 
     // 「source map 位置」的文件名模板
     sourceMapFilename: "[name].map",
