@@ -6,11 +6,22 @@
 
 > **使用方法：**
 >
-> 在 `codes/chapter03/webpack2` 目录下执行 `node buildAll.js` 命令，运行编译脚本。
+> 在 `codes/chapter03/webpack2` 目录下执行命令
+>
+> ```bash
+> $ npm install
+> $ npm run build
+> ```
 >
 > 编译结束后，会在每个 demo 目录下生成 dist 目录，其中包含了 webpack 的输出文件。此时，直接在浏览器打开 `index.html` 文件，就可以看到展示。
 >
 > 此外，在各 demo 目录下，直接执行 `webpack-dev-server` 命令，启动一个 web app。其中，`demo02`，`demo03` 的示例，需要打开 http://localhost:8080/ 进行访问。其它示例，因为配置了 `OpenBrowserPlugin` ，会直接打开浏览器访问。
+>
+> 如果需要清除编译输出文件，执行以下命令
+>
+> ```bash
+> $ npm run clean
+> ```
 
 ### demo00
 

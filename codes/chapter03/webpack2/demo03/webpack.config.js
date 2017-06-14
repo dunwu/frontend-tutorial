@@ -39,7 +39,7 @@ module.exports = {
     // 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务。
     new HtmlWebpackPlugin({
       title: "react-step-by-step",
-      template: "./index.html"
+      template: "./public/index.html"
     }),
 
     // 自动打开浏览器

@@ -97,7 +97,7 @@ browserify ./index.js \
   | uglifyjs --compress --mangle > ./bundle.js
 ```
 
->**注意：**
+>:warning: **注意：**
 >
 >包的名称是`uglify-js`，但是它提供的文件叫`uglifyjs`。<br>
 >这不是一个错字。
@@ -140,7 +140,7 @@ plugins: [
 
 ### Webpack
 
->**注意：**
+>:warning: **注意：**
 >
 >如果你正在使用[Create React App](#create-react-app)方式，参考上述文档。<br>
 >本节只适用于直接配置Webpack的情况。

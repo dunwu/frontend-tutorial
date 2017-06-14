@@ -53,7 +53,7 @@ module.exports = {
 };
 ```
 
-> **完整示例：** ([**DEMO09**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo09))
+> ​:flashlight:​  **示例DEMO09：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo09/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo09))
 
 ### 分离第三方库(Vendor Code Splitting)
 
@@ -112,7 +112,7 @@ main.bef8f974.js
 vendor.2f1bd4c8.js
 ```
 
-> **完整示例：** ([**DEMO10**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo10))
+> ​:flashlight:​  **示例DEMO10：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo10/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo10))
 
 ## 代码按需分离(On Demand Code Splitting)
 
@@ -199,4 +199,4 @@ module: {
 },
 ```
 
-> **完整示例：** ([**DEMO11**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo11))
+> ​:flashlight:​  **示例DEMO11：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo11/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo11))

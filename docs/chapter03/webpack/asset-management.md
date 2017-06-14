@@ -1,6 +1,6 @@
 # 资源管理
 
-> **Tip：**
+> :pushpin: **提示：**
 >
 > 本文基于 webpack2 版本。
 
@@ -8,7 +8,7 @@
 
 很多浏览器并不识别 React 语法，为了让浏览器支持，你需要使用 **babel-loader** 解释器来转义 React 语法为普通的 Javascript 语法。
 
-> **注意：**
+> :warning: **注意：**
 >
 > 官方推荐 babel-loader 和 webpack 的对应版本
 >
@@ -58,7 +58,7 @@ module: {
 },
 ```
 
-> **完整示例：** ([**DEMO04**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo04))
+> ​:flashlight:​  **示例DEMO04：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo04/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo04))
 
 ## 加载 CSS
 
@@ -92,7 +92,7 @@ module.exports = {
 
 其余，加载 less，sass 等样式文件也是大同小异，不一一细说。
 
-> **完整示例：** ([**DEMO06**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo06))
+> :flashlight: **示例DEMO06：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo06/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo06))
 
 ## 加载图片
 
@@ -172,7 +172,7 @@ $ npm i --save-dev image-webpack-loader
 }
 ```
 
-> **完整示例：** ([**DEMO07**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo07))
+> :flashlight: **示例DEMO07：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo07/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo07))
 
 ## 加载字体
 
@@ -222,4 +222,4 @@ p {
 
 然后，相对路径，会被替换为构建目录中的完整路径/文件名。
 
-> **完整示例：** ([**DEMO08**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo08))
+> :flashlight: **示例DEMO08：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo08/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo08))

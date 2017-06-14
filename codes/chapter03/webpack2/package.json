@@ -13,6 +13,7 @@
   "author": "victor zhang",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf */dist/*",
     "build": "node buildAll.js"
   },
   "dependencies": {
@@ -32,6 +33,7 @@
     "image-webpack-loader": "3.x",
     "moment": "^2.18.1",
     "open-browser-webpack-plugin": "^0.0.5",
+    "rimraf": "^2.6.1",
     "style-loader": "0.x",
     "webpack": "2.x",
     "webpack-dev-server": "2.x"
