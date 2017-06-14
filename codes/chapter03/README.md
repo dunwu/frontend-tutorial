@@ -1,13 +1,18 @@
-# Chapter03 - Webpack
+# Chapter03 - Webpack 示例代码
 
-> 本章节教程文档：[Chapter03 - Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03)
+> ​:open_book: 本章节教程文档：[Chapter03 - Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03)
+
+## webpack2
+
+> **使用方法：**
 >
+> 在 `codes/chapter03/webpack2` 目录下执行 `node buildAll.js` 命令，运行编译脚本。
+>
+> 编译结束后，会在每个 demo 目录下生成 dist 目录，其中包含了 webpack 的输出文件。此时，直接在浏览器打开 `index.html` 文件，就可以看到展示。
+>
+> 此外，在各 demo 目录下，直接执行 `webpack-dev-server` 命令，启动一个 web app。其中，`demo02`，`demo03` 的示例，需要打开 http://localhost:8080/ 进行访问。其它示例，因为配置了 `OpenBrowserPlugin` ，会直接打开浏览器访问。
 
-## 示例代码说明
-
-### webpack2
-
-#### demo00
+### demo00
 
 **使用方法**
 
@@ -18,53 +23,61 @@ $ webpack ./app/index.js ./dist/bundle.js
 ```
 2. 在浏览器中打开 index.html 文件。
 
-#### demo01
+### demo01
 
 单入口的 webpack 示例。
 
-#### demo02
+### demo02
 
 多入口的 webpack 示例。
 
-#### demo03
+### demo03
 
 HtmlWebpackPlugin + OpenBrowserPlugin 根据 Html 模板生成包含 bundle 的 html 文件，并且自动打开浏览器。
 
-#### demo04
+### demo04
 
 webpack + react：webpack 自动将 js 中的 React 语法转义为浏览器可以识别的 JavaScript 语法。
 
-#### demo05
+### demo05
 
 使用 webpack.optimize.UglifyJsPlugin 插件，压缩 js 文件。
 
-#### demo06
+### demo06
 
 打包、加载 css 文件。
 
-#### demo07
+### demo07
 
 打包、压缩图片文件。
 
-#### demo08
+### demo08
 
 添加字体
 
-#### demo09
+### demo09
 
 代码分离 - CSS
 
-#### demo10
+### demo10
 
 代码分离 - Libraries
 
-#### demo11
+### demo11
 
 代码分离 - 异步
 
-### jigsaw
+### demo12
 
-#### 使用说明
+webpack 开发工具 webpack-dev-server 的使用
+
+### demo13
+
+webpack 热替换
+
+## jigsaw
+
+### 使用说明
 
 1. 执行以下命令：
 
@@ -75,7 +88,7 @@ npm start
 
 2. 在浏览器中打开：http://localhost:3000
 
-#### 项目说明
+### **项目说明**
 
 **上次内容：**
 

@@ -24,7 +24,7 @@ module.exports = {
     // filename: "bundle.min.js",
     // filename: "[name].js", // 用于多个入口点(entry point)（出口点？）
     // filename: "[chunkhash].js", // 用于长效缓存
-    filename: "[name].js", // 用于长效缓存
+    filename: "[name].[chunkhash:8].js", // 用于长效缓存
   },
 
   // 关于模块配置
@@ -77,6 +77,13 @@ module.exports = {
   // 附加插件列表
   plugins: [
 
+    // 压缩 js 插件
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
+
     // 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务。
     new HtmlWebpackPlugin({
       title: "react-step-by-step",
@@ -94,8 +101,6 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: "vendor" // 指定公共 bundle 的名字。
     }),
-
-    new webpack.HotModuleReplacementPlugin()
   ],
 
   // 通过在浏览器调试工具(browser devtools)中添加元信息(meta info)增强调试
@@ -111,7 +116,6 @@ module.exports = {
     contentBase: [path.join(__dirname, "dist")],
     compress: true,
     port: 9000, // 启动端口号
-    hot: true, // 启用 webpack 的模块热替换特性
     inline: true,
     proxy: {
       '/api/*': {
