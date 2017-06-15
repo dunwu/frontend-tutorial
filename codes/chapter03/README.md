@@ -90,14 +90,16 @@ webpack 热替换
 
 ### 使用说明
 
+
+
 1. 执行以下命令：
 
 ```
 npm install
-npm start
+npm run dev
 ```
 
-2. 在浏览器中打开：http://localhost:3000
+2. 在浏览器中打开：http://localhost:9000
 
 ### **项目说明**
 
@@ -117,9 +119,20 @@ npm start
 
 让我们来看看 `codes/chapter03/jigsaw` 示例：
 
-`package.json` 文件中的 `dependencies` 和 `devDependencies` 属性列举了本项目需要使用的各种 JavaScript 库。你可以轻松通过 **Npm** 或 **Yarn** 来自动下载对应版本的包。`scripts` 属性指定了可以运行的命令：`npm start` ，在本文件中，这条命令等价于执行 `webpack-dev-server --hot --inline --content-base` 命令。它会启动一个 web app。
+> :pushpin: **提示：**
+>
+> 本示例将 **webpack**、**webpack-dev-server** 与 **package.json** 结合起来，使得项目可以分为两套运行环境：
+>
+> - 开发环境（development）
+> - 生产环境（production）
 
-Webpack 会根据 `webpack.config.js` 文件中的配置去打包、装载资源模块和代码模块。
+`package.json` 文件中的 `dependencies` 和 `devDependencies` 属性列举了本项目需要使用的各种 JavaScript 库。你可以轻松通过 **Npm** 或 **Yarn** 来自动下载对应版本的包。
+
+`scripts` 属性指定了几条可以运行的命令：
+
+- `npm clean` 清除输出文件。
+- `npm run dev` 用于开发环境，启动一个可以模块热替换，便于调试的 web app 。
+- `npm run prod` 用于生产环境，编译后，输出一个 dist 目录。其中包含了所有的代码和资源，在浏览器打开其中的 `index.html` 文件，就可以看到这个静态 app。
 
 **下次内容：**
 

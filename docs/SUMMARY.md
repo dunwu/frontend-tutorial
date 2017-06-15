@@ -31,6 +31,7 @@
     * [Webpack 入门](chapter03/webpack/webpack-tutorial.md)
     * [Webpack 资源管理](chapter03/webpack/asset-management.md)
     * [Webpack 代码分离](chapter03/webpack/code-splitting.md)
+    * [Webpack 开发工具](chapter03/webpack/development.md)
 * [Chapter04 - ES6, Babel](chapter04/README.md)
     * [ES6入门](chapter04/es6/ES6入门.md)
     * [Babel入门](chapter04/babel/Babel入门.md)

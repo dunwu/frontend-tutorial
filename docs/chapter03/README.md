@@ -16,6 +16,7 @@
   * [Webpack 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
   * [Webpack 资源管理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
   * [Webpack 代码分离](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+  * [Webpack 开发工具](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
 
 ## :books: 学习资料
 

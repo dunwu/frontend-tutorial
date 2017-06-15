@@ -4,6 +4,7 @@
   "description": "react-step-by-step 是一个从零开始学习 react 的教程。",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf ./dist npm-debug.log*",
     "dev": "webpack-dev-server --config webpack.config.dev.js --color",
     "prod": "webpack --config webpack.config.prod.js"
   },
@@ -35,6 +36,7 @@
     "moment": "2.x",
     "open-browser-webpack-plugin": "0.x",
     "react-hot-loader": "^3.0.0-beta.7",
+    "rimraf": "^2.6.1",
     "style-loader": "0.x",
     "webpack": "2.x",
     "webpack-dev-server": "2.x",
