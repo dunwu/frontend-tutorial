@@ -8,8 +8,8 @@ module.exports = {
 
   // 这里应用程序开始执行
   // webpack 开始打包
-  // 本例中 entry 为多入口
   entry: {
+    // App 入口
     main: "./app/index"
   },
 
@@ -42,6 +42,7 @@ module.exports = {
         // 语义解释器，将 js/jsx 文件中的 es2015/react 语法自动转为浏览器可识别的 Javascript 语法
         test: /\.jsx?$/,
         include: path.resolve(__dirname, "app"),
+        exclude: /node_modules/,
 
         // 应该应用的 loader，它相对上下文解析
         // 为了更清晰，`-loader` 后缀在 webpack 2 中不再是可选的
@@ -57,6 +58,8 @@ module.exports = {
       {
         // css 加载
         test: /\.css$/,
+
+        // CSS 代码分离
         use: ExtractTextPlugin.extract({
           use: "css-loader"
         })

@@ -7,7 +7,6 @@ module.exports = {
 
   // 这里应用程序开始执行
   // webpack 开始打包
-  // 本例中 entry 为多入口
   entry: {
     main: "./app/index"
   },
@@ -25,7 +24,7 @@ module.exports = {
     // filename: "[name].[chunkhash].js", // 用于长效缓存
   },
 
-// 关于模块配置
+  // 关于模块配置
   module: {
 
     // 模块规则（配置 loader、解析器等选项）

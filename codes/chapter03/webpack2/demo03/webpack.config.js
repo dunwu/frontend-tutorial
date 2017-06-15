@@ -7,7 +7,6 @@ module.exports = {
 
   // 这里应用程序开始执行
   // webpack 开始打包
-  // 本例中 entry 为多入口
   entry: {
     main: "./app/index"
   },

@@ -10,8 +10,11 @@ module.exports = {
   // webpack 开始打包
   // 本例中 entry 为多入口
   entry: {
+    // App 入口
     main: "./app/index",
-    vendor: "react"
+
+    // 第三方库
+    vendor: ["react"]
   },
 
   // webpack 如何输出结果的相关选项
@@ -43,6 +46,7 @@ module.exports = {
         // 语义解释器，将 js/jsx 文件中的 es2015/react 语法自动转为浏览器可识别的 Javascript 语法
         test: /\.jsx?$/,
         include: path.resolve(__dirname, "app"),
+        exclude: /node_modules/,
 
         // 应该应用的 loader，它相对上下文解析
         // 为了更清晰，`-loader` 后缀在 webpack 2 中不再是可选的
@@ -52,7 +56,7 @@ module.exports = {
         // loader 的可选项
         options: {
           presets: ["es2015", "react"],
-          plugins: ['syntax-dynamic-import']
+          plugins: ["syntax-dynamic-import"] // 动态导入插件
         },
       },
 
@@ -98,8 +102,9 @@ module.exports = {
     // 将样式文件独立打包
     new ExtractTextPlugin("styles.css"),
 
+    // 将多个入口起点之间共享的公共模块，生成为一些 chunk，并且分离到单独的 bundle 中
     new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor" // 指定公共 bundle 的名字。
+      name: "vendor" // 指定公共 bundle 的名字
     })
   ]
 };
