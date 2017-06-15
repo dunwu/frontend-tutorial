@@ -1,5 +1,18 @@
 # Webpack 代码分离
 
+> :pushpin: **提示：**
+>
+> 1. 版本问题
+>
+>    本文基于 `webpack 2.x` 版本。`webpack 2.x` 相比 `webpack 1.x` 有重大改变。所以，如果你的项目中已使用了 webpack 1.x ，本教程的示例将不适用，请慎重。
+>
+>    如果铁了心要升级 webpack ，请参考 [webpack 官方文档 - 从 v1 迁移到 v2](https://doc.webpack-china.org/guides/migrating/)
+>
+>
+> 2. 阅读建议
+>
+>    阅读本文前，建议先阅读 [Webpack 概念](https://github.com/atlantis1024/react-step-by-step/blob/master/docs/chapter03/webpack/concept.md) 。
+
 代码分离是 webpack 中最引人注目的特性之一。
 
 你可以把你的代码分离到不同的 bundle 中，然后你就可以去按需加载这些文件。

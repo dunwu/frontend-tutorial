@@ -13,8 +13,24 @@ module.exports = {
   // webpack 开始打包
   // 本例中 entry 为多入口
   entry: {
-    main: "./app/index",
-    react: "react",
+    main: [
+      // App 入口
+      "./app/index",
+
+      // 开启 React 代码的模块热替换(HMR)
+      'react-hot-loader/patch',
+
+      // 为 webpack-dev-server 的环境打包代码
+      // 然后连接到指定服务器域名与端口
+      'webpack-dev-server/client?http://localhost:9000',
+
+      // 为热替换(HMR)打包好代码
+      // only- 意味着只有成功更新运行代码才会执行热替换(HMR)
+      'webpack/hot/only-dev-server',
+    ],
+
+    // 第三方库
+    vendor: ["react"]
   },
 
   // webpack 如何输出结果的相关选项
@@ -29,8 +45,8 @@ module.exports = {
     // filename: "[chunkhash].js", // 用于长效缓存
     filename: "[name].[hash].js",
 
-    // 输出解析文件的目录，url 相对于 HTML 页面
-    publicPath: "./",
+    // 对于热替换(HMR)是必须的，让 webpack 知道在哪里载入热更新的模块(chunk)
+    publicPath: "/",
 
     // 「source map 位置」的文件名模板
     sourceMapFilename: "[name].map",
@@ -52,6 +68,7 @@ module.exports = {
         // 语义解释器，将 js/jsx 文件中的 es2015/react 语法自动转为浏览器可识别的 Javascript 语法
         test: /\.jsx?$/,
         include: path.resolve(__dirname, "app"),
+        exclude: /node_modules/,
 
         // 应该应用的 loader，它相对上下文解析
         // 为了更清晰，`-loader` 后缀在 webpack 2 中不再是可选的
@@ -60,8 +77,21 @@ module.exports = {
 
         // loader 的可选项
         options: {
-          presets: ["es2015", "react"],
-          plugins: ['syntax-dynamic-import']
+          presets: [
+            // webpack 现在已经支持原生的 import 语句了, 并且将其运用在 tree-shaking 特性上
+            [
+              "es2015",
+              {
+                "modules": false
+              }
+            ],
+
+            "react" // 转译 React 组件为 JavaScript 代码
+          ],
+          plugins: [
+            "syntax-dynamic-import",  // 动态导入插件
+            "react-hot-loader/babel" // 开启 React 代码的模块热替换(HMR)
+          ]
         },
       },
 
@@ -126,8 +156,9 @@ module.exports = {
     // 将样式文件独立打包
     new ExtractTextPlugin("styles.css"),
 
+    // 将多个入口起点之间共享的公共模块，生成为一些 chunk，并且分离到单独的 bundle 中
     new webpack.optimize.CommonsChunkPlugin({
-      name: "react" // 指定公共 bundle 的名字。
+      name: "vendor" // 指定公共 bundle 的名字
     }),
   ],
 };

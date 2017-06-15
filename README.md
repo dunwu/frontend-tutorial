@@ -8,6 +8,13 @@
 
 水很深，坑很大，真不容易啊，故立此项目，记录爬坑点滴。
 
+![node](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/node.png)
+![webpack](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/webpack.png)
+![babel](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/babel.png)
+![react](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/react.png)
+![react-router](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/react-router.png)
+![redux](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/redux.png)
+
 ## :memo: 内容目录
 
 - [x] [Chapter01 - React](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)

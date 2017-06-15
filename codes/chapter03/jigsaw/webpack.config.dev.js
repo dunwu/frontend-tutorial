@@ -18,9 +18,12 @@ module.exports = function (env) {
         }
       }),
 
-      // 热替换插件
-      new webpack.HotModuleReplacementPlugin()
-    ],
+    // 开启全局的模块热替换(HMR)
+    new webpack.HotModuleReplacementPlugin(),
+
+    // 当模块热替换(HMR)时在浏览器控制台输出对用户更友好的模块名字信息
+    new webpack.NamedModulesPlugin(),
+  ],
 
     // 通过在浏览器调试工具(browser devtools)中添加元信息(meta info)增强调试
     // devtool: "source-map", // 牺牲了构建速度的 `source-map' 是最详细的
@@ -37,12 +40,7 @@ module.exports = function (env) {
       port: 9000, // 启动端口号
       hot: true, // 启用 webpack 的模块热替换特性
       inline: true,
-      proxy: {
-        '/api/*': {
-          target: 'http://localhost:5000',
-          secure: false
-        }
-      }
+      publicPath: "/", // 和上文 output 的“publicPath”值保持一致
     }
   })
 };
