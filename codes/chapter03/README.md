@@ -34,63 +34,89 @@ $ webpack ./app/index.js ./dist/bundle.js
 ```
 2. 在浏览器中打开 index.html 文件。
 
+> ​:flashlight: **示例DEMO00：** ([**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo00))
+
 ### demo01
 
 单入口的 webpack 示例。
+
+> ​:flashlight: **示例DEMO01：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo01/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo01))
 
 ### demo02
 
 多入口的 webpack 示例。
 
+> :flashlight: **示例DEMO02：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo02/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo02))
+
 ### demo03
 
 HtmlWebpackPlugin + OpenBrowserPlugin 根据 Html 模板生成包含 bundle 的 html 文件，并且自动打开浏览器。
+
+> :flashlight: **示例DEMO03：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo03/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo03))
 
 ### demo04
 
 webpack + react：webpack 自动将 js 中的 React 语法转义为浏览器可以识别的 JavaScript 语法。
 
+> :flashlight: **示例DEMO04：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo04/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo04))
+
 ### demo05
 
 使用 webpack.optimize.UglifyJsPlugin 插件，压缩 js 文件。
+
+> :flashlight: **示例DEMO05：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo05/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo05))
 
 ### demo06
 
 打包、加载 css 文件。
 
+> :flashlight: **示例DEMO06：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo06/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo06))
+
 ### demo07
 
 打包、压缩图片文件。
+
+> ​:flashlight: **示例DEMO07：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo07/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo07))
 
 ### demo08
 
 添加字体
 
+> :flashlight: **示例DEMO08：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo08/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo08))
+
 ### demo09
 
 代码分离 - CSS
+
+> :flashlight: **示例DEMO09：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo09/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo09))
 
 ### demo10
 
 代码分离 - Libraries
 
+> :flashlight: **示例DEMO10：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo10/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo10))
+
 ### demo11
 
 代码分离 - 异步
+
+> :flashlight: **示例DEMO11：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo11/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo11))
 
 ### demo12
 
 webpack 开发工具 webpack-dev-server 的使用
 
+> :flashlight: **示例DEMO12：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo12/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo12))
+
 ### demo13
 
 webpack 热替换
 
+> :flashlight: **示例DEMO13：** ([**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo13))
+
 ## jigsaw
 
 ### 使用说明
-
-
 
 1. 执行以下命令：
 
@@ -137,3 +163,5 @@ npm run dev
 **下次内容：**
 
 也许，你已经留意到在 webpack.config.js 中，使用了 `babel-loader` 。由于浏览器无法直接识别 React 语法，所以需要使用 Babel 来转义 React 语法为浏览器可以识别的 JavaScript 语法。Chapter04 将介绍这部分内容，并给出示例。
+
+> ​:flashlight:​ **示例 chapter03-jigsaw：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/jigsaw/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/jigsaw))

@@ -230,7 +230,7 @@ plugins: [
 ```
 
 
-> ​:flashlight: **示例DEMO13：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo13/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo13))
+> ​:flashlight: **示例DEMO13：** ([**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo13))
 >
 > 在示例中，启动服务后，打开浏览器，访问 http://localhost:9000/ 。
 >
