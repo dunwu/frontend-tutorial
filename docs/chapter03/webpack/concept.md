@@ -219,3 +219,13 @@ HMR 是可选功能，只会影响包含 HMR 代码的模块。举个例子，�
 一些 loader 已经生成可热更新的模块。例如，`style-loader` 能够置换出页面的样式表。对于这样的模块，你不需要做任何特殊处理。
 
 webpack 的强大之处在于它的可定制化，取决于特定项目需求，这里有*许多*配置 HMR 的方式。
+
+# Webpack 系列教程
+
+欢迎阅读其它内容：
+
+* [Webpack 概念](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
+* [Webpack 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
+* [Webpack 资源管理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
+* [Webpack 代码分离](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+* [Webpack 开发工具](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
