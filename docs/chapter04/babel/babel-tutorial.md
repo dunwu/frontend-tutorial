@@ -1,5 +1,7 @@
 # Babel 入门指南
 
+![babel](https://github.com/atlantis1024/react-step-by-step/blob/master/assets/images/logo/babel_big.png?raw=true)
+
 > ​:warning: **注意：**
 >
 > Babel 可以与很多构建工具（如 `Browserify`、`Grunt`、`Gulp` 等）进行集成。由于本教程选择 `Webpack` ，所以只讲解与 `Webpack` 的集成。想了解如何与其它工具集成，请参考：[**官方文档 - installation**](https://babeljs.io/docs/setup/#installation)
