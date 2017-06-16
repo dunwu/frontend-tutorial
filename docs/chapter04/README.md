@@ -11,11 +11,19 @@
 > Babel 的用途并不止于此，它支持语法扩展，能支持像 React 所用的 JSX 语法，同时还支持用于静态类型检查的流式语法（Flow Syntax）。
 >
 
+- **教程**
+
+  * [Babel 入门](https://github.com/atlantis1024/react-step-by-step/blob/master/docs/chapter04/babel/babel-tutorial.md)
+  
 ### ES6
 
 > ECMAScript 6.0（简称 ES6）是 JavaScript 语言的下一代标准。ES6 的第一个版本，就这样在2015年6月发布了，正式名称就是《ECMAScript 2015标准》（简称 ES2015）。
 >
 
+- **教程**
+
+  * [ES6 入门](https://github.com/atlantis1024/react-step-by-step/blob/master/docs/chapter04/es6/es6-tutorial.md)
+  
 ## :books: 学习资料
 
 ### Babel
@@ -29,8 +37,6 @@
 
 ### ES6
 
-- **官方资料**
-- **入门资料**
 - **进阶资料**
   - [ES6-Learning](https://github.com/ericdouglas/ES6-Learning)
 - **值得一读的文章**

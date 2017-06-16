@@ -442,7 +442,7 @@ Babel 插件大致分为三类：
 
 形式如下：
 
-```json
+```js
 {
   test: /\.jsx?$/,
   include: path.resolve(__dirname, "app"),
