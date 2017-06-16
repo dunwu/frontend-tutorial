@@ -33,8 +33,8 @@
     * [Webpack 代码分离](chapter03/webpack/code-splitting.md)
     * [Webpack 开发工具](chapter03/webpack/development.md)
 * [Chapter04 - ES6, Babel](chapter04/README.md)
-    * [ES6入门](chapter04/es6/ES6入门.md)
-    * [Babel入门](chapter04/babel/Babel入门.md)
+    * [Babel 入门](chapter04/babel/babel-tutorial.md)
+    * [ES6 入门](chapter04/es6/es6-tutorial.md)
 * Chapter05 - React Router
 * [Chapter06 - Flux / Redux](chapter06/README.md)
     * [Flux入门](chapter06/flux/Flux入门.md)
