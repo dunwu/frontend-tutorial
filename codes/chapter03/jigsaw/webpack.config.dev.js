@@ -35,45 +35,6 @@ module.exports = function (env) {
       publicPath: "/",
     },
 
-    // 关于模块配置
-    module: {
-
-      // 模块规则（配置 loader、解析器等选项）
-      rules: [
-        {
-          // 语义解释器，将 js/jsx 文件中的 es2015/react 语法自动转为浏览器可识别的 Javascript 语法
-          test: /\.jsx?$/,
-          include: path.resolve(__dirname, "app"),
-          exclude: /node_modules/,
-
-          // 应该应用的 loader，它相对上下文解析
-          // 为了更清晰，`-loader` 后缀在 webpack 2 中不再是可选的
-          // 查看 webpack 1 升级指南。
-          loader: "babel-loader",
-
-          // loader 的可选项
-          options: {
-            presets: [
-              // webpack 现在已经支持原生的 import 语句了, 并且将其运用在 tree-shaking 特性上
-              [
-                "es2015",
-                {
-                  "modules": false
-                }
-              ],
-
-              "react" // 转译 React 组件为 JavaScript 代码
-            ],
-            plugins: [
-              "syntax-dynamic-import",  // 动态导入插件
-              "react-hot-loader/babel" // 开启 React 代码的模块热替换(HMR)
-            ]
-          }
-        }
-
-      ]
-    },
-
     // 附加插件列表
     plugins: [
 

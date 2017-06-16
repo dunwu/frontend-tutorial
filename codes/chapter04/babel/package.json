@@ -14,7 +14,8 @@
   "author": "victor zhang",
   "license": "MIT",
   "scripts": {
-    "demo01": "babel demo01 -d ./dist/demo01"
+    "demo01": "babel demo01 -d ./dist/demo01",
+    "demo02": "node demo02/register.js"
   },
   "dependencies": {
     "react": "15.x",
@@ -30,6 +31,7 @@
     "babel-preset-es2015": "6.x",
     "babel-preset-react": "6.x",
     "babel-preset-stage-0": "6.x",
+    "babel-register": "^6.24.1",
     "webpack": "2.x",
     "webpack-dev-server": "2.x"
   }
