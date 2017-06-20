@@ -411,7 +411,42 @@ ReactDOM.render((
 > 渲染 `<Redirect>` 的时候将会导航到一个新的地址（location）。这个新的地址（location）将会覆盖在访问历史记录里面的原地址，就像服务端的重定向（HTTP 3XX）一样。
 >
 
-demo10
+### demo10 - Active Links
+
+> Active Links(激活的链接)
+>
+> `<NavLink>` 是 `<Link>` 的一个特定版本, 会在匹配上当前 URL 的时候会给已经渲染的元素添加样式参数。
+
+为 `NavLink` 添加 `activeStyle` 属性：
+
+```js
+// modules/App.js
+<li><Link to="/about" activeStyle={{ color: 'red' }}>About</Link></li>
+<li><Link to="/repos" activeStyle={{ color: 'red' }}>Repos</Link></li>
+```
+
+现在，如果你激活超链接，指定的链接会变为红色。
+
+也可以使用 `activeClassName` 属性指明类名，然后设置类的样式。
+
+
+```jsx
+<li><NavLink to="/topics/topicA/react" activeClassName="active">主题A</NavLink></li>
+<li><NavLink to="/topics/topicB/react-router" activeClassName="active">主题B</NavLink></li>
+<li><NavLink to="/topics/topicC/redux" activeClassName="active">主题C会被跳转到主题B</NavLink></li>
+```
+
+新建 `app/index.css` 文件，添加 `active` 类的样式
+
+```css
+.active {
+  font-weight: bold;
+  color: blue;
+}
+```
+
+并在 `index.js` 中引入样式文件：`import './index.css'` ，当然，你需要在 `webpack.config.js` 中指定 `css-loader` 、`style-loader` 。
+
 demo11
 demo12
 demo13
