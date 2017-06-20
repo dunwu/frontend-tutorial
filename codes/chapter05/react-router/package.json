@@ -14,10 +14,6 @@
   ],
   "author": "victor zhang",
   "license": "MIT",
-  "scripts": {
-    "clean": "rimraf */dist/*",
-    "build": "node buildAll.js"
-  },
   "dependencies": {
     "react": "15.x",
     "react-dom": "15.x",

@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import App from './components/App';
 import About from './components/About';
-import Repos from './components/Repos';
+import Topics from './components/Topics';
 
 ReactDOM.render((
   <Router>
     <div>
       <Route exact path="/" component={App}/>
-      <Route path="/repos" component={Repos}/>
       <Route path="/about" component={About}/>
+      <Route path="/topics" component={Topics}/>
     </div>
   </Router>
 ), document.getElementById("root"));

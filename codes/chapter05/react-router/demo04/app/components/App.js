@@ -7,8 +7,8 @@ class App extends React.PureComponent {
       <div>
         <h1>React Router Tutorial</h1>
         <ul role="nav">
-          <li><Link to="/about">About Page</Link></li>
-          <li><Link to="/repos">Repos Page</Link></li>
+          <li><Link to="/about">关于</Link></li>
+          <li><Link to="/topics">主题列表</Link></li>
         </ul>
       </div>
     )

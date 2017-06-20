@@ -2,11 +2,12 @@
 
 ## 简介
 
-[React Router Tutorial](https://github.com/reactjs/react-router-tutorial) 是官方的示例教程。
-
-示例代码精炼易懂，非常适合学习 react-router 的新手。
-
-这里，将其搬迁过来，并翻译为中文。水平有限，翻译不当之处，敬请指出。
+> 本示例教程参考 [React Router Tutorial](https://github.com/reactjs/react-router-tutorial) 和 [React Router4 官方示例](https://reacttraining.com/react-router/web/example/basic) ，基于 React Router 4.x 编写。
+>
+> 需要注意的是：React Router 4.x 与以前版本有非常大的差异。
+>
+> 示例代码精炼易懂，非常适合学习 react-router 的新手。
+>
 
 ### 运行环境
 
@@ -14,29 +15,27 @@
 
 ### 使用方法
 
-本目录下的所有示例 app ，如果没有特殊说明，使用方法都遵照下面步骤：
+> ​:pushpin: **提示：**
+>
+>  `codes/chapter05/react-router` 所有示例中需要的依赖已添加到目录下的 `package.json` 文件中。因此，你只需要执行 `npm install` 命令一次，就可以使用所有示例。
 
-1. **npm install**
+1. 使用 webpack-dev-server 启动一个 web app
 
-   官方的示例教程分为多个 lesson，每个 lesson 都可视为一个独立的 app （都含有 `package.json` 和 `webpack.config.js`）。
+   执行命令：
 
-   这意味着：每次运行不同的示例，你都需要先执行 `npm install` 来安装依赖库。但是这些示例中使用的很多库都是重复的，这就很浪费时间了。因此，我将所有依赖统一放在外部目录的 `package.json` 文件中。
+   ```bash
+   $ npm install -g webpack-dev-server@2.x # 如果你没有在全局安装 webpack-dev-server2，请安装一下吧
+   $ webpack-dev-server
+   ```
 
-   现在，你只要在 example 目录下执行一次 `npm install` 。
+2. 在浏览器中访问 http://localhost:9000
 
-2. **webpack-dev-server**
-
-   在不同示例 app 的目录下直接执行 `webpack-dev-server` 就可以启动 app。
-
-3. **访问 url**
-
-   接下来，打开 [http://localhost:9000](http://localhost:9000) 
 
 ## 示例说明
 
-### demo01
+### demo01 - Setting up the Project
 
-> Setting up the Project(设置项目)
+> **Setting up the Project(设置项目)**
 >
 > 本例将展示如何用 `webpack` + `npm` 来建立一个简单的 web 服务。
 >
@@ -45,9 +44,9 @@
 
 应该可以在浏览器中看到 `Hello, React Router` 消息。
 
-### demo02
+### demo02 - Rendering a Route
 
-> Rendering a Route(渲染一个路由)
+> **Rendering a Route(渲染一个路由)**
 
 首先，`Router` 是一个组件。
 
@@ -86,13 +85,34 @@ ReactDOM.render((
 
 你可以试着使用 `BrowserRouter` ，用法与 `HashRouter` 相同，url 中将不会出现 `#` 符号。
 
-### demo03
+### demo03 - Navigating with Link
 
-> Navigating with Link(使用链接导航)
+> **Navigating with Link(使用链接导航)**
 >
 > 也许在您应用中最常用的组件是 `Link`。它几乎与您惯用的 `<a/>` 标记完全相同，除了它知道被它渲染的 `Router`。
 >
 > 让我们为我们的 App 组件创建几个导航。
+
+修改 `app/index.js` 文件：
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
+import App from './components/App';
+import About from './components/About';
+import Topics from './components/Topics';
+
+ReactDOM.render((
+  <Router>
+    <div>
+      <Route exact path="/" component={App}/>
+      <Route path="/about" component={About}/>
+      <Route path="/topics" component={Topics}/>
+    </div>
+  </Router>
+), document.getElementById("root"));
+```
 
 修改 `app/components/App.js` 文件如下：
 
@@ -108,8 +128,8 @@ class App extends React.PureComponent {
       <div>
         <h1>React Router Tutorial</h1>
         <ul role="nav">
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/repos">Repos</Link></li>
+          <li><Link to="/about">关于</Link></li>
+          <li><Link to="/topics">主题</Link></li>
         </ul>
       </div>
     )
@@ -122,9 +142,9 @@ export default App;
 
 尝试点击超链接，应该可以跳转到指定的页面了。
 
-### demo04
+### demo04 - Nested Routes
 
-> Nested Routes(嵌套路由)
+> **Nested Routes(嵌套路由)**
 >
 > 我们添加到应用程序的导航应该可能存在于每个屏幕上。没有 React Router，我们可以将 `ul` 包装到一个组件中，例如 `Nav`，并在我们的每个屏幕上渲染一个 `Nav`。
 >
@@ -133,102 +153,85 @@ export default App;
 
 #### 嵌套 UI 和 URL
 
-你注意到你的 App 就像是一组层层包装的盒子吗？你是否也注意到你的 URL 也是有层级的呢？举一个url 例子， `/repos/123` ，我们的组件可能是像这样的：
+你注意到你的 App 就像是一组层层包装的盒子吗？你是否也注意到你的 URL 也是有层级的呢？举一个url 例子， `/topics/topicA` ，我们的组件可能是像这样的：
 
-```js
+```jsx
 <App>       {/*  /          */}
-  <Repos>   {/*  /repos     */}
-    <Repo/> {/*  /repos/123 */}
-  </Repos>
+  <Topics>   {/*  /topics     */}
+    <TopicA/> {/*  /topics/topicA */}
+  </Topics>
 </App>
 ```
 
 而我们的 UI 可能是这样的：
 
 ```
-         +-------------------------------------+
-         | Home Repos About                    | <- App
-         +------+------------------------------+
-         |      |                              |
-Repos -> | repo |  Repo 1                      |
-         |      |                              |
-         | repo |  Boxes inside boxes          |
-         |      |  inside boxes ...            | <- Repo
-         | repo |                              |
-         |      |                              |
-         | repo |                              |
-         |      |                              |
-         +------+------------------------------+
+          +--------------------------------------+
+          | Home Topics About                    | <- App
+          +-------+------------------------------+
+          |       |                              |
+Topics -> | topic |  Topic A                     |
+          |       |                              |
+          | topic |  Boxes inside boxes          |
+          |       |  inside boxes ...            | <- Topic
+          | topic |                              |
+          |       |                              |
+          | topic |                              |
+          |       |                              |
+          +------+-------------------------------+
 ```
 
 React Router 通过嵌套路由，让你的 UI 自动成为嵌套的UI。
 
 #### 分享我们的导航
 
-让我们把 About 和 Repos 组件嵌套进 App 中，这样，我们就可以在任意地方复用 App 这个导航组件了。我们需要做两步：
+让我们把 TopicA 和 TopicB 组件嵌套进 Topics 中，这样，我们就可以在任意地方复用 Topics 这个导航组件了。我们需要做两步：
 
-1. 修改 `app/index.js` 文件内容
-
-首先，为 App 创建子节点，并将隶属于它的 Route 移过来。
-
-```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter as Router, Route } from 'react-router-dom';
-import App from './components/App';
-import About from './components/About';
-import Repos from './components/Repos';
-
-ReactDOM.render((
-  // 注意：Router 只能有一个子元素
-  <Router>
-    <div>
-      <Route path="/" component={App}/>
-      <Route path="/repos" component={Repos}/>
-      <Route path="/about" component={About}/>
-    </div>
-  </Router>
-), document.getElementById("root"));
-```
-
-2. 修改 `app/components/App.js` 文件
+1. 修改 `app/components/Topics.js` 文件
 
 接下来，渲染 App 内部的子节点。
 
-```diff
+```jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+import TopicA from './TopicA';
+import TopicB from './TopicB';
 
-class App extends React.PureComponent {
+class Topics extends React.PureComponent {
   render() {
     return (
       <div>
-        <h1>Hello, React Router!</h1>
-        <ul role="nav">
-          <li><Link to="/about">About Page</Link></li>
-          <li><Link to="/repos">Repos Page</Link></li>
+        <h1>主题</h1>
+        <ul>
+          <li><Link to="/topics/topicA">主题A</Link></li>
+          <li><Link to="/topics/topicB">主题B</Link></li>
         </ul>
-+        {this.props.children}        
+
+        <hr/>
+
+        <Route path="/topics/topicA" component={TopicA}/>
+        <Route path="/topics/topicB" component={TopicB}/>
       </div>
     )
   }
 }
-export default App;
+export default Topics;
 ```
 
 好了，现在尝试点击链接，然后留意 App 组件，可以发现子路由组件现在被 `this.props.children` 所包裹。
 
 由 React Router 构建的 UI 就像这样：
 
-```js
-// at /about
+```jsx
 <App>
   <About/>
 </App>
 
-// at /repos
 <App>
-  <Repos/>
+  <Topics>
+    <TopicA/>
+    <TopicB/>
+  </Topics>
 </App>
 ```
 
@@ -240,8 +243,112 @@ export default App;
 >
 > 如果将 About 移到 App 之外，会发生什么？
 
-demo05
-demo06
+### demo05 - Url Params
+
+> **Url Params(URL 参数)**
+>
+> 观察一下下面的 URL：
+>
+> ```
+> /topics/topicA/react
+> /topics/topicB/react-router
+> ```
+>
+> 这些 URL 可能匹配这样的路由路径：
+>
+> ```
+> /topics/:topicId/:topicName
+> ```
+>
+> 以 `:` 开始的部分是 URL 参数，这些参数的值将被解析出来并用于 `match.params.xxx` 上的路由组件。
+
+现在，我们来改造一下 `demo04` 的 `Topics` 组件：
+
+修改 `app/components/Topics.js` 文件如下：
+
+```jsx
+import React from 'react';
+import { Link, Route } from 'react-router-dom';
+
+const Topic = ({ match }) => (
+  <div>
+    <h3>主题ID: {match.params.topicId}</h3>
+    <h3>主题名: {match.params.topicName}</h3>
+  </div>
+);
+
+class Topics extends React.PureComponent {
+  render() {
+    return (
+      <div>
+        <h1>主题列表</h1>
+        <ul>
+          <li><Link to="/topics/topicA/react">主题A</Link></li>
+          <li><Link to="/topics/topicB/react-router">主题B</Link></li>
+        </ul>
+
+        <hr/>
+
+        <Route path="/topics/:topicId/:topicName" component={Topic}/>
+      </div>
+    )
+  }
+}
+export default Topics;
+
+```
+
+### demo06 - Ambiguous Matches
+
+> **Ambiguous Matches(模糊匹配)**
+>
+> `demo05` 中，我们学习了React Router如何使用 url 参数。基于此，我们可以更进一步：使用模糊匹配。
+
+有时你想要允许类似 `/about` 和 `/company` 的这种静态路径，而且同时需要允许类似 `/:user` 这种对于路径参数的匹配。
+
+那么，问题来了： `/about` 在这里是模糊的，它会同时匹配 `/about` 和 `/:user` 。大多数路由系统都有一套自己的算法来决定哪些路径可以匹配哪些不能匹配，从而匹配到一个确定的路由 route 。
+
+你可以使用 React Router 在很多不同的地方匹配路径。例如：sidebars，breadcrumbs 等等。当你你想匹配 `/about` 而不想同时也匹配到 `/:user` 时，你可以使用 `<Switch>` 来把你的 `<Route>` 包一层，在  `<Switch>` 里的第一个匹配对象就会被渲染出来。
+
+`<Switch>` 的独特之处在于它仅仅渲染一个路由。相反地，每一个包含匹配地址(location)的 `<Route>` 都会被渲染。
+
+下面就是一个例子：
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
+
+const About = () => <h2>关于</h2>;
+const Company = () => <h2>公司</h2>;
+const User = ({ match }) => (
+  <div>
+    <h2>用户：{match.params.user}</h2>
+  </div>
+);
+
+ReactDOM.render((
+  <Router>
+    <div>
+      <ul>
+        <li><Link to="/about">关于(static)</Link></li>
+        <li><Link to="/company">公司(static)</Link></li>
+        <li><Link to="/kim">Kim (dynamic)</Link></li>
+        <li><Link to="/chris">Chris (dynamic)</Link></li>
+      </ul>
+
+      <hr/>
+
+      <Switch>
+        <Route path="/about" component={About}/>
+        <Route path="/company" component={Company}/>
+        <Route path="/:user" component={User}/>
+      </Switch>
+    </div>
+  </Router>
+), document.getElementById("root"));
+```
+
 demo07
 demo08
 demo09
