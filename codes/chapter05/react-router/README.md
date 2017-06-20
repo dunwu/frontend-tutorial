@@ -349,14 +349,75 @@ ReactDOM.render((
 ), document.getElementById("root"));
 ```
 
-demo07
-demo08
-demo09
+### demo07 - Return Home
+
+> **Return Home(返回首页)**
+>
+> 现在，我们已经学习了如何配置 `Route` 、`Switch` 和 `Link` 。我们可以使用它们灵活组合来管理我们的页面。但是，似乎还缺少什么。发现了没：一般网站的页面都会有回到首页链接，但是在我们的示例中还没有。
+>
+> React Router4 中取消了 `IndexRoute` 、`IndexLink` 。但是，一样可以很简单的设置回到首页链接。
+
+选择一个需要包含回到首页链接的组件，添加一个指向首页路径（例如： `/` ）的 `Link` 即可：
+
+```jsx
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+class About extends React.PureComponent {
+  render() {
+    return (
+      <div>
+        <h1>关于</h1>
+        <Link to="/">回到首页</Link>
+      </div>
+    )
+  }
+}
+export default About;
+```
+
+### demo08 - No Match(404)
+
+> **No Match(未匹配)**
+>
+> `<Switch>` 会渲染它里面的第一个可以匹配的 `<Route>`，而且一个没有 path 的 `<Route>` 会满足任何匹配。
+
+修改 `app/index.js` 文件
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import App from './components/App';
+import About from './components/About';
+import Topics from './components/Topics';
+import NoMatch from './components/NoMatch';
+
+ReactDOM.render((
+  <Router>
+    <Switch>
+      <Route exact path="/" component={App}/>
+      <Route path="/about" component={About}/>
+      <Route path="/topics" component={Topics}/>
+      <Route component={NoMatch}/>
+    </Switch>
+  </Router>
+), document.getElementById("root"));
+```
+### demo09 - Redirect
+
+> **Redirect(重定向)**
+>
+> 渲染 `<Redirect>` 的时候将会导航到一个新的地址（location）。这个新的地址（location）将会覆盖在访问历史记录里面的原地址，就像服务端的重定向（HTTP 3XX）一样。
+>
+
 demo10
 demo11
 demo12
 demo13
 demo14
+
+
 
 
 
