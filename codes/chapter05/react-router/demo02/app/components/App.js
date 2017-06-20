@@ -2,7 +2,7 @@ import React from 'react';
 
 class App extends React.PureComponent {
   render() {
-    return <div>Hello, React Router!</div>
+    return <h1>Hello, React Router!</h1>
   }
 }
 export default App;
