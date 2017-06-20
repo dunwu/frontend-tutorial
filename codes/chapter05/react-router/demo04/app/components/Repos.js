@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 class Repos extends React.PureComponent {
   render() {
-    return <div>Repos</div>
+    return <h1>Repos</h1>
   }
 }
 export default Repos;
