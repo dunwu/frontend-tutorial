@@ -11,7 +11,10 @@
 
 - **教程**
 
-  * [如何学习 Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-howto.md)
+  * [React Router v4 简介](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-introduction.md)
+  * [React Router v4 基础](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-basic.md)
+  * [React Router v4 进阶](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-advanced.md)
+  * [React Router v4 API](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md)
 
 ## :books: 学习资料
 

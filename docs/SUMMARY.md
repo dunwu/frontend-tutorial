@@ -35,7 +35,11 @@
 * [Chapter04 - ES6, Babel](chapter04/README.md)
     * [Babel 入门](chapter04/babel/babel-tutorial.md)
     * [ES6 入门](chapter04/es6/es6-tutorial.md)
-* Chapter05 - React Router
+* [Chapter05 - React Router](chapter05/README.md)
+    * [React Router v4 简介](chapter05/react-router-v4/react-router-introduction.md)
+    * [React Router v4 基础](chapter05/react-router-v4/react-router-basic.md)
+    * [React Router v4 进阶](chapter05/react-router-v4/react-router-advanced.md)
+    * [React Router v4 API](chapter05/react-router-v4/react-router-api.md)
 * [Chapter06 - Flux / Redux](chapter06/README.md)
     * [Flux入门](chapter06/flux/Flux入门.md)
     * [Redux入门](chapter06/redux/Redux入门.md)

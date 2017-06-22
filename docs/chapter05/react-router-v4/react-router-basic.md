@@ -1,6 +1,12 @@
-# React Router4 基础
+# React Router v4 基础
 
-## 本教程使用说明
+> ​:warning: **注意：**
+>
+> React Router v4 有重大改变，很多 API 不兼容以往版本。
+>
+> 如果你的项目中使用了老版本的 React Router ，升级到 React Router v4 有不小的工作量，请慎重。
+
+## 教程使用说明
 
 ### 运行环境
 
@@ -22,6 +28,14 @@
    ```
 
 2. 在浏览器中访问 http://localhost:9000
+
+### 示例
+
+本文中的示例都有线上示例和源码，如需要查看，请分别点击 **DEMO** 和 **SOURCE** 链接。
+
+### 知识点
+
+本人一向信奉实践出真知，所以本文先展示 React Router 各种简单应用，不在示例中穿插较多的知识点讲述。示例中用到的 React Router v4 组件都可以在知识点章节中找到说明。
 
 ## 渐进式的示例
 
@@ -54,9 +68,9 @@ export default App;
 
 3. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-在浏览器中访问 http://localhost:9000/，应该可以看到 `React Router Tutorial` 消息。
-
-> ​:flashlight:​ **示例DEMO01：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo01/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo01))
+> ​:flashlight: **示例DEMO01：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo01/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo01))
+>
+> 在浏览器中访问 http://localhost:9000/，应该可以看到 `React Router Tutorial` 消息。
 
 ### Basic Route(基本路由)
 
@@ -68,6 +82,11 @@ ReactDOM.render((<Routes/>), document.getElementById("root"));
 
 `Routes` 是我们将要自定义的路由容器。
 
+如果向下面的代码一样，仅仅引入 `Router` ，而没有在 `Router` 中定义 `Route`，将什么也不会展示。
+
+```jsx
+ReactDOM.render((<Router/>), document.getElementById("root"));
+```
 2. 新增 `app/routes.js` 文件，内容如下：
 
 ```jsx
@@ -116,13 +135,13 @@ class Topics extends React.PureComponent {
 
 4. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-在浏览器中访问 http://localhost:9000/，应该可以看到与 `demo01` 相同的结果。但是，由于我们使用了 `HashRouter` ，地址栏显示的地址中会含有 `#` 符号。你可以试着使用 `BrowserRouter` ，用法与 `HashRouter` 相同，url 中将不会出现 `#` 符号。
-
-访问 http://localhost:9000/#/about ，可以看到 About 页面
-
-访问 http://localhost:9000/#/topics ，可以看到 Topics 页面
-
-> ​:flashlight:​ **示例DEMO02：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo02/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo02))
+> ​:flashlight: **示例DEMO02：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo02/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo02))
+>
+> 在浏览器中访问 http://localhost:9000/，应该可以看到与 `DEMO01` 相同的结果。但是，由于我们使用了 `HashRouter` ，地址栏显示的地址中会含有 `#` 符号（形式如：http://localhost:9000/#）。你可以试着使用 `BrowserRouter` ，用法与 `HashRouter` 相同，url 中将不会出现 `#` 符号。
+>
+> 你可以在访问地址后面添加上下文路径 about (http://localhost:9000/#/about) 和 topic  (http://localhost:9000/#/topics)  ，来分别访问 About 页面和 Topics 页面。
+>
+> 线上示例，添加上下文路径一样可以访问对应页面。
 
 ### Nested Routes(嵌套路由)
 
@@ -158,10 +177,23 @@ class Topics extends React.PureComponent {
 
 2. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-> ​:flashlight:​ **示例DEMO03：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo03/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo03))
+> ​:flashlight: **示例DEMO03：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo03/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo03))
 >
+> `DEMO02` 可以访问的页面，在 `DEMO03` 中都可以访问。
+>
+> 此外，新增了可访问页面：
+>
+> http://localhost:9000/#/topics/one
+>
+> http://localhost:9000/#/topics/two
+>
+> 线上示例，添加上下文路径一样可以访问对应页面。
 
 ### Navigating with link(使用链接导航)
+
+前面的示例中，我们学习了使用基本路由、嵌套路由的配置，来控制我们访问的页面。
+
+但是，很明显，每次在地址栏中输入访问路径非常麻烦。我们需要使用链接，React Router 提供了 Link 组件，功能和使用方式都与 `<a>` 十分相似。不同的是，`Link` 可以感知被它渲染的 `Router` 。
 
 1. 修改 `app/components/App.js` 文件，内容如下：
 
@@ -227,8 +259,13 @@ export default Topics;
 
 > ​:flashlight: **示例DEMO04：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo04/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo04))
 >
+> 在浏览器中访问 http://localhost:9000/ ，此时页面中已经有了链接，点击链接可以跳转相应页面了。
 
 ### Redirect and No Match(重定向和未匹配)
+
+React Router v4 可以通过 `Redirect` 组件来支持重定向功能。
+
+此外，可以利用 `Switch` 组件和 `Route` 组件来处理未匹配路径。
 
 1. 修改 `app/routes.js` 文件，内容如下：
 
@@ -345,81 +382,3 @@ export default Topics;
 
 > ​:flashlight: **示例DEMO06：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo06/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo06))
 >
-
-## 知识点
-
-### Router
-
-`Router` 是所有路由组件共用的底层接口，一般应用并不会直接使用这个接口，而是使用高级的路由：
-
-- `<BrowserRouter>`
-- `<HashRouter>`
-- `<NativeRouter>`
-- `<MemoryRouter>`
-- `<StaticRouter>`
-
-启动新项目时，需要根据实际场景选择路由器类型。
-
-对于基于浏览器的项目，`react-router-dom` 提供了 `<BrowserRouter>` 和 `<HashRouter>` 组件。当您有服务器来处理动态请求时，应使用 `<BrowserRouter>` ，而 `<HashRouter>` 应用于静态网站。通常最好使用 `<BrowserRouter>` ，但如果您的网站将托管在仅提供静态文件的服务器上，则 `<HashRouter>` 是一个很好的解决方案。
-
-对于使用 [React Native](https://facebook.github.io/react-native/) 的移动端项目，`react-router-native` 提供了 `<NativeRouter>` 组件。
-
-`react-router` 提供了 `<MemoryRouter>` 和 `<StaticRouter>` 组件。 `<MemoryRouter>` 组件将 url 的历史记录保存在内存中（不读取或写入地址栏），在测试和非浏览器环境（如React Native）中较有用。`<StaticRouter>` 是静态路由，顾名思义，就是从来不会改变地址的路由。
-
-如果向下面的代码一样，仅仅引入 `Router` ，而没有在 `Router` 中定义 `Route`，将什么也不会展示。
-
-```jsx
-ReactDOM.render((<Router/>), document.getElementById("root"));
-```
-
-### History
-
-每个 `Router` 会创建一个 [`history`](https://github.com/ReactTraining/history) 对象，history 可以管理 session 记录。 `Router` 使用 `history` 的 API (`pushState`, `replaceState` 和 `popstate` 事件) 来保持 UI 和 URL 的同步。
-
-History 是 React Router 的两大重要依赖之一（除去 React 本身），在不同的 Javascript 环境中，`history` 以多种形式实现了对于 session 历史的管理。
-
-> :pushpin: **提示：**
->
-> React Router v4 以前的版本中，创建 `Router` 时，总是需要为其引入一个 `history` 对象。如下：
->
-> ```jsx
-> import { browserHistory } from 'react-router';
-> ReactDOM.render(
->   <Router history={browserHistory} routes={routes} />,
->   document.getElementById("root")
-> )
-> ```
->
-> React Router v4 的 `Router` 不用再显示的引入 `history` ，因为组件内部已经为其创建了合适的 `history` 对象。
-
-### Route
-
-要理解并使用好 React Router，最重要的可能就是 `Route` 组件了。
-
-`Route` 组件主要的作用就是当一个location 匹配路由的 path 时，渲染某些 UI。
-
-#### Route渲染方法
-
-使用 `<Route>` 有三种渲染内容的方法：
-
-- `<Route component>`
-- `<Route render>`
-- `<Route children>`
-
-在不同的情况下每个都特别有用，对于某个 `<Route>`，你只能使用这些 props 其中的一个，绝大多数的时候会使用 `component`。
-
-### Redirect
-
-渲染 `<Redirect>` 的时候将会导航到一个新的地址（location）。这个新的地址（location）将会覆盖在访问历史记录里面的原地址，就像服务端的重定向（HTTP 3XX）一样。
-
-### Link
-
-为应用提供声明式的、无障碍导航。
-
-也许在你的应用中最常用的 React Router 组件是 `Link`。它几乎与您惯用的 `<a/>` 标记完全相同，除了它知道被它渲染的 `Router`。
-
-### Switch
-
-渲染匹配地址(location)的第一个 `<Route>` 或者 `<Redirect>` 。
-
-`<Switch>` 的独特之处是独它仅仅渲染一个路由。
