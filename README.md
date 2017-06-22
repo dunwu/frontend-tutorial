@@ -2,7 +2,7 @@
 
 初学 React 的时候，相信大部分人都有这样的体会：React 技术栈水太深，涉及的技术点太多了。
 
-如今网上有不少 React 相关的教程，但多的是是完整的 React 项目，少的是庖丁解牛式的、一步步的搭建 React 项目框架的教程。而且，React 涉及的技术点很多，常常让人有种无从入手的感觉。**该从哪儿学起呢？**这是个问题啊。
+如今网上有不少 React 相关的教程，但多的是是完整的 React 项目，少的是庖丁解牛式的、一步步的搭建 React 项目框架的教程。而且，React 涉及的技术点很多，常常让人有种无从入手的感觉。
 
 如果，你也有这样的困惑，不妨阅读一下 [如何学习React(react-howto)](https://github.com/petehunt/react-howto/blob/master/README-zh.md) 。这篇文章提出了一个合理的学习 React 技术栈的顺序，我认为很有道理。
 
@@ -54,7 +54,7 @@
     * [React Router v4 基础](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-basic.md)
     * [React Router v4 进阶](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-advanced.md)
     * [React Router v4 API](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md)
-* [***Chapter06 - Flux / Redux***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/README.md)
+* [***Chapter06 - Flux, Redux***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/README.md)
     * [Flux入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/flux/Flux入门.md)
     * [Redux入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/redux/Redux入门.md)
 
