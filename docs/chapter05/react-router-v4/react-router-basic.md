@@ -56,6 +56,8 @@ export default App;
 
 在浏览器中访问 http://localhost:9000/，应该可以看到 `React Router Tutorial` 消息。
 
+> ​:flashlight:​ **示例DEMO01：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo01/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo01))
+
 ### Basic Route(基本路由)
 
 1. 修改 `app/index.js` 文件，内容如下：
@@ -120,6 +122,8 @@ class Topics extends React.PureComponent {
 
 访问 http://localhost:9000/#/topics ，可以看到 Topics 页面
 
+> ​:flashlight:​ **示例DEMO02：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo02/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo02))
+
 ### Nested Routes(嵌套路由)
 
 1. 修改 `app/routes.js` 文件，内容如下：
@@ -153,6 +157,9 @@ class Topics extends React.PureComponent {
 ```
 
 2. 按照 `本教程使用说明 - 使用方法` 步骤执行。
+
+> ​:flashlight:​ **示例DEMO03：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo03/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo03))
+>
 
 ### Navigating with link(使用链接导航)
 
@@ -217,6 +224,9 @@ export default Topics;
 ```
 
 3. 按照 `本教程使用说明 - 使用方法` 步骤执行。
+
+> ​:flashlight: **示例DEMO04：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo04/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo04))
+>
 
 ### Redirect and No Match(重定向和未匹配)
 
@@ -287,6 +297,9 @@ export default NoMatch;
 
 4. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
+> ​:flashlight:​ **示例DEMO05：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo05/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo05))
+>
+
 ### Url Params(Url 参数)
 
 1. 修改 `app/components/Topics.js` 文件，内容如下：
@@ -329,6 +342,9 @@ export default Topics;
 ```
 
 2. 按照 `本教程使用说明 - 使用方法` 步骤执行。
+
+> ​:flashlight: **示例DEMO06：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo06/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo06))
+>
 
 ## 知识点
 
@@ -391,6 +407,10 @@ History 是 React Router 的两大重要依赖之一（除去 React 本身），
 - `<Route children>`
 
 在不同的情况下每个都特别有用，对于某个 `<Route>`，你只能使用这些 props 其中的一个，绝大多数的时候会使用 `component`。
+
+### Redirect
+
+渲染 `<Redirect>` 的时候将会导航到一个新的地址（location）。这个新的地址（location）将会覆盖在访问历史记录里面的原地址，就像服务端的重定向（HTTP 3XX）一样。
 
 ### Link
 
