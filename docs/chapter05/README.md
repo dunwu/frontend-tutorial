@@ -4,9 +4,7 @@
 
 ### React Router
 
-> [React Router](https://github.com/ReactTraining/react-router) 是一个模组打包工具（module bundler）。其主要目的是将 JavaScript 文件捆绑在浏览器中，但它也能够转换，捆绑或打包任何资源文件。
->
-> webpack 允许根据需要去加载应用程序的部件。使得 Javascript 应用可以高度复用。
+> [React Router](https://github.com/ReactTraining/react-router) 是一个基于 [React](http://facebook.github.io/react/) 之上的强大路由库，它可以让你向应用中快速地添加视图和数据流，同时保持页面与 URL 间的同步。
 >
 
 - **教程**

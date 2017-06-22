@@ -35,7 +35,7 @@
 
 ### 知识点
 
-本人一向信奉实践出真知，所以本文先展示 React Router 各种简单应用，不在示例中穿插较多的知识点讲述。示例中用到的 React Router v4 组件都可以在知识点章节中找到说明。
+本人一向信奉实践出真知，所以本文先展示 React Router 各种简单应用，不在示例中穿插较多的知识点讲述。示例中用到的 React Router v4 组件都可以在 [React Router v4 API](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md) 中找到说明。
 
 ## 渐进式的示例
 
