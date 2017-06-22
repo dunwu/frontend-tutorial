@@ -1,12 +1,14 @@
 # React 爬坑指南
 
-作为一名主修后端的职业程序员，第一次接触 React 的感觉就像是：明明和人约好了要单挑，结果发现对方来了一大帮人，被华丽滴群殴了。
+初学 React 的时候，相信大部分人都有这样的体会：React 技术栈水太深，涉及的技术点太多了。
 
-曾几何时，前端在我看来就是：html + css + js，不过如此嘛！
+如今网上有不少 React 相关的教程，但多的是是完整的 React 项目，少的是庖丁解牛式的、一步步的搭建 React 项目框架的教程。而且，React 涉及的技术点很多，常常让人有种无从入手的感觉。**该从哪儿学起呢？**这是个问题啊。
 
-好吧，React 技术栈刷新了我对前端的认识。
+如果，你也有这样的困惑，不妨阅读一下 [如何学习React(react-howto)](https://github.com/petehunt/react-howto/blob/master/README-zh.md) 。这篇文章提出了一个合理的学习 React 技术栈的顺序，我认为很有道理。
 
-水很深，坑很大，真不容易啊，故立此项目，记录爬坑点滴。
+本教程采用 react-howto 中提出的 React 技术栈学习路线，由浅入深，循序渐进的为你一一讲解 React 。
+
+如果，你有任何疑问或建议，欢迎在 Issues 中提出。
 
 ![node](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/node.png)
 ![webpack](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/logo/webpack.png)
@@ -17,7 +19,7 @@
 
 ## :memo: 内容目录
 
-* [Chapter01 - React](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/README.md)
+* [***Chapter01 - React***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/README.md)
     * [React入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/React入门.md)
     * [React 官方教程基础篇](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/react-basic-lessons.md)
         * [安装](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/01.installation.md)
@@ -32,27 +34,27 @@
         * [状态提升](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/10.lifting-state-up.md)
         * [组合 vs 继承](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/11.composition-vs-inheritance.md)
         * [思考 React](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/12.thinking-in-react.md)
-* [Chapter02 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/README.md)
+* [***Chapter02 - Node, Npm, Yarn***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/README.md)
     * [Node入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
     * [Node代码组织](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node代码组织.md)
     * [Node的IO操作](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node的IO操作.md)
     * [Npm入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/npm/Npm入门.md)
-* [Chapter03 - Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/README.md)
+* [***Chapter03 - Webpack***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/README.md)
     * [如何学习 Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-howto.md)
     * [Webpack 概念](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
     * [Webpack 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
     * [Webpack 资源管理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
     * [Webpack 代码分离](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
     * [Webpack 开发工具](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
-* [Chapter04 - ES6, Babel](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04/README.md)
+* [***Chapter04 - ES6, Babel***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04/README.md)
     * [Babel 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04/babel/babel-tutorial.md)
     * [ES6 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04/es6/es6-tutorial.md)
-* [Chapter05 - React Router](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/README.md)
+* [***Chapter05 - React Router***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/README.md)
     * [React Router v4 简介](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-introduction.md)
     * [React Router v4 基础](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-basic.md)
     * [React Router v4 进阶](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-advanced.md)
     * [React Router v4 API](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md)
-* [Chapter06 - Flux / Redux](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/README.md)
+* [***Chapter06 - Flux / Redux***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/README.md)
     * [Flux入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/flux/Flux入门.md)
     * [Redux入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/redux/Redux入门.md)
 
