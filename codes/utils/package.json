@@ -14,10 +14,10 @@
   ],
   "author": "victor zhang",
   "license": "MIT",
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {},
   "devDependencies": {
-    "chalk": "1.x"
+    "chalk": "1.x",
+    "ora": "^1.3.0"
   }
 }
