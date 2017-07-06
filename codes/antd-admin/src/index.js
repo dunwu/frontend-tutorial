@@ -1,13 +1,29 @@
+/**
+ * 参考 React Hot Loader：http://gaearon.github.io/react-hot-loader/getstarted/
+ */
+import 'react-hot-loader/patch';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { hashHistory, Router } from 'react-router';
-import store from './redux/store';
-import routes from './route/route';
-
-import '../styles/main.less';
+import { AppContainer } from 'react-hot-loader';
+import Root from './containers/Root';
+import configureStore from './redux/store/configureStore';
+const store = configureStore();
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Router routes={routes} history={hashHistory} />
-  </Provider>, document.getElementById('root'));
+  <AppContainer>
+    <Root store={ store }/>
+  </AppContainer>,
+  document.getElementById('root')
+);
+
+if (module.hot) {
+  module.hot.accept('./containers/Root', () => {
+    const RootContainer = require('./containers/Root');
+    ReactDOM.render(
+      <AppContainer>
+        <RootContainer store={ store }/>
+      </AppContainer>,
+      document.getElementById('root')
+    );
+  });
+}

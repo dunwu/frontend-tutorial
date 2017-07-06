@@ -1,97 +1,145 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { Button, Card, Col, Form, Icon, Input, message, Row } from 'antd';
 import { bindActionCreators } from 'redux';
-import globalConfig from '../../config';
-import ajax from '../../utils/ajax';
-import { message } from 'antd';
-import { loginSuccessCreator } from '../../redux/Login.js';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import { login } from '../../redux/actions/auth';
 
-/**
- * 定义Login组件
- */
-class Login extends React.PureComponent {
+import './Login.less';
 
-  // 这个login样式是直接从网上找的: https://colorlib.com/wp/html5-and-css3-login-forms/
-  // 一般而言公司内部都会提供基于LDAP的统一登录, 用到这个登录组件的场景应该挺少的
+const FormItem = Form.Item;
 
-  state = {
-    username: '',  // 当前输入的用户名
-    password: '',  // 当前输入的密码
-    requesting: false, // 当前是否正在请求服务端接口
-  };
-
-  handleUsernameInput = (e) => {
-    this.setState({ username: e.target.value });
-  };
-
-  handlePasswordInput = (e) => {
-    this.setState({ password: e.target.value });
-  };
-
-  /**
-   * 处理表单的submit事件
-   *
-   * @param e
-   */
-  handleSubmit = async (e) => {  // async可以配合箭头函数
-    e.preventDefault();  // 这个很重要, 防止跳转
-    this.setState({ requesting: true });
-    const hide = message.loading('正在验证...', 0);
-
-    const username = this.state.username;
-    const password = this.state.password;
-    console.debug('username = %s, password = %s', username, password);
-
-    try {
-      // 服务端验证
-      const res = await ajax.login(username, password);
-      hide();
-      console.debug('login validate return: result %o', res);
-
-      if (res.code === 0) {
-        message.success('登录成功');
-        // 如果登录成功, 触发一个loginSuccess的action, payload就是登录后的用户名
-        this.props.handleLoginSuccess(res.data);
-      } else {
-        message.error(`登录失败: ${res.message}, 请联系管理员`);
-        this.setState({ requesting: false });
-      }
-    } catch (exception) {
-      hide();
-      message.error(`网络请求出错: ${exception.message}`);
-      console.error('login error, %o', exception);
-      this.setState({ requesting: false });
-    }
-  };
-
-  render() {
-    // 整个组件被一个id="loginDIV"的div包围, 样式都设置到这个div中
-    return (
-      <div id="loginDIV">
-        <div className="login">
-          <h1>{globalConfig.name}</h1>
-          <form onSubmit={this.handleSubmit}>
-            <input className="login-input" type="text" value={this.state.username}
-                   onChange={this.handleUsernameInput} placeholder="用户名" required="required"/>
-            <input className="login-input" type="password" value={this.state.password}
-                   onChange={this.handlePasswordInput} placeholder="密码" required="required"/>
-            <button className="btn btn-primary btn-block btn-large"
-                    type="submit" disabled={this.state.requesting}>
-              登录
-            </button>
-          </form>
-        </div>
-      </div>
-    );
-  }
-
+const propTypes = {
+  user: PropTypes.object,
+  loggingIn: PropTypes.bool,
+  loginErrors: PropTypes.string
+};
+function hasErrors(fieldsError) {
+  return Object.keys(fieldsError).some(field => fieldsError[field]);
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    handleLoginSuccess: bindActionCreators(loginSuccessCreator, dispatch),
-  };
-};
+class Login extends React.Component {
 
-// 不需要从state中获取什么, 所以传一个null
-export default connect(null, mapDispatchToProps)(Login);
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false,
+    }
+  }
+
+  componentDidMount() {
+    // To disabled submit button at the beginning.
+    this.props.form.validateFields();
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+
+    this.setState({
+      loading: true
+    });
+
+    const data = this.props.form.getFieldsValue();
+    this.props.login(data.user, data.password).payload.promise.then(res => {
+      this.setState({
+        loading: false
+      });
+      if (res.error) {
+        message.error(res.payload.response.data.message);
+      }
+      if (!res.error && res.payload.data) {
+        message.success('Welcome ' + res.payload.data.name);
+        this.props.history.replace('/');
+      }
+    }).catch(err => {
+      this.setState({
+        loading: false
+      });
+    });
+    this.props.form.validateFields((err, values) => {
+      if (!err) {
+        console.log('Received values of form: ', values);
+      }
+    });
+  }
+
+  render() {
+    const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched, setFieldsValue } = this.props.form;
+    // Only show error after a field is touched.
+    const userNameError = isFieldTouched('userName') && getFieldError('userName');
+    const passwordError = isFieldTouched('password') && getFieldError('password');
+
+    return (
+      <Row className="login-row" type="flex" justify="space-around" align="middle">
+        <Card className="login-form">
+          <Row gutter={12} type="flex" justify="space-around" align="middle">
+            <Col span="{6}">
+            </Col>
+            <Col span="{6}">
+              <img src="http://cdn.instantlogosearch.com/svg/svgporn/react.svg" style={{ width: 50, height: 50 }}/>
+            </Col>
+            <Col span="{6}">
+              <h1>React 管理系统</h1>
+            </Col>
+            <Col span="{6}">
+            </Col>
+          </Row>
+          <Form layout="horizontal" onSubmit={this.handleSubmit.bind(this)}>
+            <FormItem validateStatus={userNameError ? 'error' : ''}
+                      help={userNameError || ''}>
+              {getFieldDecorator('user', {
+                rules: [{ required: true, message: 'Please input your username!' }],
+              })(
+                <Input
+                  className="input"
+                  prefix={<Icon type="user" style={{ fontSize: 18 }}/>}
+                  ref={node => this.userNameInput = node}
+                  placeholder="admin"
+                />
+              )}
+            </FormItem>
+            <FormItem validateStatus={passwordError ? 'error' : ''}
+                      help={passwordError || ''}>
+              {getFieldDecorator('password', {
+                rules: [{ required: true, message: 'Please input your password!' }],
+              })(
+                <Input className="input" size="large"
+                       prefix={<Icon type="lock" style={{ fontSize: 18 }}/>}
+                       type='password'
+                       placeholder='123456'/>
+              )}
+            </FormItem>
+            <p>
+              <Button className="btn-login" type='primary' size="large" icon="poweroff"
+                      loading={this.state.loading}
+                      htmlType='submit'
+                      disabled={hasErrors(getFieldsError())}>确定</Button>
+            </p>
+          </Form>
+        </Card>
+      </Row>
+    )
+  }
+}
+
+Login.propTypes = propTypes;
+
+Login = Form.create()(Login);
+
+function mapStateToProps(state) {
+  const { auth } = state;
+  if (auth.user) {
+    return { user: auth.user, loggingIn: auth.loggingIn, loginErrors: '' };
+  }
+
+  return { user: null, loggingIn: auth.loggingIn, loginErrors: auth.loginErrors };
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    login: bindActionCreators(login, dispatch)
+  }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Login))

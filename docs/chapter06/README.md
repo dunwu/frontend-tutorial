@@ -1,18 +1,20 @@
 # Chapter06 - Flux / Redux
 
-## Flux
+## :memo: 知识点
 
-## Redux
+### Flux
 
-## 参考资料
+### Redux
 
-- **Flux**
+## :books: 学习资料
+
+### Flux
 
   - [Flux 官网](https://facebook.github.io/flux/)
 
   - [Flux 架构入门教程](http://www.ruanyifeng.com/blog/2016/01/flux.html)
 
-- **Redux**
+### Redux
 
   - [Redux Github](https://github.com/reactjs/redux)
 
