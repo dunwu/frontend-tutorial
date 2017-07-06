@@ -1,6 +1,6 @@
 {
-  "name": "Login",
+  "name": "Home",
   "version": "0.0.0",
   "private": true,
-  "main": "./Login.js"
+  "main": "./Home.jsx"
 }

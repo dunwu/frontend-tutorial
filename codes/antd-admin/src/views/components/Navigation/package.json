@@ -2,5 +2,5 @@
   "name": "NavigationPage",
   "version": "0.0.0",
   "private": true,
-  "main": "./NavigationPage.js"
+  "main": "./NavigationPage.jsx"
 }

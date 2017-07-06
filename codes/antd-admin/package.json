@@ -30,6 +30,7 @@
     "react-redux": "^5.0.0",
     "react-router": "^4.1.0",
     "react-router-dom": "^4.1.1",
+    "recharts": "^1.0.0-alpha.1",
     "redux": "3.x",
     "redux-thunk": "2.x"
   },
@@ -49,6 +50,7 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.24.1",
+    "if-env": "^1.0.0",
     "image-webpack-loader": "^3.3.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",

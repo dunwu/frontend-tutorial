@@ -1,24 +1,24 @@
+import { Avatar, Badge, Col, Dropdown, Icon, Layout, Menu, Popover, Row } from 'antd';
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { Avatar, Badge, Col, Dropdown, Icon, Layout, Menu, Popover, Row } from 'antd';
-import './index.less';
+import './Header.less';
 
-const { Header } = Layout;
+const {Header} = Layout;
 
 class commonHeader extends React.Component {
-  constructor() {
+  constructor () {
     super()
   }
 
   handleLogOut = () => {
-    const { logout } = this.props;
+    const {logout} = this.props;
     logout().payload.promise.then(() => {
       this.props.history.replace('/login');
     });
   };
 
-  render() {
-    const { profile } = this.props;
+  render () {
+    const {profile} = this.props;
     let username = profile.user ? profile.user.name : '';
     const menu = (
       <Menu>
@@ -45,7 +45,7 @@ class commonHeader extends React.Component {
     );
 
     return (
-      <Header style={{ background: '#fff', padding: 0 }}>
+      <Header style={{background: '#fff', padding: 0}}>
         <Row type="flex" justify="end" align="middle">
           <Col span={3}>
             <Badge className="header-icon" count={5}>
@@ -64,7 +64,7 @@ class commonHeader extends React.Component {
           <Col span={3}>
             <Dropdown overlay={menu}>
               <a className="ant-dropdown-link" href="#">
-                <Avatar style={{ verticalAlign: 'middle' }}>{username}</Avatar> <Icon type="down"/>
+                <Avatar style={{verticalAlign: 'middle'}}>{username}</Avatar> <Icon type="down"/>
               </a>
             </Dropdown>
           </Col>

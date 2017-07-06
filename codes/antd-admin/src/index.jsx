@@ -1,10 +1,10 @@
 /**
  * 参考 React Hot Loader：http://gaearon.github.io/react-hot-loader/getstarted/
  */
-import 'react-hot-loader/patch';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import 'react-hot-loader/patch';
 import Root from './containers/Root';
 import configureStore from './redux/store/configureStore';
 const store = configureStore();

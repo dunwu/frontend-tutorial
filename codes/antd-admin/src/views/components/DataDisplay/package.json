@@ -2,5 +2,5 @@
   "name": "DataDisplayPage",
   "version": "0.0.0",
   "private": true,
-  "main": "./DataDisplayPage.js"
+  "main": "./DataDisplayPage.jsx"
 }

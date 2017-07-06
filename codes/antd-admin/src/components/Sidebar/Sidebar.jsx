@@ -1,14 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { matchPath, withRouter } from 'react-router';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 import { Icon, Layout, Menu } from 'antd';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { connect } from 'react-redux';
+import { matchPath, withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
+import { bindActionCreators } from 'redux';
 import { refreshMenu, refreshNavPath } from '../../redux/actions/menu';
-import './index.less';
-
-const SubMenu = Menu.SubMenu
+import './Sidebar.less';
 
 const defaultProps = {
   items: []
@@ -18,7 +16,7 @@ const propTypes = {
   items: PropTypes.array
 };
 
-const { Sider } = Layout;
+const {Sider} = Layout;
 
 const isActive = (path, history) => {
   return matchPath(path, {
@@ -44,11 +42,11 @@ class Sidebar extends React.Component {
     });
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.props.getAllMenu()
   }
 
-  componentWillReceiveProps(nextProps) {
+  componentWillReceiveProps (nextProps) {
     Array.isArray(nextProps.items) && nextProps.items.map((item, i) => {
       Array.isArray(item.child) && item.child.map((node) => {
         if (node.url && isActive(node.url, this.props.history)) {
@@ -68,9 +66,9 @@ class Sidebar extends React.Component {
     this.props.updateNavPath(item.keyPath, item.key)
   }
 
-  render() {
-    const { items, updateNavPath, history } = this.props
-    let { activeKey, openKey } = this.state
+  render () {
+    const {items, updateNavPath, history} = this.props
+    let {activeKey, openKey} = this.state
 
     const _menuProcess = (nodes, pkey) => {
       return Array.isArray(nodes) && nodes.map((item, i) => {
@@ -81,12 +79,12 @@ class Sidebar extends React.Component {
           }
           if (menu.length > 0) {
             return (
-              <SubMenu
+              <Menu.SubMenu
                 key={'sub' + item.key}
                 title={<span><Icon type={item.icon}/><span className="nav-text">{item.name}</span></span>}
               >
                 {menu}
-              </SubMenu>
+              </Menu.SubMenu>
             )
           } else {
             return (
@@ -110,7 +108,7 @@ class Sidebar extends React.Component {
         collapsed={this.state.collapsed}
         onCollapse={this.onCollapse}
       >
-        <div className="ant-layout-logo"></div>
+        <div className="ant-layout-logo"/>
         <Menu
           mode={this.state.mode} theme="dark"
           selectedKeys={[activeKey]}
@@ -134,14 +132,14 @@ class Sidebar extends React.Component {
 Sidebar.propTypes = propTypes;
 Sidebar.defaultProps = defaultProps;
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
 
   return {
     items: state.menu.items
   }
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps (dispatch) {
   return {
     getAllMenu: bindActionCreators(refreshMenu, dispatch),
     updateNavPath: bindActionCreators(refreshNavPath, dispatch)

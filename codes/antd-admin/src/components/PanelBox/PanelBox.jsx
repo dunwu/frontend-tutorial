@@ -1,13 +1,13 @@
-import React from 'react';
 import { Card } from 'antd';
-import './index.less';
+import React from 'react';
+import './PanelBox.less';
 
 export default class PanelBox extends React.Component {
-  constructor() {
+  constructor () {
     super()
   }
 
-  render() {
+  render () {
 
     return (
       <Card className={"panel-box " + this.props.className} title={this.props.title} bordered={false}

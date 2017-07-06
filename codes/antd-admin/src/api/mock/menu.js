@@ -12,14 +12,19 @@ module.exports = {
       icon: 'user',
       child: [
         {
+          name: 'Chart',
+          key: 101,
+          url: '/pages/chart'
+        },
+        {
           name: 'Form',
           key: 102,
-          url: '/form'
+          url: '/pages/form'
         },
         {
           name: 'Table',
           key: 103,
-          url: '/table'
+          url: '/pages/table'
         },
       ]
     },

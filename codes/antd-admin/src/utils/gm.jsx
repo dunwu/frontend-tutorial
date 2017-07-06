@@ -1,46 +1,46 @@
 import GM from 'g2-mobile';
-import React from 'react';
 import PropTypes from 'prop-types';
+import React from 'react';
 
 let uniqueId = 0;
-function generateUniqueId() {
+function generateUniqueId () {
   return `rc-gm-${uniqueId++}`;
 }
 
-export default function createGM(__operation, height = null) {
+export default function createGM (__operation, height = null) {
   class Component extends React.Component {
 
-    constructor(props, context) {
+    constructor (props, context) {
       super(props, context);
       this.chart = null;
       this.chartId = generateUniqueId();
     }
 
-    componentDidMount() {
+    componentDidMount () {
       this.initChart(this.props);
     }
 
-    componentWillReceiveProps(newProps) {
-      const { data: newData } = newProps;
-      const { data: oldData } = this.props;
+    componentWillReceiveProps (newProps) {
+      const {data: newData} = newProps;
+      const {data: oldData} = this.props;
 
       if (newData !== oldData) {
         this.chart.changeData(newData);
       }
     }
 
-    shouldComponentUpdate() {
+    shouldComponentUpdate () {
       return false;
     }
 
-    componentWillUnmount() {
+    componentWillUnmount () {
       this.chart.destroy();
       this.chart = null;
       this.chartId = null;
     }
 
-    initChart(props) {
-      const { data } = props;
+    initChart (props) {
+      const {data} = props;
       const chart = new GM.Chart({
         id: this.chartId
       });
@@ -49,8 +49,8 @@ export default function createGM(__operation, height = null) {
       this.chart = chart;
     }
 
-    render() {
-      return (<canvas id={this.chartId} style={ {'width':'100%', 'height': height} }></canvas>);
+    render () {
+      return (<canvas id={this.chartId} style={ {'width': '100%', 'height': height} }/>);
     }
   }
 

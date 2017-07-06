@@ -4,7 +4,7 @@ import { Button, Card, Col, Form, Icon, Input, message, Row } from 'antd';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { login } from '../../redux/actions/auth';
+import { login } from '../../../redux/actions/auth';
 
 import './Login.less';
 

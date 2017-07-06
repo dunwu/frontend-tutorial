@@ -1,45 +1,43 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Redirect, Route } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import { Layout } from 'antd';
-
-import { childRoutes } from '@/router';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+import NavPath from '@/components/NavPath';
+import Sidebar from '@/components/Sidebar';
+import { fetchProfile, logout } from '@/redux/actions';
+import { childRoutes } from '@/routes';
 import authHOC from '@/utils/auth';
 
-import NavPath from '@/components/NavPath';
-import Header from '@/components/Header';
-import Sidebar from '@/components/Sidebar';
-import Footer from '@/components/Footer';
+import { Layout } from 'antd';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { connect } from 'react-redux';
+import { Redirect, Route } from 'react-router-dom';
+import { bindActionCreators } from 'redux';
 
-import { fetchProfile, logout } from '@/redux/actions/auth';
+import './App.less';
 
-import './index.less';
-
-const { Content } = Layout;
+const {Content} = Layout;
 
 class App extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
   }
 
-  componentWillMount() {
-    const { actions } = this.props;
+  componentWillMount () {
+    const {actions} = this.props;
     actions.fetchProfile();
   }
 
-  render() {
-    const { auth, navpath, actions } = this.props;
+  render () {
+    const {auth, navpath, actions} = this.props;
 
     return (
       <Layout className="ant-layout-has-sider">
         <Sidebar />
         <Layout>
           <Header profile={auth} logout={actions.logout}/>
-          <Content style={{ margin: '0 16px' }}>
+          <Content style={{margin: '0 16px'}}>
             <NavPath data={navpath}/>
-            <div style={{ minHeight: 360 }}>
+            <div style={{minHeight: 360}}>
               <Redirect to="/home"/>
               {childRoutes.map((route, index) => (
                 <Route key={index} path={route.path} component={authHOC(route.component)} exactly={route.exactly}/>
@@ -59,15 +57,15 @@ App.propTypes = {
 };
 
 const mapStateToProps = (state) => {
-  const { auth, menu } = state;
+  const {auth, menu} = state;
   return {
     auth: auth ? auth : null,
     navpath: menu.navpath
   };
 };
 
-function mapDispatchToProps(dispatch) {
-  return { actions: bindActionCreators({ fetchProfile, logout }, dispatch) };
+function mapDispatchToProps (dispatch) {
+  return {actions: bindActionCreators({fetchProfile, logout}, dispatch)};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

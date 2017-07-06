@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
-const validate = function(history) {
+const validate = function (history) {
   const isLoggedIn = !!window.localStorage.getItem("uid");
-  if (!isLoggedIn && history.location.pathname != "/login") {
+  if (!isLoggedIn && history.location.pathname !== "/login") {
     history.replace("/login");
   }
 };
@@ -11,21 +11,24 @@ const validate = function(history) {
 /**
  * Higher-order component (HOC) to wrap restricted pages
  */
-export default function authHOC(BaseComponent) {
+export default function authHOC (BaseComponent) {
   class Restricted extends Component {
-    componentWillMount() {
+    componentWillMount () {
       this.checkAuthentication(this.props);
     }
-    componentWillReceiveProps(nextProps) {
+
+    componentWillReceiveProps (nextProps) {
       if (nextProps.location !== this.props.location) {
         this.checkAuthentication(nextProps);
       }
     }
-    checkAuthentication(params) {
-      const { history } = params;
+
+    checkAuthentication (params) {
+      const {history} = params;
       validate(history);
     }
-    render() {
+
+    render () {
       return <BaseComponent {...this.props} />;
     }
   }

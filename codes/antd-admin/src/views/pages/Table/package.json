@@ -1,6 +1,6 @@
 {
-  "name": "Root",
+  "name": "Table",
   "version": "0.0.0",
   "private": true,
-  "main": "./Root.jsx"
+  "main": "./Table.jsx"
 }
