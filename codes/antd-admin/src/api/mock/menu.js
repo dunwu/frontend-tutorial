@@ -4,7 +4,7 @@ module.exports = {
       key: 0,
       name: 'Home',
       icon: 'home',
-      url: '/home'
+      url: '/pages/dashboard'
     },
     {
       key: 1,

@@ -11,9 +11,7 @@ const createStoreWithMiddleware = applyMiddleware(
 export default function configureStore(initialState) {
   let store;
 
-  console.log(process.env.NODE_ENV);
   if (process.env.NODE_ENV === "development") {
-    console.log("Go to development");
     const persistState = require('redux-devtools').persistState;
     const DevTools = require('../../containers/ReduxDevTools').default;
 

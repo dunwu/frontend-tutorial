@@ -4,7 +4,7 @@ import General from '@/views/components/General';
 
 import Navigation from '@/views/components/Navigation';
 import Form from '@/views/pages/Form';
-import Home from '@/views/pages/Home';
+import Dashboard from '@/views/pages/Dashboard';
 import Login from '@/views/pages/Login';
 import Chart from '@/views/pages/Chart';
 import Mailbox from '@/views/pages/Mailbox';
@@ -24,8 +24,8 @@ const validate = function (next, replace, callback) {
 
 export const childRoutes = [
   {
-    'path': '/home',
-    'component': Home,
+    'path': '/pages/dashboard',
+    'component': Dashboard,
     'exactly': true
   },
   {

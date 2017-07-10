@@ -22,7 +22,6 @@
   "dependencies": {
     "antd": "^2.11.2",
     "axios": "^0.15.3",
-    "g2-mobile": "2.1.13",
     "lodash": "^4.16.4",
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
