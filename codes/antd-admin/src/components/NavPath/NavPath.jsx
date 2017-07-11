@@ -1,40 +1,37 @@
 import { Breadcrumb } from 'antd';
 import PropTypes from 'prop-types';
 import React from 'react';
-
 import './NavPath.less';
 
-const defaultProps = {
-  data: []
-};
+export default class NavPath extends React.PureComponent {
+  static propTypes = {
+    data: PropTypes.array
+  };
 
-const propTypes = {
-  data: PropTypes.array
-};
+  static defaultProps = {
+    data: []
+  };
 
-class NavPath extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
   }
 
-  render () {
-    const {data} = this.props;
-    const bread = data.map((item) => {
+  render() {
+    const { data } = this.props;
+    const breadcrumbItems = data.map((item) => {
       return (
-        <Breadcrumb.Item key={'bc-' + item.key}>{item.name}</Breadcrumb.Item>
+        <Breadcrumb.Item className="navPathItem" key={'bc-' + item.key}>
+          {item.name}
+        </Breadcrumb.Item>
       )
     });
 
     return (
-      <Breadcrumb separator=">" style={{margin: '12px 0'}}>
-        <Breadcrumb.Item key='bc-0'>首页</Breadcrumb.Item>
-        {bread}
-      </Breadcrumb>
+      <div>
+        <Breadcrumb className="navPath">
+          {breadcrumbItems}
+        </Breadcrumb>
+      </div>
     )
   }
 }
-
-NavPath.propTypes = propTypes;
-NavPath.defaultProps = defaultProps;
-
-export default NavPath

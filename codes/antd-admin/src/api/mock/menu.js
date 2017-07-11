@@ -2,8 +2,8 @@ module.exports = {
   menus: [
     {
       key: 0,
-      name: 'Home',
-      icon: 'home',
+      name: 'Dashboard',
+      icon: 'area-chart',
       url: '/pages/dashboard'
     },
     {
@@ -13,17 +13,17 @@ module.exports = {
       child: [
         {
           name: 'Chart',
-          key: 101,
+          key: 11,
           url: '/pages/chart'
         },
         {
           name: 'Form',
-          key: 102,
+          key: 12,
           url: '/pages/form'
         },
         {
           name: 'Table',
-          key: 103,
+          key: 13,
           url: '/pages/table'
         },
       ]
@@ -35,47 +35,46 @@ module.exports = {
       child: [
         {
           name: 'NavigationPage',
-          key: 201,
+          key: 21,
           url: '/components/navigation'
         },
         {
           name: 'DataDisplayPage',
-          key: 202,
+          key: 22,
           url: '/components/dataDisplay'
         },
         {
           name: 'GeneralPage',
-          key: 203,
+          key: 23,
           url: '/components/general'
         },
         {
           name: 'FeedbackPage',
-          key: 204,
+          key: 24,
           url: '/components/feedback'
         },
-
       ]
     },
     {
       key: 4,
-      name: '其它',
+      name: 'Others',
       icon: 'coffee',
       child: [
         {
           name: '选项1',
-          key: 401
+          key: 41
         },
         {
           name: '选项2',
-          key: 402
+          key: 42
         },
         {
           name: '选项3',
-          key: 403
+          key: 43
         },
         {
           name: '错误页面',
-          key: 404
+          key: 44
         },
       ]
     }
