@@ -4,7 +4,7 @@
 
 学习 webpack，需要先了解几个核心概念，下面会一一道来。
 
-![webpack-introduction](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/assets/images/webpack-introduction.png)
+![webpack-introduction](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/webpack-introduction.png)
 
 ## 模块化(module)
 
