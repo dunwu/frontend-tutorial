@@ -22,20 +22,6 @@
 ![react-stack](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/react-stack.png)
 
 * [***Chapter01 - React***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/README.md)
-    * [React入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/React入门.md)
-    * [React 官方教程基础篇](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/react-basic-lessons.md)
-        * [安装](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/01.installation.md)
-        * [JSX 简介](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/02.introducing-jsx.md)
-        * [元素渲染](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/03.rendering-elements.md)
-        * [组件（component）和属性（props）](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/04.components-and-props.md)
-        * [状态（State）和生命周期](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/05.state-and-lifecycle.md)
-        * [事件处理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/06.handling-events.md)
-        * [条件渲染](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/07.conditional-rendering.md)
-        * [列表 & Keys](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/08.lists-and-keys.md)
-        * [表单](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/09.forms.md)
-        * [状态提升](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/10.lifting-state-up.md)
-        * [组合 vs 继承](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/11.composition-vs-inheritance.md)
-        * [思考 React](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/react/basic/12.thinking-in-react.md)
 * [***Chapter02 - Node, Npm, Yarn***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/README.md)
     * [Node入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
     * [Node代码组织](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node代码组织.md)
@@ -62,9 +48,9 @@
 
 **Editing...**
 
-## :triangular_ruler: 约定
+## :pushpin: 说明
 
-正所谓无规矩不成方圆，一个画风严肃的项目应该有一套完整的规范，才不至于长歪了。
+​本教程已使用 Gitbook 生成电子书。:point_right: [**react-step-by-step 电子书**](https://atlantis1024.gitbooks.io/react-step-by-step/content)
 
 - **codes** ：所有示例代码存放于 `codes` 目录。
 
@@ -78,4 +64,4 @@
 - **docs** ：所有文档存放于 `docs` 目录。并且文档遵循 [**GitBook**](https://github.com/GitbookIO/gitbook) 规范。为了取得更好的阅读效果，建议参照 [**docs 说明**](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) 阅读本教程。
 
 
-- **Git** ：使用 [gitmoji](https://github.com/carloscuesta/gitmoji/) 规范填写提交信息（带图标的提示信息很有趣）。
+- **Git** ：采用 [gitmoji](https://github.com/carloscuesta/gitmoji/) 规范填写提交信息（带图标的提示信息很有趣）。

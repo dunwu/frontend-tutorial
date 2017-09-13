@@ -1,4 +1,9 @@
-# React入门
+---
+id: react-quickstart
+title: React 快速入门
+---
+
+# React 快速入门
 
 ## 安装
 
