@@ -10,47 +10,47 @@
 
 如果，你有任何疑问或建议，欢迎在 Issues 中提出。
 
-![node](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/logo/node.png)
-![webpack](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/logo/webpack.png)
-![babel](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/logo/babel.png)
-![react](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/logo/react.png)
-![react-router](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/logo/react-router.png)
-![redux](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/logo/redux.png)
+![node](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/node.png)
+![webpack](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/webpack.png)
+![babel](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/babel.png)
+![react](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/react.png)
+![react-router](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/react-router.png)
+![redux](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/redux.png)
 
 ## :memo: 内容
 
-![react-stack](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/react-stack.png)
+![react-stack](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/react-stack.png)
 
-* [***Chapter01 - React***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01/README.md)
-* [***Chapter02 - Node, Npm, Yarn***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/README.md)
-    * [Node入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
-    * [Node代码组织](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node代码组织.md)
-    * [Node的IO操作](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node的IO操作.md)
-    * [Npm入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/npm/Npm入门.md)
-* [***Chapter03 - Webpack***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/README.md)
-    * [如何学习 Webpack](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-howto.md)
-    * [Webpack 概念](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
-    * [Webpack 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
-    * [Webpack 资源管理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
-    * [Webpack 代码分离](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
-    * [Webpack 开发工具](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
-* [***Chapter04 - ES6, Babel***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04/README.md)
-    * [Babel 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04/babel/babel-tutorial.md)
-    * [ES6 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter04/es6/es6-tutorial.md)
-* [***Chapter05 - React Router***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/README.md)
-    * [React Router v4 简介](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-introduction.md)
-    * [React Router v4 基础](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-basic.md)
-    * [React Router v4 进阶](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-advanced.md)
-    * [React Router v4 API](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md)
-* [***Chapter06 - Flux, Redux***](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/README.md)
-    * [Flux入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/flux/Flux入门.md)
-    * [Redux入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter06/redux/Redux入门.md)
+* [***Chapter01 - React***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter01/README.md)
+* [***Chapter02 - Node, Npm, Yarn***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/README.md)
+    * [Node入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
+    * [Node代码组织](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/node/Node代码组织.md)
+    * [Node的IO操作](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/node/Node的IO操作.md)
+    * [Npm入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/npm/Npm入门.md)
+* [***Chapter03 - Webpack***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/README.md)
+    * [如何学习 Webpack](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-howto.md)
+    * [Webpack 概念](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
+    * [Webpack 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
+    * [Webpack 资源管理](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
+    * [Webpack 代码分离](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+    * [Webpack 开发工具](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
+* [***Chapter04 - ES6, Babel***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter04/README.md)
+    * [Babel 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter04/babel/babel-tutorial.md)
+    * [ES6 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter04/es6/es6-tutorial.md)
+* [***Chapter05 - React Router***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/README.md)
+    * [React Router v4 简介](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-introduction.md)
+    * [React Router v4 基础](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-basic.md)
+    * [React Router v4 进阶](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-advanced.md)
+    * [React Router v4 API](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md)
+* [***Chapter06 - Flux, Redux***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter06/README.md)
+    * [Flux入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter06/flux/Flux入门.md)
+    * [Redux入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter06/redux/Redux入门.md)
 
 **Editing...**
 
 ## :pushpin: 说明
 
-​本教程已使用 Gitbook 生成电子书。:point_right: [**react-step-by-step 电子书**](https://atlantis1024.gitbooks.io/react-step-by-step/content)
+​本教程已使用 Gitbook 生成电子书。:point_right: [**react-step-by-step 电子书**](https://zp1024.gitbooks.io/react-step-by-step/content)
 
 - **codes** ：所有示例代码存放于 `codes` 目录。
 
@@ -61,7 +61,7 @@
   每个 `jsgsaw` 目录，都是基于前面 chapter 的基础上，引入本 chapter 重点学习的技术。我觉得，通过这种方式，能更加晰的理解，如何搭建一个完整的 React 项目。
 
 
-- **docs** ：所有文档存放于 `docs` 目录。并且文档遵循 [**GitBook**](https://github.com/GitbookIO/gitbook) 规范。为了取得更好的阅读效果，建议参照 [**docs 说明**](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) 阅读本教程。
+- **docs** ：所有文档存放于 `docs` 目录。并且文档遵循 [**GitBook**](https://github.com/GitbookIO/gitbook) 规范。为了取得更好的阅读效果，建议参照 [**docs 说明**](https://github.com/zp1024/react-step-by-step/tree/master/docs) 阅读本教程。
 
 
 - **Git** ：采用 [gitmoji](https://github.com/carloscuesta/gitmoji/) 规范填写提交信息（带图标的提示信息很有趣）。

@@ -30,9 +30,9 @@ JavaScript 一种直译式脚本语言，是一种动态类型、弱类型、基
 
 ## :book: 电子书
 
-- [**Html 教程**](https://atlantis1024.gitbooks.io/html-notes/content/)
-- [**Css 教程**](https://atlantis1024.gitbooks.io/css-notes/content/)
+- [**Html 教程**](https://zp1024.gitbooks.io/html-notes/content/)
+- [**Css 教程**](https://zp1024.gitbooks.io/css-notes/content/)
 
 ## :door: 传送门
 
-| [**回首頁**](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) |
+| [**回首頁**](https://github.com/zp1024/react-step-by-step/tree/master/docs) |

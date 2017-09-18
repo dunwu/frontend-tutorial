@@ -4,7 +4,7 @@
 
 > **关键点**
 >
-> - `react-router` - [教程](https://github.com/atlantis1024/react-router-notes)
+> - `react-router` - [教程](https://github.com/zp1024/react-router-notes)
 
 **运行方法**
 

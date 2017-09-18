@@ -7,7 +7,7 @@
   "root": "./docs",
   "links": {
     "sidebar": {
-      "react-step-by-step": "https://github.com/atlantis1024/react-step-by-step"
+      "react-step-by-step": "https://github.com/zp1024/react-step-by-step"
     }
   },
   "plugins": [
@@ -45,11 +45,11 @@
       }
     },
     "edit-link": {
-      "base": "https://github.com/atlantis1024/react-step-by-step/blob/master",
+      "base": "https://github.com/zp1024/react-step-by-step/blob/master/docs",
       "label": "编辑此页面"
     },
     "github": {
-      "url": "https://github.com/atlantis1024"
+      "url": "https://github.com/zp1024"
     },
     "simple-page-toc": {
       "maxDepth": 4,

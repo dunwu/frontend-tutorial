@@ -1,6 +1,6 @@
 # React Router v4 简介
 
-![react-router-website](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/react-router-website.png)
+![react-router-website](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/react-router-website.png)
 
 ## 概述
 

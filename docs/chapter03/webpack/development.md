@@ -72,7 +72,7 @@ $ webpack-dev-server --open
 
 > ​:pushpin: **提示：**
 >
-> 本教程中的 [**示例代码**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes) 除了 `demo00` ，都可以使用 webpack-dev-server 命令启动服务。
+> 本教程中的 [**示例代码**](https://github.com/zp1024/react-step-by-step/tree/master/codes) 除了 `demo00` ，都可以使用 webpack-dev-server 命令启动服务。
 
 在你的文件中做一点更改并且保存。你应该可以在控制台中看到正在编译。编译完成之后，页面应该会刷新。如果控制台中什么都没发生，你可能需要调整下 [`watchOptions`](https://doc.webpack-china.org/configuration/dev-server#devserver-watchoptions-)。
 
@@ -86,7 +86,7 @@ $ webpack-dev-server --open
 
 更多配置项参考：[官方文档 - 开发中 Server(DevServer)](https://doc.webpack-china.org/configuration/dev-server/)
 
-> ​:flashlight: **示例DEMO12：** ([**DEMO**](https://atlantis1024.github.io/react-step-by-step/chapter03/webpack2/demo12/dist/index.html) / [**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo12))
+> ​:flashlight: **示例DEMO12：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo12/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo12))
 >
 > 在本示例中，devServer 配置如下：
 >
@@ -230,7 +230,7 @@ plugins: [
 ```
 
 
-> ​:flashlight: **示例DEMO13：** ([**SOURCE**](https://github.com/atlantis1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo13))
+> ​:flashlight: **示例DEMO13：** ([**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo13))
 >
 > 在示例中，启动服务后，打开浏览器，访问 http://localhost:9000/ 。
 >
@@ -270,8 +270,8 @@ plugins: [
 
 欢迎阅读其它内容：
 
-* [Webpack 概念](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
-* [Webpack 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
-* [Webpack 资源管理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
-* [Webpack 代码分离](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
-* [Webpack 开发工具](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
+* [Webpack 概念](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
+* [Webpack 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
+* [Webpack 资源管理](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
+* [Webpack 代码分离](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+* [Webpack 开发工具](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)

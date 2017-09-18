@@ -13,9 +13,9 @@
 
 - **教程**
 
-  - [Node入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
-  - [Node代码组织](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node代码组织.md)
-  - [Node的IO操作](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/node/Node的IO操作.md)
+  - [Node入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
+  - [Node代码组织](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/node/Node代码组织.md)
+  - [Node的IO操作](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/node/Node的IO操作.md)
 
 ### Nvm
 
@@ -36,7 +36,7 @@
 
 - **教程**
 
-  - [Npm入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter02/npm/Npm入门.md)
+  - [Npm入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/npm/Npm入门.md)
     
 ### Yarn
 
@@ -72,4 +72,4 @@
 
 ## :door: 传送门
 
-| [回首頁](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) |
+| [回首頁](https://github.com/zp1024/react-step-by-step/tree/master/docs) |

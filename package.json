@@ -4,22 +4,22 @@
   "scripts": {
     "clean": "rimraf _book",
     "prepare": "gitbook install",
-    "build": "gitbook build -g atlantis1024/react-step-by-step",
+    "build": "gitbook build ./ --log=debug --debug",
     "start": "gitbook serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atlantis1024/react-step-by-step.git"
+    "url": "https://github.com/zp1024/react-step-by-step.git"
   },
   "keywords": [
     "react"
   ],
-  "author": "Zhang Peng <atlantis1024@163.com>",
+  "author": "Zhang Peng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atlantis1024/react-step-by-step/issues"
+    "url": "https://github.com/zp1024/react-step-by-step/issues"
   },
-  "homepage": "https://github.com/atlantis1024/react-step-by-step",
+  "homepage": "https://github.com/zp1024/react-step-by-step",
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
     "rimraf": "^2.3.4"

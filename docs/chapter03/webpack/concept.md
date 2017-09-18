@@ -4,7 +4,7 @@
 
 学习 webpack，需要先了解几个核心概念，下面会一一道来。
 
-![webpack-introduction](https://raw.githubusercontent.com/atlantis1024/react-step-by-step/master/docs/assets/images/webpack-introduction.png)
+![webpack-introduction](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/webpack-introduction.png)
 
 ## 模块化(module)
 
@@ -224,8 +224,8 @@ webpack 的强大之处在于它的可定制化，取决于特定项目需求，
 
 欢迎阅读其它内容：
 
-* [Webpack 概念](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
-* [Webpack 入门](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
-* [Webpack 资源管理](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
-* [Webpack 代码分离](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
-* [Webpack 开发工具](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
+* [Webpack 概念](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
+* [Webpack 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
+* [Webpack 资源管理](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
+* [Webpack 代码分离](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+* [Webpack 开发工具](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)

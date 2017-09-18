@@ -13,7 +13,7 @@
 
 - **教程**
 
-  * [Babel 入门](https://github.com/atlantis1024/react-step-by-step/blob/master/docs/chapter04/babel/babel-tutorial.md)
+  * [Babel 入门](https://github.com/zp1024/react-step-by-step/blob/master/docs/chapter04/babel/babel-tutorial.md)
   
 ### ES6
 
@@ -22,7 +22,7 @@
 
 - **教程**
 
-  * [ES6 入门](https://github.com/atlantis1024/react-step-by-step/blob/master/docs/chapter04/es6/es6-tutorial.md)
+  * [ES6 入门](https://github.com/zp1024/react-step-by-step/blob/master/docs/chapter04/es6/es6-tutorial.md)
   
 ## :books: 学习资料
 
@@ -45,4 +45,4 @@
 
 ## :door: 传送门
 
-| [回首頁](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) |
+| [回首頁](https://github.com/zp1024/react-step-by-step/tree/master/docs) |

@@ -1,6 +1,6 @@
 # Chapter02 - Node, Npm, Yarn
 
-> 本章节教程文档：[Chapter01 - Node, Npm, Yarn](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter01)
+> 本章节教程文档：[Chapter01 - Node, Npm, Yarn](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter01)
 >
 
 ## 示例代码说明

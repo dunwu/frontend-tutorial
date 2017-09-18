@@ -9,10 +9,10 @@
 
 - **教程**
 
-  * [React Router v4 简介](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-introduction.md)
-  * [React Router v4 基础](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-basic.md)
-  * [React Router v4 进阶](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-advanced.md)
-  * [React Router v4 API](https://github.com/atlantis1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md)
+  * [React Router v4 简介](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-introduction.md)
+  * [React Router v4 基础](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-basic.md)
+  * [React Router v4 进阶](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-advanced.md)
+  * [React Router v4 API](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md)
 
 ## :books: 学习资料
 
@@ -35,4 +35,4 @@
 
 ## :door: 传送门
 
-| [回首頁](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) |
+| [回首頁](https://github.com/zp1024/react-step-by-step/tree/master/docs) |

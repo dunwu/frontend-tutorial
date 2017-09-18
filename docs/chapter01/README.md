@@ -10,8 +10,8 @@
 
 入门内容不过瘾，还想了解更多？
 
-​:point_right: [**React 教程电子书**](https://atlantis1024.gitbooks.io/html-notes/content/)
+​:point_right: [**React 教程电子书**](https://zp1024.gitbooks.io/html-notes/content/)
 
 ## :door: 传送门
 
-| [回首頁](https://github.com/atlantis1024/react-step-by-step/tree/master/docs) |
+| [回首頁](https://github.com/zp1024/react-step-by-step/tree/master/docs) |
