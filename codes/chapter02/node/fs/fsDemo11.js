@@ -1,6 +1,6 @@
 /**
  * 删除目录
- * Created by victor zhang on 2017/6/5.
+ * Created by Zhang Peng on 2017/6/5.
  */
 var fs = require("fs");
 // 执行前创建一个空的 temp 目录

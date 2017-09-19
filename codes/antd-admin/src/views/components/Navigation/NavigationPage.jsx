@@ -1,5 +1,5 @@
 /**
- * Created by victor zhang on 2017/7/6.
+ * Created by Zhang Peng on 2017/7/6.
  */
 import React from 'react';
 import StepsDemo from './StepsDemo';

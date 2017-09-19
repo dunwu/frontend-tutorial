@@ -10,7 +10,7 @@
     "react",
     "webpack"
   ],
-  "author": "victor zhang",
+  "author": "Zhang Peng",
   "license": "MIT",
   "scripts": {
     "clean": "rimraf */dist/*",

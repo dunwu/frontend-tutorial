@@ -11,7 +11,7 @@
     "webpack",
     "babel"
   ],
-  "author": "victor zhang",
+  "author": "Zhang Peng",
   "license": "MIT",
   "scripts": {
     "demo01": "babel demo01 -d ./dist/demo01",

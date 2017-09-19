@@ -1,6 +1,6 @@
 /**
  * 本例展示 arrow function（箭头函数）
- * Created by victor zhang on 2017/6/16.
+ * Created by Zhang Peng on 2017/6/16.
  */
 
 /*demo01*/

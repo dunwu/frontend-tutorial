@@ -19,7 +19,7 @@
     "babel",
     "react-router"
   ],
-  "author": "victor zhang",
+  "author": "Zhang Peng",
   "license": "MIT",
   "dependencies": {
     "react": "^15.5.4",

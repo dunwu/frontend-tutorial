@@ -1,6 +1,6 @@
 /**
  * 事件驱动示例
- * Created by victor zhang on 2017/6/5.
+ * Created by Zhang Peng on 2017/6/5.
  */
 // 引入 events 模块
 var events = require('events');

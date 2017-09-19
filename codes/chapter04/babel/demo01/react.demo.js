@@ -1,5 +1,5 @@
 /**
- * Created by victor zhang on 2017/6/15.
+ * Created by Zhang Peng on 2017/6/15.
  */
 import React from 'react';
 import ReactDOM from 'react-dom';

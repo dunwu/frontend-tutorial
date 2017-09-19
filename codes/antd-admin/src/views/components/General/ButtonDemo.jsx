@@ -1,7 +1,7 @@
 /**
  * antd 按钮控件示例
  * 参考：https://ant.design/components/button-cn/
- * Created by victor zhang on 2017/7/5.
+ * Created by Zhang Peng on 2017/7/5.
  */
 import React from 'react';
 import { Button, Card, Col, Dropdown, Icon, Menu, Radio, Row } from 'antd';

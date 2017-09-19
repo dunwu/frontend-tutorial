@@ -1,7 +1,7 @@
 /**
  * Alert 警告提示
  * 参考：https://ant.design/components/alert-cn/
- * Created by victor zhang on 2017/7/5.
+ * Created by Zhang Peng on 2017/7/5.
  */
 import React from 'react';
 import { Alert, Card, Col, Row } from 'antd';

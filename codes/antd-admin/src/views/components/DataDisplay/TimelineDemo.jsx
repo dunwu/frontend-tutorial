@@ -1,7 +1,7 @@
 /**
  * Timeline 时间轴
  * https://ant.design/components/timeline-cn/
- * Created by victor zhang on 2017/7/6.
+ * Created by Zhang Peng on 2017/7/6.
  */
 import React from 'react';
 import { Card, Col, Icon, Row, Timeline } from 'antd';

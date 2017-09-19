@@ -1,6 +1,6 @@
 /**
  * 解码缓冲区数据并使用指定的编码返回字符串
- * Created by victor zhang on 2017/6/5.
+ * Created by Zhang Peng on 2017/6/5.
  */
 var buf = new Buffer(26);
 for (var i = 0; i < 26; i++) {

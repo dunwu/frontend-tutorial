@@ -1,5 +1,5 @@
 /**
- * Created by victor zhang on 2017/6/14.
+ * Created by Zhang Peng on 2017/6/14.
  */
 const path = require('path');
 const webpack = require('webpack');

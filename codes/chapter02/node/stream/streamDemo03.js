@@ -1,6 +1,6 @@
 /**
  * 管道流示例
- * Created by victor zhang on 2017/6/5.
+ * Created by Zhang Peng on 2017/6/5.
  */
 var fs = require("fs");
 

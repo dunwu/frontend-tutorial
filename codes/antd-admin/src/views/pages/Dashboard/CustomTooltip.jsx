@@ -1,5 +1,5 @@
 /**
- * Created by victor zhang on 2017/7/10.
+ * Created by Zhang Peng on 2017/7/10.
  */
 import PropTypes from 'prop-types';
 import React from 'react';

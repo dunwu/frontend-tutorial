@@ -1,7 +1,7 @@
 /**
  * Notification 通知提醒框
  * 参考：https://ant.design/components/notification-cn/
- * Created by victor zhang on 2017/7/5.
+ * Created by Zhang Peng on 2017/7/5.
  */
 import React from 'react';
 import { Button, Card, Col, Icon, notification, Row, Select } from 'antd';

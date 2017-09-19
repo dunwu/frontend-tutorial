@@ -1,6 +1,6 @@
 /**
  * 写入流示例
- * Created by victor zhang on 2017/6/5.
+ * Created by Zhang Peng on 2017/6/5.
  */
 var fs = require("fs");
 var data = '醉里挑灯看剑，梦回吹角连营';

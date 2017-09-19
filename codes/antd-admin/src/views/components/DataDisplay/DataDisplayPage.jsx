@@ -1,6 +1,6 @@
 /**
  * antd 的 Data Display 组件展示页面
- * Created by victor zhang on 2017/7/5.
+ * Created by Zhang Peng on 2017/7/5.
  */
 import React from 'react';
 import CalendarDemo from './CalendarDemo';

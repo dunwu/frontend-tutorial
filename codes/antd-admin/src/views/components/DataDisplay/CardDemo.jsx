@@ -1,7 +1,7 @@
 /**
  * antd 卡片控件示例
  * https://ant.design/components/button-cn/
- * Created by victor zhang on 2017/7/5.
+ * Created by Zhang Peng on 2017/7/5.
  */
 import React from 'react';
 import { Card, Col, Row } from 'antd';

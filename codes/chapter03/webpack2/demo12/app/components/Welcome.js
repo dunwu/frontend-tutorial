@@ -1,5 +1,5 @@
 /**
- * Created by victor zhang on 2017/6/8.
+ * Created by Zhang Peng on 2017/6/8.
  */
 import React from 'react';
 

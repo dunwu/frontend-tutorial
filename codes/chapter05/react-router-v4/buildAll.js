@@ -1,5 +1,5 @@
 /**
- * Created by victor zhang on 2017/6/21.
+ * Created by Zhang Peng on 2017/6/21.
  */
 const fs = require('fs');
 const path = require('path');

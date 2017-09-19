@@ -1,5 +1,5 @@
 /**
- * Created by victor zhang on 2017/7/7.
+ * Created by Zhang Peng on 2017/7/7.
  */
 import React from 'react';
 import { Cell, Legend, Pie, PieChart, Sector, Tooltip } from 'recharts';
