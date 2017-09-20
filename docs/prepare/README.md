@@ -32,6 +32,7 @@ JavaScript 一种直译式脚本语言，是一种动态类型、弱类型、基
 
 - [**Html 教程**](https://zp1024.gitbooks.io/html-notes/content/)
 - [**Css 教程**](https://zp1024.gitbooks.io/css-notes/content/)
+- [**JavaScript 教程**](https://zp1024.gitbooks.io/js-notes/content/)
 
 ## :door: 传送门
 
