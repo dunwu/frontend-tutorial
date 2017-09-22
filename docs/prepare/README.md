@@ -3,22 +3,17 @@
 > ​学习 React 之前，你应该了解一定的 Html、Css、JavaScript 知识。这几乎是前端 web 技术的基石。
 >
 
-## :book: 入门
-
-**Html**
+## :book: 本章内容
 
 - [Html 快速入门](https://github.com/zp1024/react-step-by-step/blob/master/docs/prepare/html-quickstart.md)
 
-**Css**
-
 - [Css3 快速入门](https://github.com/zp1024/react-step-by-step/blob/master/docs/prepare/css3-quickstart.md)
+
 - [Css3 快速入门（二）](https://github.com/zp1024/react-step-by-step/blob/master/docs/prepare/css3-quickstart2.md)
 
-**Javascript**
+- JavaScript 快速入门（施工中...）
 
-JavaScript 快速入门（施工中...）
-
-## :books: 教程
+## :books: 拓展阅读
 
 更多详细内容请参考：
 
@@ -26,6 +21,6 @@ JavaScript 快速入门（施工中...）
 - [**Css 教程**](https://zp1024.gitbooks.io/css-notes/content/)
 - [**JavaScript 教程**](https://zp1024.gitbooks.io/js-notes/content/)
 
-## :door: 传送
+## :door: 传送门
 
-​| :house: [**回首頁**](https://github.com/zp1024/react-step-by-step/tree/master/docs) |
+| [**回首頁**](https://github.com/zp1024/react-step-by-step/tree/master/docs) |
