@@ -1,5 +1,9 @@
 # React 爬坑指南
 
+:point_right: [**React 爬坑指南电子书**](https://zp1024.gitbooks.io/react-step-by-step/content)
+
+## :bulb: 引言
+
 初学 React 的时候，相信大部分人都有这样的体会：React 技术栈水太深，涉及的技术点太多了。
 
 如今网上有不少 React 相关的教程，但多的是是完整的 React 项目，少的是庖丁解牛式的、一步步的搭建 React 项目框架的教程。而且，React 涉及的技术点很多，常常让人有种无从入手的感觉。
@@ -10,20 +14,14 @@
 
 如果，你有任何疑问或建议，欢迎在 Issues 中提出。
 
-![node](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/node.png)
-![webpack](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/webpack.png)
-![babel](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/babel.png)
-![react](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/react.png)
-![react-router](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/react-router.png)
-![redux](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/logo/redux.png)
-
 ## :memo: 内容
 
-![react-stack](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/react-stack.png)
+![react-stack](https://raw.githubusercontent.com/zp1024/react-step-by-step/master/docs/assets/images/react-stack.jpg)
 
 * [***Prepare - Html, Css, Javascript***](https://github.com/zp1024/react-step-by-step/tree/master/docs/prepare/README.md)
     * [Html 快速入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/prepare/html-quickstart.md)
     * [Css3 快速入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/prepare/css3-quickstart.md)
+    * [Css3 快速入门（二）](https://github.com/zp1024/react-step-by-step/tree/master/docs/prepare/css3-quickstart2.md)
 * [***Chapter01 - React***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter01/README.md)
 * [***Chapter02 - Node, Npm, Yarn***](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/README.md)
     * [Node入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
