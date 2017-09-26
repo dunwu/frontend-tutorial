@@ -35,7 +35,9 @@
 * [Chapter06 - Flux / Redux](chapter06/README.md)
   * [Flux入门](chapter06/flux/Flux入门.md)
   * [Redux入门](chapter06/redux/Redux入门.md)
-* Chapter07 - ImmutableJS
+* [Chapter07 - ESLint](chapter07/README.md)
+  * [ESLint 快速入门](chapter07/eslint/eslint-quickstart.md)
+  * [ESLint 配置](chapter07/eslint/eslint-configuration.md)
 
 -----
 * [术语](GLOSSARY.md)
