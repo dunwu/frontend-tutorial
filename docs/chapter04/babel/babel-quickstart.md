@@ -1,6 +1,6 @@
-# Babel 入门指南
+# Babel 快速入门
 
-![babel](https://github.com/zp1024/react-step-by-step/blob/master/assets/images/logo/babel_big.png?raw=true)
+![babel](../../assets/images/logo/babel_big.png?raw=true)
 
 > ​:warning: **注意：**
 >

@@ -1,4 +1,4 @@
-# ES6入门
+# ES6 快速入门
 
 ECMAScript 6（以下简称ES6）是JavaScript语言的下一代标准。
 

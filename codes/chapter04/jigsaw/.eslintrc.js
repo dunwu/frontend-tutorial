@@ -27,7 +27,7 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'indent': ['error', 2],
 
-    'jsx-a11y/href-no-hash': 2,
+    'jsx-a11y/href-no-hash': 'off',
 
     /* react */
     'react/jsx-no-bind': 'off',

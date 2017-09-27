@@ -14,23 +14,23 @@ module.exports = {
   // 本例中 entry 为多入口
   entry: {
     // 第三方库
-    vendor: ["react"]
+    vendor: ['react']
   },
 
   // webpack 如何输出结果的相关选项
   output: {
     // 所有输出文件的目标路径
     // 必须是绝对路径（使用 Node.js 的 path 模块）
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'dist'),
 
     // 「入口分块(entry chunk)」的文件名模板（出口分块？）
     // filename: "bundle.min.js",
     // filename: "[name].js", // 用于多个入口点(entry point)（出口点？）
     // filename: "[chunkhash].js", // 用于长效缓存
-    filename: "[name].[hash].js",
+    filename: '[name].[hash].js',
 
     // 「source map 位置」的文件名模板
-    sourceMapFilename: "[name].map",
+    sourceMapFilename: '[name].map'
   },
 
   // 关于模块配置
@@ -48,20 +48,20 @@ module.exports = {
       {
         // 语义解释器，将 js/jsx 文件中的 es2015/react 语法自动转为浏览器可识别的 Javascript 语法
         test: /\.jsx?$/,
-        include: path.resolve(__dirname, "app"),
+        include: path.resolve(__dirname, 'app'),
         exclude: /node_modules/,
 
         // 应该应用的 loader，它相对上下文解析
         // 为了更清晰，`-loader` 后缀在 webpack 2 中不再是可选的
         // 查看 webpack 1 升级指南。
-        loader: "babel-loader",
+        loader: 'babel-loader'
       },
 
       {
         // css 加载
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: "css-loader"
+          use: 'css-loader'
         })
       },
 
@@ -69,13 +69,13 @@ module.exports = {
         // 图片加载 + 图片压缩
         test: /\.(png|svg|jpg|gif)$/,
         loaders: [
-          "file-loader",
+          'file-loader',
           {
-            loader: "image-webpack-loader",
+            loader: 'image-webpack-loader',
             query: {
               progressive: true,
               pngquant: {
-                quality: "65-90",
+                quality: '65-90',
                 speed: 4
               }
             }
@@ -87,7 +87,7 @@ module.exports = {
         // 字体加载
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
-          "file-loader"
+          'file-loader'
         ]
       }
     ]
@@ -98,7 +98,7 @@ module.exports = {
   resolve: {
 
     // 使用的扩展名
-    extensions: [".js", ".jsx", ".json", ".css"],
+    extensions: ['.js', '.jsx', '.json', '.css']
   },
 
   // 附加插件列表
@@ -106,21 +106,21 @@ module.exports = {
 
     // 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务。
     new HtmlWebpackPlugin({
-      title: "react-step-by-step",
-      template: "./public/index.html"
+      title: 'react-step-by-step',
+      template: './public/index.html'
     }),
 
     // 自动打开浏览器
     new OpenBrowserPlugin({
-      url: "http://localhost:9000"
+      url: 'http://localhost:9000'
     }),
 
     // 将样式文件独立打包
-    new ExtractTextPlugin("styles.css"),
+    new ExtractTextPlugin('styles.css'),
 
     // 将多个入口起点之间共享的公共模块，生成为一些 chunk，并且分离到单独的 bundle 中
     new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor" // 指定公共 bundle 的名字
-    }),
-  ],
+      name: 'vendor' // 指定公共 bundle 的名字
+    })
+  ]
 };

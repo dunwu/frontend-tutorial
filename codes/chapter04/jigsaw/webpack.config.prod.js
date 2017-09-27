@@ -1,12 +1,11 @@
 /**
  * Created by Zhang Peng on 2017/6/14.
  */
-const path = require('path');
 const webpack = require('webpack');
 const WebpackMerge = require('webpack-merge');
 const CommonConfig = require('./webpack.common.js');
 
-module.exports = function (env) {
+module.exports = function () {
   return WebpackMerge(CommonConfig, {
     // 这里应用程序开始执行
     // webpack 开始打包
@@ -14,8 +13,8 @@ module.exports = function (env) {
     entry: {
       main: [
         // App 入口
-        "./app/index",
-      ],
+        './app/index'
+      ]
     },
 
     // 附加插件列表
@@ -24,7 +23,7 @@ module.exports = function (env) {
       // 定义环境变量
       new webpack.DefinePlugin({
         'process.env': {
-          'NODE_ENV': JSON.stringify('production')
+          NODE_ENV: JSON.stringify('production')
         }
       }),
 
@@ -37,12 +36,12 @@ module.exports = function (env) {
       // 压缩 js 插件
       new webpack.optimize.UglifyJsPlugin({
         output: {
-          comments: false,  // remove all comments
+          comments: false // remove all comments
         },
         compress: {
           warnings: false
         }
-      }),
-    ],
-  })
+      })
+    ]
+  });
 };

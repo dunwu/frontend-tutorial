@@ -14,16 +14,16 @@ class Clock extends React.Component {
   click() {
     // 动态引入import()
     import('moment')
-      .then(moment => moment().format("MMMM Do YYYY, h:mm:ss a"))
+      .then(moment => moment().format('yyyy-MM-dd HH:mm:ss'))
       .then(str => this.setState({ date: str }))
-      .catch(err => console.log("Failed to load moment", err));
+      .catch(err => console.log('Failed to load moment', err));
   }
 
   render() {
     return (
       <div>
         <h2>It is {this.state.date}.</h2>
-        <p onClick={this.click}>Click here to changing the time.</p>
+        <button onClick={this.click}>Click here to changing the time.</button>
       </div>
     );
   }
@@ -34,7 +34,7 @@ class Welcome extends React.PureComponent {
     return (
       <div>
         <h1>Hello, {this.props.name}</h1>
-        <img src={lionPng}/>
+        <img alt="lion.png" src={lionPng} />
         <Clock />
       </div>
     );
