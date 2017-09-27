@@ -4,8 +4,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const OpenBrowserPlugin = require('open-browser-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
 
@@ -21,13 +19,13 @@ module.exports = {
   output: {
     // 所有输出文件的目标路径
     // 必须是绝对路径（使用 Node.js 的 path 模块）
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
 
     // 「入口分块(entry chunk)」的文件名模板（出口分块？）
     // filename: "bundle.min.js",
     // filename: "[name].js", // 用于多个入口点(entry point)（出口点？）
     // filename: "[chunkhash].js", // 用于长效缓存
-    filename: '[name].[hash].js',
+    filename: '[name].[hash:8].js',
 
     // 「source map 位置」的文件名模板
     sourceMapFilename: '[name].map'
@@ -48,7 +46,7 @@ module.exports = {
       {
         // 语义解释器，将 js/jsx 文件中的 es2015/react 语法自动转为浏览器可识别的 Javascript 语法
         test: /\.jsx?$/,
-        include: path.resolve(__dirname, 'app'),
+        include: path.resolve(__dirname, '../app'),
         exclude: /node_modules/,
 
         // 应该应用的 loader，它相对上下文解析
@@ -60,35 +58,23 @@ module.exports = {
       {
         // css 加载
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: 'css-loader'
-        })
+        use: ['style-loader', 'css-loader']
       },
 
       {
-        // 图片加载 + 图片压缩
-        test: /\.(png|svg|jpg|gif)$/,
-        loaders: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            query: {
-              progressive: true,
-              pngquant: {
-                quality: '65-90',
-                speed: 4
-              }
-            }
-          }
-        ]
+        // less 加载
+        test: /\.less$/,
+        use: ['style-loader', 'css-loader', 'less-loader']
       },
 
       {
         // 字体加载
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
-        ]
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: 'static/fonts/[name].[hash:8].[ext]'
+        }
       }
     ]
   },
@@ -96,27 +82,26 @@ module.exports = {
   // 解析模块请求的选项
   // （不适用于对 loader 解析）
   resolve: {
-
     // 使用的扩展名
-    extensions: ['.js', '.jsx', '.json', '.css']
+    extensions: ['.js', '.jsx', '.json'],
+
+    alias: {
+      '@': path.resolve(__dirname, '../app')
+    }
   },
 
   // 附加插件列表
   plugins: [
 
-    // 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务。
+    /**
+     * https://doc.webpack-china.org/plugins/html-webpack-plugin/
+     * 用于简化 HTML 文件（index.html）的创建，提供访问 bundle 的服务
+     */
     new HtmlWebpackPlugin({
-      title: 'react-step-by-step',
-      template: './public/index.html'
+      title: 'ck-medusa-front',
+      template: 'public/index.html',
+      favicon: 'public/favicon.ico'
     }),
-
-    // 自动打开浏览器
-    new OpenBrowserPlugin({
-      url: 'http://localhost:9000'
-    }),
-
-    // 将样式文件独立打包
-    new ExtractTextPlugin('styles.css'),
 
     // 将多个入口起点之间共享的公共模块，生成为一些 chunk，并且分离到单独的 bundle 中
     new webpack.optimize.CommonsChunkPlugin({
