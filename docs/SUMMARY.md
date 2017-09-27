@@ -29,6 +29,7 @@
   * [ES6 快速入门](chapter04/es6/es6-quickstart.md)
   * [ESLint 快速入门](chapter04/eslint/eslint-quickstart.md)
   * [ESLint 配置](chapter04/eslint/eslint-configuration.md)
+  * [ESLint 命令](chapter04/eslint/eslint-command.md)
 * [Chapter05 - React Router](chapter05/README.md)
   * [React Router v4 简介](chapter05/react-router-v4/react-router-introduction.md)
   * [React Router v4 基础](chapter05/react-router-v4/react-router-basic.md)

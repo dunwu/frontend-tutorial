@@ -9,6 +9,7 @@
 - ***ESLint***
   - [ESLint 快速入门](eslint/eslint-quickstart.html)
   - [ESLint 配置](eslint/eslint-configuration.html)
+  - [ESLint 命令](eslint/eslint-command.html)
 
 ## :books: 拓展阅读
 
@@ -34,6 +35,17 @@
 - **官方资料**
 
   [**Github**](https://github.com/eslint/eslint) | [**官方文档**](https://eslint.org/) |
+
+- **ESLint 插件**
+
+  - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
+  - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
+  - [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
+  - [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
+
+- **编程风格**
+
+  - [Airbnb JavaScript Style](https://github.com/airbnb/javascript)
 
 ## :door: 传送门
 
