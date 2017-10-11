@@ -5,11 +5,11 @@
 
 ## :book: 本章内容
 
-- [Html 快速入门](https://github.com/zp1024/react-step-by-step/blob/master/docs/prepare/html-quickstart.md)
+- [Html 快速入门](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/html-quickstart.md)
 
-- [Css3 快速入门](https://github.com/zp1024/react-step-by-step/blob/master/docs/prepare/css3-quickstart.md)
+- [Css3 快速入门](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/css3-quickstart.md)
 
-- [Css3 快速入门（二）](https://github.com/zp1024/react-step-by-step/blob/master/docs/prepare/css3-quickstart2.md)
+- [Css3 快速入门（二）](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/css3-quickstart2.md)
 
 - JavaScript 快速入门（施工中...）
 
@@ -17,10 +17,10 @@
 
 更多详细内容请参考：
 
-- [**Html 教程**](https://zp1024.gitbooks.io/html-notes/content/)
-- [**Css 教程**](https://zp1024.gitbooks.io/css-notes/content/)
-- [**JavaScript 教程**](https://zp1024.gitbooks.io/js-notes/content/)
+- [**Html 教程**](https://dunwu.gitbooks.io/html-notes/content/)
+- [**Css 教程**](https://dunwu.gitbooks.io/css-notes/content/)
+- [**JavaScript 教程**](https://dunwu.gitbooks.io/js-notes/content/)
 
 ## :door: 传送门
 
-| [**回首頁**](https://github.com/zp1024/react-step-by-step/tree/master/docs) |
+| [**回首頁**](https://github.com/dunwu/react-step-by-step/tree/master/docs) |

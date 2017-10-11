@@ -34,17 +34,17 @@ $ gitbook serve
 
 ## 目录
 
-- [x] [Chapter01 - React](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter01)
+- [x] [Chapter01 - React](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter01)
 
-- [x] [Chapter02 - Node, Npm, Yarn](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02)
+- [x] [Chapter02 - Node, Npm, Yarn](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter02)
 
-- [x] [Chapter03 - Webpack](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03)
+- [x] [Chapter03 - Webpack](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03)
 
-- [x] [Chapter04 - ES6, Babel](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter02)
+- [x] [Chapter04 - ES6, Babel](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter02)
 
 - [x] [Chapter05 - React Router]()
 
-- [x] [Chapter06 - Flux, Redux](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter06)
+- [x] [Chapter06 - Flux, Redux](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter06)
 
 - [ ] [Chapter07 - ImmutableJS]()
 

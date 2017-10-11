@@ -11,7 +11,7 @@
 >
 > 2. 阅读建议
 >
->    阅读本文前，建议先阅读 [Webpack 概念](https://github.com/zp1024/react-step-by-step/blob/master/docs/chapter03/webpack/concept.md) 。
+>    阅读本文前，建议先阅读 [Webpack 概念](https://github.com/dunwu/react-step-by-step/blob/master/docs/chapter03/webpack/concept.md) 。
 
 ## webpack 的优势
 
@@ -208,7 +208,7 @@ module: {
 },
 ```
 
-> ​:flashlight: **示例DEMO04：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo04/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo04))
+> ​:flashlight: **示例DEMO04：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter03/webpack2/demo04/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo04))
 
 ### 加载 CSS
 
@@ -242,7 +242,7 @@ module.exports = {
 
 其余，加载 less，sass 等样式文件也是大同小异，不一一细说。
 
-> :flashlight: **示例DEMO06：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo06/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo06))
+> :flashlight: **示例DEMO06：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter03/webpack2/demo06/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo06))
 
 ### 加载图片
 
@@ -322,7 +322,7 @@ $ npm i --save-dev image-webpack-loader
 }
 ```
 
-> :flashlight: **示例DEMO07：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo07/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo07))
+> :flashlight: **示例DEMO07：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter03/webpack2/demo07/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo07))
 
 ### 加载字体
 
@@ -372,14 +372,14 @@ p {
 
 然后，相对路径，会被替换为构建目录中的完整路径/文件名。
 
-> :flashlight: **示例DEMO08：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo08/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo08))
+> :flashlight: **示例DEMO08：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter03/webpack2/demo08/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo08))
 
 # Webpack 系列教程
 
 欢迎阅读其它内容：
 
-* [Webpack 概念](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
-* [Webpack 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
-* [Webpack 资源管理](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
-* [Webpack 代码分离](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
-* [Webpack 开发工具](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
+* [Webpack 概念](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
+* [Webpack 入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
+* [Webpack 资源管理](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
+* [Webpack 代码分离](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+* [Webpack 开发工具](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)

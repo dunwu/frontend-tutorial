@@ -4,7 +4,7 @@
 >
 > 本文所有示例基于 webpack2。
 >
-> 文中的示例代码说明可以参考：[Webpack 示例代码说明](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03)
+> 文中的示例代码说明可以参考：[Webpack 示例代码说明](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03)
 
 ## 安装
 
@@ -65,7 +65,7 @@ $ webpack ./app/index.js ./dist/bundle.js
 
 在浏览器中打开 `index.html` 文件。
 
-> :flashlight: **示例：** ([**DEMO00**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo00))
+> :flashlight: **示例：** ([**DEMO00**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo00))
 
 ## webpack.config.js
 
@@ -73,7 +73,7 @@ $ webpack ./app/index.js ./dist/bundle.js
 
 ### 单入口(Entry)
 
-基于 ([**DEMO00**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo00)) 的代码，新建一个 `webpack.config.js` 文件，内容如下：
+基于 ([**DEMO00**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo00)) 的代码，新建一个 `webpack.config.js` 文件，内容如下：
 
 ```js
 const path = require('path');
@@ -104,7 +104,7 @@ $ webpack
 
 在浏览器中打开 `index.html` 文件。
 
-> :flashlight: **示例：** ([**DEMO01**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo01))
+> :flashlight: **示例：** ([**DEMO01**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo01))
 
 ### 多入口(Entry)
 
@@ -172,14 +172,14 @@ $ webpack
 在浏览器中打开 `index.html` 文件。
 
 
-> :flashlight: **示例：** ([**DEMO02**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo02))
+> :flashlight: **示例：** ([**DEMO02**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo02))
 
 # Webpack 系列教程
 
 欢迎阅读其它内容：
 
-* [Webpack 概念](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
-* [Webpack 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
-* [Webpack 资源管理](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
-* [Webpack 代码分离](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
-* [Webpack 开发工具](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
+* [Webpack 概念](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
+* [Webpack 入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
+* [Webpack 资源管理](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
+* [Webpack 代码分离](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+* [Webpack 开发工具](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)

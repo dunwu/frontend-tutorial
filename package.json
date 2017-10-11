@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zp1024/react-step-by-step.git"
+    "url": "https://github.com/dunwu/react-step-by-step.git"
   },
   "keywords": [
     "react"
@@ -17,9 +17,9 @@
   "author": "Zhang Peng",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zp1024/react-step-by-step/issues"
+    "url": "https://github.com/dunwu/react-step-by-step/issues"
   },
-  "homepage": "https://github.com/zp1024/react-step-by-step",
+  "homepage": "https://github.com/dunwu/react-step-by-step",
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
     "rimraf": "^2.3.4"

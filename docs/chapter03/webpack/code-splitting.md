@@ -11,7 +11,7 @@
 >
 > 2. 阅读建议
 >
->    阅读本文前，建议先阅读 [Webpack 概念](https://github.com/zp1024/react-step-by-step/blob/master/docs/chapter03/webpack/concept.md) 。
+>    阅读本文前，建议先阅读 [Webpack 概念](https://github.com/dunwu/react-step-by-step/blob/master/docs/chapter03/webpack/concept.md) 。
 
 代码分离是 webpack 中最引人注目的特性之一。
 
@@ -66,7 +66,7 @@ module.exports = {
 };
 ```
 
-> ​:flashlight: **示例DEMO09：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo09/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo09))
+> ​:flashlight: **示例DEMO09：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter03/webpack2/demo09/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo09))
 
 ### 分离第三方库(Vendor Code Splitting)
 
@@ -125,7 +125,7 @@ main.bef8f974.js
 vendor.2f1bd4c8.js
 ```
 
-> ​:flashlight: **示例DEMO10：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo10/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo10))
+> ​:flashlight: **示例DEMO10：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter03/webpack2/demo10/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo10))
 
 ## 代码按需分离(On Demand Code Splitting)
 
@@ -212,14 +212,14 @@ module: {
 },
 ```
 
-> ​:flashlight: **示例DEMO11：** ([**DEMO**](https://zp1024.github.io/react-step-by-step/chapter03/webpack2/demo11/dist/index.html) / [**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/webpack2/demo11))
+> ​:flashlight: **示例DEMO11：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter03/webpack2/demo11/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/webpack2/demo11))
 
 # Webpack 系列教程
 
 欢迎阅读其它内容：
 
-* [Webpack 概念](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
-* [Webpack 入门](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
-* [Webpack 资源管理](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
-* [Webpack 代码分离](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
-* [Webpack 开发工具](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)
+* [Webpack 概念](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/concept.md)
+* [Webpack 入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/webpack-tutorial.md)
+* [Webpack 资源管理](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md)
+* [Webpack 代码分离](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/code-splitting.md)
+* [Webpack 开发工具](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/development.md)

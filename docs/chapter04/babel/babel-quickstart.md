@@ -85,11 +85,11 @@ $ babel src -d lib
 $ npm run build
 ```
 
-> ​:flashlight: **示例DEMO01：** ([**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter04/babel/demo01))
+> ​:flashlight: **示例DEMO01：** ([**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter04/babel/demo01))
 >
 > 说明：
 >
-> 示例的上一级目录 [`codes/chapter04/babel`](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter04/babel) 已经配好了配置文件。
+> 示例的上一级目录 [`codes/chapter04/babel`](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter04/babel) 已经配好了配置文件。
 >
 > 在 `codes/chapter04/babel` 路径下执行命令：
 >
@@ -184,11 +184,11 @@ $ node register.js
 
 需要注意的是：你不能在你要编译的文件内同时注册 Babel，因为 node 会在 Babel 编译它之前就将它执行了。
 
-> ​:flashlight: **示例DEMO02：** ([**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter04/babel/demo02))
+> ​:flashlight: **示例DEMO02：** ([**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter04/babel/demo02))
 >
 > 说明：
 >
-> 示例的上一级目录 [`codes/chapter04/babel`](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter04/babel) 已经配好了配置文件。
+> 示例的上一级目录 [`codes/chapter04/babel`](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter04/babel) 已经配好了配置文件。
 >
 > 在 `codes/chapter04/babel` 路径下执行命令：
 >
@@ -258,7 +258,7 @@ $ npm install --save-dev babel-loader babel-core
 
 **配置 **
 
-在 Chapter03 的 [Webpack 资源管理](https://github.com/zp1024/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md) 一文中，介绍过使用 babel-loader 来处理 React 语法。
+在 Chapter03 的 [Webpack 资源管理](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter03/webpack/asset-management.md) 一文中，介绍过使用 babel-loader 来处理 React 语法。
 
 在 **webpack.config.js** 配置如下：
 
@@ -280,9 +280,9 @@ module: {
 
 > ​:flashlight:  **示例**
 >
-> **chapter03-jigsaw：** ([**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter03/jigsaw))
+> **chapter03-jigsaw：** ([**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter03/jigsaw))
 >
-> **chapter04-jigsaw：** ([**SOURCE**](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter04/jigsaw))
+> **chapter04-jigsaw：** ([**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter04/jigsaw))
 >
 > 说明：
 >

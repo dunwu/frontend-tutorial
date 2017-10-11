@@ -167,6 +167,6 @@ Airbnb 的检查规则是比较严格的，如果你认为有些检查项没有�
 
 #### 实例
 
-这里，我抛砖引玉一下，给大家提供一个我自己的 DEMO 项目：[Demo](https://github.com/zp1024/react-step-by-step/tree/master/codes/chapter04/jigsaw)
+这里，我抛砖引玉一下，给大家提供一个我自己的 DEMO 项目：[Demo](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter04/jigsaw)
 
 我在 `config/.eslintrc.js` 中基于 [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) 修改了一些定制的规则。
