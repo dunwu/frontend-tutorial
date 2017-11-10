@@ -11,7 +11,7 @@ export default class commonFooter extends React.Component {
   render () {
     return (
       <Footer className="footer">
-        Copyright © 2017 Victor Zhang
+        Copyright © 2017 Zhang Peng
       </Footer>
     )
   }

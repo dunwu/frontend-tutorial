@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import Welcome from './components/Welcome';
 
 ReactDOM.render(
-  <Welcome name="Victor Zhang"/>,
+  <Welcome name="Zhang Peng"/>,
   document.getElementById("root")
 );

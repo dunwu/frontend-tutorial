@@ -1,6 +1,6 @@
 /**
  * The Apache License 2.0
- * Copyright (c) 2016 Victor Zhang
+ * Copyright (c) 2016 Zhang Peng
  */
 package org.zp.tents.web.api;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author Victor Zhang
+ * @author Zhang Peng
  * @date 2017/1/11.
  */
 public class ResponseDTO<T> {

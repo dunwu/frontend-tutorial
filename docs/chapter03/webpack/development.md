@@ -250,7 +250,7 @@ plugins: [
 >
 > ```js
 > ReactDOM.render(
->   <Welcome name="Victor Zhang"/>,
+>   <Welcome name="Zhang Peng"/>,
 >   document.getElementById("root")
 > );
 > ```
