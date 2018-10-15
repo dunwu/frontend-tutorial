@@ -19,7 +19,7 @@
 ![react-stack](https://raw.githubusercontent.com/dunwu/react-step-by-step/master/docs/assets/images/react-stack.jpg)
 
 * [***Prepare - Html, Css, Javascript***](https://github.com/dunwu/react-step-by-step/tree/master/docs/prepare/README.md)
-    * [Html 快速入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/prepare/html-quickstart.md)
+    * [Html 快速入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/prepare/html.md)
     * [Css3 快速入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/prepare/css3-quickstart.md)
     * [Css3 快速入门（二）](https://github.com/dunwu/react-step-by-step/tree/master/docs/prepare/css3-quickstart2.md)
 * [***Chapter01 - React***](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter01/README.md)

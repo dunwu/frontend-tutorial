@@ -5,7 +5,7 @@
 
 ## :book: 本章内容
 
-- [Html 快速入门](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/html-quickstart.md)
+- [Html 快速入门](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/html.md)
 
 - [Css3 快速入门](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/css3-quickstart.md)
 
@@ -17,7 +17,6 @@
 
 更多详细内容请参考：
 
-- [**Html 教程**](https://dunwu.gitbooks.io/html-notes/content/)
 - [**Css 教程**](https://dunwu.gitbooks.io/css-notes/content/)
 - [**JavaScript 教程**](https://dunwu.gitbooks.io/js-notes/content/)
 
