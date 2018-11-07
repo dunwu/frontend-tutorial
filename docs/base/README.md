@@ -5,11 +5,11 @@
 
 ## :book: 本章内容
 
-- [Html 快速入门](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/html.md)
+- [Html 快速入门](https://github.com/dunwu/frontend-tutorial/blob/master/docs/prepare/html.md)
 
-- [Css3 快速入门](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/css3-quickstart.md)
+- [Css3 快速入门](https://github.com/dunwu/frontend-tutorial/blob/master/docs/prepare/css3-quickstart.md)
 
-- [Css3 快速入门（二）](https://github.com/dunwu/react-step-by-step/blob/master/docs/prepare/css3-quickstart2.md)
+- [Css3 快速入门（二）](https://github.com/dunwu/frontend-tutorial/blob/master/docs/prepare/css3-quickstart2.md)
 
 - JavaScript 快速入门（施工中...）
 
@@ -22,4 +22,4 @@
 
 ## :door: 传送门
 
-| [**回首頁**](https://github.com/dunwu/react-step-by-step/tree/master/docs) |
+| [**回首頁**](https://github.com/dunwu/frontend-tutorial/tree/master/docs) |

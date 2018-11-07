@@ -1,7 +1,7 @@
 {
-  "name": "react-step-by-step",
+  "name": "frontend-tutorial",
   "version": "1.0.0",
-  "description": "react-step-by-step is a course for react.",
+  "description": "frontend-tutorial is a course for react.",
   "main": "src/index.js",
   "scripts": {
     "start": "if-env NODE_ENV=prod && npm run prod || npm run dev",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dunwu/react-step-by-step"
+    "url": "https://github.com/dunwu/frontend-tutorial"
   },
   "keywords": [
     "react",

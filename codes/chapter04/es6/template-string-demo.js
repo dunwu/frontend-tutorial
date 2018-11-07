@@ -3,7 +3,7 @@
  */
 
 // ES5
-var name = 'react-step-by-step';
+var name = 'frontend-tutorial';
 var desc = 'react 技术栈教程';
 var html1 = function (name, desc) {
   var tpl = 'name: ' + name + '\n' +

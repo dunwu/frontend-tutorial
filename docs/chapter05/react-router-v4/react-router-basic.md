@@ -35,7 +35,7 @@
 
 ### 知识点
 
-本人一向信奉实践出真知，所以本文先展示 React Router 各种简单应用，不在示例中穿插较多的知识点讲述。示例中用到的 React Router v4 组件都可以在 [React Router v4 API](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter05/react-router-v4/react-router-api.md) 中找到说明。
+本人一向信奉实践出真知，所以本文先展示 React Router 各种简单应用，不在示例中穿插较多的知识点讲述。示例中用到的 React Router v4 组件都可以在 [React Router v4 API](https://github.com/dunwu/frontend-tutorial/tree/master/docs/chapter05/react-router-v4/react-router-api.md) 中找到说明。
 
 ## 渐进式的示例
 
@@ -68,7 +68,7 @@ export default App;
 
 3. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-> ​:flashlight: **示例DEMO01：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo01/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo01))
+> ​:flashlight: **示例DEMO01：** ([**DEMO**](https://dunwu.github.io/frontend-tutorial/chapter05/react-router-v4/basic/demo01/dist/index.html) / [**SOURCE**](https://github.com/dunwu/frontend-tutorial/tree/master/codes/chapter05/react-router-v4/basic/demo01))
 >
 > 在浏览器中访问 http://localhost:9000/，应该可以看到 `React Router Tutorial` 消息。
 
@@ -135,7 +135,7 @@ class Topics extends React.PureComponent {
 
 4. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-> ​:flashlight: **示例DEMO02：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo02/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo02))
+> ​:flashlight: **示例DEMO02：** ([**DEMO**](https://dunwu.github.io/frontend-tutorial/chapter05/react-router-v4/basic/demo02/dist/index.html) / [**SOURCE**](https://github.com/dunwu/frontend-tutorial/tree/master/codes/chapter05/react-router-v4/basic/demo02))
 >
 > 在浏览器中访问 http://localhost:9000/，应该可以看到与 `DEMO01` 相同的结果。但是，由于我们使用了 `HashRouter` ，地址栏显示的地址中会含有 `#` 符号（形式如：http://localhost:9000/#）。你可以试着使用 `BrowserRouter` ，用法与 `HashRouter` 相同，url 中将不会出现 `#` 符号。
 >
@@ -177,7 +177,7 @@ class Topics extends React.PureComponent {
 
 2. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-> ​:flashlight: **示例DEMO03：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo03/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo03))
+> ​:flashlight: **示例DEMO03：** ([**DEMO**](https://dunwu.github.io/frontend-tutorial/chapter05/react-router-v4/basic/demo03/dist/index.html) / [**SOURCE**](https://github.com/dunwu/frontend-tutorial/tree/master/codes/chapter05/react-router-v4/basic/demo03))
 >
 > `DEMO02` 可以访问的页面，在 `DEMO03` 中都可以访问。
 >
@@ -257,7 +257,7 @@ export default Topics;
 
 3. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-> ​:flashlight: **示例DEMO04：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo04/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo04))
+> ​:flashlight: **示例DEMO04：** ([**DEMO**](https://dunwu.github.io/frontend-tutorial/chapter05/react-router-v4/basic/demo04/dist/index.html) / [**SOURCE**](https://github.com/dunwu/frontend-tutorial/tree/master/codes/chapter05/react-router-v4/basic/demo04))
 >
 > 在浏览器中访问 http://localhost:9000/ ，此时页面中已经有了链接，点击链接可以跳转相应页面了。
 
@@ -334,7 +334,7 @@ export default NoMatch;
 
 4. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-> ​:flashlight:​ **示例DEMO05：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo05/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo05))
+> ​:flashlight:​ **示例DEMO05：** ([**DEMO**](https://dunwu.github.io/frontend-tutorial/chapter05/react-router-v4/basic/demo05/dist/index.html) / [**SOURCE**](https://github.com/dunwu/frontend-tutorial/tree/master/codes/chapter05/react-router-v4/basic/demo05))
 >
 
 ### Url Params(Url 参数)
@@ -380,5 +380,5 @@ export default Topics;
 
 2. 按照 `本教程使用说明 - 使用方法` 步骤执行。
 
-> ​:flashlight: **示例DEMO06：** ([**DEMO**](https://dunwu.github.io/react-step-by-step/chapter05/react-router-v4/basic/demo06/dist/index.html) / [**SOURCE**](https://github.com/dunwu/react-step-by-step/tree/master/codes/chapter05/react-router-v4/basic/demo06))
+> ​:flashlight: **示例DEMO06：** ([**DEMO**](https://dunwu.github.io/frontend-tutorial/chapter05/react-router-v4/basic/demo06/dist/index.html) / [**SOURCE**](https://github.com/dunwu/frontend-tutorial/tree/master/codes/chapter05/react-router-v4/basic/demo06))
 >

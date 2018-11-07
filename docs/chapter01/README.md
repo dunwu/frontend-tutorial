@@ -14,4 +14,4 @@
 
 ## :door: 传送门
 
-| [回首頁](https://github.com/dunwu/react-step-by-step/tree/master/docs) |
+| [回首頁](https://github.com/dunwu/frontend-tutorial/tree/master/docs) |

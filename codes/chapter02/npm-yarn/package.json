@@ -1,14 +1,14 @@
 ﻿{
-  "name": "react-step-by-step",
+  "name": "frontend-tutorial",
   "version": "1.0.0",
-  "description": "react-step-by-step 是一个从零开始学习 react 的教程。",
+  "description": "frontend-tutorial 是一个从零开始学习 react 的教程。",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dunwu/react-step-by-step"
+    "url": "https://github.com/dunwu/frontend-tutorial"
   },
   "keywords": [
     "react",

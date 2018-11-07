@@ -1,4 +1,4 @@
-# Chapter02 - Node, Npm, Yarn
+# Chapter01 - Node, Npm, Yarn
 
 ## :memo:知识点
 
@@ -13,9 +13,9 @@
 
 - **教程**
 
-  - [Node入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter02/node/Node入门.md)
-  - [Node代码组织](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter02/node/Node代码组织.md)
-  - [Node的IO操作](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter02/node/Node的IO操作.md)
+  - [Node.js 入门](https://github.com/dunwu/frontend-tutorial/tree/master/docs/chapter02/node/Node入门.md)
+  - [Npm 入门](https://github.com/dunwu/frontend-tutorial/tree/master/docs/chapter02/node/Node代码组织.md)
+  - [Yarn 入门](https://github.com/dunwu/frontend-tutorial/tree/master/docs/chapter02/node/Node的IO操作.md)
 
 ### Nvm
 
@@ -36,7 +36,7 @@
 
 - **教程**
 
-  - [Npm入门](https://github.com/dunwu/react-step-by-step/tree/master/docs/chapter02/npm/Npm入门.md)
+  - [Npm入门](https://github.com/dunwu/frontend-tutorial/tree/master/docs/chapter02/npm/Npm入门.md)
     
 ### Yarn
 
@@ -59,17 +59,7 @@
   - [菜鸟教程 - Node.js 教程](http://www.runoob.com/nodejs/nodejs-tutorial.html)
   - [七天学会NodeJS](https://github.com/nqdeng/7-days-nodejs)
 
-### Npm
-
-- **官方资料**
-  - [npm 官方文档](https://docs.npmjs.com/)
-
-### Yarn
-
-- **官方资料**
-  - [Yarn github](https://github.com/yarnpkg/yarn)
-  - [Yarn 官方文档](https://yarnpkg.com/zh-Hans/docs)
 
 ## :door: 传送门
 
-| [回首頁](https://github.com/dunwu/react-step-by-step/tree/master/docs) |
+| [回首頁](https://github.com/dunwu/frontend-tutorial/tree/master/docs) |
