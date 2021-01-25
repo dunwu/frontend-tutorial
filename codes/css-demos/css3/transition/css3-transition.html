@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css-notes</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: #F1AAA6;
+      transition: width 2s;
+      -moz-transition: width 2s; /* Firefox 4 */
+      -webkit-transition: width 2s; /* Safari and Chrome */
+      -o-transition: width 2s; /* Opera */
+    }
+
+    div:hover {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+<p>请把鼠标指针放到粉色的 div 元素上，来查看过渡效果。</p>
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+</body>
+</html>

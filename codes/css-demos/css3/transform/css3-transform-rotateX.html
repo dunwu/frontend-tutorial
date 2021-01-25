@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css-notes</title>
+  <style>
+    div {
+      width: 100px;
+      height: 75px;
+      color: #ffffff;
+      background-color: #346093;
+      border: 1px solid black;
+    }
+
+    div#div2 {
+      transform: rotateX(120deg);
+      -webkit-transform: rotateX(120deg); /* Safari and Chrome */
+      -moz-transform: rotateX(120deg); /* Firefox */
+    }
+  </style>
+</head>
+<body>
+<div>你好。这是一个 div 元素。</div>
+<div id="div2">你好。这是一个 div 元素。</div>
+<p><b>注释：</b> Internet Explorer 和 Opera 不支持 rotateX 方法。</p>
+</body>
+</html>

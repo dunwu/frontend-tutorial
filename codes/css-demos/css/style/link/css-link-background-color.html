@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css-notes</title>
+  <style>
+    a:link { background-color: #B2FF99; }  /* 未被访问的链接 */
+    a:visited { background-color: #FFFF85; }  /* 已被访问的链接 */
+    a:hover { background-color: #FF704D; }  /* 鼠标指针移动到链接上 */
+    a:active { background-color: #FF704D; }  /* 正在被点击的链接 */
+  </style>
+</head>
+<body>
+<p><b><a href="http://www.baidu.com" target="_blank">baidu</a></b></p>
+<p><b><a href="http://www.github.com" target="_blank">github</a></b></p>
+<p><b>注释：</b>为了使定义生效，a:hover 必须位于 a:link 和 a:visited 之后！！</p>
+<p><b>注释：</b>为了使定义生效，a:active 必须位于 a:hover 之后！！</p>
+</body>
+</html>

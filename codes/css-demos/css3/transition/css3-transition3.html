@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css-notes</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: #F1AAA6;
+      transition-property: width;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+      transition-delay: 2s;
+      /* Firefox 4 */
+      -moz-transition-property: width;
+      -moz-transition-duration: 1s;
+      -moz-transition-timing-function: linear;
+      -moz-transition-delay: 2s;
+      /* Safari and Chrome */
+      -webkit-transition-property: width;
+      -webkit-transition-duration: 1s;
+      -webkit-transition-timing-function: linear;
+      -webkit-transition-delay: 2s;
+      /* Opera */
+      -o-transition-property: width;
+      -o-transition-duration: 1s;
+      -o-transition-timing-function: linear;
+      -o-transition-delay: 2s;
+    }
+
+    div:hover {
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+
+<p>请把鼠标指针放到粉色的 div 元素上，来查看过渡效果。</p>
+
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
+<p><b>注释：</b>这个过渡效果会在开始之前等待两秒。</p>
+</body>
+</html>
