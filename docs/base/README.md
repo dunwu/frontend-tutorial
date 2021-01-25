@@ -1,7 +1,6 @@
 # Prepare - Html, Css, Javascript
 
-> ​学习 React 之前，你应该了解一定的 Html、Css、JavaScript 知识。这几乎是前端 web 技术的基石。
->
+> ​ 学习 React 之前，你应该了解一定的 Html、Css、JavaScript 知识。这几乎是前端 web 技术的基石。
 
 ## :book: 本章内容
 

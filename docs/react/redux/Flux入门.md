@@ -17,8 +17,6 @@ Flux 将一个应用分成四个部分：
 
 **Flux模式的核心就是数据的"单向流动"。**
 
-![flux-simple-f8-diagram-explained.png](../images/flux-simple-f8-diagram-explained.png)
-
 数据流动说明：
 
 ```
