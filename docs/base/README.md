@@ -2,23 +2,21 @@
 
 > ​ 学习 React 之前，你应该了解一定的 Html、Css、JavaScript 知识。这几乎是前端 web 技术的基石。
 
-## :book: 本章内容
+## 📖 内容
 
-- [Html 快速入门](https://github.com/dunwu/frontend-tutorial/blob/master/docs/prepare/html.md)
+### [Html 快速入门](html.md)
 
-- [Css3 快速入门](https://github.com/dunwu/frontend-tutorial/blob/master/docs/prepare/css3-quickstart.md)
+### [Css3 快速入门](css3-quickstart.md)
 
-- [Css3 快速入门（二）](https://github.com/dunwu/frontend-tutorial/blob/master/docs/prepare/css3-quickstart2.md)
+### [Css3 快速入门（二）](css3-quickstart2.md)
 
 - JavaScript 快速入门（施工中...）
 
-## :books: 拓展阅读
-
-更多详细内容请参考：
+## 📚 资料
 
 - [**Css 教程**](https://dunwu.gitbooks.io/css-notes/content/)
 - [**JavaScript 教程**](https://dunwu.gitbooks.io/js-notes/content/)
 
-## :door: 传送门
+## 🚪 传送
 
-| [**回首頁**](https://github.com/dunwu/frontend-tutorial/tree/master/docs) |
+◾ 🏠 [首頁](https://github.com/dunwu/frontend-tutorial) ◾ 🎯 [我的博客](https://github.com/dunwu/blog) ◾

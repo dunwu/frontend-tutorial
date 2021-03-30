@@ -24,7 +24,7 @@
 
 > 前端基础 - Html, Css, JavaScript
 
-- [Html 入门](docs/base/html.md) - 关键词： `标签`, `元素`, `属性`
+- [Html 入门](docs/base/html.md)
 - [Css 入门](docs/css)
 - [JavaScript 入门](docs/js)
 

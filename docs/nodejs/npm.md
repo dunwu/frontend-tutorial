@@ -6,29 +6,29 @@
 
 <!-- TOC depthFrom:2 depthTo:3 -->
 
-- [简介](#简介)
-- [安装](#安装)
-- [Npm 工作流](#npm-工作流)
-- [Npm 常用命令](#npm-常用命令)
-    - [初始化新项目](#初始化新项目)
-    - [安装模块](#安装模块)
-    - [卸载模块](#卸载模块)
-    - [更新模块](#更新模块)
-    - [管理配置文件](#管理配置文件)
-    - [发布包](#发布包)
-    - [执行脚本](#执行脚本)
-    - [查看安装信息](#查看安装信息)
-- [配置文件](#配置文件)
-    - [package 版本](#package-版本)
-    - [版本号](#版本号)
-- [npm 扩展](#npm-扩展)
-    - [cnpm](#cnpm)
-    - [nrm](#nrm)
-- [引用和引申](#引用和引申)
+- [1. 简介](#1-简介)
+- [2. 安装](#2-安装)
+- [3. Npm 工作流](#3-npm-工作流)
+- [4. Npm 常用命令](#4-npm-常用命令)
+    - [4.1. 初始化新项目](#41-初始化新项目)
+    - [4.2. 安装模块](#42-安装模块)
+    - [4.3. 卸载模块](#43-卸载模块)
+    - [4.4. 更新模块](#44-更新模块)
+    - [4.5. 管理配置文件](#45-管理配置文件)
+    - [4.6. 发布包](#46-发布包)
+    - [4.7. 执行脚本](#47-执行脚本)
+    - [4.8. 查看安装信息](#48-查看安装信息)
+- [5. 配置文件](#5-配置文件)
+    - [5.1. package 版本](#51-package-版本)
+    - [5.2. 版本号](#52-版本号)
+- [6. npm 扩展](#6-npm-扩展)
+    - [6.1. cnpm](#61-cnpm)
+    - [6.2. nrm](#62-nrm)
+- [7. 引用和引申](#7-引用和引申)
 
 <!-- /TOC -->
 
-## 简介
+## 1. 简介
 
 **Npm 是随同 Nodejs 一起安装的 js 包管理工具。**
 
@@ -40,7 +40,7 @@
 
 如果一个项目中存在 `package.json` 文件，那么用户可以直接使用 `npm install` 命令自动安装和维护当前项目所需的所有模块。在 `package.json` 文件中，开发者可以指定每个依赖项的版本范围，这样既可以保证模块自动更新，又不会因为所需模块功能大幅变化导致项目出现问题。开发者也可以选择将模块固定在某个版本之上。
 
-## 安装
+## 2. 安装
 
 由于新版的 nodejs 已经集成了 npm，所以之前 npm 也一并安装好了。同样可以通过输入 `npm -v` 来测试是否成功安装。命令如下，出现版本提示表示安装成功:
 
@@ -54,7 +54,7 @@ $ npm -v
 - Linux - `sudo npm install npm -g`
 - Window - `npm install npm -g`
 
-## Npm 工作流
+## 3. Npm 工作流
 
 Npm 工作流：
 
@@ -64,7 +64,7 @@ Npm 工作流：
 4. 引入版本控制系统（例如 git）
 5. 持续集成
 
-## Npm 常用命令
+## 4. Npm 常用命令
 
 **每个命令都会更新 `package.json` 文件。**
 
@@ -78,7 +78,7 @@ Npm 工作流：
 
 Npm 提供了很多命令，例如 install 和 publish，使用 npm help 可查看所有命令。
 
-### 初始化新项目
+### 4.1. 初始化新项目
 
 > `npm init` 用于初始化项目，它会创建一个名为 `package.json` 的配置文件。
 
@@ -141,7 +141,7 @@ Password:
 Email: (this IS public) mcmohd@gmail.com
 ```
 
-### 安装模块
+### 4.2. 安装模块
 
 > `npm install` 用于安装模块。
 
@@ -241,7 +241,7 @@ express@4.13.3 node_modules/express
 └── send@0.13.0 (destroy@1.0.3, statuses@1.2.1, ms@0.7.1, mime@1.3.4, http-errors@1.3.1)
 ```
 
-### 卸载模块
+### 4.3. 卸载模块
 
 > `npm uninstall` 用于卸载包。
 
@@ -273,7 +273,7 @@ npm uninstall node-tap --save-dev
 npm uninstall dtrace-provider --save-optional
 ```
 
-### 更新模块
+### 4.4. 更新模块
 
 > `npm update` 用于更新本地安装的模块。
 
@@ -287,7 +287,7 @@ aliases: up, upgrade
 
 > 注：从 **npm@2.6.1** 开始，`npm update` 仅更新顶级包。旧版本的 npm 会递归检查所有的依赖。如果要达到旧版本的行为，请使用`npm --depth 9999 update`。
 
-### 管理配置文件
+### 4.5. 管理配置文件
 
 > `npm config` 命令用于管理配置文件。
 
@@ -303,7 +303,7 @@ npm get <key>                               # npm config get <key> 的简写。
 npm set <key> <value> [-g|--global]         # npm config set <key> <value> [-g|--global] 的简写
 ```
 
-### 发布包
+### 4.6. 发布包
 
 > `npm publish` 用于发布一个包。
 
@@ -318,7 +318,7 @@ Sets tag 'latest' if no --tag specified
 
 > 说明：将包发布到注册表，以便可以按名称安装。如果没有本地 `.gitignore` 或 `.npmignore` 文件，则包括软件包目录中的所有文件。如果这两个过滤文件都存在时，某个文件被 `.gitignore` 忽略，而不被 `.npmignore` 忽略，则它将被包括。
 
-### 执行脚本
+### 4.7. 执行脚本
 
 > `npm run` 用于执行脚本。
 
@@ -342,7 +342,7 @@ Sets tag 'latest' if no --tag specified
 - `npm run prepublish` - 相当于执行 `npm run test` 和 `npm run lint` 两条命令。现在你了解如何复合命令了吧。
 - `npm start` - 相当于执行 `node index.js` 。Node.js 启动一个服务的入口脚本。
 
-### 查看安装信息
+### 4.8. 查看安装信息
 
 你可以使用以下命令来查看所有全局安装的模块：
 
@@ -369,7 +369,7 @@ projectName@projectVersion /path/to/project/folder
 └── grunt@0.4.1
 ```
 
-## 配置文件
+## 5. 配置文件
 
 使用 npm 来管理的 javascript 项目一般都有一个`package.json`文件。它定义了这个项目所依赖的各种包，以及项目的配置信息（比如名称、版本、依赖等元数据）。
 
@@ -422,7 +422,7 @@ projectName@projectVersion /path/to/project/folder
 }
 ```
 
-### package 版本
+### 5.1. package 版本
 
 上文介绍 package.json 文件中的 `dependencies` 和 `devDependencies` 字段，这二者都是 json 数组。它们的每个 json 子对象，key 表示包名，value 表示版本。
 
@@ -477,7 +477,7 @@ git+http://user@hostname/project/blah.git#commit-ish
 git+https://user@hostname/project/blah.git#commit-ish
 ```
 
-### 版本号
+### 5.2. 版本号
 
 使用 Npm 下载和发布代码时都会接触到版本号。Npm 使用语义版本号来管理代码，这里简单介绍一下。
 
@@ -491,9 +491,9 @@ git+https://user@hostname/project/blah.git#commit-ish
 
 Npm 支持的所有版本号范围指定方式可以查看[官方文档](https://npmjs.org/doc/files/package.json.html#dependencies)。
 
-## npm 扩展
+## 6. npm 扩展
 
-### cnpm
+### 6.1. cnpm
 
 大家都知道国内直接使用 npm 的官方镜像是非常慢的，这里推荐使用[淘宝 NPM 镜像](https://npm.taobao.org/)。
 
@@ -513,7 +513,7 @@ $ cnpm install [name]
 
 更多信息可以查阅：[http://npm.taobao.org/](http://npm.taobao.org/)。
 
-### nrm
+### 6.2. nrm
 
 [Nrm](https://github.com/Pana/nrm) 是 NPM 注册服务器管理工具，可以快速切换不同的注册表：npm，cnpm，nj，taobao，或者是你自己的私服。
 
@@ -561,9 +561,9 @@ Usage: nrm [options] [command]
     -V, --version  output the version number
 ```
 
-## 引用和引申
+## 7. 引用和引申
 
-> :point_right: 欢迎阅读 [我的前端技术教程系列：frontend-tutorial](https://github.com/dunwu/frontend-tutorial)
+> 👉 欢迎阅读 [我的前端技术教程系列：frontend-tutorial](https://github.com/dunwu/frontend-tutorial)
 
 - [Npm 官网](https://www.npmjs.com/)
 - [Npm 中文网](https://www.npmjs.com.cn/)

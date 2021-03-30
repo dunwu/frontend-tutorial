@@ -1,18 +1,24 @@
-# dependencies
-node_modules
-
-# temp folders
-build
-dist
-_book
-
-# temp files
-*.log
+.DS_Store
+node_modules/
+dist/
+.temp
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-bundle*.js
+**/*.log
 
-# intellij
+tests/**/coverage/
+tests/e2e/reports
+selenium-debug.log
+
+# Editor directories and files
 .idea
-*.iml
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.local
+
+package-lock.json
+yarn.lock

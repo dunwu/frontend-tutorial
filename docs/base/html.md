@@ -9,33 +9,33 @@
 <!-- TOC depthFrom:2 depthTo:3 -->
 
 - [简介](#简介)
-    - [什么是 HTML？](#什么是-html)
-    - [HTML 文档 = 网页](#html-文档--网页)
-    - [HTML 结构](#html-结构)
-    - [HTML 标签](#html-标签)
-    - [HTML 元素](#html-元素)
-    - [HTML 属性](#html-属性)
+  - [什么是 HTML？](#什么是-html)
+  - [HTML 文档 = 网页](#html-文档--网页)
+  - [HTML 结构](#html-结构)
+  - [HTML 标签](#html-标签)
+  - [HTML 元素](#html-元素)
+  - [HTML 属性](#html-属性)
 - [Quickstart](#quickstart)
-    - [基础](#基础)
-    - [样式](#样式)
-    - [链接、锚点、图片](#链接锚点图片)
-    - [列表](#列表)
-    - [表单](#表单)
-    - [表格](#表格)
-    - [区块](#区块)
-    - [框架](#框架)
+  - [基础](#基础)
+  - [样式](#样式)
+  - [链接、锚点、图片](#链接锚点图片)
+  - [列表](#列表)
+  - [表单](#表单)
+  - [表格](#表格)
+  - [区块](#区块)
+  - [框架](#框架)
 - [Html 基础](#html-基础)
-    - [标题](#标题)
-    - [段落](#段落)
-    - [链接](#链接)
-    - [图像](#图像)
-    - [水平线](#水平线)
-    - [换行](#换行)
-    - [注释](#注释)
+  - [标题](#标题)
+  - [段落](#段落)
+  - [链接](#链接)
+  - [图像](#图像)
+  - [水平线](#水平线)
+  - [换行](#换行)
+  - [注释](#注释)
 - [FAQ](#faq)
-    - [中文编码](#中文编码)
-    - [html 和 htm](#html-和-htm)
-    - [HTML 忽略空格和换行](#html-忽略空格和换行)
+  - [中文编码](#中文编码)
+  - [html 和 htm](#html-和-htm)
+  - [HTML 忽略空格和换行](#html-忽略空格和换行)
 - [引用和引申](#引用和引申)
 
 <!-- /TOC -->
@@ -75,9 +75,9 @@ doctype 声明是不区分大小写的，以下方式均可：
 
 ```html
 <!DOCTYPE html>
-<!DOCTYPE HTML>
-<!doctype html>
-<!Doctype Html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
 ```
 
 **通用声明**
@@ -91,15 +91,13 @@ doctype 声明是不区分大小写的，以下方式均可：
 - **HTML 4.01**
 
 ```html
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 ```
 
 - **XHTML 1.0**
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 ```
 
 #### html 元素
@@ -115,15 +113,15 @@ doctype 声明是不区分大小写的，以下方式均可：
 `<body>` 元素包含了可见的页面内容。
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>页面标题</title>
-</head>
-<body>
-<h1>这是一个标题</h1>
-<p>这是一个段落。</p>
-</body>
+  <head>
+    <title>页面标题</title>
+  </head>
+  <body>
+    <h1>这是一个标题</h1>
+    <p>这是一个段落。</p>
+  </body>
 </html>
 ```
 
@@ -194,21 +192,23 @@ HTML 元素:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<title>这是文章标题</title>
-</head>
-<body>
-<!-- 这是注释 -->
-<h1>这是标题 1</h1>
-<h2>这是标题 2</h2>
-<h3>这是标题 3</h3>
-<h4>这是标题 4</h4>
-<h5>这是标题 5</h5>
-<h6>这是标题 6</h6>
-<p>这是段落</p>
-<br> <!-- 这是换行 -->
-<hr> <!-- 这是分割线 -->
-</body>
+  <head>
+    <title>这是文章标题</title>
+  </head>
+  <body>
+    <!-- 这是注释 -->
+    <h1>这是标题 1</h1>
+    <h2>这是标题 2</h2>
+    <h3>这是标题 3</h3>
+    <h4>这是标题 4</h4>
+    <h5>这是标题 5</h5>
+    <h6>这是标题 6</h6>
+    <p>这是段落</p>
+    <br />
+    <!-- 这是换行 -->
+    <hr />
+    <!-- 这是分割线 -->
+  </body>
 </html>
 ```
 
@@ -235,10 +235,10 @@ HTML 元素:
 
 <!-- 特殊含义的样式 -->
 <address>
-  Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
-  Visit us at:<br>
-  Example.com<br>
-  Box 564, Disneyland<br>
+  Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br />
+  Visit us at:<br />
+  Example.com<br />
+  Box 564, Disneyland<br />
   USA
 </address>
 
@@ -247,12 +247,14 @@ HTML 元素:
 
 <!-- 长的引用语 -->
 <blockquote cite="http://www.worldwildlife.org/who/index.html">
-  For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works
-  in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+  For 50 years, WWF has been protecting the future of nature. The world's
+  leading conservation organization, WWF works in 100 countries and is supported
+  by 1.2 million members in the United States and close to 5 million globally.
 </blockquote>
 
 <!-- 短的引用语 -->
-WWF's goal is to: <q>Build a future where people live in harmony with nature.</q>
+WWF's goal is to:
+<q>Build a future where people live in harmony with nature.</q>
 
 <!-- 定义引用、引证 -->
 <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
@@ -263,7 +265,7 @@ WWF's goal is to: <q>Build a future where people live in harmony with nature.</q
 
 ```html
 <a href="http://www.example.com/">This is a Link</a>
-<a href="http://www.example.com/"><img src="URL" alt="Alternate Text"></a>
+<a href="http://www.example.com/"><img src="URL" alt="Alternate Text" /></a>
 <a href="mailto:webmaster@example.com">Send e-mail</a>A named anchor:
 <a name="tips">Useful Tips Section</a>
 <a href="#tips">Jump to the Useful Tips Section</a>
@@ -274,22 +276,22 @@ WWF's goal is to: <q>Build a future where people live in harmony with nature.</q
 ```html
 <!-- 无序列表 -->
 <ul>
-<li>First item</li>
-<li>Next item</li>
+  <li>First item</li>
+  <li>Next item</li>
 </ul>
 
 <!-- 有序列表 -->
 <ol>
-<li>First item</li>
-<li>Next item</li>
+  <li>First item</li>
+  <li>Next item</li>
 </ol>
 
 <!-- 自定义列表 -->
 <dl>
-<dt>First term</dt>
-<dd>Definition</dd>
-<dt>Next term</dt>
-<dd>Definition</dd>
+  <dt>First term</dt>
+  <dd>Definition</dd>
+  <dt>Next term</dt>
+  <dd>Definition</dd>
 </dl>
 ```
 
@@ -297,20 +299,20 @@ WWF's goal is to: <q>Build a future where people live in harmony with nature.</q
 
 ```html
 <form action="http://www.example.com/test.asp" method="post/get">
-<input type="text" name="lastname"
-value="Nixon" size="30" maxlength="50">
-<input type="password">
-<input type="checkbox" checked="checked">
-<input type="radio" checked="checked">
-<input type="submit">
-<input type="reset">
-<input type="hidden">
-<select>
-<option>Apples
-<option selected>Bananas
-<option>Cherries
-</select>
-<textarea name="Comment" rows="60" cols="20"></textarea>
+  <input type="text" name="lastname" value="Nixon" size="30" maxlength="50" />
+  <input type="password" />
+  <input type="checkbox" checked="checked" />
+  <input type="radio" checked="checked" />
+  <input type="submit" />
+  <input type="reset" />
+  <input type="hidden" />
+  <select>
+    <option>Apples</option>
+    <option selected>Bananas</option>
+    <option>Cherries</option>
+  </select>
+
+  <textarea name="Comment" rows="60" cols="20"></textarea>
 </form>
 ```
 
@@ -318,32 +320,34 @@ value="Nixon" size="30" maxlength="50">
 
 ```html
 <table border="1">
-  <caption>Monthly Savings</caption>
+  <caption>
+    Monthly Savings
+  </caption>
   <colgroup>
-    <col span="1" style="background-color:#dcdcdc">
-    <col style="background-color:#00bfff">
+    <col span="1" style="background-color:#dcdcdc" />
+    <col style="background-color:#00bfff" />
   </colgroup>
   <thead>
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
   </thead>
   <tfoot>
-  <tr>
-    <td>Sum</td>
-    <td>$180</td>
-  </tr>
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
   </tfoot>
   <tbody>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-  <tr>
-    <td>February</td>
-    <td>$80</td>
-  </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
   </tbody>
 </table>
 ```
@@ -363,7 +367,7 @@ value="Nixon" size="30" maxlength="50">
 
 ```html
 <iframe src="http://www.runoob.com">
-  <p>您的浏览器不支持  iframe 标签。</p>
+  <p>您的浏览器不支持 iframe 标签。</p>
 </iframe>
 ```
 
@@ -529,7 +533,7 @@ URL 指存储图像的位置。如果名为 "boat.gif" 的图像位于 www.examp
 alt 属性用来为图像定义一串预备的可替换的文本。替换文本属性的值是用户定义的。
 
 ```html
-<img src="boat.gif" alt="Big Boat">
+<img src="boat.gif" alt="Big Boat" />
 ```
 
 在浏览器无法载入图像时，替换文本属性告诉读者她们失去的信息。此时，浏览器将显示这个替代性的文本而不是图像。为页面上的图像都加上替换文本属性是个好习惯，这样有助于更好的显示信息，并且对于那些使用纯文本浏览器的人来说是非常有用的。
@@ -574,16 +578,11 @@ alt 属性用来为图像定义一串预备的可替换的文本。替换文本�
 
 ```html
 <html>
-<body>
-<h1>春晓</h1>
-<p>
-    春眠不觉晓，
-      处处闻啼鸟。
-        夜来风雨声，
-          花落知多少。
-</p>
-<p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
-</body>
+  <body>
+    <h1>春晓</h1>
+    <p>春眠不觉晓， 处处闻啼鸟。 夜来风雨声， 花落知多少。</p>
+    <p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
+  </body>
 </html>
 ```
 
@@ -620,14 +619,14 @@ alt 属性用来为图像定义一串预备的可替换的文本。替换文本�
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>页面标题</title>
-</head>
-<body>
-<h1>我的第一个标题</h1>
-<p>我的第一个段落。</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>页面标题</title>
+  </head>
+  <body>
+    <h1>我的第一个标题</h1>
+    <p>我的第一个段落。</p>
+  </body>
 </html>
 ```
 
@@ -643,16 +642,11 @@ alt 属性用来为图像定义一串预备的可替换的文本。替换文本�
 
 ```html
 <html>
-<body>
-<h1>春晓</h1>
-<p>
-    春眠不觉晓，
-      处处闻啼鸟。
-        夜来风雨声，
-          花落知多少。
-</p>
-<p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
-</body>
+  <body>
+    <h1>春晓</h1>
+    <p>春眠不觉晓， 处处闻啼鸟。 夜来风雨声， 花落知多少。</p>
+    <p>注意，浏览器忽略了源代码中的排版（省略了多余的空格和换行）。</p>
+  </body>
 </html>
 ```
 
@@ -660,7 +654,7 @@ alt 属性用来为图像定义一串预备的可替换的文本。替换文本�
 
 ## 引用和引申
 
-> :point_right: 欢迎阅读 [我的前端技术教程系列：frontend-tutorial](https://github.com/dunwu/frontend-tutorial)
+> 👉 欢迎阅读 [我的前端技术教程系列：frontend-tutorial](https://github.com/dunwu/frontend-tutorial)
 
 - [mozilla html 教程](https://developer.mozilla.org/en-US/Learn/HTML)
 - [W3school html 教程](http://www.w3school.com.cn/html/index.asp)

@@ -7,12 +7,12 @@
 <!-- TOC depthFrom:2 depthTo:3 -->
 
 - [Node.js 工具](#nodejs-工具)
-    - [nvm](#nvm)
+  - [nvm](#nvm)
 - [引用和引申](#引用和引申)
-    - [官方资源](#官方资源)
-    - [教程](#教程)
-    - [工具](#工具)
-    - [资源收集](#资源收集)
+  - [官方资源](#官方资源)
+  - [教程](#教程)
+  - [工具](#工具)
+  - [资源收集](#资源收集)
 
 <!-- /TOC -->
 
@@ -46,7 +46,7 @@ nvm use node6.14.4  # 指定 Node.js 版本（必须已安装）
 
 ## 引用和引申
 
-> :point_right: 欢迎阅读 [我的前端技术教程系列：frontend-tutorial](https://github.com/dunwu/frontend-tutorial)
+> 👉 欢迎阅读 [我的前端技术教程系列：frontend-tutorial](https://github.com/dunwu/frontend-tutorial)
 
 ### 官方资源
 
