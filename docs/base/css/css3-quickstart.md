@@ -28,7 +28,6 @@ CSS3 被划分为模块。
 - box-shadow
 - border-image
 
-
 ### 圆角边框
 
 在 CSS2 中添加圆角矩形需要技巧。我们必须为每个圆角使用不同的图片。
@@ -45,9 +44,9 @@ CSS3 被划分为模块。
 
 ```css
 div {
-  border:2px solid;
-  border-radius:25px;
-  -moz-border-radius:25px; /* Old Firefox */
+  border: 2px solid;
+  border-radius: 25px;
+  -moz-border-radius: 25px; /* Old Firefox */
 }
 ```
 
@@ -112,10 +111,10 @@ CSS3 包含多个新的背景属性，它们提供了对背景更强大的控制
 
 ```css
 div {
-  background:url(bg_flower.gif);
-  -moz-background-size:63px 100px; /* 老版本的 Firefox */
-  background-size:63px 100px;
-  background-repeat:no-repeat;
+  background: url(bg_flower.gif);
+  -moz-background-size: 63px 100px; /* 老版本的 Firefox */
+  background-size: 63px 100px;
+  background-repeat: no-repeat;
 }
 ```
 
@@ -123,10 +122,10 @@ div {
 
 ```css
 div {
-  background:url(bg_flower.gif);
-  -moz-background-size:40% 100%; /* 老版本的 Firefox */
-  background-size:40% 100%;
-  background-repeat:no-repeat;
+  background: url(bg_flower.gif);
+  -moz-background-size: 40% 100%; /* 老版本的 Firefox */
+  background-size: 40% 100%;
+  background-repeat: no-repeat;
 }
 ```
 
@@ -136,17 +135,17 @@ div {
 
 背景图片可以放置于 content-box、padding-box 或 border-box 区域。
 
-![background-origin](../assets/images/css3/background-origin.gif)
+![img](https://raw.githubusercontent.com/dunwu/images/dev/snap/20210331151204.gif)
 
 **实例：在 content-box 中定位背景图片**
 
 ```css
 div {
-  background:url(bg_flower.gif);
-  background-repeat:no-repeat;
-  background-size:100% 100%;
-  -webkit-background-origin:content-box; /* Safari */
-  background-origin:content-box;
+  background: url(bg_flower.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-origin: content-box; /* Safari */
+  background-origin: content-box;
 }
 ```
 
@@ -157,8 +156,8 @@ CSS3 允许您为元素使用多个背景图像。
 **实例：为 body 元素设置两幅背景图片**
 
 ```css
-body { 
-  background-image:url(bg_flower.gif),url(bg_flower_2.gif);
+body {
+  background-image: url(bg_flower.gif), url(bg_flower_2.gif);
 }
 ```
 
@@ -181,7 +180,7 @@ CSS3 包含多个新的文本特性。
 
 ```css
 h1 {
-  text-shadow: 5px 5px 5px #FF0000;
+  text-shadow: 5px 5px 5px #ff0000;
 }
 ```
 
@@ -200,7 +199,9 @@ This paragraph contains a very long word: thisisaveryveryveryveryveryverylongwor
 **实例：允许对长单词进行拆分，并换行到下一行**
 
 ```css
-p {word-wrap:break-word;}
+p {
+  word-wrap: break-word;
+}
 ```
 
 ### 字体
@@ -224,7 +225,7 @@ p {word-wrap:break-word;}
 实例
 
 ```css
-<style> 
+<style>
 @font-face {
   font-family: myFirstFont;
   src: url('../../assets/fonts/sansation-light.ttf'); /* IE9+ */
@@ -245,12 +246,12 @@ div {
 ```css
 @font-face {
   font-family: myFirstFont;
-  src: url('../../assets/fonts/sansation-light.ttf'); /* IE9+ */
+  src: url("../../assets/fonts/sansation-light.ttf"); /* IE9+ */
 }
 
 @font-face {
   font-family: myFirstFont;
-  src: url('../../assets/fonts/sansation-bold.ttf'); /* IE9+ */
+  src: url("../../assets/fonts/sansation-bold.ttf"); /* IE9+ */
   font-weight: bold;
 }
 ```
@@ -265,14 +266,14 @@ div {
 
 下面的表格列出了能够在 @font-face 规则中定义的所有字体描述符：
 
-| 描述符           | 值                                        | 描述                                       |
-| ------------- | ---------------------------------------- | ---------------------------------------- |
-| font-family   | *name*                                   | 必需。规定字体的名称。                              |
-| src           | *URL*                                    | 必需。定义字体文件的 URL。                          |
-| font-stretch  | normalcondensedultra-condensedextra-condensedsemi-condensedexpandedsemi-expandedextra-expandedultra-expanded | 可选。定义如何拉伸字体。默认是 "normal"。                |
-| font-style    | ormalitalicoblique                       | 可选。定义字体的样式。默认是 "normal"。                 |
-| font-weight   | normalbold100200300400500600700800900    | 可选。定义字体的粗细。默认是 "normal"。                 |
-| unicode-range | *unicode-range*                          | 可选。定义字体支持的 UNICODE 字符范围。默认是 "U+0-10FFFF"。 |
+| 描述符        | 值                                                                                                           | 描述                                                         |
+| ------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| font-family   | _name_                                                                                                       | 必需。规定字体的名称。                                       |
+| src           | _URL_                                                                                                        | 必需。定义字体文件的 URL。                                   |
+| font-stretch  | normalcondensedultra-condensedextra-condensedsemi-condensedexpandedsemi-expandedextra-expandedultra-expanded | 可选。定义如何拉伸字体。默认是 "normal"。                    |
+| font-style    | ormalitalicoblique                                                                                           | 可选。定义字体的样式。默认是 "normal"。                      |
+| font-weight   | normalbold100200300400500600700800900                                                                        | 可选。定义字体的粗细。默认是 "normal"。                      |
+| unicode-range | _unicode-range_                                                                                              | 可选。定义字体支持的 UNICODE 字符范围。默认是 "U+0-10FFFF"。 |
 
 ## 布局
 
@@ -322,24 +323,23 @@ div {
 
 ```css
 div {
-  -moz-column-rule:3px outset #ff0000;	/* Firefox */
-  -webkit-column-rule:3px outset #ff0000;	/* Safari and Chrome */
-  column-rule:3px outset #ff0000;
+  -moz-column-rule: 3px outset #ff0000; /* Firefox */
+  -webkit-column-rule: 3px outset #ff0000; /* Safari and Chrome */
+  column-rule: 3px outset #ff0000;
 }
 ```
 
 ### 列属性
 
-| 属性                | 描述                                      |
-| ----------------- | --------------------------------------- |
-| column-count      | 规定元素应该被分隔的列数。                           |
-| column-fill       | 规定如何填充列。                                |
-| column-gap        | 规定列之间的间隔。                               |
-| column-rule       | 设置所有 column-rule-* 属性的简写属性。             |
+| 属性              | 描述                                               |
+| ----------------- | -------------------------------------------------- |
+| column-count      | 规定元素应该被分隔的列数。                         |
+| column-fill       | 规定如何填充列。                                   |
+| column-gap        | 规定列之间的间隔。                                 |
+| column-rule       | 设置所有 column-rule-\* 属性的简写属性。           |
 | column-rule-color | 规定列之间规则的颜色。                             |
 | column-rule-style | 规定列之间规则的样式。                             |
 | column-rule-width | 规定列之间规则的宽度。                             |
-| column-span       | 规定元素应该横跨的列数。                            |
-| column-width      | 规定列的宽度。                                 |
+| column-span       | 规定元素应该横跨的列数。                           |
+| column-width      | 规定列的宽度。                                     |
 | columns           | 规定设置 column-width 和 column-count 的简写属性。 |
-

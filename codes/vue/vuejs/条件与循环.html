@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>条件与循环</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div>
+        <h2>条件控制</h2>
+        <p v-if="red" style="color: red">红色</p>
+        <p v-else>非红色</p>
+      </div>
+      <div>
+        <h2>循环控制</h2>
+        <ol>
+          <li v-for="todo in todos">{{ todo.text }}</li>
+        </ol>
+      </div>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          red: true,
+          todos: [{ text: "学习 JavaScript" }, { text: "学习 Vue" }, { text: "整个牛项目" }],
+        },
+      });
+    </script>
+  </body>
+</html>

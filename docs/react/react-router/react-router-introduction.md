@@ -5,7 +5,6 @@
 ## 概述
 
 > [React Router](https://github.com/ReactTraining/react-router) 是一个基于 [React](http://facebook.github.io/react/) 之上的强大路由库，它可以让你向应用中快速地添加视图和数据流，同时保持页面与 URL 间的同步。
->
 
 React Router v4 的核心理念是**声明式可组合性（declarative composability）**。
 
@@ -29,14 +28,14 @@ $ yarn add react-router-dom
 
 所有的封装模块都可以从顶部导入：
 
-```jsx
+```react
 import {
   BrowserRouter as Router,
   StaticRouter, // for server rendering
   Route,
-  Link
+  Link,
   // etc.
-} from 'react-router-dom'
+} from "react-router-dom";
 ```
 
 ### Native
@@ -49,15 +48,15 @@ $ npm install react-router-native
 
 所有的封装模块都可以从顶部导入：
 
-```jsx
+```react
 import {
   NativeRouter as Router,
   DeepLinking,
   AndroidBackButton,
   Link,
-  Route
+  Route,
   // etc.
-} from 'react-router-native'
+} from "react-router-native";
 ```
 
 ### Core
@@ -70,10 +69,10 @@ $ npm install react-router
 
 所有的封装模块都可以从顶部导入：
 
-```jsx
+```react
 import {
   MemoryRouter as Router,
-  Route
+  Route,
   // etc.
-} from 'react-router'
+} from "react-router";
 ```

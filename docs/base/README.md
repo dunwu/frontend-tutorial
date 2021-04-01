@@ -6,16 +6,17 @@
 
 ### [Html 快速入门](html.md)
 
-### [Css3 快速入门](css3-quickstart.md)
+### [Css3 快速入门](css/css3-quickstart.md)
 
-### [Css3 快速入门（二）](css3-quickstart2.md)
+### [Css3 快速入门（二）](css/css3-quickstart2.md)
 
 - JavaScript 快速入门（施工中...）
 
 ## 📚 资料
 
-- [**Css 教程**](https://dunwu.gitbooks.io/css-notes/content/)
-- [**JavaScript 教程**](https://dunwu.gitbooks.io/js-notes/content/)
+- [mozilla html 教程](https://developer.mozilla.org/en-US/Learn/HTML)
+- [W3school html 教程](http://www.w3school.com.cn/html/index.asp)
+- [W3school css3 教程](https://www.w3school.com.cn/css/index.asp)
 
 ## 🚪 传送
 

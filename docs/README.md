@@ -20,15 +20,15 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2017-Now Dunwu
 
 > 前端基础 - Html, Css, JavaScript
 
-- [Html 入门](base/html.md) - 关键词： `标签`, `元素`, `属性`
-- [Css 入门](css)
-- [JavaScript 入门](js)
+- [Html 入门](base/html.md)
+- [Css 入门](base/css)
+- [JavaScript 入门](base/js)
 
 ### Nodejs
 
 - [Node.js 入门](nodejs/nodejs.md)
-- [Npm 入门](nodejs/npm.md) - 关键词： `nodejs`, `包管理`, `npm`, `cnpm`
-- [Yarn 入门](nodejs/yarn.md) - 关键词： `nodejs`, `包管理`, `yarn`
+- [Npm 入门](nodejs/npm.md)
+- [Yarn 入门](nodejs/yarn.md)
 
 ### Webpack
 
@@ -62,6 +62,12 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2017-Now Dunwu
 - Redux
   - [Flux 入门](react/redux/Flux入门.md)
   - [Redux 入门](react/redux/Redux入门.md)
+
+### 前端常用工具
+
+- [Axios 入门](tool/axios.md)
+- [Prettier 入门](tool/prettier.md)
+- [Lodash 入门](tool/lodash.md)
 
 ## 📌 说明
 

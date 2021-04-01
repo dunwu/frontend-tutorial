@@ -34,6 +34,42 @@ module.exports = {
             link: "/base/",
           },
           {
+            text: "Nodejs",
+            link: "/nodejs/",
+            items: [
+              {
+                text: "Node.js 入门",
+                link: "/nodejs/nodejs",
+              },
+              {
+                text: "npm",
+                link: "/nodejs/npm",
+              },
+              {
+                text: "yarn",
+                link: "/nodejs/yarn",
+              },
+            ],
+          },
+          {
+            text: "前端工具",
+            link: "/tool/",
+            items: [
+              {
+                text: "Axios 入门",
+                link: "/tool/axios",
+              },
+              {
+                text: "Prettier 入门",
+                link: "/tool/prettier",
+              },
+              {
+                text: "Lodash 入门",
+                link: "/tool/lodash",
+              },
+            ],
+          },
+          {
             text: "🎯 博客",
             link: "https://github.com/dunwu/blog",
             target: "_blank",
