@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>嵌套路由</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>嵌套路由</h1>
+      <p>
+        <router-link to="/user/foo">/user/foo</router-link>
+        <router-link to="/user/foo/profile">/user/foo/profile</router-link>
+        <router-link to="/user/foo/posts">/user/foo/posts</router-link>
+      </p>
+      <!-- 路由出口 -->
+      <!-- 路由匹配到的组件将渲染在这里 -->
+      <router-view></router-view>
+    </div>
+    <script>
+      // 0. 如果使用模块化机制编程，导入Vue和VueRouter，要调用 Vue.use(VueRouter)
+
+      // 1. 定义 (路由) 组件。
+      const User = {
+        template: `
+          <div class="user">
+            <h2>User {{ $route.params.id }}</h2>
+            <router-view></router-view>
+          </div>
+        `,
+      };
+      const UserHome = { template: "<div>Home</div>" };
+      const UserProfile = { template: "<div>Profile</div>" };
+      const UserPosts = { template: "<div>Posts</div>" };
+
+      // 2. 创建 router 实例
+      const router = new VueRouter({
+        routes: [
+          {
+            path: "/user/:id",
+            component: User,
+            children: [
+              {
+                // 当 /user/:id/profile 匹配成功，
+                // UserProfile 会被渲染在 User 的 <router-view> 中
+                path: "profile",
+                component: UserProfile,
+              },
+              {
+                // 当 /user/:id/posts 匹配成功
+                // UserPosts 会被渲染在 User 的 <router-view> 中
+                path: "posts",
+                component: UserPosts,
+              },
+            ],
+          },
+        ],
+      });
+
+      // 3. 创建和挂载根实例。
+      const app = new Vue({
+        router,
+      }).$mount("#app");
+    </script>
+  </body>
+</html>

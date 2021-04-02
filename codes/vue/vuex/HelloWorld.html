@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>HelloWorld</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <p>{{ count }}</p>
+      <p>
+        <button @click="increment">+</button>
+        <button @click="decrement">-</button>
+      </p>
+    </div>
+    <script>
+      const store = new Vuex.Store({
+        state: {
+          count: 0,
+        },
+        mutations: {
+          increment: (state) => state.count++,
+          decrement: (state) => state.count--,
+        },
+      });
+
+      new Vue({
+        el: "#app",
+        computed: {
+          count() {
+            return store.state.count;
+          },
+        },
+        methods: {
+          increment() {
+            store.commit("increment");
+          },
+          decrement() {
+            store.commit("decrement");
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

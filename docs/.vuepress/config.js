@@ -70,6 +70,20 @@ module.exports = {
             ],
           },
           {
+            text: "Vue 技术生态",
+            link: "/vue/",
+            items: [
+              {
+                text: "Vue Router 基础",
+                link: "/vue/vue-router-basic",
+              },
+              {
+                text: "Vue Router 进阶",
+                link: "/vue/vue-router-advanced",
+              },
+            ],
+          },
+          {
             text: "🎯 博客",
             link: "https://github.com/dunwu/blog",
             target: "_blank",
