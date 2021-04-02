@@ -6,13 +6,13 @@
 
 1. 修改 `app/index.js` ，引入 css
 
-```react
+```jsx
 import "./index.css";
 ```
 
 3. 修改 `app/components/Topics.js` 文件，内容如下：
 
-```react
+```jsx
 class Topics extends React.PureComponent {
   render() {
     return (
@@ -50,7 +50,7 @@ class Topics extends React.PureComponent {
 
 1. 修改 `app/components/Topics.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
 

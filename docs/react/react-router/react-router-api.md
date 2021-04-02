@@ -109,7 +109,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 使用示例：
 
-```react
+```jsx
 <Route path="/user/:username" component={User} />
 ```
 
@@ -121,7 +121,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 使用示例：
 
-```react
+```jsx
 <Route path="/home" render={() => <div>Home</div>}/>
 
 // 包装/合成
@@ -195,7 +195,7 @@ location 对象不会发生改变，因此你可以在生命周期的钩子函�
 
 使用示例：
 
-```react
+```jsx
 // 通常你只需要这样使用 location
 <Link to="/somewhere"/>
 
@@ -295,7 +295,7 @@ history 对象通常会具有以下属性和方法：
 
 ### Link 使用示例
 
-```react
+```jsx
 <Link to="/about">关于</Link>
 
 <Link
@@ -316,7 +316,7 @@ history 对象通常会具有以下属性和方法：
 
 思考下面的代码：
 
-```react
+```jsx
 <Route path="/about" component={About}/>
 <Route path="/:user" component={User}/>
 <Route component={NoMatch}/>
@@ -326,7 +326,7 @@ history 对象通常会具有以下属性和方法：
 
 然而，有时候我们只想选择一个 `<Route>` 来渲染。如果我们现在处于 `/about` ，我们也不希望匹配 /:user （或者显示我们的 “404” 页面 ）。以下是使用 Switch 的方法来实现：
 
-```react
+```jsx
 <Switch>
   <Route exact path="/" component={Home} />
   <Route path="/about" component={About} />

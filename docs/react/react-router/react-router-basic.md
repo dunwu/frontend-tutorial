@@ -45,7 +45,7 @@
 
 1. 新建 `app/index.js` 文件，内容如下：
 
-```react
+```jsx
 ReactDOM.render(<App />, document.getElementById("root"));
 ```
 
@@ -53,7 +53,7 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 2. 新建 `app/App.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 
 class App extends React.PureComponent {
@@ -76,7 +76,7 @@ export default App;
 
 1. 修改 `app/index.js` 文件，内容如下：
 
-```react
+```jsx
 ReactDOM.render(<Routes />, document.getElementById("root"));
 ```
 
@@ -84,13 +84,13 @@ ReactDOM.render(<Routes />, document.getElementById("root"));
 
 如果向下面的代码一样，仅仅引入 `Router` ，而没有在 `Router` 中定义 `Route`，将什么也不会展示。
 
-```react
+```jsx
 ReactDOM.render(<Router />, document.getElementById("root"));
 ```
 
 2. 新增 `app/routes.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import App from "./components/App";
@@ -115,7 +115,7 @@ export default Routes;
 
 **About 组件**
 
-```react
+```jsx
 class About extends React.PureComponent {
   render() {
     return <h2>关于</h2>;
@@ -125,7 +125,7 @@ class About extends React.PureComponent {
 
 **Topics 组件**
 
-```react
+```jsx
 class Topics extends React.PureComponent {
   render() {
     return <h2>主题</h2>;
@@ -147,7 +147,7 @@ class Topics extends React.PureComponent {
 
 1. 修改 `app/routes.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
@@ -193,7 +193,7 @@ class Topics extends React.PureComponent {
 
 1. 修改 `app/components/App.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -219,7 +219,7 @@ export default App;
 
 2. 修改 `app/components/Topics.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
 
@@ -269,7 +269,7 @@ React Router v4 可以通过 `Redirect` 组件来支持重定向功能。
 
 1. 修改 `app/routes.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import {
   HashRouter as Router,
@@ -298,7 +298,7 @@ export default Routes;
 
 2. 修改 `app/components/App.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -330,7 +330,7 @@ export default App;
 
 3. 新增 `app/components/NoMatch.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 
 class NoMatch extends React.PureComponent {
@@ -355,7 +355,7 @@ export default NoMatch;
 
 1. 修改 `app/components/Topics.js` 文件，内容如下：
 
-```react
+```jsx
 import React from "react";
 import { Link, Route, Switch } from "react-router-dom";
 

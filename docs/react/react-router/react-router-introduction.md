@@ -28,7 +28,7 @@ $ yarn add react-router-dom
 
 所有的封装模块都可以从顶部导入：
 
-```react
+```jsx
 import {
   BrowserRouter as Router,
   StaticRouter, // for server rendering
@@ -48,7 +48,7 @@ $ npm install react-router-native
 
 所有的封装模块都可以从顶部导入：
 
-```react
+```jsx
 import {
   NativeRouter as Router,
   DeepLinking,
@@ -69,7 +69,7 @@ $ npm install react-router
 
 所有的封装模块都可以从顶部导入：
 
-```react
+```jsx
 import {
   MemoryRouter as Router,
   Route,
