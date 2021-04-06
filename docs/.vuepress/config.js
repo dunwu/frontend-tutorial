@@ -81,6 +81,22 @@ module.exports = {
                 text: "Vue Router 进阶",
                 link: "/vue/vue-router-advanced",
               },
+              {
+                text: "Vuex 基础",
+                link: "/vue/vuex-basic",
+              },
+              {
+                text: "Vuex 进阶",
+                link: "/vue/vuex-advanced",
+              },
+              {
+                text: "Vue Loader",
+                link: "/vue/vue-loader",
+              },
+              {
+                text: "Vue Devtools",
+                link: "/vue/vue-devtools",
+              },
             ],
           },
           {

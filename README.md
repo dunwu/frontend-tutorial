@@ -72,6 +72,9 @@
 - [Vue Router 基础](docs/vue/vue-router-basic.md)
 - [Vue Router 进阶](docs/vue/vue-router-advanced.md)
 - [Vuex 基础](docs/vue/vuex-basic.md)
+- [Vuex 进阶](docs/vue/vuex-advanced.md)
+- [Vue Loader](docs/vue/vue-loader.md)
+- [Vue Devtools](docs/vue/vue-devtools.md)
 
 ### 前端常用工具
 

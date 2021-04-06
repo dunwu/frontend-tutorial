@@ -5,6 +5,9 @@
 - [Vue Router 基础](vue-router-basic.md)
 - [Vue Router 进阶](vue-router-advanced.md)
 - [Vuex 基础](vuex-basic.md)
+- [Vuex 进阶](vuex-advanced.md)
+- [Vue Loader](vue-loader.md)
+- [Vue Devtools](vue-devtools.md)
 
 ## 📚 资料
 
@@ -16,6 +19,8 @@
   - [Vue Router Github](https://github.com/vuejs/vue-router)
   - [Vuex 官网](https://vuex.vuejs.org/zh/)
   - [Vuex Github](https://github.com/vuejs/vuex)
+  - [Vue Loader 官网](https://vue-loader.vuejs.org/zh/)
+  - [Vue Loader Github](https://github.com/vuejs/vue-loader)
 
 ## 🚪 传送
 

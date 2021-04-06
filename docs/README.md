@@ -68,6 +68,9 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2017-Now Dunwu
 - [Vue Router 基础](vue/vue-router-basic.md)
 - [Vue Router 进阶](vue/vue-router-advanced.md)
 - [Vuex 基础](vue/vuex-basic.md)
+- [Vuex 进阶](vue/vuex-advanced.md)
+- [Vue Loader](vue/vue-loader.md)
+- [Vue Devtools](vue/vue-devtools.md)
 
 ### 前端常用工具
 
