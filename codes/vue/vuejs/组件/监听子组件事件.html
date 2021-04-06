@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>通过Prop向子组件传递数据</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div :style="{ fontSize: postFontSize + 'em' }">
+        <blog-post
+          v-for="post in posts"
+          v-bind:key="post.id"
+          v-bind:post="post"
+          v-on:enlarge-text="postFontSize += 0.1"
+        ></blog-post>
+      </div>
+    </div>
+    <script>
+      Vue.component("blog-post", {
+        props: ["post"],
+        template: `
+          <div class="blog-post">
+            <h3>{{ post.title }}</h3>
+            <button v-on:click="$emit('enlarge-text')">
+              Enlarge text
+            </button>
+            <div v-html="post.content"></div>
+          </div>
+        `,
+      });
+
+      var app = new Vue({
+        el: "#app",
+        data: {
+          posts: [
+            { id: 1, title: "My journey with Vue", content: "xxx" },
+            { id: 2, title: "Blogging with Vue", content: "xxx" },
+            { id: 3, title: "Why Vue is so fun", content: "xxx" },
+          ],
+          postFontSize: 1,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>组件的复用</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <button-counter></button-counter>
+      <button-counter></button-counter>
+      <button-counter></button-counter>
+    </div>
+    <script>
+      // 定义一个名为 button-counter 的新组件
+      Vue.component("button-counter", {
+        data: function () {
+          return {
+            count: 0,
+          };
+        },
+        template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>',
+      });
+
+      var app = new Vue({
+        el: "#app",
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>v-for遍历对象属性</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>v-for遍历对象属性</h2>
+      <ul id="v-for-object" class="demo">
+        <li v-for="value in object">{{ value }}</li>
+      </ul>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          object: {
+            title: "How to do lists in Vue",
+            author: "Jane Doe",
+            publishedAt: "2016-04-10",
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

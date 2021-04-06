@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>v-for遍历数组</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>v-for遍历数组</h2>
+      <ol>
+        <li v-for="todo in todos">{{ todo.text }}</li>
+      </ol>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          todos: [{ text: "学习 JavaScript" }, { text: "学习 Vue" }],
+        },
+      });
+    </script>
+  </body>
+</html>

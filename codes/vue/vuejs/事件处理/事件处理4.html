@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>事件处理</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <button v-on:click="warn('Form cannot be submitted yet.', $event)">Submit</button>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        methods: {
+          warn: function (message, event) {
+            // 现在我们可以访问原生事件对象
+            if (event) {
+              event.preventDefault();
+            }
+            alert(message);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

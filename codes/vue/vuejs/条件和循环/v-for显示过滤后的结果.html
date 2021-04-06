@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>显示过滤后的结果</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <h2>显示过滤后的结果</h2>
+      <ul>
+        <li v-for="n in evenNumbers">{{ n }}</li>
+      </ul>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          numbers: [1, 2, 3, 4, 5],
+        },
+        computed: {
+          evenNumbers: function () {
+            return this.numbers.filter(function (number) {
+              return number % 2 === 0;
+            });
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

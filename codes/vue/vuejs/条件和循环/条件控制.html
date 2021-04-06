@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>条件控制</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div>
+        <h2>条件控制</h2>
+        <input v-model="type" />
+        <div v-if="type === 'red'">红</div>
+        <div v-else-if="type === 'yellow'">黄</div>
+        <div v-else-if="type === 'blue'">蓝</div>
+        <div v-else>请输入有效颜色单词（只允许 red/yellow/blue）</div>
+      </div>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          type: null,
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -74,6 +74,10 @@ module.exports = {
             link: "/vue/",
             items: [
               {
+                text: "Vue.js 基础",
+                link: "/vue/vuejs-basic",
+              },
+              {
                 text: "Vue Router 基础",
                 link: "/vue/vue-router-basic",
               },

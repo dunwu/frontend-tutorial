@@ -65,6 +65,7 @@ footer: CC-BY-SA-4.0 Licensed | Copyright © 2017-Now Dunwu
 
 ### Vue 技术生态
 
+- [Vue.js 基础](vue/vuejs-basic.md)
 - [Vue Router 基础](vue/vue-router-basic.md)
 - [Vue Router 进阶](vue/vue-router-advanced.md)
 - [Vuex 基础](vue/vuex-basic.md)

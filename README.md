@@ -69,6 +69,7 @@
 
 ### Vue 技术生态
 
+- [Vue.js 基础](docs/vue/vuejs-basic.md)
 - [Vue Router 基础](docs/vue/vue-router-basic.md)
 - [Vue Router 进阶](docs/vue/vue-router-advanced.md)
 - [Vuex 基础](docs/vue/vuex-basic.md)

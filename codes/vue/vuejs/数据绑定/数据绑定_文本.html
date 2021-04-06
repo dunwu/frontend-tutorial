@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>数据绑定_文本</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <input v-model="message" />
+      <p>随输入而变化的内容：{{ message }}</p>
+    </div>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "数据绑定_文本",
+        },
+      });
+    </script>
+  </body>
+</html>
