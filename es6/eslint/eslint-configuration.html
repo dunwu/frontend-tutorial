@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ESLint 配置 | FRONTEND-TUTORIAL</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/frontend-tutorial/favicon.ico">
+    <meta name="description" content="前端教程">
+    
+    <link rel="preload" href="/frontend-tutorial/assets/css/0.styles.fb161648.css" as="style"><link rel="preload" href="/frontend-tutorial/assets/js/app.0f2f3ef1.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/4.0f425322.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/32.f0b2a53f.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/5.608566ca.js" as="script"><link rel="prefetch" href="/frontend-tutorial/assets/js/10.1aadac9e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/11.62869f33.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/12.00af68a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/13.fad1990f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/14.7a436432.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/15.1ed64873.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/16.e4fab6e4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/17.c425f0c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/18.b19b4a8c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/19.cf3ece76.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/20.e9494703.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/21.8e701cc6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/22.c82dafa0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/23.c9095c3c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/24.97fb2434.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/25.79d04eb4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/26.0560c9b3.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/27.ca75901a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/28.a2617487.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/29.034030a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/30.687c6413.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/31.023e8160.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/33.928cca1f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/34.e7b4cfb6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/35.b6a1c119.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/36.615a2e5c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/37.7c6f496d.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/38.92700ab1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/39.ca730fba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/40.735cdb31.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/41.80a4b65e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/42.33625d08.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/43.de7d648b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/44.7f081370.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/45.4a5d9c6b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/46.ae465fd4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/47.fc08a8e0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/48.3fae0897.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/49.a705c18f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/50.d5ce8c52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/51.fb7cf5ef.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/52.ccd8ffb2.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/53.c39cec94.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/54.44e52515.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/55.a1b302d0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/56.18324d52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/57.4ab7da19.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/58.6666b050.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/59.9031b427.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/6.79caa705.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/60.584946dd.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/61.39e0a712.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/62.8f33fd7c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/63.b27ab9ac.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/64.b15cd74f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/65.a0cdcfa5.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/66.81e0a185.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/67.a06444ff.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/68.85e176ee.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/69.2e790a70.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/7.f420f9c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/70.cc01ed99.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/71.27be19ba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/72.d4cdf44e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/73.210cfade.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/8.64ae920a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/9.692fe702.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~flowchart.d1e58b72.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~notification.ecb92178.js">
+    <link rel="stylesheet" href="/frontend-tutorial/assets/css/0.styles.fb161648.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="FRONTEND-TUTORIAL" class="logo"> <span class="site-name can-hide">FRONTEND-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>ESLint 配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#指定解析器选项" class="sidebar-link">指定解析器选项</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#指定解析器" class="sidebar-link">指定解析器</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#指定环境" class="sidebar-link">指定环境</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#指定全局变量" class="sidebar-link">指定全局变量</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#配置插件" class="sidebar-link">配置插件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#配置规则" class="sidebar-link">配置规则</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用行注释禁用规则" class="sidebar-link">使用行注释禁用规则</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#添加分享配置" class="sidebar-link">添加分享配置</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用配置文件" class="sidebar-link">使用配置文件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#配置文件文件格式" class="sidebar-link">配置文件文件格式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#配置的层级和继承" class="sidebar-link">配置的层级和继承</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#扩展配置文件" class="sidebar-link">扩展配置文件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用-eslint-recommended" class="sidebar-link">使用  eslint:recommended</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用可共享的配置包" class="sidebar-link">使用可共享的配置包</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用插件中的配置" class="sidebar-link">使用插件中的配置</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用一个配置文件" class="sidebar-link">使用一个配置文件</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用-eslint-all" class="sidebar-link">使用  eslint:all</a></li></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#基于-glob-模式的配置" class="sidebar-link">基于 glob 模式的配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#怎么工作" class="sidebar-link">怎么工作</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#相对-glob-模式" class="sidebar-link">相对 glob 模式</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#配置示例" class="sidebar-link">配置示例</a></li></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#在配置文件中注释" class="sidebar-link">在配置文件中注释</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#指定需要检查的文件扩展名" class="sidebar-link">指定需要检查的文件扩展名</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#忽略文件和目录" class="sidebar-link">忽略文件和目录</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#使用备用文件" class="sidebar-link">使用备用文件</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#在-package-json-中使用-eslintconfig" class="sidebar-link">在 package.json 中使用 eslintConfig</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/eslint/eslint-configuration.html#忽略文件告警" class="sidebar-link">忽略文件告警</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="eslint-配置"><a href="#eslint-配置" class="header-anchor">#</a> ESLint 配置</h1> <p>ESlint 被设计为完全可配置的，这意味着你可以关闭每一个规则而只运行基本语法验证，或混合和匹配 ESLint 默认绑定的规则和你的自定义规则，以让 ESLint 更适合你的项目。有两种主要的方式来配置 ESLint：</p> <ol><li><strong>Configuration Comments</strong> - 使用 JavaScript 注释把配置信息直接嵌入到一个代码源文件中。</li> <li><strong>Configuration Files</strong> - 使用 JavaScript、JSON 或者 YAML 文件为整个目录和它的子目录指定配置信息。可以配置一个独立的  <a href="https://cn.eslint.org/docs/user-guide/configuring#configuration-file-formats" target="_blank" rel="noopener noreferrer">.eslintrc.*<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  文件，或者直接在  <a href="https://docs.npmjs.com/files/package.json" target="_blank" rel="noopener noreferrer"><code>package.json</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  文件里的  <code>eslintConfig</code>  字段指定配置，ESLint 会查找和自动读取它们，再者，你可以在<a href="https://cn.eslint.org/docs/user-guide/command-line-interface" target="_blank" rel="noopener noreferrer">命令行<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>运行时指定一个任意的配置文件。</li></ol> <p>有很多信息可以配置：</p> <ul><li><strong>Environments</strong> - 指定脚本的运行环境。每种环境都会有一组特定的预定义全局变量。</li> <li><strong>Globals</strong> - 脚本在执行期间访问的额外的全局变量。</li> <li><strong>Rules</strong> - 启用的规则及其各自的错误级别。</li></ul> <p>所有这些选项让你可以细粒度地控制 ESLint 如何对待你的代码。</p> <h2 id="指定解析器选项"><a href="#指定解析器选项" class="header-anchor">#</a> 指定解析器选项</h2> <p>ESLint 允许你指定你想要支持的 JavaScript 语言选项。默认情况下，ESLint 支持 ECMAScript 5 语法。你可以覆盖该设置，以启用对 ECMAScript 其它版本和 JSX 的支持。</p> <p>请注意，对 JSX 语法的支持不用于对 React 的支持。React 使用了一些特定的 ESLint 无法识别的 JSX 语法。如果你正在使用 React 并且想要 React 语义支持，我们推荐你使用  <a href="https://github.com/yannickcr/eslint-plugin-react" target="_blank" rel="noopener noreferrer">eslint-plugin-react<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <p>同样的，支持 ES6 语法并不意味着同时支持新的 ES6 全局变量或类型（比如  <code>Set</code>  等新类型）。使用  <code>{ &quot;parserOptions&quot;: { &quot;ecmaVersion&quot;: 6 } }</code>  来启用 ES6 语法支持；要额外支持新的 ES6 全局变量，使用  <code>{ &quot;env&quot;:{ &quot;es6&quot;: true } }</code>(这个设置会同时自动启用 ES6 语法支持)。</p> <p>解析器选项可以在  <code>.eslintrc.*</code>  文件使用  <code>parserOptions</code>  属性设置。可用的选项有：</p> <ul><li><code>ecmaVersion</code> - 默认设置为 5， 你可以使用 3、5、6、7 或 8 来指定你想要使用的 ECMAScript 版本。你也可以用使用年份命名的版本号指定为 2015（同 6），2016（同 7），或 2017（同 8）</li> <li><code>sourceType</code> - 设置为  <code>&quot;script&quot;</code> (默认) 或  <code>&quot;module&quot;</code>（如果你的代码是 ECMAScript 模块)。</li> <li><code>ecmaFeatures</code> - 这是个对象，表示你想使用的额外的语言特性:<code>globalReturn</code> - 允许在全局作用域下使用  <code>return</code>  语句<code>impliedStrict</code> - 启用全局  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode" target="_blank" rel="noopener noreferrer">strict mode<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> (如果  <code>ecmaVersion</code>  是 5 或更高)<code>jsx</code> - 启用  <a href="http://facebook.github.io/jsx/" target="_blank" rel="noopener noreferrer">JSX<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a><code>experimentalObjectRestSpread</code> - 启用实验性的  <a href="https://github.com/sebmarkbage/ecmascript-rest-spread" target="_blank" rel="noopener noreferrer">object rest/spread properties<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  支持。(**重要：**这是一个实验性的功能,在未来可能会有明显改变。 建议你写的规则  <strong>不要</strong>  依赖该功能，除非当它发生改变时你愿意承担维护成本。)</li></ul> <p><code>.eslintrc.json</code>  文件示例：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;parserOptions&quot;: {
+        &quot;ecmaVersion&quot;: 6,
+        &quot;sourceType&quot;: &quot;module&quot;,
+        &quot;ecmaFeatures&quot;: {
+            &quot;jsx&quot;: true
+        }
+    },
+    &quot;rules&quot;: {
+        &quot;semi&quot;: 2
+    }
+}
+
+</code></pre></div><p>设置解析器选项能帮助 ESLint 确定什么是解析错误，所有语言选项默认都是  <code>false</code>。</p> <h2 id="指定解析器"><a href="#指定解析器" class="header-anchor">#</a> 指定解析器</h2> <p>ESLint 默认使用<a href="https://github.com/eslint/espree" target="_blank" rel="noopener noreferrer">Espree<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>作为其解析器，你可以在配置文件中指定一个不同的解析器，只要该解析器符合下列要求：</p> <ol><li>它必须是本地安装的一个 npm 模块。</li> <li>它必须有兼容 Esprima 的接口（它必须输出一个  <code>parse()</code>  方法）</li> <li>它必须产出兼容 Esprima 的 AST 和 token 对象。</li></ol> <p>注意，即使满足这些兼容性要求，也不能保证一个外部解析器可以与 ESLint 正常配合工作，ESLint 也不会修复与其它解析器不兼容的相关 bug。</p> <p>为了表明使用该 npm 模块作为你的解析器，你需要在你的  <code>.eslintrc</code>  文件里指定  <code>parser</code>  选项。例如，下面的配置指定了 Esprima 作为解析器：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;parser&quot;: &quot;esprima&quot;,
+    &quot;rules&quot;: {
+        &quot;semi&quot;: &quot;error&quot;
+    }
+}
+
+</code></pre></div><p>以下解析器与 ESLint 兼容：</p> <ul><li><a href="https://npmjs.com/package/esprima" target="_blank" rel="noopener noreferrer">Esprima<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://npmjs.com/package/babel-eslint" target="_blank" rel="noopener noreferrer">Babel-ESLint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> - 一个对<a href="http://babeljs.io/" target="_blank" rel="noopener noreferrer">Babel<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>解析器的包装，使其能够与 ESLint 兼容。</li> <li><a href="https://npmjs.com/package/typescript-eslint-parser" target="_blank" rel="noopener noreferrer">typescript-eslint-parser(实验)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> - 一个把 TypeScript 转换为 ESTree 兼容格式的解析器，这样它就可以在 ESLint 中使用了。这样做的目的是通过 ESLint 来解析 TypeScript 文件（尽管不一定必须通过所有的 ESLint 规则）。</li></ul> <p>注意，在使用自定义解析器时，为了让 ESLint 在处理非 ECMAScript 5 特性时正常工作，配置属性  <code>parserOptions</code>  仍然是必须的。解析器会被传入  <code>parserOptions</code>，但是不一定会使用它们来决定功能特性的开关。</p> <h2 id="指定环境"><a href="#指定环境" class="header-anchor">#</a> 指定环境</h2> <p>一个“环境”定义了一组预定义的全局变量。可用的环境包括：</p> <ul><li><code>browser</code> - 浏览器环境中的全局变量。</li> <li><code>node</code> - Node.js 全局变量和 Node.js 作用域。</li> <li><code>commonjs</code> - CommonJS 全局变量和 CommonJS 作用域 (一般用于 Browserify/WebPack 打包的只在浏览器中运行的代码)。</li> <li><code>shared-node-browser</code> - Node 和 Browser 通用全局变量。</li> <li><code>es6</code> - 启用除了 modules 以外的所有 ECMAScript 6 特性（该选项会自动设置  <code>ecmaVersion</code>  解析器选项为 6）。</li> <li><code>worker</code> - Web Workers 全局变量。</li> <li><code>amd</code> - 将  <code>require()</code>  和  <code>define()</code>  定义为像  <a href="https://github.com/amdjs/amdjs-api/wiki/AMD" target="_blank" rel="noopener noreferrer">amd<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  一样的全局变量。</li> <li><code>mocha</code> - 添加所有的 Mocha 测试全局变量。</li> <li><code>jasmine</code> - 添加所有的 Jasmine 版本 1.3 和 2.0 的测试全局变量。</li> <li><code>jest</code> - Jest 全局变量。</li> <li><code>phantomjs</code> - PhantomJS 全局变量。</li> <li><code>protractor</code> - Protractor 全局变量。</li> <li><code>qunit</code> - QUnit 全局变量。</li> <li><code>jquery</code> - jQuery 全局变量。</li> <li><code>prototypejs</code> - Prototype.js 全局变量。</li> <li><code>shelljs</code> - ShellJS 全局变量。</li> <li><code>meteor</code> - Meteor 全局变量。</li> <li><code>mongo</code> - MongoDB 全局变量。</li> <li><code>applescript</code> - AppleScript 全局变量。</li> <li><code>nashorn</code> - Java 8 Nashorn 全局变量。</li> <li><code>serviceworker</code> - Service Worker 全局变量。</li> <li><code>atomtest</code> - Atom 测试全局变量。</li> <li><code>embertest</code> - Ember 测试全局变量。</li> <li><code>webextensions</code> - WebExtensions 全局变量。</li> <li><code>greasemonkey</code> - GreaseMonkey 全局变量。</li></ul> <p>这些环境并不是互斥的，所以你可以同时定义多个。</p> <p>可以在源文件里、在配置文件中或使用  <a href="https://cn.eslint.org/docs/user-guide/command-line-interface" target="_blank" rel="noopener noreferrer">命令行<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  的  <code>--env</code>  选项来指定环境。</p> <p>要在你的 JavaScript 文件中使用注释来指定环境，格式如下：</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint-env node, mocha */
+
+</code></pre></div><p>该设置启用了 Node.js 和 Mocha 环境。</p> <p>要在配置文件里指定环境，使用  <code>env</code>  关键字指定你想启用的环境，并设置它们为  <code>true</code>。例如，以下示例启用了 browser 和 Node.js 的环境：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;env&quot;: {
+        &quot;browser&quot;: true,
+        &quot;node&quot;: true
+    }
+}
+
+</code></pre></div><p>或在  <code>package.json</code>  文件中：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;name&quot;: &quot;mypackage&quot;,
+    &quot;version&quot;: &quot;0.0.1&quot;,
+    &quot;eslintConfig&quot;: {
+        &quot;env&quot;: {
+            &quot;browser&quot;: true,
+            &quot;node&quot;: true
+        }
+    }
+}
+
+</code></pre></div><p>在 YAML 文件中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+  env:
+    browser: true
+    node: true
+
+</code></pre></div><p>如果你想在一个特定的插件中使用一种环境，确保提前在  <code>plugins</code>  数组里指定了插件名，然后在 env 配置中不带前缀的插件名后跟一个  <code>/</code> ，紧随着环境名。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;plugins&quot;: [&quot;example&quot;],
+    &quot;env&quot;: {
+        &quot;example/custom&quot;: true
+    }
+}
+
+</code></pre></div><p>或在  <code>package.json</code>  文件中</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;name&quot;: &quot;mypackage&quot;,
+    &quot;version&quot;: &quot;0.0.1&quot;,
+    &quot;eslintConfig&quot;: {
+        &quot;plugins&quot;: [&quot;example&quot;],
+        &quot;env&quot;: {
+            &quot;example/custom&quot;: true
+        }
+    }
+}
+
+</code></pre></div><p>在 YAML 文件中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+  plugins:
+    - example
+  env:
+    example/custom: true
+
+</code></pre></div><h2 id="指定全局变量"><a href="#指定全局变量" class="header-anchor">#</a> 指定全局变量</h2> <p>当访问当前源文件内未定义的变量时，<a href="https://cn.eslint.org/docs/rules/no-undef" target="_blank" rel="noopener noreferrer">no-undef<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  规则将发出警告。如果你想在一个源文件里使用全局变量，推荐你在 ESLint 中定义这些全局变量，这样 ESLint 就不会发出警告了。你可以使用注释或在配置文件中定义全局变量。</p> <p>要在你的 JavaScript 文件中，用注释指定全局变量，格式如下：</p> <div class="language- extra-class"><pre class="language-text"><code>/* global var1, var2 */
+
+</code></pre></div><p>这里定义了两个全局变量：<code>var1</code>  和  <code>var2</code>。如果你想指定这些变量不应被重写（只读），你可以将它们设置为  <code>false</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>/* global var1:false, var2:false */
+
+</code></pre></div><p>在配置文件里配置全局变量时，使用  <code>globals</code>  指出你要使用的全局变量。将变量设置为  <code>true</code>  将允许变量被重写，或  <code>false</code>  将不允许被重写。比如：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;globals&quot;: {
+        &quot;var1&quot;: true,
+        &quot;var2&quot;: false
+    }
+}
+
+</code></pre></div><p>在 YAML 中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+  globals:
+    var1: true
+    var2: false
+
+</code></pre></div><p>在这些例子中  <code>var1</code>  允许被重写，<code>var2</code>  不允许被重写。</p> <p><strong>注意：</strong>  要启用<a href="https://cn.eslint.org/docs/rules/no-global-assign" target="_blank" rel="noopener noreferrer">no-global-assign<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>规则来禁止对只读的全局变量进行修改。</p> <h2 id="配置插件"><a href="#配置插件" class="header-anchor">#</a> 配置插件</h2> <p>ESLint 支持使用第三方插件。在使用插件之前，你必须使用 npm 安装它。</p> <p>在配置文件里配置插件时，可以使用  <code>plugins</code>  关键字来存放插件名字的列表。插件名称可以省略  <code>eslint-plugin-</code>  前缀。</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;plugins&quot;: [
+        &quot;plugin1&quot;,
+        &quot;eslint-plugin-plugin2&quot;
+    ]
+}
+
+</code></pre></div><p>在 YAML 中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+  plugins:
+    - plugin1
+    - eslint-plugin-plugin2
+
+</code></pre></div><p>**注意：**全局安装的 ESLint 只能使用全局安装的插件。本地安装的 ESLint 不仅可以使用本地安装的插件，也可以使用全局安装的插件。</p> <h2 id="配置规则"><a href="#配置规则" class="header-anchor">#</a> 配置规则</h2> <p>ESLint 附带有大量的规则。你可以使用注释或配置文件修改你项目中要使用的规则。要改变一个规则设置，你必须将规则 ID 设置为下列值之一：</p> <ul><li><code>&quot;off&quot;</code>  或  <code>0</code> - 关闭规则</li> <li><code>&quot;warn&quot;</code>  或  <code>1</code> - 开启规则，使用警告级别的错误：<code>warn</code> (不会导致程序退出)</li> <li><code>&quot;error&quot;</code>  或  <code>2</code> - 开启规则，使用错误级别的错误：<code>error</code> (当被触发的时候，程序会退出)</li></ul> <p>为了在文件注释里配置规则，使用以下格式的注释：</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint eqeqeq: &quot;off&quot;, curly: &quot;error&quot; */
+
+</code></pre></div><p>在这个例子里，<a href="https://cn.eslint.org/docs/rules/eqeqeq" target="_blank" rel="noopener noreferrer"><code>eqeqeq</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  规则被关闭，<a href="https://cn.eslint.org/docs/rules/curly" target="_blank" rel="noopener noreferrer"><code>curly</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  规则被打开，定义为错误级别。你也可以使用对应的数字定义规则严重程度：</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint eqeqeq: 0, curly: 2 */
+
+</code></pre></div><p>这个例子和上个例子是一样的，只不过它是用的数字而不是字符串。<code>eqeqeq</code>  规则是关闭的，<code>curly</code>  规则被设置为错误级别。</p> <p>如果一个规则有额外的选项，你可以使用数组字面量指定它们，比如：</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint quotes: [&quot;error&quot;, &quot;double&quot;], curly: 2 */
+
+</code></pre></div><p>这条注释为规则  <a href="https://cn.eslint.org/docs/rules/quotes" target="_blank" rel="noopener noreferrer"><code>quotes</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  指定了 “double”选项。数组的第一项总是规则的严重程度（数字或字符串）。</p> <p>还可以使用  <code>rules</code>  连同错误级别和任何你想使用的选项，在配置文件中进行规则配置。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;rules&quot;: {
+        &quot;eqeqeq&quot;: &quot;off&quot;,
+        &quot;curly&quot;: &quot;error&quot;,
+        &quot;quotes&quot;: [&quot;error&quot;, &quot;double&quot;]
+    }
+}
+
+</code></pre></div><p>在 YAML 中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+rules:
+  eqeqeq: off
+  curly: error
+  quotes:
+    - error
+    - double
+
+</code></pre></div><p>配置定义在插件中的一个规则的时候，你必须使用  <code>插件名/规则ID</code>  的形式。比如：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;plugins&quot;: [
+        &quot;plugin1&quot;
+    ],
+    &quot;rules&quot;: {
+        &quot;eqeqeq&quot;: &quot;off&quot;,
+        &quot;curly&quot;: &quot;error&quot;,
+        &quot;quotes&quot;: [&quot;error&quot;, &quot;double&quot;],
+        &quot;plugin1/rule1&quot;: &quot;error&quot;
+    }
+}
+
+</code></pre></div><p>在 YAML 中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+plugins:
+  - plugin1
+rules:
+  eqeqeq: 0
+  curly: error
+  quotes:
+    - error
+    - &quot;double&quot;
+  plugin1/rule1: error
+
+</code></pre></div><p>在这些配置文件中，规则  <code>plugin1/rule1</code>  表示来自插件  <code>plugin1</code>  的  <code>rule1</code>  规则。你也可以使用这种格式的注释配置，比如：</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint &quot;plugin1/rule1&quot;: &quot;error&quot; */
+
+</code></pre></div><p>**注意：**当指定来自插件的规则时，确保删除  <code>eslint-plugin-</code>  前缀。ESLint 在内部只使用没有前缀的名称去定位规则。</p> <h2 id="使用行注释禁用规则"><a href="#使用行注释禁用规则" class="header-anchor">#</a> 使用行注释禁用规则</h2> <p>可以在你的文件中使用以下格式的块注释来临时禁止规则出现警告：</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint-disable */
+
+alert('foo');
+
+/* eslint-enable */
+
+</code></pre></div><p>你也可以对指定的规则启用或禁用警告:</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint-disable no-alert, no-console */
+
+alert('foo');
+console.log('bar');
+
+/* eslint-enable no-alert, no-console */
+
+
+</code></pre></div><p>如果在整个文件范围内禁止规则出现警告，将  <code>/* eslint-disable */</code>  块注释放在文件顶部：</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint-disable */
+
+alert('foo');
+
+</code></pre></div><p>你也可以对整个文件启用或禁用警告:</p> <div class="language- extra-class"><pre class="language-text"><code>/* eslint-disable no-alert */
+
+// Disables no-alert for the rest of the file
+alert('foo');
+
+</code></pre></div><p>可以在你的文件中使用以下格式的行注释在某一特定的行上禁用所有规则：</p> <div class="language- extra-class"><pre class="language-text"><code>alert('foo'); // eslint-disable-line
+
+// eslint-disable-next-line
+alert('foo');
+
+</code></pre></div><p>在某一特定的行上禁用某个指定的规则：</p> <div class="language- extra-class"><pre class="language-text"><code>alert('foo'); // eslint-disable-line no-alert
+
+// eslint-disable-next-line no-alert
+alert('foo');
+
+</code></pre></div><p>在某个特定的行上禁用多个规则：</p> <div class="language- extra-class"><pre class="language-text"><code>alert('foo'); // eslint-disable-line no-alert, quotes, semi
+
+// eslint-disable-next-line no-alert, quotes, semi
+alert('foo');
+
+</code></pre></div><p>上面的所有方法同样适用于插件规则。例如，禁止  <code>eslint-plugin-example</code>  的  <code>rule-name</code>  规则，把插件名（<code>example</code>）和规则名（<code>rule-name</code>）结合为  <code>example/rule-name</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>foo(); // eslint-disable-line example/rule-name
+
+</code></pre></div><p>**注意：**为文件的某部分禁用警告的注释，告诉 ESLint 不要对禁用的代码报告规则的冲突。ESLint 仍解析整个文件，然而，禁用的代码仍需要是有效的 JavaScript 语法。</p> <h2 id="添加分享配置"><a href="#添加分享配置" class="header-anchor">#</a> 添加分享配置</h2> <p>ESLint 支持在配置文件添加共享设置。你可以添加  <code>settings</code>  对象到配置文件，它将提供给每一个将被执行的规则。如果你想添加的自定义规则而且使它们可以访问到相同的信息，这将会很有用，并且很容易配置。</p> <p>在 JSON 中：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;settings&quot;: {
+        &quot;sharedData&quot;: &quot;Hello&quot;
+    }
+}
+
+</code></pre></div><p>在 YAML 中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+  settings:
+    sharedData: &quot;Hello&quot;
+
+</code></pre></div><h2 id="使用配置文件"><a href="#使用配置文件" class="header-anchor">#</a> 使用配置文件</h2> <p>有两种方式可以使用配置文件。第一种是将文件保存到你喜欢的地方，然后将它的位置使用  <code>-c</code>  选项传递命令行，比如：</p> <div class="language- extra-class"><pre class="language-text"><code>eslint -c myconfig.json myfiletotest.js
+
+</code></pre></div><p>第二种方式是通过  <code>.eslintrc.*</code>  和  <code>package.json</code>。ESLint 将自动在要检测的文件目录里寻找它们，紧接着是父级目录，一直到文件系统的根目录。当你想对一个项目的不同部分的使用不同配置，或当你希望别人能够直接使用 ESLint，而无需记住要在配置文件中传递什么，这种方式就很有用。</p> <p>每种情况，配置文件都会覆盖默认设置。</p> <h2 id="配置文件文件格式"><a href="#配置文件文件格式" class="header-anchor">#</a> 配置文件文件格式</h2> <p>ESLint 支持几种格式的配置文件：</p> <ul><li><strong>JavaScript</strong> - 使用  <code>.eslintrc.js</code>  然后输出一个配置对象。</li> <li><strong>YAML</strong> - 使用  <code>.eslintrc.yaml</code>  或  <code>.eslintrc.yml</code>  去定义配置的结构。</li> <li><strong>JSON</strong> - 使用  <code>.eslintrc.json</code>  去定义配置的结构，ESLint 的 JSON 文件允许 JavaScript 风格的注释。</li> <li><strong>(不推荐)</strong> - 使用  <code>.eslintrc</code>，可以使 JSON 也可以是 YAML。</li> <li><strong>package.json</strong> - 在  <code>package.json</code>  里创建一个  <code>eslintConfig</code>属性，在那里定义你的配置。</li></ul> <p>如果同一个目录下有多个配置文件，ESLint 只会使用一个。优先级顺序如下：</p> <ol><li><code>.eslintrc.js</code></li> <li><code>.eslintrc.yaml</code></li> <li><code>.eslintrc.yml</code></li> <li><code>.eslintrc.json</code></li> <li><code>.eslintrc</code></li> <li><code>package.json</code></li></ol> <h2 id="配置的层级和继承"><a href="#配置的层级和继承" class="header-anchor">#</a> 配置的层级和继承</h2> <p>当使用  <code>.eslintrc.*</code>  和  <code>package.json</code>文件的配置时，你可以利用层叠配置。例如，假如你有以下结构：</p> <div class="language- extra-class"><pre class="language-text"><code>your-project
+├── .eslintrc
+├── lib
+│ └── source.js
+└─┬ tests
+  ├── .eslintrc
+  └── test.js
+
+</code></pre></div><p>层叠配置使用离要检测的文件最近的  <code>.eslintrc</code>文件作为最高优先级，然后才是父目录里的配置文件，等等。当你在这个项目中允许 ESLint 时，<code>lib/</code>下面的所有文件将使用项目根目录里的  <code>.eslintrc</code>  文件作为它的配置文件。当 ESLint 遍历到  <code>test/</code>  目录，<code>your-project/.eslintrc</code>  之外，它还会用到  <code>your-project/tests/.eslintrc</code>。所以  <code>your-project/tests/test.js</code>  是基于它的目录层次结构中的两个<code>.eslintrc</code>  文件的组合，并且离的最近的一个优先。通过这种方式，你可以有项目级 ESLint 设置，也有覆盖特定目录的 ESLint 设置。</p> <p>同样的，如果在根目录的  <code>package.json</code>  文件中有一个  <code>eslintConfig</code>  字段，其中的配置将使用于所有子目录，但是当  <code>tests</code>  目录下的  <code>.eslintrc</code>  文件中的规则与之发生冲突时，就会覆盖它。</p> <div class="language- extra-class"><pre class="language-text"><code>your-project
+├── package.json
+├── lib
+│ └── source.js
+└─┬ tests
+  ├── .eslintrc
+  └── test.js
+
+</code></pre></div><p>如果同一目录下  <code>.eslintrc</code>  和  <code>package.json</code>  同时存在，<code>.eslintrc</code>  优先级高会被使用，<code>package.json</code>  文件将不会被使用。</p> <p>**注意：**如果在你的主目录下有一个自定义的配置文件 (<code>~/.eslintrc</code>) ，如果没有其它配置文件时它才会被使用。因为个人配置将适用于用户目录下的所有目录和文件，包括第三方的代码，当 ESLint 运行时可能会导致问题。</p> <p>默认情况下，ESLint 会在所有父级目录里寻找配置文件，一直到根目录。如果你想要你所有项目都遵循一个特定的约定时，这将会很有用，但有时候会导致意想不到的结果。为了将 ESLint 限制到一个特定的项目，在你项目根目录下的  <code>package.json</code>  文件或者  <code>.eslintrc.*</code>  文件里的  <code>eslintConfig</code>  字段下设置  <code>&quot;root&quot;: true</code>。ESLint 一旦发现配置文件中有  <code>&quot;root&quot;: true</code>，它就会停止在父级目录中寻找。</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;root&quot;: true
+}
+
+</code></pre></div><p>在 YAML 中：</p> <div class="language- extra-class"><pre class="language-text"><code>---
+  root: true
+
+</code></pre></div><p>例如，<code>projectA</code>  的  <code>lib/</code>  目录下的  <code>.eslintrc</code>  文件中设置了  <code>&quot;root&quot;: true</code>。这种情况下，当检测  <code>main.js</code>  时，<code>lib/</code>  下的配置将会被使用，<code>projectA/</code>  下的  <code>.eslintrc</code>  将不会被使用。</p> <div class="language- extra-class"><pre class="language-text"><code>home
+└── user
+    ├── .eslintrc &lt;- Always skipped if other configs present
+    └── projectA
+        ├── .eslintrc  &lt;- Not used
+        └── lib
+            ├── .eslintrc  &lt;- { &quot;root&quot;: true }
+            └── main.js
+
+</code></pre></div><p>完整的配置层次结构，从最高优先级最低的优先级，如下:</p> <ol><li>行内配置
+<ol><li><code>/*eslint-disable*/</code>  和  <code>/*eslint-enable*/</code></li> <li><code>/*global*/</code></li> <li><code>/*eslint*/</code></li> <li><code>/*eslint-env*/</code></li></ol></li> <li>命令行选项：
+<ol><li><code>--global</code></li> <li><code>--rule</code></li> <li><code>--env</code></li> <li><code>-c</code>、<code>--config</code></li></ol></li> <li>项目级配置：
+<ol><li>与要检测的文件在同一目录下的  <code>.eslintrc.*</code>  或  <code>package.json</code>  文件</li> <li>继续在父级目录寻找  <code>.eslintrc</code>  或  <code>package.json</code>文件，直到根目录（包括根目录）或直到发现一个有<code>&quot;root&quot;: true</code>的配置。</li> <li>如果不是（1）到（3）中的任何一种情况，退回到  <code>~/.eslintrc</code>  中自定义的默认配置。</li></ol></li></ol> <h2 id="扩展配置文件"><a href="#扩展配置文件" class="header-anchor">#</a> 扩展配置文件</h2> <p>一个配置文件可以被基础配置中的已启用的规则继承。</p> <p><code>extends</code>  属性值可以是：</p> <ul><li>在配置中指定的一个字符串</li> <li>字符串数组：每个配置继承它前面的配置</li></ul> <p>ESLint 递归地进行扩展配置，所以一个基础的配置也可以有一个  <code>extends</code>  属性。</p> <p><code>rules</code>  属性可以做下面的任何事情以扩展（或覆盖）规则：</p> <ul><li>启用额外的规则</li> <li>改变继承的规则级别而不改变它的选项：
+<ul><li>基础配置：<code>&quot;eqeqeq&quot;: [&quot;error&quot;, &quot;allow-null&quot;]</code></li> <li>派生的配置：<code>&quot;eqeqeq&quot;: &quot;warn&quot;</code></li> <li>最后生成的配置：<code>&quot;eqeqeq&quot;: [&quot;warn&quot;, &quot;allow-null&quot;]</code></li></ul></li> <li>覆盖基础配置中的规则的选项
+<ul><li>基础配置：<code>&quot;quotes&quot;: [&quot;error&quot;, &quot;single&quot;, &quot;avoid-escape&quot;]</code></li> <li>派生的配置：<code>&quot;quotes&quot;: [&quot;error&quot;, &quot;single&quot;]</code></li> <li>最后生成的配置：<code>&quot;quotes&quot;: [&quot;error&quot;, &quot;single&quot;]</code></li></ul></li></ul> <h3 id="使用-eslint-recommended"><a href="#使用-eslint-recommended" class="header-anchor">#</a> 使用  eslint:recommended</h3> <p>值为  <code>&quot;eslint:recommended&quot;</code>  的  <code>extends</code>  属性启用一系列核心规则，这些规则报告一些常见问题，在  <a href="https://cn.eslint.org/docs/rules/" target="_blank" rel="noopener noreferrer">规则页面<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  中被标记为   。这个推荐的子集只能在 ESLint 主要版本进行更新。</p> <p>如果你的配置集成了推荐的规则：在你升级到 ESLint 新的主版本之后，在你使用<a href="https://cn.eslint.org/docs/user-guide/command-line-interface#fix" target="_blank" rel="noopener noreferrer">命令行<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>的  <code>--fix</code>  选项之前，检查一下报告的问题，这样你就知道一个新的可修复的推荐的规则将更改代码。</p> <p><code>eslint --init</code>  命令可以创建一个配置，这样你就可以继承推荐的规则。</p> <p>JavaScript 格式的一个配置文件的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+    &quot;extends&quot;: &quot;eslint:recommended&quot;,
+    &quot;rules&quot;: {
+        // enable additional rules
+        &quot;indent&quot;: [&quot;error&quot;, 4],
+        &quot;linebreak-style&quot;: [&quot;error&quot;, &quot;unix&quot;],
+        &quot;quotes&quot;: [&quot;error&quot;, &quot;double&quot;],
+        &quot;semi&quot;: [&quot;error&quot;, &quot;always&quot;],
+
+        // override default options for rules from base configurations
+        &quot;comma-dangle&quot;: [&quot;error&quot;, &quot;always&quot;],
+        &quot;no-cond-assign&quot;: [&quot;error&quot;, &quot;always&quot;],
+
+        // disable rules from base configurations
+        &quot;no-console&quot;: &quot;off&quot;,
+    }
+}
+</code></pre></div><h3 id="使用可共享的配置包"><a href="#使用可共享的配置包" class="header-anchor">#</a> 使用可共享的配置包</h3> <p><a href="https://cn.eslint.org/docs/developer-guide/shareable-configs" target="_blank" rel="noopener noreferrer">可共享的配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  是一个 npm 包，它输出一个配置对象。要确保这个包安装在 ESLint 能请求到的目录下。</p> <p><code>extends</code>  属性值可以省略包名的前缀  <code>eslint-config-</code>。</p> <p><code>eslint --init</code>  命令可以创建一个配置，这样你就可以扩展一个流行的风格指南（比如，<code>eslint-config-standard</code>）。</p> <p>YAML 格式的一个配置文件的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>extends: standard
+rules:
+  comma-dangle:
+    - error
+    - always
+  no-empty: warn
+
+</code></pre></div><h3 id="使用插件中的配置"><a href="#使用插件中的配置" class="header-anchor">#</a> 使用插件中的配置</h3> <p><a href="https://cn.eslint.org/docs/developer-guide/working-with-plugins" target="_blank" rel="noopener noreferrer">插件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  是一个 npm 包，通常输出规则。一些插件也可以输出一个或多个命名的  <a href="https://cn.eslint.org/docs/developer-guide/working-with-plugins#configs-in-plugins" target="_blank" rel="noopener noreferrer">配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。要确保这个包安装在 ESLint 能请求到的目录下。</p> <p><code>plugins</code> <a href="https://cn.eslint.org/docs/user-guide/configuring#configuring-plugins" target="_blank" rel="noopener noreferrer">属性值<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  可以省略包名的前缀  <code>eslint-plugin-</code>。</p> <p><code>extends</code>  属性值可以由以下组成：</p> <ul><li><code>plugin:</code></li> <li>包名 (省略了前缀，比如，<code>react</code>)</li> <li><code>/</code></li> <li>配置名称 (比如  <code>recommended</code>)</li></ul> <p>JSON 格式的一个配置文件的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;plugins&quot;: [
+        &quot;react&quot;
+    ],
+    &quot;extends&quot;: [
+        &quot;eslint:recommended&quot;,
+        &quot;plugin:react/recommended&quot;
+    ],
+    &quot;rules&quot;: {
+       &quot;no-set-state&quot;: &quot;off&quot;
+    }
+}
+
+</code></pre></div><h3 id="使用一个配置文件"><a href="#使用一个配置文件" class="header-anchor">#</a> 使用一个配置文件</h3> <p><code>extends</code>  属性值可以是基本<a href="https://cn.eslint.org/docs/user-guide/configuring#using-configuration-files" target="_blank" rel="noopener noreferrer">配置文件<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>的绝对路径或相对路径。</p> <p>ESLint 解析基本配置文件的相对路径相对你你使用的配置文件，<strong>除非</strong>那个文件在你的主目录或非 ESLint 安装目录的父级目录。在这些情况下，ESLint 解析基本配合文件的相对路径相对于被检测的  <strong>项目</strong>目录（尤其是当前工作目录）。</p> <p>JSON 格式的一个配置文件的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;extends&quot;: [
+        &quot;./node_modules/coding-standard/eslintDefaults.js&quot;,
+        &quot;./node_modules/coding-standard/.eslintrc-es6&quot;,
+        &quot;./node_modules/coding-standard/.eslintrc-jsx&quot;
+    ],
+    &quot;rules&quot;: {
+        &quot;eqeqeq&quot;: &quot;warn&quot;
+    }
+}
+
+</code></pre></div><h3 id="使用-eslint-all"><a href="#使用-eslint-all" class="header-anchor">#</a> 使用  eslint:all</h3> <p><code>extends</code>  属性值可以是  <code>&quot;eslint:all&quot;</code>，启用当前安装的 ESLint 中所有的核心规则。这些规则可以在 ESLint 的任何版本进行更改。</p> <p>**重要：**这些配置  <strong>不推荐在产品中使用</strong>，因为它随着 ESLint 版本进行更改。使用的话，请自己承担风险。</p> <p>如果你配置 ESLint 升级时自动地启用新规则，当源码没有任何改变时，ESLint 可以报告新问题，因此任何 ESLint 的新的小版本好像有破坏性的更改。</p> <p>当你决定在一个项目上使用的规则和选项，尤其是如果你很少覆盖选项或禁用规则，你可能启用所有核心规则作为一种快捷方式使用。规则的默认选项并不是 ESLint 推荐的（例如，<code>quotes</code>  规则的默认选项并不意味着双引号要比单引号好）。</p> <p>如果你的配置扩展了所有的核心规则：在你升级到一个新的大或小的 ESLint 版本，在你使用<a href="https://cn.eslint.org/docs/user-guide/command-line-interface#fix" target="_blank" rel="noopener noreferrer">命令行<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>的  <code>--fix</code>  选项之前，检查一下报告的问题，这样你就知道一个新的可修复的规则将更改代码。</p> <p>JavaScript 格式的一个配置文件的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>module.exports = {
+    &quot;extends&quot;: &quot;eslint:all&quot;,
+    &quot;rules&quot;: {
+        // override default options
+        &quot;comma-dangle&quot;: [&quot;error&quot;, &quot;always&quot;],
+        &quot;indent&quot;: [&quot;error&quot;, 2],
+        &quot;no-cond-assign&quot;: [&quot;error&quot;, &quot;always&quot;],
+
+        // disable now, but enable in the future
+        &quot;one-var&quot;: &quot;off&quot;, // [&quot;error&quot;, &quot;never&quot;]
+
+        // disable
+        &quot;init-declarations&quot;: &quot;off&quot;,
+        &quot;no-console&quot;: &quot;off&quot;,
+        &quot;no-inline-comments&quot;: &quot;off&quot;,
+    }
+}
+
+</code></pre></div><h2 id="基于-glob-模式的配置"><a href="#基于-glob-模式的配置" class="header-anchor">#</a> 基于 glob 模式的配置</h2> <p>有时，你可能需要更精细的配置，比如，如果同一个目录下的文件需要有不同的配置。因此，你可以在配置中使用  <code>overrides</code>  键，它只适用于匹配特定的 glob 模式的文件，使用你在命令行上传递的格式 (e.g., <code>app/**/*.test.js</code>)。</p> <h3 id="怎么工作"><a href="#怎么工作" class="header-anchor">#</a> 怎么工作</h3> <ul><li>Glob 模式覆盖只能在配置文件 (<code>.eslintrc.*</code>  或  <code>package.json</code>) 中进行配置。</li> <li>模式应用于相对于配置文件的目录的文件路径。 比如，如果你的配置文件的路径为  <code>/Users/john/workspace/any-project/.eslintrc.js</code>  而你要检测的路径为  <code>/Users/john/workspace/any-project/lib/util.js</code>，那么你在  <code>.eslintrc.js</code>  中提供的模式是相对于 <code>lib/util.js</code> 来执行的.</li> <li>在相同的配置文件中，Glob 模式覆盖比其他常规配置具有更高的优先级。 同一个配置中的多个覆盖将按顺序被应用。也就是说，配置文件中的最后一个覆盖会有最高优先级。</li> <li>一个 glob 特定的配置几乎与 ESLint 的其他配置相同。覆盖块可以包含常规配置中的除了  <code>extends</code>、<code>overrides</code>  和  <code>root</code>  之外的其他任何有效配置选项，</li> <li>可以在单个覆盖块中提供多个 glob 模式。一个文件必须匹配至少一个配置中提供的模式。</li> <li>覆盖块也可以指定从匹配中排除的模式。如果一个文件匹配了任何一个排除模式，该配置将不再被应用。</li></ul> <h3 id="相对-glob-模式"><a href="#相对-glob-模式" class="header-anchor">#</a> 相对 glob 模式</h3> <div class="language- extra-class"><pre class="language-text"><code>project-root
+├── app
+│   ├── lib
+│   │   ├── foo.js
+│   │   ├── fooSpec.js
+│   ├── components
+│   │   ├── bar.js
+│   │   ├── barSpec.js
+│   ├── .eslintrc.json
+├── server
+│   ├── server.js
+│   ├── serverSpec.js
+├── .eslintrc.json
+
+</code></pre></div><p><code>app/.eslintrc.json</code>  文件中的配置定义了 glob 模式  <code>**/*Spec.js</code>。该模式是相对  <code>app/.eslintrc.json</code>  的基本目录的。因此，该模式将匹配  <code>app/lib/fooSpec.js</code>  和  <code>app/components/barSpec.js</code>  但  <strong>不匹配</strong> <code>server/serverSpec.js</code>。如果你在项目根目录下的  <code>.eslintrc.json</code>  文件中定义了同样的模式，它将匹配这三个  <code>*Spec</code>  文件。</p> <h3 id="配置示例"><a href="#配置示例" class="header-anchor">#</a> 配置示例</h3> <p>在你的  <code>.eslintrc.json</code>  文件中：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;rules&quot;: {
+    &quot;quotes&quot;: [ 2, &quot;double&quot; ]
+  },
+
+  &quot;overrides&quot;: [
+    {
+      &quot;files&quot;: [ &quot;bin/*.js&quot;, &quot;lib/*.js&quot; ],
+      &quot;excludedFiles&quot;: &quot;*.test.js&quot;,
+      &quot;rules&quot;: {
+        &quot;quotes&quot;: [ 2, &quot;single&quot; ]
+      }
+    }
+  ]
+}
+
+</code></pre></div><h2 id="在配置文件中注释"><a href="#在配置文件中注释" class="header-anchor">#</a> 在配置文件中注释</h2> <p>JSON 和 YAML 配置文件格式都支持注释 ( <code>package.json</code>  文件不应该包括注释)。你可以在其他类型的文件中使用 JavaScript 风格的注释或使用 YAML 风格的注释，ESLint 会忽略它们。这允许你的配置更加人性化。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;env&quot;: {
+        &quot;browser&quot;: true
+    },
+    &quot;rules&quot;: {
+        // Override our default settings just for this directory
+        &quot;eqeqeq&quot;: &quot;warn&quot;,
+        &quot;strict&quot;: &quot;off&quot;
+    }
+}
+
+</code></pre></div><h2 id="指定需要检查的文件扩展名"><a href="#指定需要检查的文件扩展名" class="header-anchor">#</a> 指定需要检查的文件扩展名</h2> <p>目前，告诉 ESLint 哪个文件扩展名要检测的唯一方法是使用  <a href="https://cn.eslint.org/docs/user-guide/command-line-interface#ext" target="_blank" rel="noopener noreferrer"><code>--ext</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>  命令行选项指定一个逗号分隔的扩展名列表。注意，该标记只在与目录一起使用时有效，如果使用文件名或 glob 模式，它将会被忽略。</p> <h2 id="忽略文件和目录"><a href="#忽略文件和目录" class="header-anchor">#</a> 忽略文件和目录</h2> <p>你可以通过在项目根目录创建一个  <code>.eslintignore</code>  文件告诉 ESLint 去忽略特定的文件和目录。<code>.eslintignore</code>  文件是一个纯文本文件，其中的每一行都是一个 glob 模式表明哪些路径应该忽略检测。例如，以下将忽略所有的 JavaScript 文件：</p> <div class="language- extra-class"><pre class="language-text"><code>**/*.js
+
+</code></pre></div><p>当 ESLint 运行时，在确定哪些文件要检测之前，它会在当前工作目录中查找一个  <code>.eslintignore</code>  文件。如果发现了这个文件，当遍历目录时，将会应用这些偏好设置。一次只有一个  <code>.eslintignore</code>  文件会被使用，所以，不是当前工作目录下的  <code>.eslintignore</code>  文件将不会被用到。</p> <p>Globs 匹配使用  <a href="https://github.com/kaelzhang/node-ignore" target="_blank" rel="noopener noreferrer">node-ignore<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，所以大量可用的特性有：</p> <ul><li>以  <code>#</code>  开头的行被当作注释，不影响忽略模式。</li> <li>路径是相对于  <code>.eslintignore</code>  的位置或当前工作目录。这也会影响通过  <code>--ignore-pattern</code>传递的路径。</li> <li>忽略模式同  <code>.gitignore</code> <a href="http://git-scm.com/docs/gitignore" target="_blank" rel="noopener noreferrer">规范<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li>以  <code>!</code>  开头的行是否定模式，它将会重新包含一个之前被忽略的模式。</li></ul> <p>除了  <code>.eslintignore</code>  文件中的模式，ESLint 总是忽略  <code>/node_modules/*</code>  和  <code>/bower_components/*</code>  中的文件。</p> <p>例如：把下面  <code>.eslintignore</code>  文件放到当前工作目录里，将忽略  <code>node_modules</code>，<code>bower_components</code>  以及  <code>build/</code>  目录下除了  <code>build/index.js</code>  的所有文件。</p> <div class="language- extra-class"><pre class="language-text"><code># /node_modules/* and /bower_components/* ignored by default
+
+# Ignore built files except build/index.js
+build/*
+!build/index.js
+
+</code></pre></div><h3 id="使用备用文件"><a href="#使用备用文件" class="header-anchor">#</a> 使用备用文件</h3> <p>如果相比于当前工作目录下  <code>.eslintignore</code>  文件，你更想使用一个不同的文件，你可以在命令行使用  <code>--ignore-path</code>  选项指定它。例如，你可以使用  <code>.jshintignore</code>  文件，因为它有相同的格式：</p> <div class="language- extra-class"><pre class="language-text"><code>eslint --ignore-path .jshintignore file.js
+
+</code></pre></div><p>你也可以使用你的  <code>.gitignore</code>  文件：</p> <div class="language- extra-class"><pre class="language-text"><code>eslint --ignore-path .gitignore file.js
+</code></pre></div><p>任何文件只要满足标准忽略文件格式都可以用。记住，指定  <code>--ignore-path</code>  意味着任何现有的  <code>.eslintignore</code>  文件将不被使用。请注意，<code>.eslintignore</code>  中的匹配规则比  <code>.gitignore</code>  中的更严格。</p> <h3 id="在-package-json-中使用-eslintconfig"><a href="#在-package-json-中使用-eslintconfig" class="header-anchor">#</a> 在 package.json 中使用 eslintConfig</h3> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;mypackage&quot;,
+  &quot;version&quot;: &quot;0.0.1&quot;,
+  &quot;eslintConfig&quot;: {
+      &quot;env&quot;: {
+          &quot;browser&quot;: true,
+          &quot;node&quot;: true
+      }
+  },
+  &quot;eslintIgnore&quot;: [&quot;hello.js&quot;, &quot;world.js&quot;]
+}
+</code></pre></div><h3 id="忽略文件告警"><a href="#忽略文件告警" class="header-anchor">#</a> 忽略文件告警</h3> <p>当您将目录传递给 ESLint 时，文件和目录将被忽略。如果将特定文件传递给 ESLint，则会看到一条警告，指示该文件已被跳过。例如，假设你有一个 <code>.eslintignore</code> 文件，如下所示：</p> <div class="language- extra-class"><pre class="language-text"><code>foo.js
+
+</code></pre></div><p>然后，您执行：</p> <div class="language- extra-class"><pre class="language-text"><code>eslint foo.js
+
+</code></pre></div><p>您将会看到以下告警：</p> <div class="language- extra-class"><pre class="language-text"><code>foo.js
+  0:0  warning  File ignored because of your .eslintignore file. Use --no-ignore to override.
+
+✖ 1 problem (0 errors, 1 warning)
+
+</code></pre></div><p>发生此消息是因为 ESLint 不确定是否要检查该文件。如消息所示，您可以使用 <code>--no-ignore</code> 省略使用忽略规则。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/frontend-tutorial/edit/master/docs/es6/eslint/eslint-configuration.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/frontend-tutorial/assets/js/app.0f2f3ef1.js" defer></script><script src="/frontend-tutorial/assets/js/4.0f425322.js" defer></script><script src="/frontend-tutorial/assets/js/32.f0b2a53f.js" defer></script><script src="/frontend-tutorial/assets/js/5.608566ca.js" defer></script>
+  </body>
+</html>

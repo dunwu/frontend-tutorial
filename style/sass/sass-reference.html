@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>sass 参考手册 | FRONTEND-TUTORIAL</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/frontend-tutorial/favicon.ico">
+    <meta name="description" content="前端教程">
+    
+    <link rel="preload" href="/frontend-tutorial/assets/css/0.styles.fb161648.css" as="style"><link rel="preload" href="/frontend-tutorial/assets/js/app.0f2f3ef1.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/4.0f425322.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/52.ccd8ffb2.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/5.608566ca.js" as="script"><link rel="prefetch" href="/frontend-tutorial/assets/js/10.1aadac9e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/11.62869f33.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/12.00af68a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/13.fad1990f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/14.7a436432.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/15.1ed64873.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/16.e4fab6e4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/17.c425f0c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/18.b19b4a8c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/19.cf3ece76.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/20.e9494703.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/21.8e701cc6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/22.c82dafa0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/23.c9095c3c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/24.97fb2434.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/25.79d04eb4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/26.0560c9b3.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/27.ca75901a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/28.a2617487.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/29.034030a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/30.687c6413.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/31.023e8160.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/32.f0b2a53f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/33.928cca1f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/34.e7b4cfb6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/35.b6a1c119.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/36.615a2e5c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/37.7c6f496d.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/38.92700ab1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/39.ca730fba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/40.735cdb31.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/41.80a4b65e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/42.33625d08.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/43.de7d648b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/44.7f081370.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/45.4a5d9c6b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/46.ae465fd4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/47.fc08a8e0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/48.3fae0897.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/49.a705c18f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/50.d5ce8c52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/51.fb7cf5ef.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/53.c39cec94.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/54.44e52515.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/55.a1b302d0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/56.18324d52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/57.4ab7da19.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/58.6666b050.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/59.9031b427.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/6.79caa705.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/60.584946dd.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/61.39e0a712.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/62.8f33fd7c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/63.b27ab9ac.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/64.b15cd74f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/65.a0cdcfa5.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/66.81e0a185.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/67.a06444ff.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/68.85e176ee.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/69.2e790a70.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/7.f420f9c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/70.cc01ed99.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/71.27be19ba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/72.d4cdf44e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/73.210cfade.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/8.64ae920a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/9.692fe702.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~flowchart.d1e58b72.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~notification.ecb92178.js">
+    <link rel="stylesheet" href="/frontend-tutorial/assets/css/0.styles.fb161648.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="FRONTEND-TUTORIAL" class="logo"> <span class="site-name can-hide">FRONTEND-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>sass 参考手册</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_1-特色功能-features" class="sidebar-link">1. 特色功能 (Features)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_2-语法格式-syntax" class="sidebar-link">2. 语法格式 (Syntax)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_3-使用-sass-using-sass" class="sidebar-link">3. 使用 Sass (Using Sass)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_3-1-rack-rails-merb-plugin" class="sidebar-link">3.1. Rack/Rails/Merb Plugin</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_3-2-缓存-caching" class="sidebar-link">3.2. 缓存 (Caching)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_3-3-配置选项-options" class="sidebar-link">3.3. 配置选项 (Options)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_3-4-判断语法格式-syntax-selection" class="sidebar-link">3.4. 判断语法格式 (Syntax Selection)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_3-5-编码格式-encodings" class="sidebar-link">3.5. 编码格式 (Encodings)</a></li></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_4-css-功能拓展-css-extensions" class="sidebar-link">4. CSS 功能拓展 (CSS Extensions)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_4-1-嵌套规则-nested-rules" class="sidebar-link">4.1. 嵌套规则 (Nested Rules)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_4-2-父选择器-referencing-parent-selectors" class="sidebar-link">4.2. 父选择器 &amp; (Referencing Parent Selectors: &amp;)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_4-3-属性嵌套-nested-properties" class="sidebar-link">4.3. 属性嵌套 (Nested Properties)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_4-4-占位符选择器-foo-placeholder-selectors-foo" class="sidebar-link">4.4. 占位符选择器 %foo (Placeholder Selectors: %foo)</a></li></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_5-注释-与-comments-and" class="sidebar-link">5. 注释 /* */ 与 // (Comments: /* */ and //)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-sassscript" class="sidebar-link">6. SassScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-1-interactive-shell" class="sidebar-link">6.1. Interactive Shell</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-2-变量-variables" class="sidebar-link">6.2. 变量 $ (Variables: $)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-3-数据类型-data-types" class="sidebar-link">6.3. 数据类型 (Data Types)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-4-运算-operations" class="sidebar-link">6.4. 运算 (Operations)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-5-圆括号-parentheses" class="sidebar-link">6.5. 圆括号 (Parentheses)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-6-函数-functions" class="sidebar-link">6.6. 函数 (Functions)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-7-插值语句-interpolation" class="sidebar-link">6.7. 插值语句 #{} (Interpolation: #{})</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-8-in-sassscript" class="sidebar-link">6.8. &amp; in SassScript</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_6-9-变量定义-default-variable-defaults-default" class="sidebar-link">6.9. 变量定义 !default (Variable Defaults: !default)</a></li></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-rules-与指令-rules-and-directives" class="sidebar-link">7. @-Rules 与指令 (@-Rules and Directives)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-1-import" class="sidebar-link">7.1. @import</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-2-media" class="sidebar-link">7.2. @media</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-3-extend" class="sidebar-link">7.3. @extend</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-4-at-root" class="sidebar-link">7.4. @at-root</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-5-debug" class="sidebar-link">7.5. @debug</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-6-warn" class="sidebar-link">7.6. @warn</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_7-7-warn" class="sidebar-link">7.7. @warn</a></li></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_8-控制指令-control-directives" class="sidebar-link">8. 控制指令 (Control Directives)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_8-1-if" class="sidebar-link">8.1. if()</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_8-2-if" class="sidebar-link">8.2. @if</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_8-3-for" class="sidebar-link">8.3. @for</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_8-4-each" class="sidebar-link">8.4. @each</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_8-5-while" class="sidebar-link">8.5. @while</a></li></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_9-混合指令-mixin-directives" class="sidebar-link">9. 混合指令 (Mixin Directives)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_9-1-定义混合指令-mixin-defining-a-mixin-mixin" class="sidebar-link">9.1. 定义混合指令 @mixin (Defining a Mixin: @mixin)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_9-2-引用混合样式-include-including-a-mixin-include" class="sidebar-link">9.2. 引用混合样式 @include (Including a Mixin: @include)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_9-3-参数-arguments" class="sidebar-link">9.3. 参数 (Arguments)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_9-4-向混合样式中导入内容-passing-content-blocks-to-a-mixin" class="sidebar-link">9.4. 向混合样式中导入内容 (Passing Content Blocks to a Mixin)</a></li></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_10-函数指令-function-directives" class="sidebar-link">10. 函数指令 (Function Directives)</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_11-输出格式-output-style" class="sidebar-link">11. 输出格式 (Output Style)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_11-1-nested" class="sidebar-link">11.1. :nested</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_11-2-expanded" class="sidebar-link">11.2. :expanded</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_11-3-compact" class="sidebar-link">11.3. :compact</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_11-4-compressed" class="sidebar-link">11.4. :compressed</a></li></ul></li><li><a href="/frontend-tutorial/style/sass/sass-reference.html#_12-拓展-sass-extending-sass" class="sidebar-link">12. 拓展 Sass (Extending Sass)</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_12-1-自定义-sass-函数-defining-custom-sass-functions" class="sidebar-link">12.1. 自定义 Sass 函数 (Defining Custom Sass Functions)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_12-2-存储缓存-cache-stores" class="sidebar-link">12.2. 存储缓存 (Cache Stores)</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/style/sass/sass-reference.html#_12-3-自定义导入-custom-importers" class="sidebar-link">12.3. 自定义导入 (Custom Importers)</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sass-参考手册"><a href="#sass-参考手册" class="header-anchor">#</a> sass 参考手册</h1> <blockquote><p>Sass 是 Syntactically Awesome StyleSheets 的缩写，即语法优雅的样式表。</p> <p>Sass 是一款强化 CSS 的辅助工具，它在 CSS 语法的基础上增加了变量 (variables)、嵌套 (nested rules)、混合 (mixins)、导入 (inline imports) 等高级功能，这些拓展令 CSS 更加强大与优雅。使用 Sass 以及 Sass 的样式库（如 <a href="http://compass-style.org/" target="_blank" rel="noopener noreferrer">Compass<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）有助于更好地组织管理样式文件，以及更高效地开发项目。</p></blockquote> <h2 id="_1-特色功能-features"><a href="#_1-特色功能-features" class="header-anchor">#</a> 1. 特色功能 (Features)</h2> <ul><li>完全兼容 CSS3</li> <li>在 CSS 基础上增加变量、嵌套 (nesting)、混合 (mixins) 等功能</li> <li>通过<a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html" target="_blank" rel="noopener noreferrer">函数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>进行颜色值与属性值的运算</li> <li>提供<a href="https://www.sass.hk/docs/#t8" target="_blank" rel="noopener noreferrer">控制指令 (control directives)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>等高级功能</li> <li>自定义输出格式</li></ul> <h2 id="_2-语法格式-syntax"><a href="#_2-语法格式-syntax" class="header-anchor">#</a> 2. 语法格式 (Syntax)</h2> <p>Sass 有两种语法格式。首先是 SCSS (Sassy CSS) —— 也是本文示例所使用的格式 —— 这种格式仅在 CSS3 语法的基础上进行拓展，所有 CSS3 语法在 SCSS 中都是通用的，同时加入 Sass 的特色功能。此外，SCSS 也支持大多数 CSS hacks 写法以及浏览器前缀写法 (vendor-specific syntax)，以及早期的 IE 滤镜写法。这种格式以 <code>.scss</code> 作为拓展名。</p> <p>另一种也是最早的 Sass 语法格式，被称为缩进格式 (Indented Sass) 通常简称 &quot;Sass&quot;，是一种简化格式。它使用 “缩进” 代替 “花括号” 表示属性属于某个选择器，用 “换行” 代替 “分号” 分隔属性，很多人认为这样做比 SCSS 更容易阅读，书写也更快速。缩进格式也可以使用 Sass 的全部功能，只是与 SCSS 相比个别地方采取了不同的表达方式，具体请查看 <a href="http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html" target="_blank" rel="noopener noreferrer">the indented syntax reference<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。这种格式以 <code>.sass</code> 作为拓展名。</p> <p>任何一种格式可以直接 <a href="https://www.sass.hk/docs/#t7-1" target="_blank" rel="noopener noreferrer">导入 (@import)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 到另一种格式中使用，或者通过 <code>sass-convert</code> 命令行工具转换成另一种格式：</p> <div class="language- extra-class"><pre class="language-text"><code># Convert Sass to SCSS
+$ sass-convert style.sass style.scss
+
+# Convert SCSS to Sass
+$ sass-convert style.scss style.sass
+
+</code></pre></div><h2 id="_3-使用-sass-using-sass"><a href="#_3-使用-sass-using-sass" class="header-anchor">#</a> 3. 使用 Sass (Using Sass)</h2> <p>Sass 可以通过以下三种方式使用：作为命令行工具；作为独立的 Ruby 模块 (Ruby module)；或者作为 Rack-enabled 框架的插件（例如 Ruby on Rails 与 Merb）。无论哪种方式都需要先安装 Sass gem （Windows 系统需要先<a href="http://rubyinstaller.org/" target="_blank" rel="noopener noreferrer">安装 Ruby<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>）：</p> <div class="language- extra-class"><pre class="language-text"><code>gem install sass
+
+</code></pre></div><p>在命令行中运行 Sass：</p> <div class="language- extra-class"><pre class="language-text"><code>sass input.scss output.css
+
+</code></pre></div><p>监视单个 Sass 文件，每次修改并保存时自动编译：</p> <div class="language- extra-class"><pre class="language-text"><code>sass --watch input.scss:output.css
+
+</code></pre></div><p>监视整个文件夹：</p> <div class="language- extra-class"><pre class="language-text"><code>sass --watch app/sass:public/stylesheets
+
+</code></pre></div><p>更多命令的用法请通过 <code>sass --help</code> 获取帮助。</p> <p>在 Ruby 中使用 Sass 也非常容易，Sass gem 安装完毕后运行 <code>require &quot;sass&quot;</code> 然后按照下面的方法使用 <a href="http://sass-lang.com/docs/yardoc/Sass/Engine.html" target="_blank" rel="noopener noreferrer">Sass::Engine<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>：</p> <div class="language- extra-class"><pre class="language-text"><code>engine = Sass::Engine.new(&quot;#main {background-color: #0000ff}&quot;, :syntax =&gt; :scss)
+engine.render #=&gt; &quot;#main { background-color: #0000ff; }\n&quot;
+
+</code></pre></div><h3 id="_3-1-rack-rails-merb-plugin"><a href="#_3-1-rack-rails-merb-plugin" class="header-anchor">#</a> 3.1. Rack/Rails/Merb Plugin</h3> <p>在 Rails 3 之前的版本中使用 Sass，需要在 <code>environment.rb</code> 文件中添加：</p> <div class="language- extra-class"><pre class="language-text"><code>config.gem &quot;sass&quot;
+
+</code></pre></div><p>Rails 3 则需要在 Gemfile 中添加：</p> <div class="language- extra-class"><pre class="language-text"><code>gem &quot;sass&quot;
+
+</code></pre></div><p>在 Merb 中使用 Sass，需要在 <code>config/dependencies.rb</code> 中添加：</p> <div class="language- extra-class"><pre class="language-text"><code>dependency &quot;merb-haml&quot;
+
+</code></pre></div><p>在 Rack 中使用 Sass，需要在 <code>config.ru</code> 中添加：</p> <div class="language- extra-class"><pre class="language-text"><code>require 'sass/plugin/rack'
+use Sass::Plugin::Rack
+
+</code></pre></div><p>样式文件与 views 不同，不包含任何动态内容，因此 CSS 只需要在 Sass 文件被修改后再编译生成。默认情况下 <code>.sass</code> 与 <code>.scss</code> 文件放置在 <code>public/stylesheets/sass</code> 中（可通过<a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#template_location-option" target="_blank" rel="noopener noreferrer">:template_location<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 修改路径），编译生成的 CSS 文件放置在 <code>public/stylesheets</code> 中。例如 <code>public/stylesheets/sass/main.scss</code> 编译生成 <code>public/stylesheets/main.css</code>。</p> <h3 id="_3-2-缓存-caching"><a href="#_3-2-缓存-caching" class="header-anchor">#</a> 3.2. 缓存 (Caching)</h3> <p>Sass 自动缓存编译后的模板与 <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#partials" target="_blank" rel="noopener noreferrer">partials<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，这样做能够显著提升重新编译的速度，尤其在处理由 <code>@import</code> 导入多个子文件的大型项目时。</p> <p>单独使用 Sass，缓存内容保存在 <code>.sass-cache</code> 文件夹中。在 Rails 和 Merb 项目中缓存文件保存在 <code>tmp/sass-cache</code> 文件夹中（可通过 <a href="https://www.sass.hk/docs/" target="_blank" rel="noopener noreferrer"><code>:cache_location</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 修改路径）。禁用缓存可将 <code>:cache</code>设为 <code>false</code>。</p> <h3 id="_3-3-配置选项-options"><a href="#_3-3-配置选项-options" class="header-anchor">#</a> 3.3. 配置选项 (Options)</h3> <p><a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html#options" target="_blank" rel="noopener noreferrer">暂未翻译<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_3-4-判断语法格式-syntax-selection"><a href="#_3-4-判断语法格式-syntax-selection" class="header-anchor">#</a> 3.4. 判断语法格式 (Syntax Selection)</h3> <p>Sass 命令行工具根据文件的拓展名判断所使用的语法格式，没有文件名时 <code>sass</code> 命令默认编译 <code>.sass</code> 文件，添加 <code>--scss</code> 选项或者使用 <code>scss</code> 命令编译 SCSS 文件。</p> <h3 id="_3-5-编码格式-encodings"><a href="#_3-5-编码格式-encodings" class="header-anchor">#</a> 3.5. 编码格式 (Encodings)</h3> <p>在 Ruby 1.9 及以上环境中运行 Sass 时，Sass 对文件的编码格式比较敏感，首先会根据 <a href="http://www.w3.org/TR/2013/WD-css-syntax-3-20130919/#determine-the-fallback-encoding" target="_blank" rel="noopener noreferrer">CSS spec<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 判断样式文件的编码格式，如果失败则检测 Ruby string encoding。也就是说，Sass 首先检查 Unicode byte order mark，然后是 <code>@charset</code> 声明，最后是 Ruby string encoding，假如都没有检测到，默认使用 UTF-8 编码。</p> <p>与 CSS 相同，使用 <code>@charset</code> 可以声明特定的编码格式。在样式文件的起始位置（前面没有任何空白与注释）插入 <code>@charset &quot;encoding-name&quot;</code>， Sass 将会按照给出的编码格式编译文件。注意所使用的编码格式必须可转换为 Unicode 字符集。</p> <p>Sass 以 UTF-8 编码输出 CSS 文件，当且仅当编译后的文件中包含非 ASCII 字符时，才会在输出文件中添加 <code>@charset</code> 声明，而在压缩模式下 (compressed mode) 使用 UTF-8 byte order mark 代替 <code>@charset</code> 声明语句。</p> <h2 id="_4-css-功能拓展-css-extensions"><a href="#_4-css-功能拓展-css-extensions" class="header-anchor">#</a> 4. CSS 功能拓展 (CSS Extensions)</h2> <h3 id="_4-1-嵌套规则-nested-rules"><a href="#_4-1-嵌套规则-nested-rules" class="header-anchor">#</a> 4.1. 嵌套规则 (Nested Rules)</h3> <p>Sass 允许将一套 CSS 样式嵌套进另一套样式中，内层的样式将它外层的选择器作为父选择器，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>#main p {
+  color: #00ff00;
+  width: 97%;
+
+  .redbox {
+    background-color: #ff0000;
+    color: #000000;
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main p {
+  color: #00ff00;
+  width: 97%; }
+  #main p .redbox {
+    background-color: #ff0000;
+    color: #000000; }
+
+</code></pre></div><p>嵌套功能避免了重复输入父选择器，而且令复杂的 CSS 结构更易于管理：</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  width: 97%;
+
+  p, div {
+    font-size: 2em;
+    a { font-weight: bold; }
+  }
+
+  pre { font-size: 3em; }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  width: 97%; }
+  #main p, #main div {
+    font-size: 2em; }
+    #main p a, #main div a {
+      font-weight: bold; }
+  #main pre {
+    font-size: 3em; }
+
+</code></pre></div><h3 id="_4-2-父选择器-referencing-parent-selectors"><a href="#_4-2-父选择器-referencing-parent-selectors" class="header-anchor">#</a> 4.2. 父选择器 <code>&amp;</code> (Referencing Parent Selectors: <code>&amp;</code>)</h3> <p>在嵌套 CSS 规则时，有时也需要直接使用嵌套外层的父选择器，例如，当给某个元素设定 <code>hover</code> 样式时，或者当 <code>body</code> 元素有某个 classname 时，可以用 <code>&amp;</code> 代表嵌套规则外层的父选择器。</p> <div class="language- extra-class"><pre class="language-text"><code>a {
+  font-weight: bold;
+  text-decoration: none;
+  &amp;:hover { text-decoration: underline; }
+  body.firefox &amp; { font-weight: normal; }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>a {
+  font-weight: bold;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+  body.firefox a {
+    font-weight: normal; }
+
+</code></pre></div><p>编译后的 CSS 文件中 <code>&amp;</code> 将被替换成嵌套外层的父选择器，如果含有多层嵌套，最外层的父选择器会一层一层向下传递：</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  color: black;
+  a {
+    font-weight: bold;
+    &amp;:hover { color: red; }
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  color: black; }
+  #main a {
+    font-weight: bold; }
+    #main a:hover {
+      color: red; }
+
+</code></pre></div><p><code>&amp;</code> 必须作为选择器的第一个字符，其后可以跟随后缀生成复合的选择器，例如</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  color: black;
+  &amp;-sidebar { border: 1px solid; }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  color: black; }
+  #main-sidebar {
+    border: 1px solid; }
+
+</code></pre></div><p>当父选择器含有不合适的后缀时，Sass 将会报错。</p> <h3 id="_4-3-属性嵌套-nested-properties"><a href="#_4-3-属性嵌套-nested-properties" class="header-anchor">#</a> 4.3. 属性嵌套 (Nested Properties)</h3> <p>有些 CSS 属性遵循相同的命名空间 (namespace)，比如 <code>font-family, font-size, font-weight</code> 都以 <code>font</code> 作为属性的命名空间。为了便于管理这样的属性，同时也为了避免了重复输入，Sass 允许将属性嵌套在命名空间中，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>.funky {
+  font: {
+    family: fantasy;
+    size: 30em;
+    weight: bold;
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold; }
+
+</code></pre></div><p>命名空间也可以包含自己的属性值，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>.funky {
+  font: 20px/24px {
+    family: fantasy;
+    weight: bold;
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.funky {
+  font: 20px/24px;
+    font-family: fantasy;
+    font-weight: bold; }
+
+</code></pre></div><h3 id="_4-4-占位符选择器-foo-placeholder-selectors-foo"><a href="#_4-4-占位符选择器-foo-placeholder-selectors-foo" class="header-anchor">#</a> 4.4. 占位符选择器 <code>%foo</code> (Placeholder Selectors: <code>%foo</code>)</h3> <p>Sass 额外提供了一种特殊类型的选择器：占位符选择器 (placeholder selector)。与常用的 id 与 class 选择器写法相似，只是 <code>#</code> 或 <code>.</code> 替换成了 <code>%</code>。必须通过 <a href="https://www.sass.hk/docs/#t7-3" target="_blank" rel="noopener noreferrer">@extend<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 指令调用，更多介绍请查阅 <a href="https://www.sass.hk/docs/#t7-3-6" target="_blank" rel="noopener noreferrer">@extend-Only Selectors<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <p>当占位符选择器单独使用时（未通过 <code>@extend</code> 调用），不会编译到 CSS 文件中。</p> <h2 id="_5-注释-与-comments-and"><a href="#_5-注释-与-comments-and" class="header-anchor">#</a> 5. 注释 <code>/* */</code> 与 <code>//</code> (Comments: <code>/* */</code> and <code>//</code>)</h2> <p>Sass 支持标准的 CSS 多行注释 <code>/* */</code>，以及单行注释 <code>//</code>，前者会 被完整输出到编译后的 CSS 文件中，而后者则不会，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>/* This comment is
+ * several lines long.
+ * since it uses the CSS comment syntax,
+ * it will appear in the CSS output. */
+body { color: black; }
+
+// These comments are only one line long each.
+// They won't appear in the CSS output,
+// since they use the single-line comment syntax.
+a { color: green; }
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>/* This comment is
+ * several lines long.
+ * since it uses the CSS comment syntax,
+ * it will appear in the CSS output. */
+body {
+  color: black; }
+
+a {
+  color: green; }
+
+</code></pre></div><p>将 <code>!</code> 作为多行注释的第一个字符表示在压缩输出模式下保留这条注释并输出到 CSS 文件中，通常用于添加版权信息。</p> <p>插值语句 (interpolation) 也可写进多行注释中输出变量值：</p> <div class="language- extra-class"><pre class="language-text"><code>$version: &quot;1.2.3&quot;;
+/* This CSS is generated by My Snazzy Framework version #{$version}. */
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>/* This CSS is generated by My Snazzy Framework version 1.2.3. */
+
+</code></pre></div><h2 id="_6-sassscript"><a href="#_6-sassscript" class="header-anchor">#</a> 6. SassScript</h2> <p>在 CSS 属性的基础上 Sass 提供了一些名为 SassScript 的新功能。 SassScript 可作用于任何属性，允许属性使用变量、算数运算等额外功能。</p> <p>通过 interpolation，SassScript 甚至可以生成选择器或属性名，这一点对编写 mixin 有很大帮助。</p> <h3 id="_6-1-interactive-shell"><a href="#_6-1-interactive-shell" class="header-anchor">#</a> 6.1. Interactive Shell</h3> <p>Interactive Shell 可以在命令行中测试 SassScript 的功能。在命令行中输入 <code>sass -i</code>，然后输入想要测试的 SassScript 查看输出结果：</p> <div class="language- extra-class"><pre class="language-text"><code>$ sass -i
+&gt;&gt; &quot;Hello, Sassy World!&quot;
+&quot;Hello, Sassy World!&quot;
+&gt;&gt; 1px + 1px + 1px
+3px
+&gt;&gt; #777 + #777
+#eeeeee
+&gt;&gt; #777 + #888
+white
+
+</code></pre></div><h3 id="_6-2-变量-variables"><a href="#_6-2-变量-variables" class="header-anchor">#</a> 6.2. 变量 <code>$</code> (Variables: <code>$</code>)</h3> <p>SassScript 最普遍的用法就是变量，变量以美元符号开头，赋值方法与 CSS 属性的写法一样：</p> <div class="language- extra-class"><pre class="language-text"><code>$width: 5em;
+
+</code></pre></div><p>直接使用即调用变量：</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  width: $width;
+}
+
+</code></pre></div><p>变量支持块级作用域，嵌套规则内定义的变量只能在嵌套规则内使用（局部变量），不在嵌套规则内定义的变量则可在任何地方使用（全局变量）。将局部变量转换为全局变量可以添加<code>!global</code> 声明：</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  $width: 5em !global;
+  width: $width;
+}
+
+#sidebar {
+  width: $width;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  width: 5em;
+}
+
+#sidebar {
+  width: 5em;
+}
+
+</code></pre></div><h3 id="_6-3-数据类型-data-types"><a href="#_6-3-数据类型-data-types" class="header-anchor">#</a> 6.3. 数据类型 (Data Types)</h3> <p>SassScript 支持 6 种主要的数据类型：</p> <ul><li>数字，<code>1, 2, 13, 10px</code></li> <li>字符串，有引号字符串与无引号字符串，<code>&quot;foo&quot;, 'bar', baz</code></li> <li>颜色，<code>blue, #04a3f9, rgba(255,0,0,0.5)</code></li> <li>布尔型，<code>true, false</code></li> <li>空值，<code>null</code></li> <li>数组 (list)，用空格或逗号作分隔符，<code>1.5em 1em 0 2em, Helvetica, Arial, sans-serif</code></li> <li>maps, 相当于 JavaScript 的 object，<code>(key1: value1, key2: value2)</code></li></ul> <p>SassScript 也支持其他 CSS 属性值，比如 Unicode 字符集，或 <code>!important</code> 声明。然而Sass 不会特殊对待这些属性值，一律视为无引号字符串。</p> <h4 id="_6-3-1-字符串-strings"><a href="#_6-3-1-字符串-strings" class="header-anchor">#</a> 6.3.1. 字符串 (Strings)</h4> <p>SassScript 支持 CSS 的两种字符串类型：有引号字符串 (quoted strings)，如 <code>&quot;Lucida Grande&quot;</code> <code>'http://sass-lang.com'</code>；与无引号字符串 (unquoted strings)，如 <code>sans-serif</code> <code>bold</code>，在编译 CSS 文件时不会改变其类型。只有一种情况例外，使用 <code>#{}</code> (interpolation) 时，有引号字符串将被编译为无引号字符串，这样便于在 mixin 中引用选择器名：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin firefox-message($selector) {
+  body.firefox #{$selector}:before {
+    content: &quot;Hi, Firefox users!&quot;;
+  }
+}
+@include firefox-message(&quot;.header&quot;);
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>body.firefox .header:before {
+  content: &quot;Hi, Firefox users!&quot;; }
+
+</code></pre></div><h4 id="_6-3-2-数组-lists"><a href="#_6-3-2-数组-lists" class="header-anchor">#</a> 6.3.2. 数组 (Lists)</h4> <p>数组 (lists) 指 Sass 如何处理 CSS 中 <code>margin: 10px 15px 0 0</code> 或者 <code>font-face: Helvetica, Arial, sans-serif</code> 这样通过空格或者逗号分隔的一系列的值。事实上，独立的值也被视为数组 —— 只包含一个值的数组。</p> <p>数组本身没有太多功能，但 <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#list-functions" target="_blank" rel="noopener noreferrer">Sass list functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 赋予了数组更多新功能：<code>nth</code> 函数可以直接访问数组中的某一项；<code>join</code> 函数可以将多个数组连接在一起；<code>append</code> 函数可以在数组中添加新值；而 <code>@each</code> 指令能够遍历数组中的每一项。</p> <p>数组中可以包含子数组，比如 <code>1px 2px, 5px 6px</code> 是包含 <code>1px 2px</code> 与 <code>5px 6px</code> 两个数组的数组。如果内外两层数组使用相同的分隔方式，需要用圆括号包裹内层，所以也可以写成 <code>(1px 2px) (5px 6px)</code>。变化是，之前的 <code>1px 2px, 5px 6px</code> 使用逗号分割了两个子数组 (comma-separated)，而 <code>(1px 2px) (5px 6px)</code> 则使用空格分割(space-separated)。</p> <p>当数组被编译为 CSS 时，Sass 不会添加任何圆括号（CSS 中没有这种写法），所以 <code>(1px 2px) (5px 6px)</code> 与 <code>1px 2px, 5px 6px</code> 在编译后的 CSS 文件中是完全一样的，但是它们在 Sass 文件中却有不同的意义，前者是包含两个数组的数组，而后者是包含四个值的数组。</p> <p>用 <code>()</code> 表示不包含任何值的空数组（在 Sass 3.3 版之后也视为空的 map）。空数组不可以直接编译成 CSS，比如编译 <code>font-family: ()</code> Sass 将会报错。如果数组中包含空数组或空值，编译时将被清除，比如 <code>1px 2px () 3px</code> 或 <code>1px 2px null 3px</code>。</p> <p>基于逗号分隔的数组允许保留结尾的逗号，这样做的意义是强调数组的结构关系，尤其是需要声明只包含单个值的数组时。例如 <code>(1,)</code> 表示只包含 <code>1</code> 的数组，而 <code>(1 2 3,)</code> 表示包含 <code>1 2 3</code> 这个以空格分隔的数组的数组。</p> <h4 id="_6-3-3-maps"><a href="#_6-3-3-maps" class="header-anchor">#</a> 6.3.3. Maps</h4> <p>Maps represent an association between keys and values, where keys are used to look up values. They make it easy to collect values into named groups and access those groups dynamically. They have no direct parallel in CSS, although they’re syntactically similar to media query expressions:</p> <div class="language- extra-class"><pre class="language-text"><code>scss $map: (key1: value1, key2: value2, key3: value3);
+</code></pre></div><p>Unlike lists, maps must always be surrounded by parentheses and must always be comma-separated. Both the keys and values in maps can be any SassScript object. A map may only have one value associated with a given key (although that value may be a list). A given value may be associated with many keys, though. Like lists, maps are mostly manipulated using SassScript functions. The map-get function looks up values in a map and the map-merge function adds values to a map. The @each directive can be used to add styles for each key/value pair in a map. The order of pairs in a map is always the same as when the map was created. Maps can also be used anywhere lists can. When used by a list function, a map is treated as a list of pairs. For example, (key1: value1, key2: value2) would be treated as the nested list key1 value1, key2 value2 by list functions. Lists cannot be treated as maps, though, with the exception of the empty list. () represents both a map with no key/value pairs and a list with no elements. Note that map keys can be any Sass data type (even another map) and the syntax for declaring a map allows arbitrary SassScript expressions that will be evaluated to determine the key. Maps cannot be converted to plain CSS. Using one as the value of a variable or an argument to a CSS function will cause an error. Use the inspect($value) function to produce an output string useful for debugging maps.</p> <h4 id="_6-3-4-颜色-colors"><a href="#_6-3-4-颜色-colors" class="header-anchor">#</a> 6.3.4. 颜色 (Colors)</h4> <p>Any CSS color expression returns a SassScript Color value. This includes a large number of named colors which are indistinguishable from unquoted strings. In compressed output mode, Sass will output the smallest CSS representation of a color. For example, #FF0000 will output as red in compressed mode, but blanchedalmond will output as #FFEBCD. A common issue users encounter with named colors is that since Sass prefers the same output format as was typed in other output modes, a color interpolated into a selector becomes invalid syntax when compressed. To avoid this, always quote named colors if they are meant to be used in the construction of a selector.</p> <h3 id="_6-4-运算-operations"><a href="#_6-4-运算-operations" class="header-anchor">#</a> 6.4. 运算 (Operations)</h3> <p>所有数据类型均支持相等运算</p> <div class="language- extra-class"><pre class="language-text"><code>==
+</code></pre></div><p>或</p> <div class="language- extra-class"><pre class="language-text"><code>!=
+</code></pre></div><p>，此外，每种数据类型也有其各自支持的运算方式。</p> <h4 id="_6-4-1-数字运算-number-operations"><a href="#_6-4-1-数字运算-number-operations" class="header-anchor">#</a> 6.4.1. 数字运算 (Number Operations)</h4> <p>SassScript 支持数字的加减乘除、取整等运算 (<code>+, -, *, /, %</code>)，如果必要会在不同单位间转换值。</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  width: 1in + 8pt;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  width: 1.111in; }
+
+</code></pre></div><p>关系运算 <code>&lt;, &gt;, &lt;=, &gt;=</code> 也可用于数字运算，相等运算 <code>==, !=</code> 可用于所有数据类型。</p> <h5 id="_6-4-1-1-除法运算-division-and"><a href="#_6-4-1-1-除法运算-division-and" class="header-anchor">#</a> 6.4.1.1. 除法运算 <code>/</code> (Division and <code>/</code>)</h5> <p><code>/</code> 在 CSS 中通常起到分隔数字的用途，SassScript 作为 CSS 语言的拓展当然也支持这个功能，同时也赋予了 <code>/</code> 除法运算的功能。也就是说，如果 <code>/</code> 在 SassScript 中把两个数字分隔，编译后的 CSS 文件中也是同样的作用。</p> <p>以下三种情况 <code>/</code> 将被视为除法运算符号：</p> <ul><li>如果值，或值的一部分，是变量或者函数的返回值</li> <li>如果值被圆括号包裹</li> <li>如果值是算数表达式的一部分</li></ul> <div class="language- extra-class"><pre class="language-text"><code>p {
+  font: 10px/8px;             // Plain CSS, no division
+  $width: 1000px;
+  width: $width/2;            // Uses a variable, does division
+  width: round(1.5)/2;        // Uses a function, does division
+  height: (500px/2);          // Uses parentheses, does division
+  margin-left: 5px + 8px/2px; // Uses +, does division
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  font: 10px/8px;
+  width: 500px;
+  height: 250px;
+  margin-left: 9px; }
+
+</code></pre></div><p>如果需要使用变量，同时又要确保 <code>/</code> 不做除法运算而是完整地编译到 CSS 文件中，只需要用 <code>#{}</code> 插值语句将变量包裹。</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  $font-size: 12px;
+  $line-height: 30px;
+  font: #{$font-size}/#{$line-height};
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  font: 12px/30px; }
+
+</code></pre></div><h4 id="_6-4-2-颜色值运算-color-operations"><a href="#_6-4-2-颜色值运算-color-operations" class="header-anchor">#</a> 6.4.2. 颜色值运算 (Color Operations)</h4> <p>颜色值的运算是分段计算进行的，也就是分别计算红色，绿色，以及蓝色的值：</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: #010203 + #040506;
+}
+
+</code></pre></div><p>计算 <code>01 + 04 = 05</code> <code>02 + 05 = 07</code> <code>03 + 06 = 09</code>，然后编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: #050709; }
+
+</code></pre></div><p>使用 <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html" target="_blank" rel="noopener noreferrer">color functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 比计算颜色值更方便一些。</p> <p>数字与颜色值之间也可以进行算数运算，同样也是分段计算的，比如</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: #010203 * 2;
+}
+
+</code></pre></div><p>计算 <code>01 * 2 = 02</code> <code>02 * 2 = 04</code> <code>03 * 2 = 06</code>，然后编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: #020406; }
+
+</code></pre></div><p>需要注意的是，如果颜色值包含 alpha channel（rgba 或 hsla 两种颜色值），必须拥有相等的 alpha 值才能进行运算，因为算术运算不会作用于 alpha 值。</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: rgba(255, 0, 0, 0.75) + rgba(0, 255, 0, 0.75);
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: rgba(255, 255, 0, 0.75); }
+
+</code></pre></div><p>颜色值的 alpha channel 可以通过 <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#opacify-instance_method" target="_blank" rel="noopener noreferrer">opacify<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 或 <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#transparentize-instance_method" target="_blank" rel="noopener noreferrer">transparentize<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 两个函数进行调整。</p> <div class="language- extra-class"><pre class="language-text"><code>$translucent-red: rgba(255, 0, 0, 0.5);
+p {
+  color: opacify($translucent-red, 0.3);
+  background-color: transparentize($translucent-red, 0.25);
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: rgba(255, 0, 0, 0.8);
+  background-color: rgba(255, 0, 0, 0.25); }
+
+</code></pre></div><p>IE 滤镜要求所有的颜色值包含 alpha 层，而且格式必须固定 <code>#AABBCCDD</code>，使用 <code>ie_hex_str</code> 函数可以很容易地将颜色转化为 IE 滤镜要求的格式。</p> <div class="language- extra-class"><pre class="language-text"><code>$translucent-red: rgba(255, 0, 0, 0.5);
+$green: #00ff00;
+div {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr='#{ie-hex-str($green)}', endColorstr='#{ie-hex-str($translucent-red)}');
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>div {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled='false', startColorstr=#FF00FF00, endColorstr=#80FF0000);
+}
+
+</code></pre></div><h4 id="_6-4-3-字符串运算-string-operations"><a href="#_6-4-3-字符串运算-string-operations" class="header-anchor">#</a> 6.4.3. 字符串运算 (String Operations)</h4> <p><code>+</code> 可用于连接字符串</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  cursor: e + -resize;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  cursor: e-resize; }
+
+</code></pre></div><p>注意，如果有引号字符串（位于 <code>+</code> 左侧）连接无引号字符串，运算结果是有引号的，相反，无引号字符串（位于 <code>+</code> 左侧）连接有引号字符串，运算结果则没有引号。</p> <div class="language- extra-class"><pre class="language-text"><code>p:before {
+  content: &quot;Foo &quot; + Bar;
+  font-family: sans- + &quot;serif&quot;;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p:before {
+  content: &quot;Foo Bar&quot;;
+  font-family: sans-serif; }
+
+</code></pre></div><p>运算表达式与其他值连用时，用空格做连接符：</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  margin: 3px + 4px auto;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  margin: 7px auto; }
+
+</code></pre></div><p>在有引号的文本字符串中使用 <code>#{}</code> 插值语句可以添加动态的值：</p> <div class="language- extra-class"><pre class="language-text"><code>p:before {
+  content: &quot;I ate #{5 + 10} pies!&quot;;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p:before {
+  content: &quot;I ate 15 pies!&quot;; }
+
+</code></pre></div><p>空的值被视作插入了空字符串：</p> <div class="language- extra-class"><pre class="language-text"><code>$value: null;
+p:before {
+  content: &quot;I ate #{$value} pies!&quot;;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p:before {
+  content: &quot;I ate pies!&quot;; }
+
+</code></pre></div><h4 id="_6-4-4-布尔运算-boolean-operations"><a href="#_6-4-4-布尔运算-boolean-operations" class="header-anchor">#</a> 6.4.4. 布尔运算 (Boolean Operations)</h4> <p>SassScript 支持布尔型的 <code>and</code> <code>or</code> 以及 <code>not</code> 运算。</p> <h4 id="_6-4-5-数组运算-list-operations"><a href="#_6-4-5-数组运算-list-operations" class="header-anchor">#</a> 6.4.5. 数组运算 (List Operations)</h4> <p>数组不支持任何运算方式，只能使用 <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#list-functions" target="_blank" rel="noopener noreferrer">list functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 控制。</p> <h3 id="_6-5-圆括号-parentheses"><a href="#_6-5-圆括号-parentheses" class="header-anchor">#</a> 6.5. 圆括号 (Parentheses)</h3> <p>圆括号可以用来影响运算的顺序：</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  width: 1em + (2em * 3);
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  width: 7em; }
+
+</code></pre></div><h3 id="_6-6-函数-functions"><a href="#_6-6-函数-functions" class="header-anchor">#</a> 6.6. 函数 (Functions)</h3> <p>SassScript 定义了多种函数，有些甚至可以通过普通的 CSS 语句调用：</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: hsl(0, 100%, 50%);
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: #ff0000; }
+
+</code></pre></div><h4 id="_6-6-1-关键词参数-keyword-arguments"><a href="#_6-6-1-关键词参数-keyword-arguments" class="header-anchor">#</a> 6.6.1. 关键词参数 (Keyword Arguments)</h4> <p>Sass 函数允许使用关键词参数 (keyword arguments)，上面的例子也可以写成：</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: hsl($hue: 0, $saturation: 100%, $lightness: 50%);
+}
+
+</code></pre></div><p>虽然不够简明，但是阅读起来会更方便。关键词参数给函数提供了更灵活的接口，以及容易调用的参数。关键词参数可以打乱顺序使用，如果使用默认值也可以省缺，另外，参数名被视为变量名，下划线、短横线可以互换使用。</p> <p>通过 <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html" target="_blank" rel="noopener noreferrer">Sass::Script::Functions<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 查看完整的 Sass 函数列表，参数名，以及如何自定义函数。</p> <h3 id="_6-7-插值语句-interpolation"><a href="#_6-7-插值语句-interpolation" class="header-anchor">#</a> 6.7. 插值语句 <code>#{}</code> (Interpolation: <code>#{}</code>)</h3> <p>通过 <code>#{}</code> 插值语句可以在选择器或属性名中使用变量：</p> <div class="language- extra-class"><pre class="language-text"><code>$name: foo;
+$attr: border;
+p.#{$name} {
+  #{$attr}-color: blue;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p.foo {
+  border-color: blue; }
+
+</code></pre></div><p><code>#{}</code> 插值语句也可以在属性值中插入 SassScript，大多数情况下，这样可能还不如使用变量方便，但是使用 <code>#{}</code> 可以避免 Sass 运行运算表达式，直接编译 CSS。</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  $font-size: 12px;
+  $line-height: 30px;
+  font: #{$font-size}/#{$line-height};
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  font: 12px/30px; }
+
+</code></pre></div><h3 id="_6-8-in-sassscript"><a href="#_6-8-in-sassscript" class="header-anchor">#</a> 6.8. <code>&amp;</code> in SassScript</h3> <p>Just like when it’s used in selectors, &amp; in SassScript refers to the current parent selector. It’s a comma-separated list of space-separated lists. For example:</p> <div class="language- extra-class"><pre class="language-text"><code>.foo.bar .baz.bang, .bip.qux {
+  $selector: &amp;;
+}
+
+</code></pre></div><p>The value of $selector is now ((&quot;.foo.bar&quot; &quot;.baz.bang&quot;), &quot;.bip.qux&quot;). The compound selectors are quoted here to indicate that they’re strings, but in reality they would be unquoted. Even if the parent selector doesn’t contain a comma or a space, &amp; will always have two levels of nesting, so it can be accessed consistently.</p> <p>If there is no parent selector, the value of &amp; will be null. This means you can use it in a mixin to detect whether a parent selector exists:</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin does-parent-exist {
+  @if &amp; {
+    &amp;:hover {
+      color: red;
+    }
+  } @else {
+    a {
+      color: red;
+    }
+  }
+}
+
+</code></pre></div><h3 id="_6-9-变量定义-default-variable-defaults-default"><a href="#_6-9-变量定义-default-variable-defaults-default" class="header-anchor">#</a> 6.9. 变量定义 <code>!default</code> (Variable Defaults: <code>!default</code>)</h3> <p>可以在变量的结尾添加 <code>!default</code> 给一个未通过 <code>!default</code> 声明赋值的变量赋值，此时，如果变量已经被赋值，不会再被重新赋值，但是如果变量还没有被赋值，则会被赋予新的值。</p> <div class="language- extra-class"><pre class="language-text"><code>$content: &quot;First content&quot;;
+$content: &quot;Second content?&quot; !default;
+$new_content: &quot;First time reference&quot; !default;
+
+#main {
+  content: $content;
+  new-content: $new_content;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  content: &quot;First content&quot;;
+  new-content: &quot;First time reference&quot;; }
+
+</code></pre></div><p>变量是 null 空值时将视为未被 <code>!default</code> 赋值。</p> <div class="language- extra-class"><pre class="language-text"><code>$content: null;
+$content: &quot;Non-null content&quot; !default;
+
+#main {
+  content: $content;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  content: &quot;Non-null content&quot;; }
+
+</code></pre></div><h2 id="_7-rules-与指令-rules-and-directives"><a href="#_7-rules-与指令-rules-and-directives" class="header-anchor">#</a> 7. @-Rules 与指令 (@-Rules and Directives)</h2> <p>Sass 支持所有的 CSS3 @-Rules，以及 Sass 特有的 “指令”（directives）。这一节会详细解释，更多资料请查看 <a href="https://www.sass.hk/docs/#8" target="_blank" rel="noopener noreferrer">控制指令 (control directives)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 与 <a href="https://www.sass.hk/docs/#9" target="_blank" rel="noopener noreferrer">混合指令 (mixin directives)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 两个部分。</p> <h3 id="_7-1-import"><a href="#_7-1-import" class="header-anchor">#</a> 7.1. @import</h3> <p>Sass 拓展了 <code>@import</code> 的功能，允许其导入 SCSS 或 Sass 文件。被导入的文件将合并编译到同一个 CSS 文件中，另外，被导入的文件中所包含的变量或者混合指令 (mixin) 都可以在导入的文件中使用。</p> <p>Sass 在当前地址，或 Rack, Rails, Merb 的 Sass 文件地址寻找 Sass 文件，如果需要设定其他地址，可以用 <code>:load_paths</code> 选项，或者在命令行中输入 <code>--load-path</code> 命令。</p> <p>通常，<code>@import</code> 寻找 Sass 文件并将其导入，但在以下情况下，<code>@import</code> 仅作为普通的 CSS 语句，不会导入任何 Sass 文件。</p> <ul><li>文件拓展名是 <code>.css</code>；</li> <li>文件名以 <code>http://</code> 开头；</li> <li>文件名是 <code>url()</code>；</li> <li><code>@import</code> 包含 media queries。</li></ul> <p>如果不在上述情况内，文件的拓展名是 <code>.scss</code> 或 <code>.sass</code>，则导入成功。没有指定拓展名，Sass 将会试着寻找文件名相同，拓展名为 <code>.scss</code> 或 <code>.sass</code> 的文件并将其导入。</p> <div class="language- extra-class"><pre class="language-text"><code>@import &quot;foo.scss&quot;;
+
+</code></pre></div><p>或</p> <div class="language- extra-class"><pre class="language-text"><code>@import &quot;foo&quot;;
+
+</code></pre></div><p>都会导入文件 foo.scss，但是</p> <div class="language- extra-class"><pre class="language-text"><code>@import &quot;foo.css&quot;;
+@import &quot;foo&quot; screen;
+@import &quot;http://foo.com/bar&quot;;
+@import url(foo);
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>@import &quot;foo.css&quot;;
+@import &quot;foo&quot; screen;
+@import &quot;http://foo.com/bar&quot;;
+@import url(foo);
+
+</code></pre></div><p>Sass 允许同时导入多个文件，例如同时导入 rounded-corners 与 text-shadow 两个文件：</p> <div class="language- extra-class"><pre class="language-text"><code>@import &quot;rounded-corners&quot;, &quot;text-shadow&quot;;
+
+</code></pre></div><p>导入文件也可以使用 <code>#{ }</code> 插值语句，但不是通过变量动态导入 Sass 文件，只能作用于 CSS 的 <code>url()</code> 导入方式：</p> <div class="language- extra-class"><pre class="language-text"><code>$family: unquote(&quot;Droid+Sans&quot;);
+@import url(&quot;http://fonts.googleapis.com/css?family=\#{$family}&quot;);
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>@import url(&quot;http://fonts.googleapis.com/css?family=Droid+Sans&quot;);
+
+</code></pre></div><h4 id="_7-1-1-分音-partials"><a href="#_7-1-1-分音-partials" class="header-anchor">#</a> 7.1.1. 分音 (Partials)</h4> <p>如果需要导入 SCSS 或者 Sass 文件，但又不希望将其编译为 CSS，只需要在文件名前添加下划线，这样会告诉 Sass 不要编译这些文件，但导入语句中却不需要添加下划线。</p> <p>例如，将文件命名为 <code>_colors.scss</code>，便不会编译 <code>_colours.css</code> 文件。</p> <div class="language- extra-class"><pre class="language-text"><code>@import &quot;colors&quot;;
+
+</code></pre></div><p>上面的例子，导入的其实是 <code>_colors.scss</code> 文件</p> <p>注意，不可以同时存在添加下划线与未添加下划线的同名文件，添加下划线的文件将会被忽略。</p> <h4 id="_7-1-2-嵌套-import"><a href="#_7-1-2-嵌套-import" class="header-anchor">#</a> 7.1.2. 嵌套 @import</h4> <p>大多数情况下，一般在文件的最外层（不在嵌套规则内）使用 <code>@import</code>，其实，也可以将 <code>@import</code> 嵌套进 CSS 样式或者 <code>@media</code> 中，与平时的用法效果相同，只是这样导入的样式只能出现在嵌套的层中。</p> <p>假设 example.scss 文件包含以下样式：</p> <div class="language- extra-class"><pre class="language-text"><code>.example {
+  color: red;
+}
+
+</code></pre></div><p>然后导入到 <code>#main</code> 样式内</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  @import &quot;example&quot;;
+}
+
+</code></pre></div><p>将会被编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#main .example {
+  color: red;
+}
+
+</code></pre></div><blockquote><p>Directives that are only allowed at the base level of a document, like @mixin or @charset, are not allowed in files that are @imported in a nested context. 这一句不理解</p></blockquote> <p>不可以在混合指令 (mixin) 或控制指令 (control directives) 中嵌套 <code>@import</code>。</p> <h3 id="_7-2-media"><a href="#_7-2-media" class="header-anchor">#</a> 7.2. @media</h3> <p>Sass 中 <code>@media</code> 指令与 CSS 中用法一样，只是增加了一点额外的功能：允许其在 CSS 规则中嵌套。如果 <code>@media</code> 嵌套在 CSS 规则内，编译时，<code>@media</code> 将被编译到文件的最外层，包含嵌套的父选择器。这个功能让 <code>@media</code> 用起来更方便，不需要重复使用选择器，也不会打乱 CSS 的书写流程。</p> <div class="language- extra-class"><pre class="language-text"><code>.sidebar {
+  width: 300px;
+  @media screen and (orientation: landscape) {
+    width: 500px;
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.sidebar {
+  width: 300px; }
+  @media screen and (orientation: landscape) {
+    .sidebar {
+      width: 500px; } }
+
+</code></pre></div><p><code>@media</code> 的 queries 允许互相嵌套使用，编译时，Sass 自动添加 <code>and</code></p> <div class="language- extra-class"><pre class="language-text"><code>@media screen {
+  .sidebar {
+    @media (orientation: landscape) {
+      width: 500px;
+    }
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>@media screen and (orientation: landscape) {
+  .sidebar {
+    width: 500px; } }
+
+</code></pre></div><p><code>@media</code> 甚至可以使用 SassScript（比如变量，函数，以及运算符）代替条件的名称或者值：</p> <div class="language- extra-class"><pre class="language-text"><code>$media: screen;
+$feature: -webkit-min-device-pixel-ratio;
+$value: 1.5;
+
+@media #{$media} and ($feature: $value) {
+  .sidebar {
+    width: 500px;
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .sidebar {
+    width: 500px; } }
+
+</code></pre></div><h3 id="_7-3-extend"><a href="#_7-3-extend" class="header-anchor">#</a> 7.3. @extend</h3> <p>在设计网页的时候常常遇到这种情况：一个元素使用的样式与另一个元素完全相同，但又添加了额外的样式。通常会在 HTML 中给元素定义两个 class，一个通用样式，一个特殊样式。假设现在要设计一个普通错误样式与一个严重错误样式，一般会这样写：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;error seriousError&quot;&gt;
+  Oh no! You've been hacked!
+&lt;/div&gt;
+
+</code></pre></div><p>样式如下</p> <div class="language- extra-class"><pre class="language-text"><code>.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.seriousError {
+  border-width: 3px;
+}
+
+</code></pre></div><p>麻烦的是，这样做必须时刻记住使用 <code>.seriousError</code> 时需要参考 <code>.error</code> 的样式，带来了很多不变：智能比如加重维护负担，导致 bug，或者给 HTML 添加无语意的样式。使用 <code>@extend</code> 可以避免上述情况，告诉 Sass 将一个选择器下的所有样式继承给另一个选择器。</p> <div class="language- extra-class"><pre class="language-text"><code>.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+
+</code></pre></div><p>上面代码的意思是将 <code>.error</code> 下的所有样式继承给 <code>.seriousError</code>，<code>border-width: 3px;</code> 是单独给 <code>.seriousError</code> 设定特殊样式，这样，使用 <code>.seriousError</code> 的地方可以不再使用<code>.error</code>。</p> <p>其他使用到 <code>.error</code> 的样式也会同样继承给 <code>.seriousError</code>，例如，另一个样式 <code>.error.intrusion</code> 使用了 <code>hacked.png</code> 做背景，`` 也同样会使用<code>hacked.png</code> 背景。</p> <div class="language- extra-class"><pre class="language-text"><code>.error.intrusion {
+  background-image: url(&quot;/image/hacked.png&quot;);
+}
+
+</code></pre></div><h4 id="_7-3-1-how-it-works"><a href="#_7-3-1-how-it-works" class="header-anchor">#</a> 7.3.1. How it Works</h4> <p><code>@extend</code> 的作用是将重复使用的样式 (<code>.error</code>) 延伸 (extend) 给需要包含这个样式的特殊样式（<code>.seriousError</code>），刚刚的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.error.intrusion {
+  background-image: url(&quot;/image/hacked.png&quot;);
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.error.intrusion, .seriousError.intrusion {
+  background-image: url(&quot;/image/hacked.png&quot;); }
+
+.seriousError {
+  border-width: 3px; }
+
+</code></pre></div><p>当合并选择器时，<code>@extend</code> 会很聪明地避免无谓的重复，<code>.seriousError.seriousError</code> 将编译为 <code>.seriousError</code>，不能匹配任何元素的选择器（比如 <code>#main#footer</code> ）也会删除。</p> <h4 id="_7-3-2-延伸复杂的选择器-extending-complex-selectors"><a href="#_7-3-2-延伸复杂的选择器-extending-complex-selectors" class="header-anchor">#</a> 7.3.2. 延伸复杂的选择器 (Extending Complex Selectors)</h4> <p>Class 选择器并不是唯一可以被延伸 (extend) 的，Sass 允许延伸任何定义给单个元素的选择器，比如 <code>.special.cool</code>，<code>a:hover</code> 或者 <code>a.user[href^=&quot;http://&quot;]</code> 等，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>.hoverlink {
+  @extend a:hover;
+}
+
+</code></pre></div><p>同 class 元素一样，<code>a:hover</code> 的样式将继承给 <code>.hoverlink</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>.hoverlink {
+  @extend a:hover;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>a:hover, .hoverlink {
+  text-decoration: underline; }
+
+</code></pre></div><p>与上面 <code>.error.intrusion</code> 的例子一样，所有 <code>a:hover</code> 的样式将继承给 <code>.hoverlink</code>，包括其他使用到 <code>a:hover</code> 的样式，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>.hoverlink {
+  @extend a:hover;
+}
+.comment a.user:hover {
+  font-weight: bold;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.comment a.user:hover, .comment .user.hoverlink {
+  font-weight: bold; }
+
+</code></pre></div><h4 id="_7-3-3-多重延伸-multiple-extends"><a href="#_7-3-3-多重延伸-multiple-extends" class="header-anchor">#</a> 7.3.3. 多重延伸 (Multiple Extends)</h4> <p>同一个选择器可以延伸给多个选择器，它所包含的属性将继承给所有被延伸的选择器：</p> <div class="language- extra-class"><pre class="language-text"><code>.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.attention {
+  font-size: 3em;
+  background-color: #ff0;
+}
+.seriousError {
+  @extend .error;
+  @extend .attention;
+  border-width: 3px;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.error, .seriousError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.attention, .seriousError {
+  font-size: 3em;
+  background-color: #ff0; }
+
+.seriousError {
+  border-width: 3px; }
+
+</code></pre></div><p>每个 <code>.seriousError</code> 将包含 <code>.error</code> 与 <code>.attention</code> 下的所有样式，这时，后定义的样式享有优先权：<code>.seriousError</code> 的背景颜色是 <code>#ff0</code> 而不是 <code>#fdd</code>，因为 <code>.attention</code> 在 <code>.error</code> 之后定义。</p> <p>多重延伸可以使用逗号分隔选择器名，比如 <code>@extend .error, .attention;</code> 与 <code>@extend .error;</code> <code>@extend.attention</code> 有相同的效果。</p> <h4 id="_7-3-4-继续延伸-chaining-extends"><a href="#_7-3-4-继续延伸-chaining-extends" class="header-anchor">#</a> 7.3.4. 继续延伸 (Chaining Extends)</h4> <p>当一个选择器延伸给第二个后，可以继续将第二个选择器延伸给第三个，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+.criticalError {
+  @extend .seriousError;
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+}
+
+</code></pre></div><p>现在，每个 <code>.seriousError</code> 选择器将包含 <code>.error</code> 的样式，而 <code>.criticalError</code> 不仅包含 <code>.seriousError</code> 的样式也会同时包含 <code>.error</code> 的所有样式，上面的代码编译为：</p> <div class="language- extra-class"><pre class="language-text"><code>.error, .seriousError, .criticalError {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+.seriousError, .criticalError {
+  border-width: 3px; }
+
+.criticalError {
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%; }
+
+</code></pre></div><h4 id="_7-3-5-选择器列-selector-sequences"><a href="#_7-3-5-选择器列-selector-sequences" class="header-anchor">#</a> 7.3.5. 选择器列 (Selector Sequences)</h4> <p>暂时不可以将选择器列 (Selector Sequences)，比如 <code>.foo .bar</code> 或 <code>.foo + .bar</code>，延伸给其他元素，但是，却可以将其他元素延伸给选择器列：</p> <div class="language- extra-class"><pre class="language-text"><code>#fake-links .link {
+  @extend a;
+}
+
+a {
+  color: blue;
+  &amp;:hover {
+    text-decoration: underline;
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>a, #fake-links .link {
+  color: blue; }
+  a:hover, #fake-links .link:hover {
+    text-decoration: underline; }
+
+</code></pre></div><h5 id="_7-3-5-1-合并选择器列-merging-selector-sequences"><a href="#_7-3-5-1-合并选择器列-merging-selector-sequences" class="header-anchor">#</a> 7.3.5.1. 合并选择器列 (Merging Selector Sequences)</h5> <p>有时会遇到复杂的情况，比如选择器列中的某个元素需要延伸给另一个选择器列，这种情况下，两个选择器列需要合并，比如：</p> <div class="language- extra-class"><pre class="language-text"><code>#admin .tabbar a {
+  font-weight: bold;
+}
+#demo .overview .fakelink {
+  @extend a;
+}
+
+</code></pre></div><p>技术上讲能够生成所有匹配条件的结果，但是这样生成的样式表太复杂了，上面这个简单的例子就可能有 10 种结果。所以，Sass 只会编译输出有用的选择器。</p> <p>当两个列 (sequence) 合并时，如果没有包含相同的选择器，将生成两个新选择器：第一列出现在第二列之前，或者第二列出现在第一列之前：</p> <div class="language- extra-class"><pre class="language-text"><code>#admin .tabbar a {
+  font-weight: bold;
+}
+#demo .overview .fakelink {
+  @extend a;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#admin .tabbar a,
+#admin .tabbar #demo .overview .fakelink,
+#demo .overview #admin .tabbar .fakelink {
+  font-weight: bold; }
+
+</code></pre></div><p>如果两个列 (sequence) 包含了相同的选择器，相同部分将会合并在一起，其他部分交替输出。在下面的例子里，两个列都包含 <code>#admin</code>，输出结果中它们合并在了一起：</p> <div class="language- extra-class"><pre class="language-text"><code>#admin .tabbar a {
+  font-weight: bold;
+}
+#admin .overview .fakelink {
+  @extend a;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#admin .tabbar a,
+#admin .tabbar .overview .fakelink,
+#admin .overview .tabbar .fakelink {
+  font-weight: bold; }
+
+</code></pre></div><h4 id="_7-3-6-extend-only-选择器-extend-only-selectors"><a href="#_7-3-6-extend-only-选择器-extend-only-selectors" class="header-anchor">#</a> 7.3.6. @extend-Only 选择器 (@extend-Only Selectors)</h4> <p>有时，需要定义一套样式并不是给某个元素用，而是只通过 <code>@extend</code> 指令使用，尤其是在制作 Sass 样式库的时候，希望 Sass 能够忽略用不到的样式。</p> <p>如果使用普通的 CSS 规则，最后会编译出很多用不到的样式，也容易与其他样式名冲突，所以，Sass 引入了“占位符选择器” (placeholder selectors)，看起来很像普通的 <code>id</code> 或 <code>class</code> 选择器，只是 <code>#</code> 或 <code>.</code> 被替换成了 <code>%</code>。可以像 class 或者 id 选择器那样使用，当它们单独使用时，不会被编译到 CSS 文件中。</p> <div class="language- extra-class"><pre class="language-text"><code>// This ruleset won't be rendered on its own.
+#context a%extreme {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+</code></pre></div><p>占位符选择器需要通过延伸指令使用，用法与 class 或者 id 选择器一样，被延伸后，占位符选择器本身不会被编译。</p> <div class="language- extra-class"><pre class="language-text"><code>.notice {
+  @extend %extreme;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#context a.notice {
+  color: blue;
+  font-weight: bold;
+  font-size: 2em; }
+
+</code></pre></div><h4 id="_7-3-7-optional-声明-the-optional-flag"><a href="#_7-3-7-optional-声明-the-optional-flag" class="header-anchor">#</a> 7.3.7. <code>!optional</code> 声明 (The <code>!optional</code> Flag)</h4> <p>如果 <code>@extend</code> 失败会收到错误提示，比如，这样写 <code>a.important {@extend .notice}</code>，当没有 <code>.notice</code> 选择器时，将会报错，只有 <code>h1.notice</code> 包含 <code>.notice</code> 时也会报错，因为 <code>h1</code> 与 <code>a</code> 冲突，会生成新的选择器。</p> <p>如果要求 <code>@extend</code> 不生成新选择器，可以通过 <code>!optional</code> 声明达到这个目的，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>a.important {
+  @extend .notice !optional;
+}
+
+</code></pre></div><h4 id="_7-3-8-在指令中延伸-extend-in-directives"><a href="#_7-3-8-在指令中延伸-extend-in-directives" class="header-anchor">#</a> 7.3.8. 在指令中延伸 (@extend in Directives)</h4> <p>在指令中使用 <code>@extend</code> 时（比如在 <code>@media</code> 中）有一些限制：Sass 不可以将 <code>@media</code> 层外的 CSS 规则延伸给指令层内的 CSS，这样会生成大量的无用代码。也就是说，如果在 <code>@media</code> （或者其他 CSS 指令）中使用 <code>@extend</code>，必须延伸给相同指令层中的选择器。</p> <p>下面的例子是可行的：</p> <div class="language- extra-class"><pre class="language-text"><code>@media print {
+  .error {
+    border: 1px #f00;
+    background-color: #fdd;
+  }
+  .seriousError {
+    @extend .error;
+    border-width: 3px;
+  }
+}
+
+</code></pre></div><p>但不可以这样：</p> <div class="language- extra-class"><pre class="language-text"><code>.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+@media print {
+  .seriousError {
+    // INVALID EXTEND: .error is used outside of the &quot;@media print&quot; directive
+    @extend .error;
+    border-width: 3px;
+  }
+}
+
+</code></pre></div><p>希望有一天，浏览器可以原生支持 <code>@extend</code> 指令，这样就可以在任何指令中使用延伸功能，不再受限制了。</p> <h3 id="_7-4-at-root"><a href="#_7-4-at-root" class="header-anchor">#</a> 7.4. @at-root</h3> <p>The @at-root directive causes one or more rules to be emitted at the root of the document, rather than being nested beneath their parent selectors. It can either be used with a single inline selector:</p> <div class="language- extra-class"><pre class="language-text"><code>.parent {
+  ...
+  @at-root .child { ... }
+}
+
+</code></pre></div><p>Which would produce:</p> <div class="language- extra-class"><pre class="language-text"><code>.parent { ... }
+.child { ... }
+
+</code></pre></div><p>Or it can be used with a block containing multiple selectors:</p> <div class="language- extra-class"><pre class="language-text"><code>.parent {
+  ...
+  @at-root {
+    .child1 { ... }
+    .child2 { ... }
+  }
+  .step-child { ... }
+}
+
+</code></pre></div><p>Which would output the following:</p> <div class="language- extra-class"><pre class="language-text"><code>.parent { ... }
+.child1 { ... }
+.child2 { ... }
+.parent .step-child { ... }
+
+</code></pre></div><h4 id="_7-4-1-at-root-without-and-at-root-with"><a href="#_7-4-1-at-root-without-and-at-root-with" class="header-anchor">#</a> 7.4.1. @at-root (without: ...) and @at-root (with: ...)</h4> <p>By default, @at-root just excludes selectors. However, it’s also possible to use @at-root to move outside of nested directives such as @media as well. For example:</p> <div class="language- extra-class"><pre class="language-text"><code>@media print {
+  .page {
+    width: 8in;
+    @at-root (without: media) {
+      color: red;
+    }
+  }
+}
+
+</code></pre></div><p>produces:</p> <div class="language- extra-class"><pre class="language-text"><code>@media print {
+  .page {
+    width: 8in;
+  }
+}
+.page {
+  color: red;
+}
+
+</code></pre></div><p>You can use @at-root (without: ...) to move outside of any directive. You can also do it with multiple directives separated by a space: @at-root (without: media supports) moves outside of both @media and @supports queries.</p> <p>There are two special values you can pass to @at-root. “rule” refers to normal CSS rules; @at-root (without: rule) is the same as @at-root with no query. @at-root (without: all) means that the styles should be moved outside of all directives and CSS rules.</p> <p>If you want to specify which directives or rules to include, rather than listing which ones should be excluded, you can use with instead of without. For example, @at-root (with: rule) will move outside of all directives, but will preserve any CSS rules.</p> <h3 id="_7-5-debug"><a href="#_7-5-debug" class="header-anchor">#</a> 7.5. @debug</h3> <p>The @debug directive prints the value of a SassScript expression to the standard error output stream. It’s useful for debugging Sass files that have complicated SassScript going on. For example:</p> <div class="language- extra-class"><pre class="language-text"><code>@debug 10em + 12em;
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>Line 1 DEBUG: 22em
+
+</code></pre></div><h3 id="_7-6-warn"><a href="#_7-6-warn" class="header-anchor">#</a> 7.6. @warn</h3> <p>The @warn directive prints the value of a SassScript expression to the standard error output stream. It’s useful for libraries that need to warn users of deprecations or recovering from minor mixin usage mistakes. There are two major distinctions between @warn and @debug:</p> <ol><li>You can turn warnings off with the --quiet command-line option or the :quiet Sass option.</li> <li>A stylesheet trace will be printed out along with the message so that the user being warned can see where their styles caused the warning.</li></ol> <p>Usage Example:</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin adjust-location($x, $y) {
+  @if unitless($x) {
+    @warn &quot;Assuming #{$x} to be in pixels&quot;;
+    $x: 1px * $x;
+  }
+  @if unitless($y) {
+    @warn &quot;Assuming #{$y} to be in pixels&quot;;
+    $y: 1px * $y;
+  }
+  position: relative; left: $x; top: $y;
+}
+
+</code></pre></div><h3 id="_7-7-warn"><a href="#_7-7-warn" class="header-anchor">#</a> 7.7. @warn</h3> <p>The @error directive throws the value of a SassScript expression as a fatal error, including a nice stack trace. It’s useful for validating arguments to mixins and functions. For example:</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin adjust-location($x, $y) {
+  @if unitless($x) {
+    @error &quot;$x may not be unitless, was #{$x}.&quot;;
+  }
+  @if unitless($y) {
+    @error &quot;$y may not be unitless, was #{$y}.&quot;;
+  }
+  position: relative; left: $x; top: $y;
+}
+
+</code></pre></div><p>There is currently no way to catch errors.</p> <h2 id="_8-控制指令-control-directives"><a href="#_8-控制指令-control-directives" class="header-anchor">#</a> 8. 控制指令 (Control Directives)</h2> <p>SassScript 提供了一些基础的控制指令，比如在满足一定条件时引用样式，或者设定范围重复输出格式。控制指令是一种高级功能，日常编写过程中并不常用到，主要与混合指令 (mixin) 配合使用，尤其是用在 <a href="http://compass-style.org/" target="_blank" rel="noopener noreferrer">Compass<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 等样式库中。</p> <h3 id="_8-1-if"><a href="#_8-1-if" class="header-anchor">#</a> 8.1. if()</h3> <p>The built-in if() function allows you to branch on a condition and returns only one of two possible outcomes. It can be used in any script context. The if function only evaluates the argument corresponding to the one that it will return – this allows you to refer to variables that may not be defined or to have calculations that would otherwise cause an error (E.g. divide by zero).</p> <h3 id="_8-2-if"><a href="#_8-2-if" class="header-anchor">#</a> 8.2. @if</h3> <p>当 <code>@if</code> 的表达式返回值不是 <code>false</code> 或者 <code>null</code> 时，条件成立，输出 <code>{}</code> 内的代码：</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  @if 1 + 1 == 2 { border: 1px solid; }
+  @if 5 &lt; 3 { border: 2px dotted; }
+  @if null  { border: 3px double; }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  border: 1px solid; }
+
+</code></pre></div><p><code>@if</code> 声明后面可以跟多个 <code>@else if</code> 声明，或者一个 <code>@else</code> 声明。如果 <code>@if</code> 声明失败，Sass 将逐条执行 <code>@else if</code> 声明，如果全部失败，最后执行 <code>@else</code> 声明，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>$type: monster;
+p {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  color: green; }
+
+</code></pre></div><h3 id="_8-3-for"><a href="#_8-3-for" class="header-anchor">#</a> 8.3. @for</h3> <p><code>@for</code> 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。这个指令包含两种格式：<code>@for $var from through</code>，或者 <code>@for $var from to</code>，区别在于 <code>through</code> 与 <code>to</code> 的含义：<em>当使用 through 时，条件范围包含  与  的值，而使用 to 时条件范围只包含  的值不包含  的值</em>。另外，<code>$var</code> 可以是任何变量，比如 <code>$i</code>；<code>和</code> 必须是整数值。</p> <div class="language- extra-class"><pre class="language-text"><code>@for $i from 1 through 3 {
+  .item-#{$i} { width: 2em * $i; }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.item-1 {
+  width: 2em; }
+.item-2 {
+  width: 4em; }
+.item-3 {
+  width: 6em; }
+
+</code></pre></div><h3 id="_8-4-each"><a href="#_8-4-each" class="header-anchor">#</a> 8.4. @each</h3> <p><code>@each</code> 指令的格式是 <code>$var in</code>, <code>$var</code> 可以是任何变量名，比如 <code>$length</code> 或者 <code>$name</code>，而 `` 是一连串的值，也就是值列表。</p> <p><code>@each</code> 将变量 <code>$var</code> 作用于值列表中的每一个项目，然后输出结果，例如：</p> <div class="language- extra-class"><pre class="language-text"><code>@each $animal in puma, sea-slug, egret, salamander {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.puma-icon {
+  background-image: url('/images/puma.png'); }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png'); }
+.egret-icon {
+  background-image: url('/images/egret.png'); }
+.salamander-icon {
+  background-image: url('/images/salamander.png'); }
+
+</code></pre></div><h4 id="_8-4-1-multiple-assignment"><a href="#_8-4-1-multiple-assignment" class="header-anchor">#</a> 8.4.1 Multiple Assignment</h4> <p>The @each directive can also use multiple variables, as in @each $var1, $var2, ... in . If is a list of lists, each element of the sub-lists is assigned to the respective variable. For example:</p> <div class="language- extra-class"><pre class="language-text"><code>@each $animal, $color, $cursor in (puma, black, default),
+                                  (sea-slug, blue, pointer),
+                                  (egret, white, move) {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+    border: 2px solid $color;
+    cursor: $cursor;
+  }
+}
+
+</code></pre></div><p>is compiled to:</p> <div class="language- extra-class"><pre class="language-text"><code>.puma-icon {
+  background-image: url('/images/puma.png');
+  border: 2px solid black;
+  cursor: default; }
+.sea-slug-icon {
+  background-image: url('/images/sea-slug.png');
+  border: 2px solid blue;
+  cursor: pointer; }
+.egret-icon {
+  background-image: url('/images/egret.png');
+  border: 2px solid white;
+  cursor: move; }
+
+</code></pre></div><p>Since maps are treated as lists of pairs, multiple assignment works with them as well. For example:</p> <div class="language- extra-class"><pre class="language-text"><code>@each $header, $size in (h1: 2em, h2: 1.5em, h3: 1.2em) {
+  #{$header} {
+    font-size: $size;
+  }
+}
+
+</code></pre></div><p>is compiled to:</p> <div class="language- extra-class"><pre class="language-text"><code>h1 {
+  font-size: 2em; }
+h2 {
+  font-size: 1.5em; }
+h3 {
+  font-size: 1.2em; }
+
+</code></pre></div><h3 id="_8-5-while"><a href="#_8-5-while" class="header-anchor">#</a> 8.5. @while</h3> <p><code>@while</code> 指令重复输出格式直到表达式返回结果为 <code>false</code>。这样可以实现比 <code>@for</code> 更复杂的循环，只是很少会用到。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>$i: 6;
+@while $i &gt; 0 {
+  .item-#{$i} { width: 2em * $i; }
+  $i: $i - 2;
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>.item-6 {
+  width: 12em; }
+
+.item-4 {
+  width: 8em; }
+
+.item-2 {
+  width: 4em; }
+
+</code></pre></div><h2 id="_9-混合指令-mixin-directives"><a href="#_9-混合指令-mixin-directives" class="header-anchor">#</a> 9. 混合指令 (Mixin Directives)</h2> <p>混合指令（Mixin）用于定义可重复使用的样式，避免了使用无语意的 class，比如 <code>.float-left</code>。混合指令可以包含所有的 CSS 规则，绝大部分 Sass 规则，甚至通过参数功能引入变量，输出多样化的样式。</p> <h3 id="_9-1-定义混合指令-mixin-defining-a-mixin-mixin"><a href="#_9-1-定义混合指令-mixin-defining-a-mixin-mixin" class="header-anchor">#</a> 9.1. 定义混合指令 <code>@mixin</code> (Defining a Mixin: <code>@mixin</code>)</h3> <p>混合指令的用法是在 <code>@mixin</code> 后添加名称与样式，比如名为 <code>large-text</code> 的混合通过下面的代码定义：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin large-text {
+  font: {
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  color: #ff0000;
+}
+
+</code></pre></div><p>混合也需要包含选择器和属性，甚至可以用 <code>&amp;</code> 引用父选择器：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin clearfix {
+  display: inline-block;
+  &amp;:after {
+    content: &quot;.&quot;;
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  * html &amp; { height: 1px }
+}
+
+</code></pre></div><h3 id="_9-2-引用混合样式-include-including-a-mixin-include"><a href="#_9-2-引用混合样式-include-including-a-mixin-include" class="header-anchor">#</a> 9.2. 引用混合样式 <code>@include</code> (Including a Mixin: <code>@include</code>)</h3> <p>使用 <code>@include</code> 指令引用混合样式，格式是在其后添加混合名称，以及需要的参数（可选）：</p> <div class="language- extra-class"><pre class="language-text"><code>.page-title {
+  @include large-text;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.page-title {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+  padding: 4px;
+  margin-top: 10px; }
+
+</code></pre></div><p>也可以在最外层引用混合样式，不会直接定义属性，也不可以使用父选择器。</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin silly-links {
+  a {
+    color: blue;
+    background-color: red;
+  }
+}
+@include silly-links;
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>a {
+  color: blue;
+  background-color: red; }
+
+</code></pre></div><p>混合样式中也可以包含其他混合样式，比如</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin compound {
+  @include highlighted-background;
+  @include header-text;
+}
+@mixin highlighted-background { background-color: #fc0; }
+@mixin header-text { font-size: 20px; }
+
+</code></pre></div><p>混合样式中应该只定义后代选择器，这样可以安全的导入到文件的任何位置。</p> <h3 id="_9-3-参数-arguments"><a href="#_9-3-参数-arguments" class="header-anchor">#</a> 9.3. 参数 (Arguments)</h3> <p>参数用于给混合指令中的样式设定变量，并且赋值使用。在定义混合指令的时候，按照变量的格式，通过逗号分隔，将参数写进圆括号里。引用指令时，按照参数的顺序，再将所赋的值对应写进括号：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin sexy-border($color, $width) {
+  border: {
+    color: $color;
+    width: $width;
+    style: dashed;
+  }
+}
+p { @include sexy-border(blue, 1in); }
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  border-color: blue;
+  border-width: 1in;
+  border-style: dashed; }
+
+</code></pre></div><p>混合指令也可以使用给变量赋值的方法给参数设定默认值，然后，当这个指令被引用的时候，如果没有给参数赋值，则自动使用默认值：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin sexy-border($color, $width: 1in) {
+  border: {
+    color: $color;
+    width: $width;
+    style: dashed;
+  }
+}
+p { @include sexy-border(blue); }
+h1 { @include sexy-border(blue, 2in); }
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>p {
+  border-color: blue;
+  border-width: 1in;
+  border-style: dashed; }
+
+h1 {
+  border-color: blue;
+  border-width: 2in;
+  border-style: dashed; }
+
+</code></pre></div><h4 id="_9-3-1-关键词参数-keyword-arguments"><a href="#_9-3-1-关键词参数-keyword-arguments" class="header-anchor">#</a> 9.3.1. 关键词参数 (Keyword Arguments)</h4> <p>混合指令也可以使用关键词参数，上面的例子也可以写成：</p> <div class="language- extra-class"><pre class="language-text"><code>p { @include sexy-border($color: blue); }
+h1 { @include sexy-border($color: blue, $width: 2in); }
+
+</code></pre></div><p>虽然不够简明，但是阅读起来会更方便。关键词参数给函数提供了更灵活的接口，以及容易调用的参数。关键词参数可以打乱顺序使用，如果使用默认值也可以省缺，另外，参数名被视为变量名，下划线、短横线可以互换使用。</p> <h4 id="_9-3-2-参数变量-variable-arguments"><a href="#_9-3-2-参数变量-variable-arguments" class="header-anchor">#</a> 9.3.2. 参数变量 (Variable Arguments)</h4> <p>有时，不能确定混合指令需要使用多少个参数，比如一个关于 <code>box-shadow</code> 的混合指令不能确定有多少个 'shadow' 会被用到。这时，可以使用参数变量 <code>…</code> 声明（写在参数的最后方）告诉 Sass 将这些参数视为值列表处理：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin box-shadow($shadows...) {
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+  box-shadow: $shadows;
+}
+.shadows {
+  @include box-shadow(0px 4px 5px #666, 2px 6px 10px #999);
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.shadowed {
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+}
+
+</code></pre></div><p>参数变量也可以用在引用混合指令的时候 (<code>@include</code>)，与平时用法一样，将一串值列表中的值逐条作为参数引用：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+$values: #ff0000, #00ff00, #0000ff;
+.primary {
+  @include colors($values...);
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.primary {
+  color: #ff0000;
+  background-color: #00ff00;
+  border-color: #0000ff;
+}
+
+</code></pre></div><blockquote><p>You can use variable arguments to wrap a mixin and add additional styles without changing the argument signature of the mixin. If you do so, even keyword arguments will get passed through to the wrapped mixin. For example:</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>@mixin wrapped-stylish-mixin($args...) {
+  font-weight: bold;
+  @include stylish-mixin($args...);
+}
+.stylish {
+  // The $width argument will get passed on to &quot;stylish-mixin&quot; as a keyword
+  @include wrapped-stylish-mixin(#00ff00, $width: 100px);
+}
+
+</code></pre></div><p>上面注释内的意思是：<code>$width</code> 参数将会传递给 <code>stylish-mixin</code> 作为关键词。</p> <h3 id="_9-4-向混合样式中导入内容-passing-content-blocks-to-a-mixin"><a href="#_9-4-向混合样式中导入内容-passing-content-blocks-to-a-mixin" class="header-anchor">#</a> 9.4. 向混合样式中导入内容 (Passing Content Blocks to a Mixin)</h3> <p>在引用混合样式的时候，可以先将一段代码导入到混合指令中，然后再输出混合样式，额外导入的部分将出现在 <code>@content</code> 标志的地方：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin apply-to-ie6-only {
+  * html {
+    @content;
+  }
+}
+@include apply-to-ie6-only {
+  #logo {
+    background-image: url(/logo.gif);
+  }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>* html #logo {
+  background-image: url(/logo.gif);
+}
+
+</code></pre></div><p><strong>为便于书写，@mixin 可以用 = 表示，而 @include 可以用 + 表示</strong>，所以上面的例子可以写成：</p> <div class="language- extra-class"><pre class="language-text"><code>=apply-to-ie6-only
+  * html
+    @content
+
++apply-to-ie6-only
+  #logo
+    background-image: url(/logo.gif)
+
+</code></pre></div><p><strong>注意：</strong> 当 <code>@content</code> 在指令中出现过多次或者出现在循环中时，额外的代码将被导入到每一个地方。</p> <h4 id="_9-4-1-variable-scope-and-content-blocks"><a href="#_9-4-1-variable-scope-and-content-blocks" class="header-anchor">#</a> 9.4.1. Variable Scope and Content Blocks</h4> <blockquote><p>The block of content passed to a mixin are evaluated in the scope where the block is defined, not in the scope of the mixin. This means that variables local to the mixin cannot be used within the passed style block and variables will resolve to the global value:</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>$color: white;
+@mixin colors($color: blue) {
+  background-color: $color;
+  @content;
+  border-color: $color;
+}
+.colors {
+  @include colors { color: $color; }
+}
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>.colors {
+  background-color: blue;
+  color: white;
+  border-color: blue;
+}
+
+</code></pre></div><blockquote><p>Additionally, this makes it clear that the variables and mixins that are used within the passed block are related to the other styles around where the block is defined. For example:</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>#sidebar {
+  $sidebar-width: 300px;
+  width: $sidebar-width;
+  @include smartphone {
+    width: $sidebar-width / 3;
+  }
+}
+
+</code></pre></div><h2 id="_10-函数指令-function-directives"><a href="#_10-函数指令-function-directives" class="header-anchor">#</a> 10. 函数指令 (Function Directives)</h2> <p>Sass 支持自定义函数，并能在任何属性值或 Sass script 中使用：</p> <div class="language- extra-class"><pre class="language-text"><code>$grid-width: 40px;
+$gutter-width: 10px;
+
+@function grid-width($n) {
+  @return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+
+#sidebar { width: grid-width(5); }
+
+</code></pre></div><p>编译为</p> <div class="language- extra-class"><pre class="language-text"><code>#sidebar {
+  width: 240px; }
+
+</code></pre></div><p>与 mixin 相同，也可以传递若干个全局变量给函数作为参数。一个函数可以含有多条语句，需要调用 <code>@return</code> 输出结果。</p> <p>自定义的函数也可以使用关键词参数，上面的例子还可以这样写：</p> <div class="language- extra-class"><pre class="language-text"><code>#sidebar { width: grid-width($n: 5); }
+
+</code></pre></div><p>建议在自定义函数前添加前缀避免命名冲突，其他人阅读代码时也会知道这不是 Sass 或者 CSS 的自带功能。</p> <p>自定义函数与 mixin 相同，都支持 variable arguments</p> <h2 id="_11-输出格式-output-style"><a href="#_11-输出格式-output-style" class="header-anchor">#</a> 11. 输出格式 (Output Style)</h2> <p>Sass 默认的 CSS 输出格式很美观也能清晰反映文档结构，为满足其他需求 Sass 也提供了多种输出格式。</p> <p>Sass 提供了四种输出格式，可以通过 <code>:style option</code> 选项设定，或者在命令行中使用 <code>--style</code> 选项。</p> <h3 id="_11-1-nested"><a href="#_11-1-nested" class="header-anchor">#</a> 11.1. <code>:nested</code></h3> <p>Nested （嵌套）样式是 Sass 默认的输出格式，能够清晰反映 CSS 与 HTML 的结构关系。选择器与属性等单独占用一行，缩进量与 Sass 文件中一致，每行的缩进量反映了其在嵌套规则内的层数。当阅读大型 CSS 文件时，这种样式可以很容易地分析文件的主要结构。</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  color: #fff;
+  background-color: #000; }
+  #main p {
+    width: 10em; }
+
+.huge {
+  font-size: 10em;
+  font-weight: bold;
+  text-decoration: underline; }
+
+</code></pre></div><h3 id="_11-2-expanded"><a href="#_11-2-expanded" class="header-anchor">#</a> 11.2. <code>:expanded</code></h3> <p>Expanded 输出更像是手写的样式，选择器、属性等各占用一行，属性根据选择器缩进，而选择器不做任何缩进。</p> <div class="language- extra-class"><pre class="language-text"><code>#main {
+  color: #fff;
+  background-color: #000;
+}
+#main p {
+  width: 10em;
+}
+
+.huge {
+  font-size: 10em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+</code></pre></div><h3 id="_11-3-compact"><a href="#_11-3-compact" class="header-anchor">#</a> 11.3. <code>:compact</code></h3> <p>Compact 输出方式比起上面两种占用的空间更少，每条 CSS 规则只占一行，包含其下的所有属性。嵌套过的选择器在输出时没有空行，不嵌套的选择器会输出空白行作为分隔符。</p> <div class="language- extra-class"><pre class="language-text"><code>#main { color: #fff; background-color: #000; }
+#main p { width: 10em; }
+
+.huge { font-size: 10em; font-weight: bold; text-decoration: underline; }
+
+</code></pre></div><h3 id="_11-4-compressed"><a href="#_11-4-compressed" class="header-anchor">#</a> 11.4. <code>:compressed</code></h3> <p>Compressed 输出方式删除所有无意义的空格、空白行、以及注释，力求将文件体积压缩到最小，同时也会做出其他调整，比如会自动替换占用空间最小的颜色表达方式。</p> <div class="language- extra-class"><pre class="language-text"><code>#main{color:#fff;background-color:#000}#main p{width:10em}.huge{font-size:10em;font-weight:bold;text-decoration:underline}
+
+</code></pre></div><h2 id="_12-拓展-sass-extending-sass"><a href="#_12-拓展-sass-extending-sass" class="header-anchor">#</a> 12. 拓展 Sass (Extending Sass)</h2> <p>Sass 提供了很多高级自定义功能，使用这些功能需要有良好的 Ruby 基础。</p> <h3 id="_12-1-自定义-sass-函数-defining-custom-sass-functions"><a href="#_12-1-自定义-sass-函数-defining-custom-sass-functions" class="header-anchor">#</a> 12.1. 自定义 Sass 函数 (Defining Custom Sass Functions)</h3> <p>通过 Ruby API 可以自定义 Sass 函数，具体请查看 <a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html#adding_custom_functions" target="_blank" rel="noopener noreferrer">source documentation<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <h3 id="_12-2-存储缓存-cache-stores"><a href="#_12-2-存储缓存-cache-stores" class="header-anchor">#</a> 12.2. 存储缓存 (Cache Stores)</h3> <p>Sass caches parsed documents so that they can be reused without parsing them again unless they have changed. By default, Sass will write these cache files to a location on the filesystem indicated by :cache_location. If you cannot write to the filesystem or need to share cache across ruby processes or machines, then you can define your own cache store and set the:cache_store option. For details on creating your own cache store, please see the source documentation.</p> <h3 id="_12-3-自定义导入-custom-importers"><a href="#_12-3-自定义导入-custom-importers" class="header-anchor">#</a> 12.3. 自定义导入 (Custom Importers)</h3> <p>Sass importers are in charge of taking paths passed to @import and finding the appropriate Sass code for those paths. By default, this code is loaded from the filesystem, but importers could be added to load from a database, over HTTP, or use a different file naming scheme than what Sass expects.</p> <p>Each importer is in charge of a single load path (or whatever the corresponding notion is for the backend). Importers can be placed in the :load_paths array alongside normal filesystem paths.</p> <p>When resolving an @import, Sass will go through the load paths looking for an importer that successfully imports the path. Once one is found, the imported file is used.</p> <p>User-created importers must inherit from Sass::Importers::Base.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/frontend-tutorial/edit/master/docs/style/sass/sass-reference.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/frontend-tutorial/assets/js/app.0f2f3ef1.js" defer></script><script src="/frontend-tutorial/assets/js/4.0f425322.js" defer></script><script src="/frontend-tutorial/assets/js/52.ccd8ffb2.js" defer></script><script src="/frontend-tutorial/assets/js/5.608566ca.js" defer></script>
+  </body>
+</html>

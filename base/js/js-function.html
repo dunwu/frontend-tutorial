@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript 函数 | FRONTEND-TUTORIAL</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/frontend-tutorial/favicon.ico">
+    <meta name="description" content="前端教程">
+    
+    <link rel="preload" href="/frontend-tutorial/assets/css/0.styles.fb161648.css" as="style"><link rel="preload" href="/frontend-tutorial/assets/js/app.0f2f3ef1.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/4.0f425322.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/21.8e701cc6.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/5.608566ca.js" as="script"><link rel="prefetch" href="/frontend-tutorial/assets/js/10.1aadac9e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/11.62869f33.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/12.00af68a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/13.fad1990f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/14.7a436432.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/15.1ed64873.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/16.e4fab6e4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/17.c425f0c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/18.b19b4a8c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/19.cf3ece76.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/20.e9494703.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/22.c82dafa0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/23.c9095c3c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/24.97fb2434.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/25.79d04eb4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/26.0560c9b3.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/27.ca75901a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/28.a2617487.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/29.034030a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/30.687c6413.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/31.023e8160.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/32.f0b2a53f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/33.928cca1f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/34.e7b4cfb6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/35.b6a1c119.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/36.615a2e5c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/37.7c6f496d.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/38.92700ab1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/39.ca730fba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/40.735cdb31.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/41.80a4b65e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/42.33625d08.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/43.de7d648b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/44.7f081370.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/45.4a5d9c6b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/46.ae465fd4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/47.fc08a8e0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/48.3fae0897.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/49.a705c18f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/50.d5ce8c52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/51.fb7cf5ef.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/52.ccd8ffb2.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/53.c39cec94.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/54.44e52515.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/55.a1b302d0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/56.18324d52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/57.4ab7da19.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/58.6666b050.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/59.9031b427.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/6.79caa705.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/60.584946dd.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/61.39e0a712.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/62.8f33fd7c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/63.b27ab9ac.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/64.b15cd74f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/65.a0cdcfa5.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/66.81e0a185.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/67.a06444ff.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/68.85e176ee.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/69.2e790a70.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/7.f420f9c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/70.cc01ed99.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/71.27be19ba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/72.d4cdf44e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/73.210cfade.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/8.64ae920a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/9.692fe702.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~flowchart.d1e58b72.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~notification.ecb92178.js">
+    <link rel="stylesheet" href="/frontend-tutorial/assets/css/0.styles.fb161648.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="FRONTEND-TUTORIAL" class="logo"> <span class="site-name can-hide">FRONTEND-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link router-link-active">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link router-link-active">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript 函数</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend-tutorial/base/js/js-function.html#函数定义" class="sidebar-link">函数定义</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#函数声明" class="sidebar-link">函数声明</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#函数表达式" class="sidebar-link">函数表达式</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#构造函数" class="sidebar-link">构造函数</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#带有返回值的函数" class="sidebar-link">带有返回值的函数</a></li></ul></li><li><a href="/frontend-tutorial/base/js/js-function.html#函数调用" class="sidebar-link">函数调用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#this-关键字" class="sidebar-link">this 关键字</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#作为一个函数调用" class="sidebar-link">作为一个函数调用</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#全局对象" class="sidebar-link">全局对象</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#函数作为方法调用" class="sidebar-link">函数作为方法调用</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#使用构造函数调用函数" class="sidebar-link">使用构造函数调用函数</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#作为函数方法调用函数" class="sidebar-link">作为函数方法调用函数</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#自调用函数" class="sidebar-link">自调用函数</a></li></ul></li><li><a href="/frontend-tutorial/base/js/js-function.html#函数参数" class="sidebar-link">函数参数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#显式参数与隐藏参数" class="sidebar-link">显式参数与隐藏参数</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#参数规则" class="sidebar-link">参数规则</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#默认参数" class="sidebar-link">默认参数</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#arguments-对象" class="sidebar-link">Arguments 对象</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#通过值传递参数" class="sidebar-link">通过值传递参数</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/base/js/js-function.html#通过对象传递参数" class="sidebar-link">通过对象传递参数</a></li></ul></li><li><a href="/frontend-tutorial/base/js/js-function.html#javascript-内嵌函数" class="sidebar-link">JavaScript 内嵌函数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/base/js/js-function.html#javascript-闭包" class="sidebar-link">JavaScript 闭包</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript-函数"><a href="#javascript-函数" class="header-anchor">#</a> JavaScript 函数</h1> <blockquote><p><strong>函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。</strong></p></blockquote> <h2 id="函数定义"><a href="#函数定义" class="header-anchor">#</a> 函数定义</h2> <p>JavaScript 使用关键词 <strong>function</strong> 定义函数。</p> <p>函数可以通过声明定义，也可以是一个表达式。</p> <h3 id="函数声明"><a href="#函数声明" class="header-anchor">#</a> 函数声明</h3> <p>函数就是包裹在花括号中的代码块，前面使用了关键词 <code>function</code> ，函数声明后不会立即执行，会在我们需要的时候调用到。</p> <div class="language- extra-class"><pre class="language-text"><code>function functionName(params) {
+  // 执行的代码
+}
+</code></pre></div><blockquote><p>提示：</p> <p>JavaScript 对大小写敏感。关键词 <code>function</code> 必须是小写的，并且必须以与函数名称相同的大小写来调用函数。</p> <p>分号是用来分隔可执行JavaScript语句。 由于函数声明不是一个可执行语句，所以不以分号结束。</p></blockquote> <h3 id="函数表达式"><a href="#函数表达式" class="header-anchor">#</a> 函数表达式</h3> <p>JavaScript 函数可以通过一个表达式定义。</p> <p>函数表达式可以存储在变量中：</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>var x = function (a, b) {return a * b};
+</code></pre></div><p>在函数表达式存储在变量后，变量也可作为一个函数使用：</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>var x = function (a, b) {return a * b};
+var z = x(4, 3);
+</code></pre></div><p>以上函数实际上是一个 <strong>匿名函数</strong> (函数没有名称)。</p> <p>函数存储在变量中，不需要函数名称，通常通过变量名来调用。</p> <blockquote><p>提示：上述函数以分号结尾，因为它是一个执行语句。</p></blockquote> <h3 id="构造函数"><a href="#构造函数" class="header-anchor">#</a> 构造函数</h3> <p>在以上实例中，我们了解到函数通过关键字 <strong>function</strong> 定义。</p> <p>函数同样可以通过内置的 JavaScript 函数构造器（Function()）定义。</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>var myFunction = new Function(&quot;a&quot;, &quot;b&quot;, &quot;return a * b&quot;);
+var x = myFunction(4, 3);
+</code></pre></div><p>实际上，你不必使用构造函数。上面实例可以写成：</p> <div class="language- extra-class"><pre class="language-text"><code>var myFunction = function (a, b) {return a * b}
+var x = myFunction(4, 3);
+</code></pre></div><blockquote><p>提示：在 JavaScript 中，很多时候，你需要避免使用 <strong>new</strong> 关键字。</p></blockquote> <h3 id="带有返回值的函数"><a href="#带有返回值的函数" class="header-anchor">#</a> 带有返回值的函数</h3> <p>有时，我们会希望函数将值返回调用它的地方。</p> <p>通过使用 return 语句就可以实现。</p> <p>在使用 return 语句时，函数会停止执行，并返回指定的值。</p> <p>语法</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction()
+{
+var x=5;
+return x;
+}
+</code></pre></div><p>上面的函数会返回值 5。</p> <p>注释：整个 JavaScript 并不会停止执行，仅仅是函数。JavaScript 将继续执行代码，从调用函数的地方。</p> <p>函数调用将被返回值取代：</p> <div class="language- extra-class"><pre class="language-text"><code>var myVar=myFunction();
+</code></pre></div><p>myVar 变量的值是 5，也就是函数 &quot;myFunction()&quot; 所返回的值。</p> <p>即使不把它保存为变量，您也可以使用返回值：</p> <div class="language- extra-class"><pre class="language-text"><code>document.getElementById(&quot;demo&quot;).innerHTML=myFunction();
+</code></pre></div><p>&quot;demo&quot; 元素的 innerHTML 将成为 5，也就是函数 &quot;myFunction()&quot; 所返回的值。</p> <p>您可以使返回值基于传递到函数中的参数：</p> <p>实例</p> <p>计算两个数字的乘积，并返回结果：</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(a,b)
+{
+return a*b;
+}
+
+document.getElementById(&quot;demo&quot;).innerHTML=myFunction(4,3);
+</code></pre></div><p>&quot;demo&quot; 元素的 innerHTML 将是：</p> <div class="language- extra-class"><pre class="language-text"><code>12
+</code></pre></div><p>在您仅仅希望退出函数时 ，也可使用 return 语句。返回值是可选的：</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(a,b)
+{
+if (a&gt;b)
+  {
+  return;
+  }
+x=a+b
+}
+</code></pre></div><p>如果 a 大于 b，则上面的代码将退出函数，并不会计算 a 和 b 的总和。</p> <h2 id="函数调用"><a href="#函数调用" class="header-anchor">#</a> 函数调用</h2> <p>JavaScript 函数有 4 种调用方式。</p> <p>每种方式的不同在于 <strong>this</strong> 的初始化。</p> <h3 id="this-关键字"><a href="#this-关键字" class="header-anchor">#</a> this 关键字</h3> <p>一般而言，在Javascript中，this指向函数执行时的当前对象。</p> <blockquote><p>注：注意 <strong>this</strong> 是保留关键字，你不能修改 <strong>this</strong> 的值。</p></blockquote> <h3 id="作为一个函数调用"><a href="#作为一个函数调用" class="header-anchor">#</a> 作为一个函数调用</h3> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(a, b) {
+    return a * b;
+}
+myFunction(10, 2);           // myFunction(10, 2) 返回 20
+</code></pre></div><p>以上函数不属于任何对象。但是在 JavaScript 中它始终是默认的全局对象。</p> <p>在 HTML 中默认的全局对象是 HTML 页面本身，所以函数是属于 HTML 页面。</p> <p>在浏览器中的页面对象是浏览器窗口(window 对象)。以上函数会自动变为 window 对象的函数。</p> <p>myFunction() 和 window.myFunction() 是一样的：</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(a, b) {
+    return a * b;
+}
+window.myFunction(10, 2);    // window.myFunction(10, 2) 返回 20
+</code></pre></div><blockquote><p>注：这是调用 JavaScript 函数常用的方法， 但不是良好的编程习惯。全局变量，方法或函数容易造成命名冲突的bug。</p></blockquote> <h3 id="全局对象"><a href="#全局对象" class="header-anchor">#</a> 全局对象</h3> <p>当函数没有被自身的对象调用时， <strong>this</strong> 的值就会变成全局对象。</p> <p>在 web 浏览器中全局对象是浏览器窗口（window 对象）。</p> <p>该实例返回 <strong>this</strong> 的值是 window 对象:</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction() {
+    return this;
+}
+myFunction();                // 返回 window 对象
+</code></pre></div><blockquote><p>注：函数作为全局对象调用，会使 <strong>this</strong> 的值成为全局对象。使用 window 对象作为一个变量容易造成程序崩溃。</p></blockquote> <h3 id="函数作为方法调用"><a href="#函数作为方法调用" class="header-anchor">#</a> 函数作为方法调用</h3> <p>在 JavaScript 中你可以将函数定义为对象的方法。</p> <p>以下实例创建了一个对象 (<strong>myObject</strong>), 对象有两个属性 (<strong>firstName</strong> 和 <strong>lastName</strong>), 及一个方法 (<strong>fullName</strong>):</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>var myObject = {
+    firstName:&quot;John&quot;,
+    lastName: &quot;Doe&quot;,
+    fullName: function () {
+        return this.firstName + &quot; &quot; + this.lastName;
+    }
+}
+myObject.fullName();         // 返回 &quot;John Doe&quot;
+</code></pre></div><p><strong>fullName</strong> 方法是一个函数。函数属于对象。 <strong>myObject</strong> 是函数的所有者。</p> <p><strong>this</strong>对象，拥有 JavaScript 代码。实例中 <strong>this</strong> 的值为 <strong>myObject</strong> 对象。</p> <p>测试一下！修改 <strong>fullName</strong> 方法并返回 <strong>this</strong> 值：</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>var myObject = {
+    firstName:&quot;John&quot;,
+    lastName: &quot;Doe&quot;,
+    fullName: function () {
+        return this;
+    }
+}
+myObject.fullName();          // 返回 [object Object] (所有者对象)
+</code></pre></div><blockquote><p>注：函数作为对象方法调用，会使得 <strong>this</strong> 的值成为对象本身。</p></blockquote> <h3 id="使用构造函数调用函数"><a href="#使用构造函数调用函数" class="header-anchor">#</a> 使用构造函数调用函数</h3> <p>如果函数调用前使用了 <strong>new</strong> 关键字, 则是调用了构造函数。</p> <p>这看起来就像创建了新的函数，但实际上 JavaScript 函数是重新创建的对象：</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>// 构造函数:
+function myFunction(arg1, arg2) {
+    this.firstName = arg1;
+    this.lastName  = arg2;
+}
+
+// This creates a new object
+var x = new myFunction(&quot;John&quot;,&quot;Doe&quot;);
+x.firstName;                             // 返回 &quot;John&quot;
+</code></pre></div><p>构造函数的调用会创建一个新的对象。新对象会继承构造函数的属性和方法。</p> <blockquote><p>注：构造函数中 <strong>this</strong> 关键字没有任何的值。<strong>this</strong> 的值在函数调用时实例化对象(new object)时创建。</p></blockquote> <h3 id="作为函数方法调用函数"><a href="#作为函数方法调用函数" class="header-anchor">#</a> 作为函数方法调用函数</h3> <p>在 JavaScript 中, 函数是对象。JavaScript 函数有它的属性和方法。</p> <p><strong>call()</strong> 和 <strong>apply()</strong> 是预定义的函数方法。 两个方法可用于调用函数，两个方法的第一个参数必须是对象本身。</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(a, b) {
+    return a * b;
+}
+myFunction.call(myObject, 10, 2);      // 返回 20
+</code></pre></div><p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(a, b) {
+    return a * b;
+}
+myArray = [10,2];
+myFunction.apply(myObject, myArray);   // 返回 20
+</code></pre></div><p>两个方法都使用了对象本身作为第一个参数。 两者的区别在于第二个参数： apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，而call则作为call的参数传入（从第二个参数开始）。</p> <p>在 JavaScript 严格模式(strict mode)下, 在调用函数时第一个参数会成为 <strong>this</strong> 的值， 即使该参数不是一个对象。</p> <p>在 JavaScript 非严格模式(non-strict mode)下, 如果第一个参数的值是 null 或 undefined, 它将使用全局对象替代。</p> <blockquote><p>注：通过 call() 或 apply() 方法你可以设置 <strong>this</strong> 的值, 且作为已存在对象的新方法调用。</p></blockquote> <h3 id="自调用函数"><a href="#自调用函数" class="header-anchor">#</a> 自调用函数</h3> <p>函数表达式可以 &quot;自调用&quot;。</p> <p>自调用表达式会自动调用。</p> <p>如果表达式后面紧跟 () ，则会自动调用。</p> <p>不能自调用声明的函数。</p> <p>通过添加括号，来说明它是一个函数表达式：</p> <div class="language- extra-class"><pre class="language-text"><code>(function () {
+    var x = &quot;Hello!!&quot;;      // 我将调用自己
+})();
+</code></pre></div><p>以上函数实际上是一个 <strong>匿名自我调用的函数</strong> (没有函数名)。</p> <h2 id="函数参数"><a href="#函数参数" class="header-anchor">#</a> 函数参数</h2> <p>在调用函数时，您可以向其传递值，这些值被称为参数。</p> <p>这些参数可以在函数中使用。</p> <p>您可以发送任意多的参数，由逗号 (,) 分隔：</p> <div class="language- extra-class"><pre class="language-text"><code>myFunction(argument1,argument2)
+</code></pre></div><p>当您声明函数时，请把参数作为变量来声明：</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(var1,var2)
+{
+这里是要执行的代码
+}
+</code></pre></div><p>变量和参数必须以一致的顺序出现。第一个变量就是第一个被传递的参数的给定的值，以此类推。</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;button onclick=&quot;myFunction('Bill Gates','CEO')&quot;&gt;点击这里&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction(name,job)
+{
+alert(&quot;Welcome &quot; + name + &quot;, the &quot; + job);
+}
+&lt;/script&gt;
+</code></pre></div><p>上面的函数会当按钮被点击时提示 &quot;Welcome Bill Gates, the CEO&quot;。</p> <p>函数很灵活，您可以使用不同的参数来调用该函数，这样就会给出不同的消息：</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;button onclick=&quot;myFunction('Harry Potter','Wizard')&quot;&gt;点击这里&lt;/button&gt;
+&lt;button onclick=&quot;myFunction('Bob','Builder')&quot;&gt;点击这里&lt;/button&gt;
+</code></pre></div><p>根据您点击的不同的按钮，上面的例子会提示 &quot;Welcome Harry Potter, the Wizard&quot; 或 &quot;Welcome Bob, the Builder&quot;。</p> <p>JavaScript 函数对参数的值(arguments)没有进行任何的检查。</p> <h3 id="显式参数与隐藏参数"><a href="#显式参数与隐藏参数" class="header-anchor">#</a> 显式参数与隐藏参数</h3> <p>函数显式参数在函数定义时列出。</p> <p>函数隐藏参数(arguments)在函数调用时传递给函数真正的值。</p> <h3 id="参数规则"><a href="#参数规则" class="header-anchor">#</a> 参数规则</h3> <p>JavaScript 函数定义时参数没有指定数据类型。</p> <p>JavaScript 函数对隐藏参数(arguments)没有进行检测。</p> <p>JavaScript 函数对隐藏参数(arguments)的个数没有进行检测。</p> <h3 id="默认参数"><a href="#默认参数" class="header-anchor">#</a> 默认参数</h3> <p>如果函数在调用时缺少参数，参数会默认设置为： <strong>undefined</strong></p> <p>有时这是可以接受的，但是建议最好为参数设置一个默认值：</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(x, y) {
+    if (y === undefined) {
+          y = 0;
+    } 
+}
+</code></pre></div><p>或者，更简单的方式：</p> <div class="language- extra-class"><pre class="language-text"><code>function myFunction(x, y) {
+    y = y || 0;
+}
+</code></pre></div><h3 id="arguments-对象"><a href="#arguments-对象" class="header-anchor">#</a> Arguments 对象</h3> <p>JavaScript 函数有个内置的对象 arguments 对象.</p> <p>argument 对象包含了函数调用的参数数组。</p> <p>通过这种方式你可以很方便的找到最后一个参数的值：</p> <div class="language- extra-class"><pre class="language-text"><code>x = findMax(1, 123, 500, 115, 44, 88);
+function findMax() {
+  var i, max = arguments[0];
+  if (arguments.length &lt; 2) {
+    return max;
+  }
+
+  for (i = 1; i &lt; arguments.length; i++) {
+    if (arguments[i] &gt; max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+</code></pre></div><h3 id="通过值传递参数"><a href="#通过值传递参数" class="header-anchor">#</a> 通过值传递参数</h3> <p>在函数中调用的参数是函数的参数。</p> <p>如果函数修改参数的值，将不会修改参数的初始值（在函数外定义）。</p> <p><strong>实例</strong></p> <div class="language- extra-class"><pre class="language-text"><code>var x = 1;
+// 通过值传递参数
+function myFunction(x) {
+    x++; //修改参数x的值，将不会修改在函数外定义的变量 x
+    console.log(x);
+}
+myFunction(x); // 2
+console.log(x); // 1
+</code></pre></div><h3 id="通过对象传递参数"><a href="#通过对象传递参数" class="header-anchor">#</a> 通过对象传递参数</h3> <p>在JavaScript中，可以引用对象的值。</p> <p>因此我们在函数内部修改对象的属性就会修改其初始的值。</p> <p>修改对象属性可作用于函数外部（全局变量）。</p> <p><strong>实例</strong></p> <div class="language- extra-class"><pre class="language-text"><code>var obj = {x:1};
+// 通过对象传递参数
+function myFunction(obj) {
+    obj.x++; //修改参数对象obj.x的值，函数外定义的obj也将会被修改
+    console.log(obj.x);
+}
+myFunction(obj); // 2
+console.log(obj.x); // 2
+</code></pre></div><h2 id="javascript-内嵌函数"><a href="#javascript-内嵌函数" class="header-anchor">#</a> JavaScript 内嵌函数</h2> <p>所有函数都能访问全局变量。</p> <p>实际上，在 JavaScript 中，所有函数都能访问它们上一层的作用域。</p> <p>JavaScript 支持嵌套函数。嵌套函数可以访问上一层的函数变量。</p> <p>该实例中，内嵌函数 <strong>plus()</strong> 可以访问父函数的 <strong>counter</strong> 变量：</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>function add() {
+    var counter = 0;
+    function plus() {counter += 1;}
+    plus();    
+    return counter; 
+}
+</code></pre></div><p>如果我们能在外部访问 <strong>plus()</strong> 函数，这样就能解决计数器的困境。</p> <p>我们同样需要确保 <strong>counter = 0</strong> 只执行一次。</p> <p><strong>我们需要闭包。</strong></p> <h2 id="javascript-闭包"><a href="#javascript-闭包" class="header-anchor">#</a> JavaScript 闭包</h2> <p>还记得函数自我调用吗？该函数会做什么？</p> <p>实例</p> <div class="language- extra-class"><pre class="language-text"><code>var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+add();
+add();
+add();
+
+// 计数器为 3
+</code></pre></div><p>说明</p> <p>变量 <strong>add</strong> 指定了函数自我调用的返回字值。</p> <p>自我调用函数只执行一次。设置计数器为 0。并返回函数表达式。</p> <p>add变量可以作为一个函数使用。非常棒的部分是它可以访问函数上一层作用域的计数器。</p> <p>这个叫作 JavaScript **闭包。**它使得函数拥有私有变量变成可能。</p> <p>计数器受匿名函数的作用域保护，只能通过 add 方法修改。</p> <blockquote><p>提示：闭包是可访问上一层函数作用域里变量的函数，即便上一层函数已经关闭。</p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/frontend-tutorial/edit/master/docs/base/js/js-function.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/frontend-tutorial/assets/js/app.0f2f3ef1.js" defer></script><script src="/frontend-tutorial/assets/js/4.0f425322.js" defer></script><script src="/frontend-tutorial/assets/js/21.8e701cc6.js" defer></script><script src="/frontend-tutorial/assets/js/5.608566ca.js" defer></script>
+  </body>
+</html>

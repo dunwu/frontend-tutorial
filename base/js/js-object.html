@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript 对象 | FRONTEND-TUTORIAL</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/frontend-tutorial/favicon.ico">
+    <meta name="description" content="前端教程">
+    
+    <link rel="preload" href="/frontend-tutorial/assets/css/0.styles.fb161648.css" as="style"><link rel="preload" href="/frontend-tutorial/assets/js/app.0f2f3ef1.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/4.0f425322.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/24.97fb2434.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/5.608566ca.js" as="script"><link rel="prefetch" href="/frontend-tutorial/assets/js/10.1aadac9e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/11.62869f33.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/12.00af68a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/13.fad1990f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/14.7a436432.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/15.1ed64873.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/16.e4fab6e4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/17.c425f0c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/18.b19b4a8c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/19.cf3ece76.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/20.e9494703.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/21.8e701cc6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/22.c82dafa0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/23.c9095c3c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/25.79d04eb4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/26.0560c9b3.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/27.ca75901a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/28.a2617487.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/29.034030a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/30.687c6413.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/31.023e8160.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/32.f0b2a53f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/33.928cca1f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/34.e7b4cfb6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/35.b6a1c119.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/36.615a2e5c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/37.7c6f496d.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/38.92700ab1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/39.ca730fba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/40.735cdb31.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/41.80a4b65e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/42.33625d08.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/43.de7d648b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/44.7f081370.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/45.4a5d9c6b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/46.ae465fd4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/47.fc08a8e0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/48.3fae0897.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/49.a705c18f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/50.d5ce8c52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/51.fb7cf5ef.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/52.ccd8ffb2.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/53.c39cec94.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/54.44e52515.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/55.a1b302d0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/56.18324d52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/57.4ab7da19.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/58.6666b050.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/59.9031b427.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/6.79caa705.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/60.584946dd.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/61.39e0a712.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/62.8f33fd7c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/63.b27ab9ac.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/64.b15cd74f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/65.a0cdcfa5.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/66.81e0a185.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/67.a06444ff.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/68.85e176ee.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/69.2e790a70.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/7.f420f9c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/70.cc01ed99.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/71.27be19ba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/72.d4cdf44e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/73.210cfade.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/8.64ae920a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/9.692fe702.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~flowchart.d1e58b72.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~notification.ecb92178.js">
+    <link rel="stylesheet" href="/frontend-tutorial/assets/css/0.styles.fb161648.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="FRONTEND-TUTORIAL" class="logo"> <span class="site-name can-hide">FRONTEND-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link router-link-active">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link router-link-active">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript 对象</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend-tutorial/base/js/js-object.html#属性和方法" class="sidebar-link">属性和方法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/base/js/js-object.html#javascript-中的对象" class="sidebar-link">JavaScript 中的对象</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/base/js/js-object.html#创建-javascript-对象" class="sidebar-link">创建 JavaScript 对象</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/base/js/js-object.html#访问对象的属性" class="sidebar-link">访问对象的属性</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/base/js/js-object.html#访问对象的方法" class="sidebar-link">访问对象的方法</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/frontend-tutorial/base/js/js-object.html#您知道吗" class="sidebar-link">您知道吗？</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript-对象"><a href="#javascript-对象" class="header-anchor">#</a> JavaScript 对象</h1> <p><strong>JavaScript 中的所有事物都是对象：字符串、数字、数组、日期，等等。</strong></p> <p><strong>在 JavaScript 中，对象是拥有属性和方法的数据。</strong></p> <h2 id="属性和方法"><a href="#属性和方法" class="header-anchor">#</a> 属性和方法</h2> <p>属性是与对象相关的值。</p> <p>方法是能够在对象上执行的动作。</p> <p>举例：汽车就是现实生活中的对象。</p> <p>汽车的属性：</p> <div class="language- extra-class"><pre class="language-text"><code>car.name=Fiat
+car.model=500
+car.weight=850kg
+car.color=white 
+</code></pre></div><p>汽车的方法：</p> <div class="language- extra-class"><pre class="language-text"><code>car.start()
+car.drive()
+car.brake()
+</code></pre></div><p>汽车的属性包括名称、型号、重量、颜色等。</p> <p>所有汽车都有这些属性，但是每款车的属性都不尽相同。</p> <p>汽车的方法可以是启动、驾驶、刹车等。</p> <p>所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同。</p> <h2 id="javascript-中的对象"><a href="#javascript-中的对象" class="header-anchor">#</a> JavaScript 中的对象</h2> <p>在 JavaScript 中，对象是数据（变量），拥有属性和方法。</p> <p>当您像这样声明一个 JavaScript 变量时：</p> <div class="language- extra-class"><pre class="language-text"><code>var txt = &quot;Hello&quot;;
+</code></pre></div><p>您实际上已经创建了一个 JavaScript 字符串对象。字符串对象拥有内建的属性 length。对于上面的字符串来说，length 的值是 5。字符串对象同时拥有若干个内建的方法。</p> <p>属性：</p> <div class="language- extra-class"><pre class="language-text"><code>txt.length=5
+</code></pre></div><p>方法：</p> <div class="language- extra-class"><pre class="language-text"><code>txt.indexOf()
+
+txt.replace()
+
+txt.search()
+
+</code></pre></div><p>提示：在面向对象的语言中，属性和方法常被称为对象的成员。</p> <p>在本教程稍后的章节中，您将学到有关字符串对象的更多属性和方法。</p> <h2 id="创建-javascript-对象"><a href="#创建-javascript-对象" class="header-anchor">#</a> 创建 JavaScript 对象</h2> <p>JavaScript 中的几乎所有事务都是对象：字符串、数字、数组、日期、函数，等等。</p> <p>你也可以创建自己的对象。</p> <p>本例创建名为 &quot;person&quot; 的对象，并为其添加了四个属性：</p> <p><strong>实例</strong></p> <div class="language- extra-class"><pre class="language-text"><code>person=new Object();
+person.firstname=&quot;Bill&quot;;
+person.lastname=&quot;Gates&quot;;
+person.age=56;
+person.eyecolor=&quot;blue&quot;;
+</code></pre></div><p>创建新 JavaScript 对象有很多不同的方法，并且您还可以向已存在的对象添加属性和方法。</p> <p>您将在本教程稍后的章节学到更多相关的内容。</p> <h2 id="访问对象的属性"><a href="#访问对象的属性" class="header-anchor">#</a> 访问对象的属性</h2> <p>访问对象属性的语法是：</p> <div class="language- extra-class"><pre class="language-text"><code>objectName.propertyName
+</code></pre></div><p>本例使用 String 对象的 length 属性来查找字符串的长度：</p> <div class="language- extra-class"><pre class="language-text"><code>var message=&quot;Hello World!&quot;;
+var x=message.length;
+</code></pre></div><p>在以上代码执行后，x 的值是：</p> <div class="language- extra-class"><pre class="language-text"><code>12
+</code></pre></div><h2 id="访问对象的方法"><a href="#访问对象的方法" class="header-anchor">#</a> 访问对象的方法</h2> <p>您可以通过下面的语法调用方法：</p> <div class="language- extra-class"><pre class="language-text"><code>objectName.methodName()
+</code></pre></div><p>这个例子使用 String 对象的 toUpperCase() 方法来把文本转换为大写：</p> <div class="language- extra-class"><pre class="language-text"><code>var message=&quot;Hello world!&quot;;
+var x=message.toUpperCase();
+
+</code></pre></div><p>在以上代码执行后，x 的值是：</p> <div class="language- extra-class"><pre class="language-text"><code>HELLO WORLD!
+</code></pre></div><h2 id="您知道吗"><a href="#您知道吗" class="header-anchor">#</a> 您知道吗？</h2> <p>提示：在面向对象的语言中，使用 camel-case 标记法的函数是很常见的。您会经常看到 someMethod() 这样的函数名，而不是 some_method()。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/frontend-tutorial/edit/master/docs/base/js/js-object.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/frontend-tutorial/assets/js/app.0f2f3ef1.js" defer></script><script src="/frontend-tutorial/assets/js/4.0f425322.js" defer></script><script src="/frontend-tutorial/assets/js/24.97fb2434.js" defer></script><script src="/frontend-tutorial/assets/js/5.608566ca.js" defer></script>
+  </body>
+</html>

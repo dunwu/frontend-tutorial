@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>scss 快速入门 | FRONTEND-TUTORIAL</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/frontend-tutorial/favicon.ico">
+    <meta name="description" content="前端教程">
+    
+    <link rel="preload" href="/frontend-tutorial/assets/css/0.styles.fb161648.css" as="style"><link rel="preload" href="/frontend-tutorial/assets/js/app.0f2f3ef1.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/4.0f425322.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/51.fb7cf5ef.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/5.608566ca.js" as="script"><link rel="prefetch" href="/frontend-tutorial/assets/js/10.1aadac9e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/11.62869f33.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/12.00af68a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/13.fad1990f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/14.7a436432.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/15.1ed64873.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/16.e4fab6e4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/17.c425f0c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/18.b19b4a8c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/19.cf3ece76.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/20.e9494703.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/21.8e701cc6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/22.c82dafa0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/23.c9095c3c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/24.97fb2434.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/25.79d04eb4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/26.0560c9b3.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/27.ca75901a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/28.a2617487.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/29.034030a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/30.687c6413.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/31.023e8160.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/32.f0b2a53f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/33.928cca1f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/34.e7b4cfb6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/35.b6a1c119.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/36.615a2e5c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/37.7c6f496d.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/38.92700ab1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/39.ca730fba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/40.735cdb31.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/41.80a4b65e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/42.33625d08.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/43.de7d648b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/44.7f081370.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/45.4a5d9c6b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/46.ae465fd4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/47.fc08a8e0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/48.3fae0897.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/49.a705c18f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/50.d5ce8c52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/52.ccd8ffb2.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/53.c39cec94.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/54.44e52515.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/55.a1b302d0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/56.18324d52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/57.4ab7da19.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/58.6666b050.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/59.9031b427.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/6.79caa705.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/60.584946dd.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/61.39e0a712.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/62.8f33fd7c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/63.b27ab9ac.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/64.b15cd74f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/65.a0cdcfa5.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/66.81e0a185.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/67.a06444ff.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/68.85e176ee.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/69.2e790a70.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/7.f420f9c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/70.cc01ed99.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/71.27be19ba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/72.d4cdf44e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/73.210cfade.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/8.64ae920a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/9.692fe702.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~flowchart.d1e58b72.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~notification.ecb92178.js">
+    <link rel="stylesheet" href="/frontend-tutorial/assets/css/0.styles.fb161648.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="FRONTEND-TUTORIAL" class="logo"> <span class="site-name can-hide">FRONTEND-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>scss 快速入门</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="scss-快速入门"><a href="#scss-快速入门" class="header-anchor">#</a> scss 快速入门</h1> <h1 id="_1-使用变量"><a href="#_1-使用变量" class="header-anchor">#</a> 1. 使用变量;</h1> <p><code>sass</code>让人们受益的一个重要特性就是它为<code>css</code>引入了变量。你可以把反复使用的<code>css</code>属性值 定义成变量，然后通过变量名来引用它们，而无需重复书写这一属性值。或者，对于仅使用过一 次的属性值，你可以赋予其一个易懂的变量名，让人一眼就知道这个属性值的用途。</p> <p><code>sass</code>使用<code>$</code>符号来标识变量(老版本的<code>sass</code>使用<code>!</code>来标识变量。改成 <code>$</code> 是多半因为<code>!highlight-color</code>看起来太丑了。)，比如<code>​$highlight-color</code>和<code>$sidebar-width</code>。为什么选择<code>​$</code> 符号呢？因为它好认、更具美感，且在CSS中并无他用，不会导致与现存或未来的<code>css</code>语法冲突。</p> <h1 id="_1-1-变量声明"><a href="#_1-1-变量声明" class="header-anchor">#</a> 1-1. 变量声明;</h1> <p><code>sass</code>变量的声明和<code>css</code>属性的声明很像：</p> <div class="language- extra-class"><pre class="language-text"><code>$highlight-color: #F90;
+</code></pre></div><p>这意味着变量<code>$highlight-color</code>现在的值是<code>#F90</code>。任何可以用作<code>css</code>属性值的赋值都 可以用作<code>sass</code>的变量值，甚至是以空格分割的多个属性值，如<code>$basic-border: 1px solid black;</code>，或以逗号分割的多个属性值，如<code>$plain-font: &quot;Myriad Pro&quot;、Myriad、&quot;Helvetica Neue&quot;、Helvetica、&quot;Liberation Sans&quot;、Arial和sans-serif; sans-serif;</code>。这时变 量还没有生效，除非你引用这个变量——我们很快就会了解如何引用。</p> <p>与<code>CSS</code>属性不同，变量可以在<code>css</code>规则块定义之外存在。当变量定义在<code>css</code>规则块内，那么该变量只能在此规则块内使用。如果它们出现在任何形式的<code>{...}</code>块中（如<code>@media</code>或者<code>@font-face</code>块），情况也是如此：</p> <div class="language- extra-class"><pre class="language-text"><code>$nav-color: #F90;
+nav {
+  $width: 100px;
+  width: $width;
+  color: $nav-color;
+}
+
+//编译后
+
+nav {
+  width: 100px;
+  color: #F90;
+}
+
+</code></pre></div><p>在这段代码中，<code>$nav-color</code>这个变量定义在了规则块外边，所以在这个样式表中都可以像 <code>nav</code>规则块那样引用它。<code>$width</code>这个变量定义在了<code>nav</code>的<code>{ }</code>规则块内，所以它只能在<code>nav</code>规则块 内使用。这意味着是你可以在样式表的其他地方定义和使用<code>$width</code>变量，不会对这里造成影响。</p> <p>只声明变量其实没啥用处，我们最终的目的还是使用它们。上例已介绍了如何使用 <code>$nav-color</code>和<code>$width</code>这两个变量，接下来我们将进一步探讨变量的使用方法。</p> <h1 id="_1-2-变量引用"><a href="#_1-2-变量引用" class="header-anchor">#</a> 1-2. 变量引用;</h1> <p>凡是<code>css</code>属性的标准值（比如说1px或者bold）可存在的地方，变量就可以使用。<code>css</code>生成时，变量会被它们的值所替代。之后，如果你需要一个不同的值，只需要改变这个变量的值，则所有引用此变量的地方生成的值都会随之改变。</p> <div class="language- extra-class"><pre class="language-text"><code>$highlight-color: #F90;
+.selected {
+  border: 1px solid $highlight-color;
+}
+
+//编译后
+
+.selected {
+  border: 1px solid #F90;
+}
+
+</code></pre></div><p>看上边示例中的<code>$highlight-color</code>变量，它被直接赋值给<code>border</code>属性，当这段代码被编译输出<code>css</code>时，<code>$highlight-color</code>会被<code>#F90</code>这一颜色值所替代。产生的效果就是给<code>selected</code>这个类一条1像素宽、实心且颜色值为<code>#F90</code>的边框。</p> <p>在声明变量时，变量值也可以引用其他变量。当你通过粒度区分，为不同的值取不同名字时，这相当有用。下例在独立的颜色值粒度上定义了一个变量，且在另一个更复杂的边框值粒度上也定义了一个变量：</p> <div class="language- extra-class"><pre class="language-text"><code>$highlight-color: #F90;
+$highlight-border: 1px solid $highlight-color;
+.selected {
+  border: $highlight-border;
+}
+
+//编译后
+
+.selected {
+  border: 1px solid #F90;
+}
+</code></pre></div><p>这里，<code>$highlight-border</code>变量的声明中使用了<code>$highlight-color</code>这个变量。产生的效 果就跟你直接为<code>border</code>属性设置了一个<code>1px</code> <code>$highlight-color solid</code>的值是一样的。 最后，我们来了解一下变量命名的实用技巧，以结束关于变量的介绍。</p> <h1 id="_1-3-变量名用中划线还是下划线分隔"><a href="#_1-3-变量名用中划线还是下划线分隔" class="header-anchor">#</a> 1-3. 变量名用中划线还是下划线分隔;</h1> <p><code>sass</code>的变量名可以与<code>css</code>中的属性名和选择器名称相同，包括中划线和下划线。这完全取决于个人的喜好，有些人喜欢使用中划线来分隔变量中的多个词（如<code>$highlight-color</code>），而有些人喜欢使用下划线（如<code>$highlight_color</code>）。使用中划线的方式更为普遍，这也是<code>compass</code>和本文都用的方式。</p> <p>不过，<code>sass</code>并不想强迫任何人一定使用中划线或下划线，所以这两种用法相互兼容。用中划线声明的变量可以使用下划线的方式引用，反之亦然。这意味着即使<code>compass</code>选择用中划线的命名方式，这并不影响你在使用<code>compass</code>的样式中用下划线的命名方式进行引用：</p> <div class="language- extra-class"><pre class="language-text"><code>$link-color: blue;
+a {
+  color: $link_color;
+}
+
+//编译后
+
+a {
+  color: blue;
+}
+</code></pre></div><p>在上例中，<code>$link-color</code>和<code>$link_color</code>其实指向的是同一个变量。实际上，在<code>sass</code>的大 多数地方，中划线命名的内容和下划线命名的内容是互通的，除了变量，也包括对混合器和Sass函数的命名。但是在<code>sass</code>中纯<code>css</code>部分不互通，比如类名、ID或属性名。</p> <p>尽管变量自身提供了很多有用的地方，但是<code>sass</code>基于变量提供的更为强大的工具才是我们关注的焦点。只有当变量与<code>sass</code>的其他特性一起使用时，才能发挥其全部的潜能。接下来，我们将探讨其中一个非常重要的特性，即规则嵌套。</p> <h1 id="_2-嵌套css-规则"><a href="#_2-嵌套css-规则" class="header-anchor">#</a> 2. 嵌套CSS 规则;</h1> <p><code>css</code>中重复写选择器是非常恼人的。如果要写一大串指向页面中同一块的样式时，往往需要 一遍又一遍地写同一个<code>ID</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>#content article h1 { color: #333 }
+#content article p { margin-bottom: 1.4em }
+#content aside { background-color: #EEE }
+</code></pre></div><p>像这种情况，<code>sass</code>可以让你只写一遍，且使样式可读性更高。在Sass中，你可以像俄罗斯套娃那样在规则块中嵌套规则块。<code>sass</code>在输出<code>css</code>时会帮你把这些嵌套规则处理好，避免你的重复书写。</p> <div class="language- extra-class"><pre class="language-text"><code>#content {
+  article {
+    h1 { color: #333 }
+    p { margin-bottom: 1.4em }
+  }
+  aside { background-color: #EEE }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code> /* 编译后 */
+#content article h1 { color: #333 }
+#content article p { margin-bottom: 1.4em }
+#content aside { background-color: #EEE }
+</code></pre></div><p>上边的例子，会在输出<code>css</code>时把它转换成跟你之前看到的一样的效果。这个过程中，<code>sass</code>用了两步，每一步都是像打开俄罗斯套娃那样把里边的嵌套规则块一个个打开。首先，把<code>#content</code>（父级）这个<code>id</code>放到<code>article</code>选择器（子级）和<code>aside</code>选择器（子级）的前边：</p> <div class="language- extra-class"><pre class="language-text"><code>#content {
+  article {
+    h1 { color: #333 }
+    p { margin-bottom: 1.4em }
+  }
+  #content aside { background-color: #EEE }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code> /* 编译后 */
+#content article h1 { color: #333 }
+#content article p { margin-bottom: 1.4em }
+#content aside { background-color: #EEE }
+</code></pre></div><p>然后，<code>#content article</code>里边还有嵌套的规则，<code>sass</code>重复一遍上边的步骤，把新的选择器添加到内嵌的选择器前边。</p> <p>一个给定的规则块，既可以像普通的CSS那样包含属性，又可以嵌套其他规则块。当你同时要为一个容器元素及其子元素编写特定样式时，这种能力就非常有用了。</p> <div class="language- extra-class"><pre class="language-text"><code>#content {
+  background-color: #f5f5f5;
+  aside { background-color: #eee }
+}
+</code></pre></div><p>容器元素的样式规则会被单独抽离出来，而嵌套元素的样式规则会像容器元素没有包含任何属性时那样被抽离出来。</p> <div class="language- extra-class"><pre class="language-text"><code>#content { background-color: #f5f5f5 }
+#content aside { background-color: #eee }
+</code></pre></div><p>大多数情况下这种简单的嵌套都没问题，但是有些场景下不行，比如你想要在嵌套的选择器 里边立刻应用一个类似于<code>：hover</code>的伪类。为了解决这种以及其他情况，<code>sass</code>提供了一个特殊结 构<code>&amp;</code>。</p> <h1 id="_2-1-父选择器的标识符"><a href="#_2-1-父选择器的标识符" class="header-anchor">#</a> 2-1. 父选择器的标识符&amp;;</h1> <p>一般情况下，<code>sass</code>在解开一个嵌套规则时就会把父选择器（<code>#content</code>）通过一个空格连接到子选择器的前边（<code>article</code>和<code>aside</code>）形成（<code>#content article</code>和<code>#content aside</code>）。这种在CSS里边被称为后代选择器，因为它选择ID为<code>content</code>的元素内所有命中选择器<code>article</code>和<code>aside</code>的元素。但在有些情况下你却不会希望<code>sass</code>使用这种后代选择器的方式生成这种连接。</p> <p>最常见的一种情况是当你为链接之类的元素写<code>：hover</code>这种伪类时，你并不希望以后代选择器的方式连接。比如说，下面这种情况<code>sass</code>就无法正常工作：</p> <div class="language- extra-class"><pre class="language-text"><code>article a {
+  color: blue;
+  :hover { color: red }
+}
+</code></pre></div><p>这意味着<code>color: red</code>这条规则将会被应用到选择器<code>article a :hover</code>，<code>article</code>元素内链接的所有子元素在被<code>hover</code>时都会变成红色。这是不正确的！你想把这条规则应用到超链接自身，而后代选择器的方式无法帮你实现。</p> <p>解决之道为使用一个特殊的<code>sass</code>选择器，即父选择器。在使用嵌套规则时，父选择器能对于嵌套规则如何解开提供更好的控制。它就是一个简单的<code>&amp;</code>符号，且可以放在任何一个选择器可出现的地方，比如<code>h1</code>放在哪，它就可以放在哪。</p> <div class="language- extra-class"><pre class="language-text"><code>article a {
+  color: blue;
+  &amp;:hover { color: red }
+}
+</code></pre></div><p>当包含父选择器标识符的嵌套规则被打开时，它不会像后代选择器那样进行拼接，而是<code>&amp;</code>被父选择器直接替换：</p> <div class="language- extra-class"><pre class="language-text"><code>article a { color: blue }
+article a:hover { color: red }
+</code></pre></div><p>在为父级选择器添加<code>：hover</code>等伪类时，这种方式非常有用。同时父选择器标识符还有另外一种用法，你可以在父选择器之前添加选择器。举例来说，当用户在使用IE浏览器时，你会通过<code>JavaScript</code>在``标签上添加一个ie的类名，为这种情况编写特殊的样式如下：</p> <div class="language- extra-class"><pre class="language-text"><code>#content aside {
+  color: red;
+  body.ie &amp; { color: green }
+}
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/*编译后*/
+#content aside {color: red};
+body.ie #content aside { color: green }
+</code></pre></div><p><code>sass</code>在选择器嵌套上是非常智能的，即使是带有父选择器的情况。当<code>sass</code>遇到群组选择器（由多个逗号分隔开的选择器形成）也能完美地处理这种嵌套。</p> <h1 id="_2-2-群组选择器的嵌套"><a href="#_2-2-群组选择器的嵌套" class="header-anchor">#</a> 2-2. 群组选择器的嵌套;</h1> <p>在<code>CSS</code>里边，选择器<code>h1``h2</code>和<code>h3</code>会同时命中h1元素、h2元素和h3元素。与此类似，<code>.button</code> <code>button</code>会命中button元素和类名为.button的元素。这种选择器称为群组选择器。群组选择器 的规则会对命中群组中任何一个选择器的元素生效。</p> <div class="language- extra-class"><pre class="language-text"><code>.button, button {
+  margin: 0;
+}
+</code></pre></div><p>当看到上边这段代码时，你可能还没意识到会有重复性的工作。但会很快发现：如果你需要在一个特定的容器元素内对这样一个群组选择器进行修饰，情况就不同了。<code>css</code>的写法会让你在群组选择器中的每一个选择器前都重复一遍容器元素的选择器。</p> <div class="language- extra-class"><pre class="language-text"><code>.container h1, .container h2, .container h3 { margin-bottom: .8em }
+</code></pre></div><p>非常幸运，<code>sass</code>的嵌套特性在这种场景下也非常有用。当<code>sass</code>解开一个群组选择器规则内嵌的规则时，它会把每一个内嵌选择器的规则都正确地解出来：</p> <div class="language- extra-class"><pre class="language-text"><code>.container {
+  h1, h2, h3 {margin-bottom: .8em}
+}
+</code></pre></div><p>首先<code>sass</code>将<code>.container</code>和<code>h1``.container</code>和<code>h2``.container</code>和<code>h3</code>分别组合，然后将三 者重新组合成一个群组选择器，生成你前边看到的普通<code>css</code>样式。对于内嵌在群组选择器内的嵌 套规则，处理方式也一样：</p> <div class="language- extra-class"><pre class="language-text"><code>nav, aside {
+  a {color: blue}
+}
+</code></pre></div><p>首先<code>sass</code>将<code>nav</code>和<code>a``aside</code>和<code>a</code>分别组合，然后将二者重新组合成一个群组选择器：</p> <div class="language- extra-class"><pre class="language-text"><code>nav a, aside a {color: blue}
+</code></pre></div><p>处理这种群组选择器规则嵌套上的强大能力，正是<code>sass</code>在减少重复敲写方面的贡献之一。尤其在当嵌套级别达到两层甚至三层以上时，与普通的<code>css</code>编写方式相比，只写一遍群组选择器大大减少了工作量。</p> <p>有利必有弊，你需要特别注意群组选择器的规则嵌套生成的<code>css</code>。虽然<code>sass</code>让你的样式表看上去很小，但实际生成的<code>css</code>却可能非常大，这会降低网站的速度。</p> <p>关于选择器嵌套的最后一个方面，我们看看<code>sass</code>如何处理组合选择器，比如&gt;、+和~的使用。你将看到，这种场景下你甚至无需使用父选择器标识符。</p> <h1 id="_2-3-子组合选择器和同层组合选择器-、-和"><a href="#_2-3-子组合选择器和同层组合选择器-、-和" class="header-anchor">#</a> 2-3. 子组合选择器和同层组合选择器：&gt;、+和~;</h1> <p>上边这三个组合选择器必须和其他选择器配合使用，以指定浏览器仅选择某种特定上下文中的元素。</p> <div class="language- extra-class"><pre class="language-text"><code>article section { margin: 5px }
+article &gt; section { border: 1px solid #ccc }
+</code></pre></div><p>你可以用子组合选择器&gt;选择一个元素的直接子元素。上例中，第一个选择器会选择article下的所有命中section选择器的元素。第二个选择器只会选择article下紧跟着的子元素中命中section选择器的元素。</p> <p>在下例中，你可以用同层相邻组合选择器<code>+</code>选择<code>header</code>元素后紧跟的<code>p</code>元素：</p> <div class="language- extra-class"><pre class="language-text"><code>header + p { font-size: 1.1em }
+</code></pre></div><p>你也可以用同层全体组合选择器<code>~</code>，选择所有跟在<code>article</code>后的同层<code>article</code>元素，不管它们之间隔了多少其他元素：</p> <div class="language- extra-class"><pre class="language-text"><code>article ~ article { border-top: 1px dashed #ccc }
+</code></pre></div><p>这些组合选择器可以毫不费力地应用到<code>sass</code>的规则嵌套中。可以把它们放在外层选择器后边，或里层选择器前边：</p> <div class="language- extra-class"><pre class="language-text"><code>article {
+  ~ article { border-top: 1px dashed #ccc }
+  &gt; section { background: #eee }
+  dl &gt; {
+    dt { color: #333 }
+    dd { color: #555 }
+  }
+  nav + &amp; { margin-top: 0 }
+}
+</code></pre></div><p><code>sass</code>会如你所愿地将这些嵌套规则一一解开组合在一起：</p> <div class="language- extra-class"><pre class="language-text"><code>article ~ article { border-top: 1px dashed #ccc }
+article &gt; footer { background: #eee }
+article dl &gt; dt { color: #333 }
+article dl &gt; dd { color: #555 }
+nav + article { margin-top: 0 }
+</code></pre></div><p>在<code>sass</code>中，不仅仅<code>css</code>规则可以嵌套，对属性进行嵌套也可以减少很多重复性的工作。</p> <h1 id="_2-4-嵌套属性"><a href="#_2-4-嵌套属性" class="header-anchor">#</a> 2-4. 嵌套属性;</h1> <p>在<code>sass</code>中，除了CSS选择器，属性也可以进行嵌套。尽管编写属性涉及的重复不像编写选择器那么糟糕，但是要反复写<code>border-style``border-width``border-color</code>以及<code>border-*</code>等也是非常烦人的。在<code>sass</code>中，你只需敲写一遍<code>border</code>：</p> <div class="language- extra-class"><pre class="language-text"><code>nav {
+  border: {
+  style: solid;
+  width: 1px;
+  color: #ccc;
+  }
+}
+</code></pre></div><p>嵌套属性的规则是这样的：把属性名从中划线-的地方断开，在根属性后边添加一个冒号:，紧跟一个<code>{ }</code>块，把子属性部分写在这个<code>{ }</code>块中。就像<code>css</code>选择器嵌套一样，<code>sass</code>会把你的子属性一一解开，把根属性和子属性部分通过中划线-连接起来，最后生成的效果与你手动一遍遍写的<code>css</code>样式一样：</p> <div class="language- extra-class"><pre class="language-text"><code>nav {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+}
+</code></pre></div><p>对于属性的缩写形式，你甚至可以像下边这样来嵌套，指明例外规则：</p> <div class="language- extra-class"><pre class="language-text"><code>nav {
+  border: 1px solid #ccc {
+  left: 0px;
+  right: 0px;
+  }
+}
+</code></pre></div><p>这比下边这种同等样式的写法要好：</p> <div class="language- extra-class"><pre class="language-text"><code>nav {
+  border: 1px solid #ccc;
+  border-left: 0px;
+  border-right: 0px;
+}
+</code></pre></div><p>属性和选择器嵌套是非常伟大的特性，因为它们不仅大大减少了你的编写量，而且通过视觉上的缩进使你编写的样式结构更加清晰，更易于阅读和开发。</p> <p>即便如此，随着你的样式表变得越来越大，这种写法也很难保持结构清晰。有时，处理这种大量样式的唯一方法就是把它们分拆到多个文件中。<code>sass</code>通过对<code>css</code>原有<code>@import</code>规则的改进直接支持了这一特性。</p> <h1 id="_3-导入sass文件"><a href="#_3-导入sass文件" class="header-anchor">#</a> 3. 导入SASS文件;</h1> <p><code>css</code>有一个特别不常用的特性，即<code>@import</code>规则，它允许在一个<code>css</code>文件中导入其他<code>css</code>文件。然而，后果是只有执行到<code>@import</code>时，浏览器才会去下载其他<code>css</code>文件，这导致页面加载起来特别慢。</p> <p><code>sass</code>也有一个<code>@import</code>规则，但不同的是，<code>sass</code>的<code>@import</code>规则在生成<code>css</code>文件时就把相关文件导入进来。这意味着所有相关的样式被归纳到了同一个<code>css</code>文件中，而无需发起额外的下载请求。另外，所有在被导入文件中定义的变量和混合器（参见2.5节）均可在导入文件中使用。</p> <p>使用<code>sass</code>的<code>@import</code>规则并不需要指明被导入文件的全名。你可以省略<code>.sass</code>或<code>.scss</code>文件后缀（见下图）。这样，在不修改样式表的前提下，你完全可以随意修改你或别人写的被导入的<code>sass</code>样式文件语法，在<code>sass</code>和<code>scss</code>语法之间随意切换。举例来说，<code>@import</code>&quot;sidebar&quot;;这条命令将把<code>sidebar.scss</code>文件中所有样式添加到当前样式表中。</p> <p><img src="https://www.sass.hk/images/p1.png" alt="img"></p> <p>本节将介绍如何使用<code>sass</code>的<code>@import</code>来处理多个<code>sass</code>文件。首先，我们将学习编写那些被导入的<code>sass</code>文件，因为在一个大型<code>sass</code>项目中，这样的文件是你最常编写的那一类。接着，了解集中导入<code>sass</code>文件的方法，使你的样式可重用性更高，包括声明可自定义的变量值，以及在某一个选择器范围内导入<code>sass</code>文件。最后，介绍如何在<code>sass</code>中使用<code>css</code>原生的<code>@import</code>命令。</p> <p>通常，有些<code>sass</code>文件用于导入，你并不希望为每个这样的文件单独地生成一个<code>css</code>文件。对此，<code>sass</code>用一个特殊的约定来解决。</p> <h1 id="_3-1-使用sass部分文件"><a href="#_3-1-使用sass部分文件" class="header-anchor">#</a> 3-1. 使用SASS部分文件;</h1> <p>当通过<code>@import</code>把<code>sass</code>样式分散到多个文件时，你通常只想生成少数几个<code>css</code>文件。那些专门为<code>@import</code>命令而编写的<code>sass</code>文件，并不需要生成对应的独立<code>css</code>文件，这样的<code>sass</code>文件称为局部文件。对此，<code>sass</code>有一个特殊的约定来命名这些文件。</p> <p>此约定即，<code>sass</code>局部文件的文件名以下划线开头。这样，<code>sass</code>就不会在编译时单独编译这个文件输出<code>css</code>，而只把这个文件用作导入。当你<code>@import</code>一个局部文件时，还可以不写文件的全名，即省略文件名开头的下划线。举例来说，你想导入<code>themes/_night-sky.scss</code>这个局部文件里的变量，你只需在样式表中写<code>@import</code> <code>&quot;themes/night-sky&quot;;</code>。</p> <p>局部文件可以被多个不同的文件引用。当一些样式需要在多个页面甚至多个项目中使用时，这非常有用。在这种情况下，有时需要在你的样式表中对导入的样式稍作修改，<code>sass</code>有一个功能刚好可以解决这个问题，即默认变量值。</p> <h1 id="_3-2-默认变量值"><a href="#_3-2-默认变量值" class="header-anchor">#</a> 3-2. 默认变量值;</h1> <p>一般情况下，你反复声明一个变量，只有最后一处声明有效且它会覆盖前边的值。举例说明：</p> <div class="language- extra-class"><pre class="language-text"><code>$link-color: blue;
+$link-color: red;
+a {
+color: $link-color;
+}
+</code></pre></div><p>在上边的例子中，超链接的<code>color</code>会被设置为<code>red</code>。这可能并不是你想要的结果，假如你写了一个可被他人通过<code>@import</code>导入的<code>sass</code>库文件，你可能希望导入者可以定制修改<code>sass</code>库文件中的某些值。使用<code>sass</code>的<code>!default</code>标签可以实现这个目的。它很像<code>css</code>属性中<code>!important</code>标签的对立面，不同的是<code>!default</code>用于变量，含义是：如果这个变量被声明赋值了，那就用它声明的值，否则就用这个默认值。</p> <div class="language- extra-class"><pre class="language-text"><code>$fancybox-width: 400px !default;
+.fancybox {
+width: $fancybox-width;
+}
+</code></pre></div><p>在上例中，如果用户在导入你的<code>sass</code>局部文件之前声明了一个<code>$fancybox-width</code>变量，那么你的局部文件中对<code>$fancybox-width</code>赋值<code>400px</code>的操作就无效。如果用户没有做这样的声明，则<code>$fancybox-width</code>将默认为<code>400px</code>。</p> <p>接下来我们将学习嵌套导入，它允许只在某一个选择器的范围内导入<code>sass</code>局部文件。</p> <h1 id="_3-3-嵌套导入"><a href="#_3-3-嵌套导入" class="header-anchor">#</a> 3-3. 嵌套导入;</h1> <p>跟原生的<code>css</code>不同，<code>sass</code>允许<code>@import</code>命令写在<code>css</code>规则内。这种导入方式下，生成对应的<code>css</code>文件时，局部文件会被直接插入到<code>css</code>规则内导入它的地方。举例说明，有一个名为<code>_blue-theme.scss</code>的局部文件，内容如下：</p> <div class="language- extra-class"><pre class="language-text"><code>aside {
+  background: blue;
+  color: white;
+}
+</code></pre></div><p>然后把它导入到一个CSS规则内，如下所示：</p> <div class="language- extra-class"><pre class="language-text"><code>.blue-theme {@import &quot;blue-theme&quot;}
+
+//生成的结果跟你直接在.blue-theme选择器内写_blue-theme.scss文件的内容完全一样。
+
+.blue-theme {
+  aside {
+    background: blue;
+    color: #fff;
+  }
+}
+</code></pre></div><p>被导入的局部文件中定义的所有变量和混合器，也会在这个规则范围内生效。这些变量和混合器不会全局有效，这样我们就可以通过嵌套导入只对站点中某一特定区域运用某种颜色主题或其他通过变量配置的样式。</p> <p>有时，可用<code>css</code>原生的<code>@import</code>机制，在浏览器中下载必需的<code>css</code>文件。<code>sass</code>也提供了几种方法来达成这种需求。</p> <h1 id="_3-4-原生的css导入"><a href="#_3-4-原生的css导入" class="header-anchor">#</a> 3-4. 原生的CSS导入;</h1> <p>由于<code>sass</code>兼容原生的<code>css</code>，所以它也支持原生的<code>CSS@import</code>。尽管通常在<code>sass</code>中使用<code>@import</code>时，<code>sass</code>会尝试找到对应的<code>sass</code>文件并导入进来，但在下列三种情况下会生成原生的<code>CSS@import</code>，尽管这会造成浏览器解析<code>css</code>时的额外下载：</p> <ul><li>被导入文件的名字以<code>.css</code>结尾；</li> <li>被导入文件的名字是一个URL地址（比如http://www.sass.hk/css/css.css），由此可用谷歌字体API提供的相应服务；</li> <li>被导入文件的名字是<code>CSS</code>的url()值。</li></ul> <p>这就是说，你不能用<code>sass</code>的<code>@import</code>直接导入一个原始的<code>css</code>文件，因为<code>sass</code>会认为你想用<code>css</code>原生的<code>@import</code>。但是，因为<code>sass</code>的语法完全兼容<code>css</code>，所以你可以把原始的<code>css</code>文件改名为<code>.scss</code>后缀，即可直接导入了。</p> <p>文件导入是保证<code>sass</code>的代码可维护性和可读性的重要一环。次之但亦非常重要的就是注释了。注释可以帮助样式作者记录写<code>sass</code>的过程中的想法。在原生的<code>css</code>中，注释对于其他人是直接可见的，但<code>sass</code>提供了一种方式可在生成的<code>css</code>文件中按需抹掉相应的注释。</p> <h1 id="_4-静默注释"><a href="#_4-静默注释" class="header-anchor">#</a> 4. 静默注释;</h1> <p><code>css</code>中注释的作用包括帮助你组织样式、以后你看自己的代码时明白为什么这样写，以及简单的样式说明。但是，你并不希望每个浏览网站源码的人都能看到所有注释。</p> <p><code>sass</code>另外提供了一种不同于<code>css</code>标准注释格式<code>/* ... */</code>的注释语法，即静默注释，其内容不会出现在生成的<code>css</code>文件中。静默注释的语法跟<code>JavaScript``Java</code>等类<code>C</code>的语言中单行注释的语法相同，它们以<code>//</code>开头，注释内容直到行末。</p> <div class="language- extra-class"><pre class="language-text"><code>body {
+  color: #333; // 这种注释内容不会出现在生成的css文件中
+  padding: 0; /* 这种注释内容会出现在生成的css文件中 */
+}
+</code></pre></div><p>实际上，<code>css</code>的标准注释格式<code>/* ... */</code>内的注释内容亦可在生成的<code>css</code>文件中抹去。当注释出现在原生<code>css</code>不允许的地方，如在<code>css</code>属性或选择器中，<code>sass</code>将不知如何将其生成到对应<code>css</code>文件中的相应位置，于是这些注释被抹掉。</p> <div class="language- extra-class"><pre class="language-text"><code>body {
+  color /* 这块注释内容不会出现在生成的css中 */: #333;
+  padding: 1; /* 这块注释内容也不会出现在生成的css中 */ 0;
+}
+
+</code></pre></div><p>你已经掌握了<code>sass</code>的静默注释，了解了保持<code>sass</code>条理性和可读性的最基本的三个方法：嵌套、导入和注释。现在，我们要进一步学习新特性，这样我们不但能保持条理性还能写出更好的样式。首先要介绍的内容是：使用混合器抽象你的相关样式。</p> <h1 id="_5-混合器"><a href="#_5-混合器" class="header-anchor">#</a> 5. 混合器;</h1> <p>如果你的整个网站中有几处小小的样式类似（例如一致的颜色和字体），那么使用变量来统一处理这种情况是非常不错的选择。但是当你的样式变得越来越复杂，你需要大段大段的重用样式的代码，独立的变量就没办法应付这种情况了。你可以通过<code>sass</code>的混合器实现大段样式的重用。</p> <p>混合器使用<code>@mixin</code>标识符定义。看上去很像其他的<code>CSS @</code>标识符，比如说<code>@media</code>或者<code>@font-face</code>。这个标识符给一大段样式赋予一个名字，这样你就可以轻易地通过引用这个名字重用这段样式。下边的这段<code>sass</code>代码，定义了一个非常简单的混合器，目的是添加跨浏览器的圆角边框。</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin rounded-corners {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+</code></pre></div><p>然后就可以在你的样式表中通过<code>@include</code>来使用这个混合器，放在你希望的任何地方。<code>@include</code>调用会把混合器中的所有样式提取出来放在<code>@include</code>被调用的地方。如果像下边这样写：</p> <div class="language- extra-class"><pre class="language-text"><code>notice {
+  background-color: green;
+  border: 2px solid #00aa00;
+  @include rounded-corners;
+}
+
+//sass最终生成：
+
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>.notice {
+  background-color: green;
+  border: 2px solid #00aa00;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+</code></pre></div><p>在<code>.notice</code>中的属性<code>border-radius``-moz-border-radius</code>和<code>-webkit-border-radius</code>全部来自<code>rounded-corners</code>这个混合器。这一节将介绍使用混合器来避免重复。通过使用参数，你可以使用混合器把你样式中的通用样式抽离出来，然后轻松地在其他地方重用。实际上，混合器太好用了，一不小心你可能会过度使用。大量的重用可能会导致生成的样式表过大，导致加载缓慢。所以，首先我们将讨论混合器的使用场景，避免滥用。</p> <h1 id="_5-1-何时使用混合器"><a href="#_5-1-何时使用混合器" class="header-anchor">#</a> 5-1. 何时使用混合器;</h1> <p>利用混合器，可以很容易地在样式表的不同地方共享样式。如果你发现自己在不停地重复一段样式，那就应该把这段样式构造成优良的混合器，尤其是这段样式本身就是一个逻辑单元，比如说是一组放在一起有意义的属性。</p> <p>判断一组属性是否应该组合成一个混合器，一条经验法则就是你能否为这个混合器想出一个好的名字。如果你能找到一个很好的短名字来描述这些属性修饰的样式，比如<code>rounded-corners``fancy-font</code>或者<code>no-bullets</code>，那么往往能够构造一个合适的混合器。如果你找不到，这时候构造一个混合器可能并不合适。</p> <p>混合器在某些方面跟<code>css</code>类很像。都是让你给一大段样式命名，所以在选择使用哪个的时候可能会产生疑惑。最重要的区别就是类名是在<code>html</code>文件中应用的，而混合器是在样式表中应用的。这就意味着类名具有语义化含义，而不仅仅是一种展示性的描述：用来描述<code>html</code>元素的含义而不是<code>html</code>元素的外观。而另一方面，混合器是展示性的描述，用来描述一条<code>css</code>规则应用之后会产生怎样的效果。</p> <p>在之前的例子中，<code>.notice</code>是一个有语义的类名。如果一个<code>html</code>元素有一个<code>notice</code>的类名，就表明了这个<code>html</code>元素的用途：向用户展示提醒信息。<code>rounded-corners</code>混合器是展示性的，它描述了包含它的<code>css</code>规则最终的视觉样式，尤其是边框角的视觉样式。混合器和类配合使用写出整洁的<code>html</code>和<code>css</code>，因为使用语义化的类名亦可以帮你避免重复使用混合器。为了保持你的<code>html</code>和<code>css</code>的易读性和可维护性，在写样式的过程中一定要铭记二者的区别。</p> <p>有时候仅仅把属性放在混合器中还远远不够，可喜的是，<code>sass</code>同样允许你把<code>css</code>规则放在混合器中。</p> <h1 id="_5-2-混合器中的css规则"><a href="#_5-2-混合器中的css规则" class="header-anchor">#</a> 5-2. 混合器中的CSS规则;</h1> <p>混合器中不仅可以包含属性，也可以包含<code>css</code>规则，包含选择器和选择器中的属性，如下代码:</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin no-bullets {
+  list-style: none;
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0px;
+  }
+}
+</code></pre></div><p>当一个包含<code>css</code>规则的混合器通过<code>@include</code>包含在一个父规则中时，在混合器中的规则最终会生成父规则中的嵌套规则。举个例子，看看下边的<code>sass</code>代码，这个例子中使用了<code>no-bullets</code>这个混合器：</p> <div class="language- extra-class"><pre class="language-text"><code>ul.plain {
+  color: #444;
+  @include no-bullets;
+}
+</code></pre></div><p><code>sass</code>的<code>@include</code>指令会将引入混合器的那行代码替换成混合器里边的内容。最终，上边的例子如下代码:</p> <div class="language- extra-class"><pre class="language-text"><code>ul.plain {
+  color: #444;
+  list-style: none;
+}
+ul.plain li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0px;
+}
+</code></pre></div><p>混合器中的规则甚至可以使用<code>sass</code>的父选择器标识符<code>&amp;</code>。使用起来跟不用混合器时一样，<code>sass</code>解开嵌套规则时，用父规则中的选择器替代<code>&amp;</code>。</p> <p>如果一个混合器只包含<code>css</code>规则，不包含属性，那么这个混合器就可以在文档的顶部调用，写在所有的<code>css</code>规则之外。如果你只是为自己写一些混合器，这并没有什么大的用途，但是当你使用一个类似于<code>Compass</code>的库时，你会发现，这是提供样式的好方法，原因在于你可以选择是否使用这些样式。</p> <p>接下来你将学习如何通过给混合器传参数来让混合器变得更加灵活和可重用。</p> <h1 id="_5-3-给混合器传参"><a href="#_5-3-给混合器传参" class="header-anchor">#</a> 5-3. 给混合器传参;</h1> <p>混合器并不一定总得生成相同的样式。可以通过在<code>@include</code>混合器时给混合器传参，来定制混合器生成的精确样式。当<code>@include</code>混合器时，参数其实就是可以赋值给<code>css</code>属性值的变量。如果你写过<code>JavaScript</code>，这种方式跟<code>JavaScript</code>的<code>function</code>很像：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin link-colors($normal, $hover, $visited) {
+  color: $normal;
+  &amp;:hover { color: $hover; }
+  &amp;:visited { color: $visited; }
+}
+</code></pre></div><p>当混合器被<code>@include</code>时，你可以把它当作一个<code>css</code>函数来传参。如果你像下边这样写：</p> <div class="language- extra-class"><pre class="language-text"><code>a {
+  @include link-colors(blue, red, green);
+}
+
+//Sass最终生成的是：
+
+a { color: blue; }
+a:hover { color: red; }
+a:visited { color: green; }
+</code></pre></div><p>当你@include混合器时，有时候可能会很难区分每个参数是什么意思，参数之间是一个什么样的顺序。为了解决这个问题，<code>sass</code>允许通过语法<code>$name: value</code>的形式指定每个参数的值。这种形式的传参，参数顺序就不必再在乎了，只需要保证没有漏掉参数即可：</p> <div class="language- extra-class"><pre class="language-text"><code>a {
+    @include link-colors(
+      $normal: blue,
+      $visited: green,
+      $hover: red
+  );
+}
+</code></pre></div><p>尽管给混合器加参数来实现定制很好，但是有时有些参数我们没有定制的需要，这时候也需要赋值一个变量就变成很痛苦的事情了。所以<code>sass</code>允许混合器声明时给参数赋默认值。</p> <h1 id="_5-4-默认参数值"><a href="#_5-4-默认参数值" class="header-anchor">#</a> 5-4. 默认参数值;</h1> <p>为了在<code>@include</code>混合器时不必传入所有的参数，我们可以给参数指定一个默认值。参数默认值使用<code>$name: default-value</code>的声明形式，默认值可以是任何有效的<code>css</code>属性值，甚至是其他参数的引用，如下代码：</p> <div class="language- extra-class"><pre class="language-text"><code>@mixin link-colors(
+    $normal,
+    $hover: $normal,
+    $visited: $normal
+  )
+{
+  color: $normal;
+  &amp;:hover { color: $hover; }
+  &amp;:visited { color: $visited; }
+}
+</code></pre></div><p>如果像下边这样调用：<code>@include link-colors(red)</code> <code>$hover</code>和<code>$visited</code>也会被自动赋值为<code>red</code>。</p> <p>混合器只是<code>sass</code>样式重用特性中的一个。我们已经了解到混合器主要用于样式展示层的重用，如果你想重用语义化的类呢？这就涉及<code>sass</code>的另一个重要的重用特性：选择器继承。</p> <h1 id="_6-使用选择器继承来精简css"><a href="#_6-使用选择器继承来精简css" class="header-anchor">#</a> 6. 使用选择器继承来精简CSS;</h1> <p>使用<code>sass</code>的时候，最后一个减少重复的主要特性就是选择器继承。基于<code>Nicole Sullivan</code>面向对象的<code>css</code>的理念，选择器继承是说一个选择器可以继承为另一个选择器定义的所有样式。这个通过<code>@extend</code>语法实现，如下代码:</p> <div class="language- extra-class"><pre class="language-text"><code>//通过选择器继承继承样式
+.error {
+  border: 1px solid red;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error;
+  border-width: 3px;
+}
+</code></pre></div><p>在上边的代码中，<code>.seriousError</code>将会继承样式表中任何位置处为<code>.error</code>定义的所有样式。以<code>class=&quot;seriousError&quot;</code> 修饰的<code>html</code>元素最终的展示效果就好像是<code>class=&quot;seriousError error&quot;</code>。相关元素不仅会拥有一个<code>3px</code>宽的边框，而且这个边框将变成红色的，这个元素同时还会有一个浅红色的背景，因为这些都是在<code>.error</code>里边定义的样式。</p> <p><code>.seriousError</code>不仅会继承<code>.error</code>自身的所有样式，任何跟<code>.error</code>有关的组合选择器样式也会被<code>.seriousError</code>以组合选择器的形式继承，如下代码:</p> <div class="language- extra-class"><pre class="language-text"><code>//.seriousError从.error继承样式
+.error a{  //应用到.seriousError a
+  color: red;
+  font-weight: 100;
+}
+h1.error { //应用到hl.seriousError
+  font-size: 1.2rem;
+}
+</code></pre></div><p>如上所示，在<code>class=&quot;seriousError&quot;</code>的<code>html</code>元素内的超链接也会变成红色和粗体。</p> <p>本节将介绍与混合器相比，哪种情况下更适合用继承。接下来在探索继承的工作细节之前，我们先了解一下继承的高级用法。最后，我们将看看使用继承可能会有哪些坑，学习如何避免这些坑。</p> <h1 id="_6-1-何时使用继承"><a href="#_6-1-何时使用继承" class="header-anchor">#</a> 6-1. 何时使用继承;</h1> <p>5-1节介绍了<a href="https://www.sass.hk/guide/" target="_blank" rel="noopener noreferrer">混合器<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>主要用于展示性样式的重用，而类名用于语义化样式的重用。因为继承是基于类的（有时是基于其他类型的选择器），所以继承应该是建立在语义化的关系上。当一个元素拥有的类（比如说<code>.seriousError</code>）表明它属于另一个类（比如说<code>.error</code>），这时使用继承再合适不过了。</p> <p>这有点抽象，所以我们从几个方面来阐释一下。想象一下你正在编写一个页面，给<code>html</code>元素添加类名，你发现你的某个类（比如说<code>.seriousError</code>）另一个类（比如说<code>.error</code>）的细化。你会怎么做？</p> <ul><li>你可以为这两个类分别写相同的样式，但是如果有大量的重复怎么办？使用<code>sass</code>时，我们提倡的就是不要做重复的工作。</li> <li>你可以使用一个选择器组（比如说<code>.error``.seriousError</code>）给这两个选择器写相同的样式。如果.error的所有样式都在同一个地方，这种做法很好，但是如果是分散在样式表的不同地方呢？再这样做就困难多了。</li> <li>你可以使用一个混合器为这两个类提供相同的样式，但当<code>.error</code>的样式修饰遍布样式表中各处时，这种做法面临着跟使用选择器组一样的问题。这两个类也不是恰好有相同的 样式。你应该更清晰地表达这种关系。</li> <li>综上所述你应该使用<code>@extend</code>。让<code>.seriousError</code>从<code>.error</code>继承样式，使两者之间的关系非常清晰。更重要的是无论你在样式表的哪里使用<code>.error``.seriousError</code>都会继承其中的样式。</li></ul> <p>现在你已经更好地掌握了何时使用继承，以及继承有哪些突出的优点，接下来我们看看一些高级用法。</p> <h1 id="_6-2-继承的高级用法"><a href="#_6-2-继承的高级用法" class="header-anchor">#</a> 6-2. 继承的高级用法;</h1> <p>任何<code>css</code>规则都可以继承其他规则，几乎任何<code>css</code>规则也都可以被继承。大多数情况你可能只想对类使用继承，但是有些场合你可能想做得更多。最常用的一种高级用法是继承一个<code>html</code>元素的样式。尽管默认的浏览器样式不会被继承，因为它们不属于样式表中的样式，但是你对<code>html</code>元素添加的所有样式都会被继承。</p> <p>接下来的这段代码定义了一个名为<code>disabled</code>的类，样式修饰使它看上去像一个灰掉的超链接。通过继承a这一超链接元素来实现：</p> <div class="language- extra-class"><pre class="language-text"><code>.disabled {
+  color: gray;
+  @extend a;
+}
+</code></pre></div><p>假如一条样式规则继承了一个复杂的选择器，那么它只会继承这个复杂选择器命中的元素所应用的样式。举例来说， 如果<code>.seriousError``@extend``.important.error</code> ， 那么<code>.important.error</code> 和<code>h1.important.error</code> 的样式都会被<code>.seriousError</code>继承， 但是<code>.important</code>或者<code>.error下</code>的样式则不会被继承。这种情况下你很可能希望<code>.seriousError</code>能够分别继承<code>.important</code>或者<code>.error</code>下的样式。</p> <p>如果一个选择器序列（<code>#main .seriousError</code>）<code>@extend</code>另一个选择器（<code>.error</code>），那么只有完全匹配<code>#main .seriousError</code>这个选择器的元素才会继承<code>.error</code>的样式，就像单个类 名继承那样。拥有<code>class=&quot;seriousError&quot;</code>的<code>#main</code>元素之外的元素不会受到影响。</p> <p>像<code>#main .error</code>这种选择器序列是不能被继承的。这是因为从<code>#main .error</code>中继承的样式一般情况下会跟直接从<code>.error</code>中继承的样式基本一致，细微的区别往往使人迷惑。</p> <p>现在你已经了解了通过继承能够做些什么事情，接下来我们将学习继承的工作细节，在生成对应<code>css</code>的时候，<code>sass</code>具体干了些什么事情。</p> <h1 id="_6-3-继承的工作细节"><a href="#_6-3-继承的工作细节" class="header-anchor">#</a> 6-3. 继承的工作细节;</h1> <p>跟变量和混合器不同，继承不是仅仅用<code>css</code>样式替换@extend处的代码那么简单。为了不让你对生成的<code>css</code>感觉奇怪，对这背后的工作原理有一定了解是非常重要的。</p> <p><code>@extend</code>背后最基本的想法是，如果<code>.seriousError @extend .error</code>， 那么样式表中的任何一处<code>.error</code>都用<code>.error``.seriousError</code>这一选择器组进行替换。这就意味着相关样式会如预期那样应用到<code>.error</code>和<code>.seriousError</code>。当<code>.error</code>出现在复杂的选择器中，比如说<code>h1.error``.error a</code>或者<code>#main .sidebar input.error[type=&quot;text&quot;]</code>，那情况就变得复杂多了，但是不用担心，<code>sass</code>已经为你考虑到了这些。</p> <p>关于<code>@extend</code>有两个要点你应该知道。</p> <ul><li>跟混合器相比，继承生成的<code>css</code>代码相对更少。因为继承仅仅是重复选择器，而不会重复属性，所以使用继承往往比混合器生成的<code>css</code>体积更小。如果你非常关心你站点的速度，请牢记这一点。</li> <li>继承遵从<code>css</code>层叠的规则。当两个不同的<code>css</code>规则应用到同一个<code>html</code>元素上时，并且这两个不同的<code>css</code>规则对同一属性的修饰存在不同的值，<code>css</code>层叠规则会决定应用哪个样式。相当直观：通常权重更高的选择器胜出，如果权重相同，定义在后边的规则胜出。</li></ul> <p>混合器本身不会引起<code>css</code>层叠的问题，因为混合器把样式直接放到了<code>css</code>规则中，而继承存在样式层叠的问题。被继承的样式会保持原有定义位置和选择器权重不变。通常来说这并不会引起什么问题，但是知道这点总没有坏处。</p> <h1 id="_6-4-使用继承的最佳实践"><a href="#_6-4-使用继承的最佳实践" class="header-anchor">#</a> 6-4. 使用继承的最佳实践;</h1> <p>通常使用继承会让你的<code>css</code>美观、整洁。因为继承只会在生成<code>css</code>时复制选择器，而不会复制大段的<code>css</code>属性。但是如果你不小心，可能会让生成的<code>css</code>中包含大量的选择器复制。</p> <p>避免这种情况出现的最好方法就是不要在<code>css</code>规则中使用后代选择器（比如<code>.foo .bar</code>）去继承<code>css</code>规则。如果你这么做，同时被继承的<code>css</code>规则有通过后代选择器修饰的样式，生成<code>css</code>中的选择器的数量很快就会失控：</p> <div class="language- extra-class"><pre class="language-text"><code>.foo .bar { @extend .baz; }
+.bip .baz { a: b; }
+</code></pre></div><p>在上边的例子中，<code>sass</code>必须保证应用到.baz的样式同时也要应用到<code>.foo .bar</code>（位于class=&quot;foo&quot;的元素内的class=&quot;bar&quot;的元素）。例子中有一条应用到<code>.bip .baz</code>（位于class=&quot;bip&quot;的元素内的class=&quot;baz&quot;的元素）的<code>css</code>规则。当这条规则应用到<code>.foo .bar</code>时，可能存在三种情况，如下代码:</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 继承可能迅速变复杂 --&gt;
+&lt;!-- Case 1 --&gt;
+&lt;div class=&quot;foo&quot;&gt;
+  &lt;div class=&quot;bip&quot;&gt;
+    &lt;div class=&quot;bar&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Case 2 --&gt;
+&lt;div class=&quot;bip&quot;&gt;
+  &lt;div class=&quot;foo&quot;&gt;
+    &lt;div class=&quot;bar&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Case 3 --&gt;
+&lt;div class=&quot;foo bip&quot;&gt;
+  &lt;div class=&quot;bar&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><p>为了应付这些情况，<code>sass</code>必须生成三种选择器组合（仅仅是.bip .foo .bar不能覆盖所有情况）。如果任何一条规则里边的后代选择器再长一点，<code>sass</code>需要考虑的情况就会更多。实际上<code>sass</code>并不总是会生成所有可能的选择器组合，即使是这样，选择器的个数依然可能会变得相当大，所以如果允许，尽可能避免这种用法。</p> <p>值得一提的是，只要你想，你完全可以放心地继承有后代选择器修饰规则的选择器，不管后代选择器多长，但有一个前提就是，不要用后代选择器去继承。</p> <h1 id="_7-小结"><a href="#_7-小结" class="header-anchor">#</a> 7. 小结;</h1> <p>本文介绍了<code>sass</code>最基本部分,你可以轻松地使用<code>sass</code>编写清晰、无冗余、语义化的<code>css</code>。对于<code>sass</code>提供的工具你已经有了一个比较深入的了解，同时也掌握了何时使用这些工具的指导原则。</p> <p>变量是<code>sass</code>提供的最基本的工具。通过变量可以让独立的<code>css</code>值变得可重用，无论是在一条单独的规则范围内还是在整个样式表中。变量、混合器的命名甚至<code>sass</code>的文件名，可以互换通用<code>_</code>和<code>-</code>。同样基础的是<code>sass</code>的嵌套机制。嵌套允许<code>css</code>规则内嵌套<code>css</code>规则，减少重复编写常用的选择器，同时让样式表的结构一眼望去更加清晰。<code>sass</code>同时提供了特殊的父选择器标识符<code>&amp;</code>，通过它可以构造出更高效的嵌套。</p> <p>你也已经学到了<code>sass</code>的另一个重要特性，样式导入。通过样式导入可以把分散在多个<code>sass</code>文件中的内容合并生成到一个<code>css</code>文件，避免了项目中有大量的<code>css</code>文件通过原生的<code>css</code> <code>@import</code>带来的性能问题。通过嵌套导入和默认变量值，导入可以构建更强有力的、可定制的样式。混合器允许用户编写语义化样式的同时避免视觉层面上样式的重复。你不仅学到了如何使用混合器减少重复，同时学习到了如何使用混合器让你的<code>css</code>变得更加可维护和语义化。最后，我们学习了与混合器相辅相成的选择器继承。继承允许你声明类之间语义化的关系，通过这些关系可以保持你的<code>css</code>的整洁和可维护性。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/frontend-tutorial/edit/master/docs/style/sass/sass-quickstart.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/frontend-tutorial/assets/js/app.0f2f3ef1.js" defer></script><script src="/frontend-tutorial/assets/js/4.0f425322.js" defer></script><script src="/frontend-tutorial/assets/js/51.fb7cf5ef.js" defer></script><script src="/frontend-tutorial/assets/js/5.608566ca.js" defer></script>
+  </body>
+</html>

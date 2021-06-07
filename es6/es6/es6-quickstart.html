@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ES6 快速入门 | FRONTEND-TUTORIAL</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/frontend-tutorial/favicon.ico">
+    <meta name="description" content="前端教程">
+    
+    <link rel="preload" href="/frontend-tutorial/assets/css/0.styles.fb161648.css" as="style"><link rel="preload" href="/frontend-tutorial/assets/js/app.0f2f3ef1.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/4.0f425322.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/30.687c6413.js" as="script"><link rel="preload" href="/frontend-tutorial/assets/js/5.608566ca.js" as="script"><link rel="prefetch" href="/frontend-tutorial/assets/js/10.1aadac9e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/11.62869f33.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/12.00af68a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/13.fad1990f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/14.7a436432.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/15.1ed64873.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/16.e4fab6e4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/17.c425f0c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/18.b19b4a8c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/19.cf3ece76.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/20.e9494703.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/21.8e701cc6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/22.c82dafa0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/23.c9095c3c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/24.97fb2434.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/25.79d04eb4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/26.0560c9b3.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/27.ca75901a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/28.a2617487.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/29.034030a1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/31.023e8160.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/32.f0b2a53f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/33.928cca1f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/34.e7b4cfb6.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/35.b6a1c119.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/36.615a2e5c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/37.7c6f496d.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/38.92700ab1.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/39.ca730fba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/40.735cdb31.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/41.80a4b65e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/42.33625d08.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/43.de7d648b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/44.7f081370.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/45.4a5d9c6b.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/46.ae465fd4.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/47.fc08a8e0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/48.3fae0897.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/49.a705c18f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/50.d5ce8c52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/51.fb7cf5ef.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/52.ccd8ffb2.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/53.c39cec94.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/54.44e52515.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/55.a1b302d0.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/56.18324d52.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/57.4ab7da19.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/58.6666b050.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/59.9031b427.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/6.79caa705.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/60.584946dd.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/61.39e0a712.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/62.8f33fd7c.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/63.b27ab9ac.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/64.b15cd74f.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/65.a0cdcfa5.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/66.81e0a185.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/67.a06444ff.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/68.85e176ee.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/69.2e790a70.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/7.f420f9c7.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/70.cc01ed99.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/71.27be19ba.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/72.d4cdf44e.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/73.210cfade.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/8.64ae920a.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/9.692fe702.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~flowchart.d1e58b72.js"><link rel="prefetch" href="/frontend-tutorial/assets/js/vendors~notification.ecb92178.js">
+    <link rel="stylesheet" href="/frontend-tutorial/assets/css/0.styles.fb161648.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/frontend-tutorial/" class="home-link router-link-active"><img src="images/dunwu-logo-100.png" alt="FRONTEND-TUTORIAL" class="logo"> <span class="site-name can-hide">FRONTEND-TUTORIAL</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/frontend-tutorial/base/" class="nav-link">
+  基础
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Nodejs" class="dropdown-title"><span class="title">Nodejs</span> <span class="arrow down"></span></button> <button type="button" aria-label="Nodejs" class="mobile-dropdown-title"><span class="title">Nodejs</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/nodejs.html" class="nav-link">
+  Node.js 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/npm.html" class="nav-link">
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/nodejs/yarn.html" class="nav-link">
+  yarn
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端工具" class="dropdown-title"><span class="title">前端工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端工具" class="mobile-dropdown-title"><span class="title">前端工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/axios.html" class="nav-link">
+  Axios 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/prettier.html" class="nav-link">
+  Prettier 入门
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/tool/lodash.html" class="nav-link">
+  Lodash 入门
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue 技术生态" class="dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue 技术生态" class="mobile-dropdown-title"><span class="title">Vue 技术生态</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuejs-basic.html" class="nav-link">
+  Vue.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-basic.html" class="nav-link">
+  Vue Router 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-router-advanced.html" class="nav-link">
+  Vue Router 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-basic.html" class="nav-link">
+  Vuex 基础
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vuex-advanced.html" class="nav-link">
+  Vuex 进阶
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-loader.html" class="nav-link">
+  Vue Loader
+</a></li><li class="dropdown-item"><!----> <a href="/frontend-tutorial/vue/vue-devtools.html" class="nav-link">
+  Vue Devtools
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dunwu/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  🎯 博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/dunwu/frontend-tutorial" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>ES6 快速入门</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/frontend-tutorial/es6/es6/es6-quickstart.html#最常用的-es6-特性" class="sidebar-link">最常用的 ES6 特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/es6/es6-quickstart.html#let-const" class="sidebar-link">let, const</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/es6/es6-quickstart.html#class-extends-super" class="sidebar-link">class, extends, super</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/es6/es6-quickstart.html#arrow-function" class="sidebar-link">arrow function</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/es6/es6-quickstart.html#template-string" class="sidebar-link">template string</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/es6/es6-quickstart.html#destructuring" class="sidebar-link">destructuring</a></li><li class="sidebar-sub-header"><a href="/frontend-tutorial/es6/es6/es6-quickstart.html#default-rest" class="sidebar-link">default, rest</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="es6-快速入门"><a href="#es6-快速入门" class="header-anchor">#</a> ES6 快速入门</h1> <p>ECMAScript 6（以下简称 ES6）是 JavaScript 语言的下一代标准。</p> <p>因为当前版本的 ES6 是在 2015 年发布的，所以又称 ECMAScript 2015。</p> <p>也就是说，ES6 就是 ES2015。</p> <p>目前，并非所有的浏览器都支持 ES6。所以，如果要让浏览器能够理解 ES6 的语义，需要使用转码器，比如最流行的 Babel。</p> <h2 id="最常用的-es6-特性"><a href="#最常用的-es6-特性" class="header-anchor">#</a> 最常用的 ES6 特性</h2> <p><code>let, const, class, extends, super, arrow functions, template string, destructuring, default, rest arguments</code>
+这些是 ES6 最常用的几个语法，基本上学会它们，我们就可以走遍天下都不怕啦！我会用最通俗易懂的语言和例子来讲解它们，保证一看就懂，一学就会。</p> <h3 id="let-const"><a href="#let-const" class="header-anchor">#</a> let, const</h3> <p>这两个的用途与<code>var</code>类似，都是用来声明变量的，但在实际运用中他俩都有各自的特殊用途。
+首先来看下面这个例子：</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;zach&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">&quot;obama&quot;</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//obama</span>
+  <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//obama</span>
+</code></pre></div><p>使用<code>var</code>两次输出都是 obama，这是因为 ES5 只有全局作用域和函数作用域，没有块级作用域，这带来很多不合理的场景。第一种场景就是你现在看到的内层变量覆盖外层变量。而<code>let</code>则实际上为 JavaScript 新增了块级作用域。用它所声明的变量，只在<code>let</code>命令所在的代码块内有效。</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">&quot;zach&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> name <span class="token operator">=</span> <span class="token string">&quot;obama&quot;</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//obama</span>
+  <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//zach</span>
+</code></pre></div><p>另外一个<code>var</code>带来的不合理场景就是用来计数的循环变量泄露为全局变量，看下面的例子：</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10</span>
+</code></pre></div><p>上面代码中，变量 i 是 var 声明的，在全局范围内都有效。所以每一次循环，新的 i 值都会覆盖旧值，导致最后输出的是最后一轮的 i 的值。而使用 let 则不会出现这个问题。</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+a<span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 6</span>
+</code></pre></div><p>再来看一个更常见的例子，了解下如果不用 ES6，而用闭包如何解决这个问题。</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">var</span> clickBoxs <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">&quot;.clickBox&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> clickBoxs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  clickBoxs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我们本来希望的是点击不同的 clickBox，显示不同的 i，但事实是无论我们点击哪个 clickBox，输出的都是 5。下面我们来看下，如何用闭包搞定它。</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">function</span> <span class="token function">iteratorFactory</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> <span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> onclick<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> clickBoxs <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">&quot;.clickBox&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> clickBoxs<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  clickBoxs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token function">iteratorFactory</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>const</code>也用来声明变量，但是声明的是常量。一旦声明，常量的值就不能改变。</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">const</span> <span class="token constant">PI</span> <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span><span class="token punctuation">;</span>
+
+<span class="token constant">PI</span> <span class="token operator">=</span> <span class="token number">23</span><span class="token punctuation">;</span> <span class="token comment">//Module build failed: SyntaxError: /es6/app.js: &quot;PI&quot; is read-only</span>
+</code></pre></div><p>当我们尝试去改变用 const 声明的常量时，浏览器就会报错。
+const 有一个很好的应用场景，就是当我们引用第三方库的时声明的变量，用 const 来声明可以避免未来不小心重命名而导致出现 bug：</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">const</span> monent <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;moment&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="class-extends-super"><a href="#class-extends-super" class="header-anchor">#</a> class, extends, super</h3> <p>这三个特性涉及了 ES5 中最令人头疼的的几个部分：原型、构造函数，继承...你还在为它们复杂难懂的语法而烦恼吗？你还在为指针到底指向哪里而纠结万分吗？</p> <p>有了 ES6 我们不再烦恼！</p> <p>ES6 提供了更接近传统语言的写法，引入了 Class（类）这个概念。新的 class 写法让对象原型的写法更加清晰、更像面向对象编程的语法，也更加通俗易懂。</p> <div class="language- extra-class"><pre class="language-text"><code>class Animal {
+    constructor(){
+        this.type = 'animal'
+    }
+    says(say){
+        console.log(this.type + ' says ' + say)
+    }
+}
+
+let animal = new Animal()
+animal.says('hello') //animal says hello
+
+class Cat extends Animal {
+    constructor(){
+        super()
+        this.type = 'cat'
+    }
+}
+
+let cat = new Cat()
+cat.says('hello') //cat says hello
+</code></pre></div><p>上面代码首先用<code>class</code>定义了一个“类”，可以看到里面有一个<code>constructor</code>方法，这就是构造方法，而<code>this</code>关键字则代表实例对象。简单地说，<code>constructor</code>内定义的方法和属性是实例对象自己的，而<code>constructor</code>外定义的方法和属性则是所有实力对象可以共享的。</p> <p>Class 之间可以通过<code>extends</code>关键字实现继承，这比 ES5 的通过修改原型链实现继承，要清晰和方便很多。上面定义了一个 Cat 类，该类通过<code>extends</code>关键字，继承了 Animal 类的所有属性和方法。</p> <p><code>super</code>关键字，它指代父类的实例（即父类的 this 对象）。子类必须在<code>constructor</code>方法中调用<code>super</code>方法，否则新建实例时会报错。这是因为子类没有自己的<code>this</code>对象，而是继承父类的<code>this</code>对象，然后对其进行加工。如果不调用<code>super</code>方法，子类就得不到<code>this</code>对象。</p> <p>ES6 的继承机制，实质是先创造父类的实例对象 this（所以必须先调用 super 方法），然后再用子类的构造函数修改 this。</p> <p>P.S 如果你写 react 的话，就会发现以上三个东西在最新版 React 中出现得很多。创建的每个 component 都是一个继承<code>React.Component</code>的类。<a href="https://facebook.github.io/react/docs/reusable-components.html" target="_blank" rel="noopener noreferrer">详见 react 文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="arrow-function"><a href="#arrow-function" class="header-anchor">#</a> arrow function</h3> <p>这个恐怕是 ES6 最最常用的一个新特性了，用它来写 function 比原来的写法要简洁清晰很多:</p> <div class="language- extra-class"><pre class="language-text"><code>function(i){ return i + 1; } //ES5
+(i) =&gt; i + 1 //ES6
+</code></pre></div><p>简直是简单的不像话对吧...
+如果方程比较复杂，则需要用<code>{}</code>把代码包起来：</p> <div class="language- extra-class"><pre class="language-text"><code>function(x, y) {
+    x++;
+    y--;
+    return x + y;
+}
+(x, y) =&gt; {x++; y--; return x+y}
+</code></pre></div><p>除了看上去更简洁以外，arrow function 还有一项超级无敌的功能！
+长期以来，JavaScript 语言的<code>this</code>对象一直是一个令人头痛的问题，在对象方法中使用 this，必须非常小心。例如：</p> <div class="language- extra-class"><pre class="language-text"><code>class Animal {
+    constructor(){
+        this.type = 'animal'
+    }
+    says(say){
+        setTimeout(function(){
+            console.log(this.type + ' says ' + say)
+        }, 1000)
+    }
+}
+
+ var animal = new Animal()
+ animal.says('hi')  //undefined says hi
+</code></pre></div><p>运行上面的代码会报错，这是因为<code>setTimeout</code>中的<code>this</code>指向的是全局对象。所以为了让它能够正确的运行，传统的解决方法有两种：</p> <ol><li><p>第一种是将 this 传给 self,再用 self 来指代 this</p> <div class="language- extra-class"><pre class="language-text"><code> says(say){
+     var self = this;
+     setTimeout(function(){
+         console.log(self.type + ' says ' + say)
+     }, 1000)
+</code></pre></div><p>2.第二种方法是用<code>bind(this)</code>,即</p> <div class="language- extra-class"><pre class="language-text"><code> says(say){
+     setTimeout(function(){
+         console.log(self.type + ' says ' + say)
+     }.bind(this), 1000)
+</code></pre></div><p>但现在我们有了箭头函数，就不需要这么麻烦了：</p></li></ol> <div class="language- extra-class"><pre class="language-text"><code>class Animal {
+    constructor(){
+        this.type = 'animal'
+    }
+    says(say){
+        setTimeout( () =&gt; {
+            console.log(this.type + ' says ' + say)
+        }, 1000)
+    }
+}
+ var animal = new Animal()
+ animal.says('hi')  //animal says hi
+</code></pre></div><p>当我们使用箭头函数时，函数体内的 this 对象，就是定义时所在的对象，而不是使用时所在的对象。
+并不是因为箭头函数内部有绑定 this 的机制，实际原因是箭头函数根本没有自己的 this，它的 this 是继承外面的，因此内部的 this 就是外层代码块的 this。</p> <h3 id="template-string"><a href="#template-string" class="header-anchor">#</a> template string</h3> <p>这个东西也是非常有用，当我们要插入大段的 html 内容到文档中时，传统的写法非常麻烦，所以之前我们通常会引用一些模板工具库，比如 mustache 等等。</p> <p>大家可以先看下面一段代码：</p> <div class="language- extra-class"><pre class="language-text"><code>$(&quot;#result&quot;).append(
+  &quot;There are &lt;b&gt;&quot; + basket.count + &quot;&lt;/b&gt; &quot; +
+  &quot;items in your basket, &quot; +
+  &quot;&lt;em&gt;&quot; + basket.onSale +
+  &quot;&lt;/em&gt; are on sale!&quot;
+);
+</code></pre></div><p>我们要用一堆的'+'号来连接文本与变量，而使用 ES6 的新特性模板字符串``后，我们可以直接这么来写：</p> <div class="language- extra-class"><pre class="language-text"><code>$(&quot;#result&quot;).append(`
+  There are &lt;b&gt;${basket.count}&lt;/b&gt; items
+   in your basket, &lt;em&gt;${basket.onSale}&lt;/em&gt;
+  are on sale!
+`);
+</code></pre></div><p>用反引号<code>（</code>）<code>来标识起始，用</code>${}`来引用变量，而且所有的空格和缩进都会被保留在输出之中，是不是非常爽？！</p> <p>React Router 从第 1.0.3 版开始也使用 ES6 语法了，比如这个例子：
+<code>{taco.name}</code> <a href="https://github.com/rackt/react-router/blob/latest/examples/passing-props-to-children/app.js" target="_blank" rel="noopener noreferrer">React Router<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="destructuring"><a href="#destructuring" class="header-anchor">#</a> destructuring</h3> <p>ES6 允许按照一定模式，从数组和对象中提取值，对变量进行赋值，这被称为解构（Destructuring）。</p> <p>看下面的例子：</p> <div class="language- extra-class"><pre class="language-text"><code>let cat = 'ken'
+let dog = 'lili'
+let zoo = {cat: cat, dog: dog}
+console.log(zoo)  //Object {cat: &quot;ken&quot;, dog: &quot;lili&quot;}
+</code></pre></div><p>用 ES6 完全可以像下面这么写：</p> <div class="language- extra-class"><pre class="language-text"><code>let cat = 'ken'
+let dog = 'lili'
+let zoo = {cat, dog}
+console.log(zoo)  //Object {cat: &quot;ken&quot;, dog: &quot;lili&quot;}
+</code></pre></div><p>反过来可以这么写：</p> <div class="language- extra-class"><pre class="language-text"><code>let dog = {type: 'animal', many: 2}
+let { type, many} = dog
+console.log(type, many)   //animal 2
+</code></pre></div><h3 id="default-rest"><a href="#default-rest" class="header-anchor">#</a> default, rest</h3> <p>default 很简单，意思就是默认值。大家可以看下面的例子，调用<code>animal()</code>方法时忘了传参数，传统的做法就是加上这一句<code>type = type || 'cat'</code>来指定默认值。</p> <div class="language- extra-class"><pre class="language-text"><code>function animal(type){
+    type = type || 'cat'
+    console.log(type)
+}
+animal()
+</code></pre></div><p>如果用 ES6 我们而已直接这么写：</p> <div class="language- extra-class"><pre class="language-text"><code>function animal(type = 'cat'){
+    console.log(type)
+}
+animal()
+</code></pre></div><p>最后一个 rest 语法也很简单，直接看例子：</p> <div class="language- extra-class"><pre class="language-text"><code>function animals(...types){
+    console.log(types)
+}
+animals('cat', 'dog', 'fish') //[&quot;cat&quot;, &quot;dog&quot;, &quot;fish&quot;]
+</code></pre></div><p>而如果不用 ES6 的话，我们则得使用 ES5 的<code>arguments</code>。</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/dunwu/frontend-tutorial/edit/master/docs/es6/es6/es6-quickstart.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/frontend-tutorial/assets/js/app.0f2f3ef1.js" defer></script><script src="/frontend-tutorial/assets/js/4.0f425322.js" defer></script><script src="/frontend-tutorial/assets/js/30.687c6413.js" defer></script><script src="/frontend-tutorial/assets/js/5.608566ca.js" defer></script>
+  </body>
+</html>
