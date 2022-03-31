@@ -10,7 +10,7 @@
   <description>antd-admin 的服务器项目</description>
 
   <properties>
-    <spring.version>4.1.4.RELEASE</spring.version>
+    <spring.version>5.3.18</spring.version>
     <jetty.version>9.3.2.v20150730</jetty.version>
   </properties>
 
