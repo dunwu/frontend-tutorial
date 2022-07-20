@@ -2494,7 +2494,7 @@ class SignUpDialog extends React.Component {
 
 [在 CodePen 中尝试](http://codepen.io/gaearon/pen/gwZbYa?editors=0010)。
 
-## 如何看待继？
+## 如何看待继承？
 
 在 Facebook ，我们在千万的组件中使用 React，我们还没有发现任何用例，值得我们建议你用继承层次结构来创建组件。
 
